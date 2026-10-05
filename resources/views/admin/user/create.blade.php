@@ -300,7 +300,7 @@
             <!-- نام -->
             <div class="mb-4">
                 <label class="vafadar-label"> نام</label>
-                <input type="text" name="name" placeholder="نام خود را وارد کنید" class="vafadar-input">
+                <input type="text" name="name" placeholder="نام خود را وارد کنید" class="vafadar-input" required>
             </div>
 
             <!-- نام خانوادگی -->
@@ -312,7 +312,7 @@
             <!-- شماره موبایل -->
             <div class="mb-4">
                 <label class="vafadar-label"> شماره موبایل</label>
-                <input type="tel" name="phoneNumber" placeholder="مثلاً 09123456789" class="vafadar-input">
+                <input type="tel" name="phoneNumber" placeholder="مثلاً 09123456789" class="vafadar-input" required>
             </div>
 
             <!-- ایمیل -->
@@ -324,7 +324,7 @@
             <!-- رمز عبور -->
             <div class="mb-4">
                 <label class="vafadar-label"> رمز عبور</label>
-                <input type="password" name="password" placeholder="رمز عبور را وارد کنید" class="vafadar-input">
+                <input type="password" name="password" placeholder="رمز عبور را وارد کنید" class="vafadar-input" required>
             </div>
 
             <!-- نقش‌ها -->
