@@ -1,0 +1,69 @@
+.leaner{
+background: #031522;
+background: linear-gradient(90deg,rgba(3, 21, 34, 1) 64%, rgba(3, 21, 34, 0) 76%, rgba(3, 21, 34, 0) 100%);
+
+}
+
+.leaner2{
+    background: #0B304A;
+background: linear-gradient(270deg,rgba(11, 48, 74, 1) 45%, rgba(11, 48, 74, 0) 94%, rgba(11, 48, 74, 0) 100%); 
+}
+
+.leaner3{
+    background: #0B304A;
+background: linear-gradient(270deg,rgba(11, 48, 74, 1) 45%, rgba(11, 48, 74, 0) 94%, rgba(11, 48, 74, 0) 100%); 
+}
+
+.leaner-left{
+background: #031522;
+background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45%, rgba(3, 21, 34, 0) 100%);
+   
+}
+
+
+@font-face{
+    font-family: "MyFont";
+    src: url(../font/B-Zar/B\ Zar\ Bold_0.ttf); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;   
+}
+
+*{
+    font-family: "MyFont";
+}
+
+
+.down_hero{
+    background: #031522;
+    background: linear-gradient(0deg,rgba(3, 21, 34, 1) 56%, rgba(3, 21, 34, 0) 172%, rgba(3, 21, 34, 0) 100%);
+}
+
+.down_hero1{
+    background: #031522;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media(max-width:1406px){
+    .fonts{
+        font-size: 17px;
+    }
+    .parent_font{
+        gap: 2px;
+    }
+}
+
+@media(max-width:1200px){
+    .leaner-left{
+        
+        background: linear-gradient(271deg,rgba(3, 21, 34, 1) -5%, rgba(3, 21, 34, 0) 45%, rgba(3, 21, 34, 0) 100%);
+    }
+    .img{
+        width: 80%;
+    }
+}
+@media(max-width:1024px){
+    .leaner{
+        background: linear-gradient(180deg,rgba(3, 21, 34, 1) 63%, rgba(3, 21, 34, 0) 85%, rgba(3, 21, 34, 0) 100%);
+    }
+}
