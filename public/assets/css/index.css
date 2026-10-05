@@ -1,0 +1,57 @@
+@import url(.css/fontiran.css);
+*{
+    font-family: "IRANSansX";
+}
+ 
+/* font */
+@import url(./fontiran.css);
+*{
+    font-family: IRANSansXFaNum;
+}
+/* root */
+:root{
+        --background:#FFFFFF;
+        --title:#1d1c1c;
+        --discription:#99a1af;
+        --secondary-text:#A6A6A6;       
+        --primary_color:#05df72;
+        --buttom:#03a297;
+        --product:#ebf8f7;
+        --greey_section:#023350;
+        --shorp_cart:#03a297;
+        --star:#f0b100;
+        --bg-input:#CCCCCC33;
+    }
+    /* css */
+    .cart_shadow{
+        box-shadow: 0px 0px 15px 1px #d7d7d7;
+    }
+
+            .transition_fast {
+                transition: all 0.2s ease;
+            }
+
+            .transition_normal {
+                transition: all 0.3s ease;
+            }
+
+            .transition_slow {
+                transition: all 0.5s ease;
+            }
+
+
+
+.head{
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.lable-1 .lable-1-1{
+   visibility: hidden;
+   opacity: 0;
+   transition: all 100ms ease-in-out;
+}
+.lable-1:hover .lable-1-1{
+   /* display: block; */
+   visibility: visible;
+   opacity: 100;
+}
+
