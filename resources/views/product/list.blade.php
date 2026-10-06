@@ -16,7 +16,7 @@
     }
     
     /* ===== کارت اصلی ===== */
-    .vafadar-table-card {
+    .derakhti-table-card {
         background: var(--metronic-content-bg);
         border: 1px solid var(--metronic-border);
         border-radius: 20px;
@@ -24,17 +24,17 @@
         transition: all 0.3s ease;
         overflow: hidden;
     }
-    .vafadar-table-card:hover {
+    .derakhti-table-card:hover {
         box-shadow: 0 8px 40px rgba(13,14,18,0.06);
     }
 
     /* ===== هدر جدول ===== */
-    .vafadar-table-header {
+    .derakhti-table-header {
         background: var(--metronic-shadow);
         border-bottom: 2px solid var(--metronic-border);
     }
 
-    .vafadar-table-header th {
+    .derakhti-table-header th {
         color: var(--metronic-text-dark);
         font-size: 11px;
         font-weight: 700;
@@ -46,24 +46,24 @@
     }
 
     /* ===== ردیف‌ها ===== */
-    .vafadar-table-row {
+    .derakhti-table-row {
         border-bottom: 1px solid var(--metronic-border);
         transition: all 0.3s ease;
         background: var(--metronic-content-bg);
     }
-    .vafadar-table-row:nth-child(even) {
+    .derakhti-table-row:nth-child(even) {
         background: var(--metronic-shadow);
     }
-    .vafadar-table-row:hover {
+    .derakhti-table-row:hover {
         background: var(--metronic-shadow);
         transform: translateX(-4px);
         box-shadow: 0 4px 12px rgba(13,14,18,0.04);
     }
-    .vafadar-table-row:last-child {
+    .derakhti-table-row:last-child {
         border-bottom: none;
     }
 
-    .vafadar-table-row td {
+    .derakhti-table-row td {
         padding: 12px 16px;
         color: var(--metronic-dark);
         font-size: 13px;
@@ -71,7 +71,7 @@
     }
 
     /* ===== بج محصول ===== */
-    .vafadar-product-badge {
+    .derakhti-product-badge {
         display: inline-flex;
         align-items: center;
         gap: 6px;
@@ -85,7 +85,7 @@
     }
 
     /* ===== وضعیت ===== */
-    .vafadar-status {
+    .derakhti-status {
         display: inline-flex;
         align-items: center;
         gap: 6px;
@@ -94,28 +94,28 @@
         font-size: 12px;
         font-weight: 600;
     }
-    .vafadar-status.active {
+    .derakhti-status.active {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
-    .vafadar-status.inactive {
+    .derakhti-status.inactive {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
 
-    .vafadar-status .dot {
+    .derakhti-status .dot {
         width: 6px;
         height: 6px;
         border-radius: 50%;
         display: inline-block;
     }
-    .vafadar-status.active .dot {
+    .derakhti-status.active .dot {
         background: #fff;
         animation: pulse-dot 2s infinite;
     }
-    .vafadar-status.inactive .dot {
+    .derakhti-status.inactive .dot {
         background: var(--metronic-text-dark);
     }
 
@@ -125,7 +125,7 @@
     }
 
     /* ===== بج ویژه و نمایش در خانه ===== */
-    .vafadar-feature-badge {
+    .derakhti-feature-badge {
         display: inline-flex;
         align-items: center;
         gap: 4px;
@@ -134,24 +134,24 @@
         font-size: 11px;
         font-weight: 600;
     }
-    .vafadar-feature-badge.featured {
+    .derakhti-feature-badge.featured {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
-    .vafadar-feature-badge.show-home {
+    .derakhti-feature-badge.show-home {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-feature-badge.normal {
+    .derakhti-feature-badge.normal {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
 
     /* ===== دکمه‌های اکشن ===== */
-    .vafadar-action-group {
+    .derakhti-action-group {
         display: flex;
         align-items: center;
         gap: 6px;
@@ -159,7 +159,7 @@
         justify-content: center;
     }
 
-    .vafadar-action-btn {
+    .derakhti-action-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -173,43 +173,43 @@
         border: 1px solid transparent;
         cursor: pointer;
     }
-    .vafadar-action-btn:hover {
+    .derakhti-action-btn:hover {
         transform: translateY(-2px);
     }
-    .vafadar-action-btn:active {
+    .derakhti-action-btn:active {
         transform: translateY(0) scale(0.95);
     }
 
-    .vafadar-action-btn.view {
+    .derakhti-action-btn.view {
         color: var(--metronic-text-dark);
         background: var(--metronic-shadow);
         border-color: var(--metronic-border);
     }
-    .vafadar-action-btn.view:hover {
+    .derakhti-action-btn.view:hover {
         background: var(--metronic-blue);
         color: #fff;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.25);
         border-color: var(--metronic-blue);
     }
 
-    .vafadar-action-btn.edit {
+    .derakhti-action-btn.edit {
         color: #fff;
         background: var(--metronic-blue);
         border-color: var(--metronic-blue);
     }
-    .vafadar-action-btn.edit:hover {
+    .derakhti-action-btn.edit:hover {
         background: var(--metronic-blue);
         color: #fff;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.25);
         border-color: var(--metronic-blue);
     }
 
-    .vafadar-action-btn.delete {
+    .derakhti-action-btn.delete {
         color: var(--metronic-dark);
         background: var(--metronic-shadow);
         border-color: var(--metronic-border);
     }
-    .vafadar-action-btn.delete:hover {
+    .derakhti-action-btn.delete:hover {
         background: var(--metronic-dark);
         color: #fff;
         box-shadow: 0 4px 16px rgba(13, 14, 18, 0.25);
@@ -217,7 +217,7 @@
     }
 
     /* ===== شمارنده ===== */
-    .vafadar-counter {
+    .derakhti-counter {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -231,7 +231,7 @@
     }
 
     /* ===== سرچ ===== */
-    .vafadar-search {
+    .derakhti-search {
         background: var(--metronic-shadow);
         border: 1px solid var(--metronic-border);
         border-radius: 12px;
@@ -243,19 +243,19 @@
         max-width: 300px;
         outline: none;
     }
-    .vafadar-search::placeholder {
+    .derakhti-search::placeholder {
         color: var(--metronic-text-dark);
     }
-    .vafadar-search:focus {
+    .derakhti-search:focus {
         border-color: var(--metronic-blue);
         box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
         background: var(--metronic-form-bg);
     }
 
-    .vafadar-search-wrap {
+    .derakhti-search-wrap {
         position: relative;
     }
-    .vafadar-search-wrap .search-icon {
+    .derakhti-search-wrap .search-icon {
         position: absolute;
         left: 14px;
         top: 50%;
@@ -264,44 +264,44 @@
     }
 
     /* ===== اسکرول ===== */
-    .vafadar-table-wrap {
+    .derakhti-table-wrap {
         overflow-x: auto;
     }
-    .vafadar-table-wrap::-webkit-scrollbar {
+    .derakhti-table-wrap::-webkit-scrollbar {
         height: 4px;
     }
-    .vafadar-table-wrap::-webkit-scrollbar-track {
+    .derakhti-table-wrap::-webkit-scrollbar-track {
         background: var(--metronic-shadow);
     }
-    .vafadar-table-wrap::-webkit-scrollbar-thumb {
+    .derakhti-table-wrap::-webkit-scrollbar-thumb {
         background: var(--metronic-blue);
         border-radius: 10px;
     }
 
     /* ===== خالی ===== */
-    .vafadar-empty {
+    .derakhti-empty {
         padding: 60px 20px;
         text-align: center;
     }
-    .vafadar-empty svg {
+    .derakhti-empty svg {
         width: 64px;
         height: 64px;
         fill: var(--metronic-border);
         margin: 0 auto 16px;
     }
-    .vafadar-empty h3 {
+    .derakhti-empty h3 {
         color: var(--metronic-dark);
         font-size: 18px;
         font-weight: 600;
     }
-    .vafadar-empty p {
+    .derakhti-empty p {
         color: var(--metronic-text-dark);
         font-size: 14px;
         margin-top: 4px;
     }
 
     /* ===== دکمه اضافه کردن ===== */
-    .vafadar-add-btn {
+    .derakhti-add-btn {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -316,17 +316,17 @@
         border: none;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
     }
-    .vafadar-add-btn:hover {
+    .derakhti-add-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.25);
         color: #fff;
     }
-    .vafadar-add-btn:active {
+    .derakhti-add-btn:active {
         transform: translateY(0) scale(0.97);
     }
 
     /* ===== تصویر کوچک ===== */
-    .vafadar-thumb {
+    .derakhti-thumb {
         width: 40px;
         height: 40px;
         border-radius: 10px;
@@ -334,13 +334,13 @@
         border: 2px solid var(--metronic-border);
         transition: all 0.3s ease;
     }
-    .vafadar-thumb:hover {
+    .derakhti-thumb:hover {
         transform: scale(1.1);
         border-color: var(--metronic-blue);
         box-shadow: 0 4px 12px rgba(27, 132, 255, 0.15);
     }
 
-    .vafadar-thumb-placeholder {
+    .derakhti-thumb-placeholder {
         width: 40px;
         height: 40px;
         border-radius: 10px;
@@ -353,7 +353,7 @@
     }
 
     /* ===== قیمت ===== */
-    .vafadar-price {
+    .derakhti-price {
         font-weight: 700;
         color: var(--metronic-dark);
         background: var(--metronic-shadow);
@@ -362,7 +362,7 @@
         display: inline-block;
     }
 
-    .vafadar-discount {
+    .derakhti-discount {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         padding: 2px 8px;
@@ -374,35 +374,35 @@
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .vafadar-table-row td {
+        .derakhti-table-row td {
             padding: 10px 12px;
             font-size: 12px;
         }
-        .vafadar-table-header th {
+        .derakhti-table-header th {
             padding: 10px 12px;
             font-size: 10px;
         }
-        .vafadar-action-btn {
+        .derakhti-action-btn {
             padding: 5px 10px;
             font-size: 11px;
         }
-        .vafadar-action-btn span {
+        .derakhti-action-btn span {
             display: none;
         }
-        .vafadar-search {
+        .derakhti-search {
             max-width: 100%;
             font-size: 13px;
         }
-        .vafadar-counter {
+        .derakhti-counter {
             font-size: 12px;
             padding: 4px 12px;
         }
-        .vafadar-add-btn {
+        .derakhti-add-btn {
             padding: 8px 14px;
             font-size: 13px;
         }
-        .vafadar-thumb,
-        .vafadar-thumb-placeholder {
+        .derakhti-thumb,
+        .derakhti-thumb-placeholder {
             width: 32px;
             height: 32px;
             font-size: 14px;
@@ -410,20 +410,20 @@
     }
 
     @media (max-width: 480px) {
-        .vafadar-table-row td {
+        .derakhti-table-row td {
             padding: 8px 8px;
             font-size: 11px;
         }
-        .vafadar-table-header th {
+        .derakhti-table-header th {
             padding: 8px 8px;
             font-size: 9px;
         }
-        .vafadar-action-btn {
+        .derakhti-action-btn {
             padding: 4px 7px;
             font-size: 10px;
         }
-        .vafadar-thumb,
-        .vafadar-thumb-placeholder {
+        .derakhti-thumb,
+        .derakhti-thumb-placeholder {
             width: 28px;
             height: 28px;
             font-size: 12px;
@@ -441,13 +441,13 @@
             <p class="text-sm mt-1" style="color: var(--metronic-text-dark);">مدیریت و مشاهده تمام محصولات فروشگاه</p>
         </div>
         <div class="flex items-center gap-3 flex-wrap">
-            <span class="vafadar-counter">
+            <span class="derakhti-counter">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                 </svg>
                 {{ count($products) }} محصول
             </span>
-            <a href="{{route('product.create')}}" class="vafadar-add-btn">
+            <a href="{{route('product.create')}}" class="derakhti-add-btn">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M12 5v14M5 12h14"/>
                 </svg>
@@ -457,23 +457,23 @@
     </div>
 
     <!-- ===== کارت جدول ===== -->
-    <div class="vafadar-table-card">
+    <div class="derakhti-table-card">
         
         <!-- ===== نوار جستجو ===== -->
         <div class="p-4 border-b" style="border-color: var(--metronic-border); background: var(--metronic-shadow);">
-            <div class="vafadar-search-wrap">
+            <div class="derakhti-search-wrap">
                 <svg class="search-icon w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"/>
                     <path d="M21 21l-4.35-4.35"/>
                 </svg>
-                <input type="text" id="searchProduct" placeholder="جستجوی محصولات..." class="vafadar-search">
+                <input type="text" id="searchProduct" placeholder="جستجوی محصولات..." class="derakhti-search">
             </div>
         </div>
 
         <!-- ===== جدول ===== -->
-        <div class="vafadar-table-wrap">
+        <div class="derakhti-table-wrap">
             <table class="w-full" id="productTable">
-                <thead class="vafadar-table-header">
+                <thead class="derakhti-table-header">
                     <tr>
                         <th style="width:50px;">#</th>
                         <th>تصویر</th>
@@ -489,17 +489,17 @@
                 </thead>
                 <tbody id="productTableBody">
                     @forelse($products as $product)
-                    <tr class="vafadar-table-row" data-id="{{$product->id}}" data-title="{{$product->title}}" data-slug="{{$product->slug}}">
+                    <tr class="derakhti-table-row" data-id="{{$product->id}}" data-title="{{$product->title}}" data-slug="{{$product->slug}}">
                         <td>
-                            <span class="vafadar-product-badge">#{{$product->id}}</span>
+                            <span class="derakhti-product-badge">#{{$product->id}}</span>
                         </td>
                         <td>
                             @if(isset($product->is_main_media))
-                                <img class="vafadar-thumb" 
+                                <img class="derakhti-thumb" 
                                      src="{{asset('storage/product_medias/'.$product->is_main_media)}}" 
                                      alt="{{$product->title}}">
                             @else
-                                <div class="vafadar-thumb-placeholder"></div>
+                                <div class="derakhti-thumb-placeholder"></div>
                             @endif
                         </td>
                         <td>
@@ -514,14 +514,14 @@
                             </span>
                         </td>
                         <td class="hidden lg:table-cell">
-                            <span class="vafadar-price">{{number_format($product->price)}}</span>
+                            <span class="derakhti-price">{{number_format($product->price)}}</span>
                         </td>
                         <td class="hidden lg:table-cell">
-                            <span class="vafadar-discount">{{number_format($product->discunt)}}</span>
+                            <span class="derakhti-discount">{{number_format($product->discunt)}}</span>
                         </td>
                         <td  class="hidden lg:table-cell">
                             @if($product->percent)
-                                <span class="vafadar-discount">-{{$product->percent}}%</span>
+                                <span class="derakhti-discount">-{{$product->percent}}%</span>
                             @else
                                 <span> ندارد </span>
                             @endif
@@ -539,12 +539,12 @@
                             <div class="flex flex-wrap gap-1">
                                 <!-- ===== وضعیت فعال/غیرفعال ===== -->
                                 @if($product->is_active)
-                                    <span class="vafadar-status active">
+                                    <span class="derakhti-status active">
                                         <span class="dot"></span>
                                         فعال
                                     </span>
                                 @else
-                                    <span class="vafadar-status inactive">
+                                    <span class="derakhti-status inactive">
                                         <span class="dot"></span>
                                         غیرفعال
                                     </span>
@@ -552,36 +552,36 @@
                                 
                                 <!-- ===== ویژه ===== -->
                                 @if($product->featured)
-                                    <span class="vafadar-feature-badge featured">⭐ ویژه</span>
+                                    <span class="derakhti-feature-badge featured">⭐ ویژه</span>
                                 @else
-                                    <span class="vafadar-feature-badge normal">معمولی</span>
+                                    <span class="derakhti-feature-badge normal">معمولی</span>
                                 @endif
                                 
                                 <!-- ===== نمایش در خانه ===== -->
                                 @if($product->show_in_home)
-                                    <span class="vafadar-feature-badge show-home"> نمایش در خانه</span>
+                                    <span class="derakhti-feature-badge show-home"> نمایش در خانه</span>
                                 @else
-                                    <span class="vafadar-feature-badge normal"> بدون نمایش</span>
+                                    <span class="derakhti-feature-badge normal"> بدون نمایش</span>
                                 @endif
                             </div>
                         </td>
                         <td>
-                            <div class="vafadar-action-group">
-                                <a href="{{route('product.single',['product'=>$product->id])}}" class="vafadar-action-btn view" title="مشاهده محصول">
+                            <div class="derakhti-action-group">
+                                <a href="{{route('product.single',['product'=>$product->id])}}" class="derakhti-action-btn view" title="مشاهده محصول">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
                                         <circle cx="12" cy="12" r="3"/>
                                     </svg>
                                     <span class="hidden sm:inline">مشاهده</span>
                                 </a>
-                                <a href="{{route('product.edit',['product'=>$product->id])}}" class="vafadar-action-btn edit" title="ویرایش محصول">
+                                <a href="{{route('product.edit',['product'=>$product->id])}}" class="derakhti-action-btn edit" title="ویرایش محصول">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
                                         <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
                                     </svg>
                                     <span class="hidden sm:inline">ویرایش</span>
                                 </a>
-                                <a href="{{route('product.delete',['product'=>$product->id])}}" class="vafadar-action-btn delete" title="حذف محصول" onclick="return confirm('آیا از حذف محصول «{{$product->title}}» مطمئن هستید؟')">
+                                <a href="{{route('product.delete',['product'=>$product->id])}}" class="derakhti-action-btn delete" title="حذف محصول" onclick="return confirm('آیا از حذف محصول «{{$product->title}}» مطمئن هستید؟')">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M3 6h18"/>
                                         <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
@@ -594,7 +594,7 @@
                     @empty
                     <tr>
                         <td colspan="8">
-                            <div class="vafadar-empty">
+                            <div class="derakhti-empty">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
                                     <path d="M20 7h-4.5L15 4h-6L8.5 7H4v11h16V7z"/>
                                     <circle cx="9" cy="13" r="2"/>
@@ -612,7 +612,7 @@
         </div>
 
         <!-- ===== فوتر جدول ===== -->
-        <div class="vafadar-table-header px-4 py-3 border-t" style="border-color: var(--metronic-border);">
+        <div class="derakhti-table-header px-4 py-3 border-t" style="border-color: var(--metronic-border);">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs" style="color: var(--metronic-text-dark);">
                 <span>تعداد کل: <strong style="color: var(--metronic-dark);">{{ count($products) }}</strong> محصول</span>
                 <span>آخرین بروزرسانی: <strong style="color: var(--metronic-dark);">{{ now()->format('Y/m/d H:i') }}</strong></span>

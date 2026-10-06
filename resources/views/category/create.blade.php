@@ -24,7 +24,7 @@
     }
 
     /* ===== کارت اصلی ===== */
-    .vafadar-form-card {
+    .derakhti-form-card {
         background: var(--metronic-bg-form);
         border: 1px solid var(--metronic-border);
         border-radius: 24px;
@@ -34,18 +34,18 @@
         width: 100%;
         margin: 0 auto;
     }
-    .vafadar-form-card:hover {
+    .derakhti-form-card:hover {
         box-shadow: var(--shadow-md);
     }
 
     /* ===== هدر فرم ===== */
-    .vafadar-form-header {
+    .derakhti-form-header {
         background: linear-gradient(135deg, #F5F5F5, #DBDFE9);
         border-bottom: 2px solid var(--metronic-border);
         padding: 20px 32px;
     }
 
-    .vafadar-form-header h2 {
+    .derakhti-form-header h2 {
         color: #1e293b;
         font-size: 20px;
         font-weight: 700;
@@ -54,7 +54,7 @@
         gap: 12px;
     }
 
-    .vafadar-form-header .header-icon {
+    .derakhti-form-header .header-icon {
         width: 44px;
         height: 44px;
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
@@ -66,7 +66,7 @@
         box-shadow: 0 4px 12px rgba(27, 132, 255, 0.25);
     }
 
-    .vafadar-form-header .sub-text {
+    .derakhti-form-header .sub-text {
         color: #9A9CAE;
         font-size: 14px;
         margin-top: 4px;
@@ -74,12 +74,12 @@
     }
 
     /* ===== بدنه فرم ===== */
-    .vafadar-form-body {
+    .derakhti-form-body {
         padding: 28px 32px 32px;
     }
 
     /* ===== سکشن‌ها ===== */
-    .vafadar-section {
+    .derakhti-section {
         background: #FFFFFF;
         border-radius: 16px;
         padding: 18px 22px;
@@ -87,19 +87,19 @@
         border: 1px solid var(--metronic-border);
         transition: all 0.3s ease;
     }
-    .vafadar-section:hover {
+    .derakhti-section:hover {
         border-color: var(--metronic-primary-light);
         box-shadow: var(--shadow-sm);
     }
 
-    .vafadar-section-title {
+    .derakhti-section-title {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 14px;
         padding-bottom: 10px;
     }
-    .vafadar-section-title .icon {
+    .derakhti-section-title .icon {
         width: 30px;
         height: 30px;
         border-radius: 10px;
@@ -110,20 +110,20 @@
         color: #fff;
         font-size: 13px;
     }
-    .vafadar-section-title h3 {
+    .derakhti-section-title h3 {
         color: #1e293b;
         font-size: 15px;
         font-weight: 700;
         margin: 0;
     }
-    .vafadar-section-title .line {
+    .derakhti-section-title .line {
         flex: 1;
         height: 2px;
         background: linear-gradient(to right, var(--metronic-border), transparent);
     }
 
     /* ===== فیلدها ===== */
-    .vafadar-label {
+    .derakhti-label {
         color: #64748b;
         font-size: 13px;
         font-weight: 600;
@@ -132,7 +132,7 @@
         padding-right: 4px;
     }
 
-    .vafadar-input {
+    .derakhti-input {
         width: 100%;
         padding: 11px 16px;
         background: rgba(255, 255, 255, 0.6);
@@ -143,34 +143,34 @@
         transition: all 0.3s ease;
         outline: none;
     }
-    .vafadar-input::placeholder {
+    .derakhti-input::placeholder {
         color: #9A9CAE;
         font-size: 13px;
     }
-    .vafadar-input:hover {
+    .derakhti-input:hover {
         border-color: var(--metronic-primary-light);
     }
-    .vafadar-input:focus {
+    .derakhti-input:focus {
         border-color: var(--metronic-primary);
         box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
         background: var(--metronic-bg-form);
     }
 
     /* ===== چک‌باکس ===== */
-    .vafadar-checkbox-group {
+    .derakhti-checkbox-group {
         display: flex;
         align-items: center;
         gap: 10px;
         padding: 4px 0;
     }
-    .vafadar-checkbox-group label {
+    .derakhti-checkbox-group label {
         color: #1e293b;
         font-size: 14px;
         font-weight: 500;
         cursor: pointer;
     }
 
-    .vafadar-checkbox {
+    .derakhti-checkbox {
         width: 18px;
         height: 18px;
         accent-color: var(--metronic-primary);
@@ -178,12 +178,12 @@
         border-radius: 5px;
         transition: all 0.2s ease;
     }
-    .vafadar-checkbox:hover {
+    .derakhti-checkbox:hover {
         transform: scale(1.1);
     }
 
     /* ===== خطا ===== */
-    .vafadar-error {
+    .derakhti-error {
         color: var(--metronic-danger);
         font-size: 12px;
         margin-top: 4px;
@@ -192,7 +192,7 @@
     }
 
     /* ===== دسته‌بندی والد ===== */
-    .vafadar-categories-box {
+    .derakhti-categories-box {
         width: 100%;
         max-height: 160px;
         overflow-y: auto;
@@ -202,22 +202,22 @@
         border-radius: 12px;
         transition: all 0.3s ease;
     }
-    .vafadar-categories-box:hover {
+    .derakhti-categories-box:hover {
         border-color: var(--metronic-primary-light);
     }
 
-    .vafadar-categories-box::-webkit-scrollbar {
+    .derakhti-categories-box::-webkit-scrollbar {
         width: 4px;
     }
-    .vafadar-categories-box::-webkit-scrollbar-track {
+    .derakhti-categories-box::-webkit-scrollbar-track {
         background: transparent;
     }
-    .vafadar-categories-box::-webkit-scrollbar-thumb {
+    .derakhti-categories-box::-webkit-scrollbar-thumb {
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-light));
         border-radius: 10px;
     }
 
-    .vafadar-category-item {
+    .derakhti-category-item {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -225,17 +225,17 @@
         border-radius: 8px;
         transition: all 0.2s ease;
     }
-    .vafadar-category-item:hover {
+    .derakhti-category-item:hover {
         background: rgba(27, 132, 255, 0.06);
     }
-    .vafadar-category-item label {
+    .derakhti-category-item label {
         color: #1e293b;
         font-size: 14px;
         cursor: pointer;
     }
 
     /* ===== دکمه ایجاد ویژگی ===== */
-    .vafadar-add-attr-btn {
+    .derakhti-add-attr-btn {
         width: 100%;
         padding: 11px;
         background: rgba(255, 255, 255, 0.4);
@@ -251,7 +251,7 @@
         justify-content: center;
         gap: 8px;
     }
-    .vafadar-add-attr-btn:hover {
+    .derakhti-add-attr-btn:hover {
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
         color: #fff;
         border-color: var(--metronic-primary);
@@ -260,7 +260,7 @@
     }
 
     /* ===== ویژگی‌ها ===== */
-    .vafadar-attr-item {
+    .derakhti-attr-item {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -284,7 +284,7 @@
         }
     }
 
-    .vafadar-attr-item input {
+    .derakhti-attr-item input {
         padding: 10px 14px;
         background: var(--metronic-bg-form);
         border: 1.5px solid var(--metronic-border);
@@ -295,12 +295,12 @@
         transition: all 0.3s ease;
         width: 100%;
     }
-    .vafadar-attr-item input:focus {
+    .derakhti-attr-item input:focus {
         border-color: var(--metronic-primary);
         box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
     }
 
-    .vafadar-attr-remove {
+    .derakhti-attr-remove {
         position: absolute;
         top: -10px;
         right: -10px;
@@ -318,7 +318,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
     }
-    .vafadar-attr-remove:hover {
+    .derakhti-attr-remove:hover {
         background: var(--metronic-danger);
         color: #fff;
         transform: rotate(90deg) scale(1.1);
@@ -326,7 +326,7 @@
     }
 
     /* ===== دکمه ثبت ===== */
-    .vafadar-submit-btn {
+    .derakhti-submit-btn {
         width: 100%;
         padding: 14px;
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
@@ -343,16 +343,16 @@
         gap: 10px;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
     }
-    .vafadar-submit-btn:hover {
+    .derakhti-submit-btn:hover {
         transform: translateY(-3px);
         box-shadow: 0 8px 28px rgba(27, 132, 255, 0.30);
     }
-    .vafadar-submit-btn:active {
+    .derakhti-submit-btn:active {
         transform: translateY(0) scale(0.97);
     }
 
     /* ===== فوتر ===== */
-    .vafadar-form-footer {
+    .derakhti-form-footer {
         margin-top: 10px;
         text-align: center;
         font-size: 12px;
@@ -362,56 +362,56 @@
     }
 
     /* ===== گرید برای فیلدها ===== */
-    .vafadar-grid-2 {
+    .derakhti-grid-2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
     }
 
-    .vafadar-grid-2 .full {
+    .derakhti-grid-2 .full {
         grid-column: 1 / -1;
     }
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .vafadar-grid-2 {
+        .derakhti-grid-2 {
             grid-template-columns: 1fr;
             gap: 12px;
         }
-        .vafadar-form-body {
+        .derakhti-form-body {
             padding: 20px 20px 24px;
         }
-        .vafadar-form-header {
+        .derakhti-form-header {
             padding: 16px 20px;
         }
     }
 
     @media (max-width: 480px) {
-        .vafadar-form-body {
+        .derakhti-form-body {
             padding: 14px 14px 18px;
         }
-        .vafadar-form-header {
+        .derakhti-form-header {
             padding: 12px 16px;
         }
-        .vafadar-form-header h2 {
+        .derakhti-form-header h2 {
             font-size: 16px;
         }
-        .vafadar-form-header .header-icon {
+        .derakhti-form-header .header-icon {
             width: 36px;
             height: 36px;
         }
-        .vafadar-section {
+        .derakhti-section {
             padding: 12px 14px;
         }
-        .vafadar-input {
+        .derakhti-input {
             padding: 9px 12px;
             font-size: 13px;
         }
-        .vafadar-submit-btn {
+        .derakhti-submit-btn {
             padding: 12px;
             font-size: 14px;
         }
-        .vafadar-categories-box {
+        .derakhti-categories-box {
             max-height: 140px;
             padding: 8px 12px;
         }
@@ -419,10 +419,10 @@
 </style>
 
 <div class="w-full lg:w-10/12 mx-auto flex justify-center py-4 px-4">
-    <div class="vafadar-form-card">
+    <div class="derakhti-form-card">
 
         <!-- ===== هدر ===== -->
-        <div class="vafadar-form-header">
+        <div class="derakhti-form-header">
             <h2>
                 <span class="header-icon">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -436,89 +436,89 @@
         </div>
 
         <!-- ===== فرم ===== -->
-        <form action="{{route('category.store')}}" method='post' class="vafadar-form-body" enctype='multipart/form-data'>
+        <form action="{{route('category.store')}}" method='post' class="derakhti-form-body" enctype='multipart/form-data'>
             @csrf
 
-                <div class="vafadar-section-title mt-5">
+                <div class="derakhti-section-title mt-5">
                     <h3>اطلاعات اصلی</h3>
                 </div>
 
-                <div class="vafadar-grid-2 mr-4">
+                <div class="derakhti-grid-2 mr-4">
                     <!-- عنوان -->
                     <div class="full">
-                        <label class="vafadar-label"> عنوان</label>
-                        <input type="text" name="title" value="{{old('title')}}" placeholder="عنوان دسته‌بندی" class="vafadar-input" required>
-                        @error('title') <span class="vafadar-error">{{$message}}</span> @enderror
+                        <label class="derakhti-label"> عنوان</label>
+                        <input type="text" name="title" value="{{old('title')}}" placeholder="عنوان دسته‌بندی" class="derakhti-input" required>
+                        @error('title') <span class="derakhti-error">{{$message}}</span> @enderror
                     </div>
 
                     <!-- خلاصه -->
                     <div>
-                        <label class="vafadar-label"> خلاصه</label>
-                        <input type="text" name="summary" value="{{old('summary')}}" placeholder="خلاصه دسته‌بندی" class="vafadar-input">
+                        <label class="derakhti-label"> خلاصه</label>
+                        <input type="text" name="summary" value="{{old('summary')}}" placeholder="خلاصه دسته‌بندی" class="derakhti-input">
                     </div>
 
                     <!-- توضیحات -->
                     <div>
-                        <label class="vafadar-label"> توضیحات</label>
-                        <input type="text" name="description" value="{{old('description')}}" placeholder="توضیحات دسته‌بندی" class="vafadar-input">
+                        <label class="derakhti-label"> توضیحات</label>
+                        <input type="text" name="description" value="{{old('description')}}" placeholder="توضیحات دسته‌بندی" class="derakhti-input">
                     </div>
 
                     <!-- اسلاگ -->
                     <div>
-                        <label class="vafadar-label"> اسلاگ</label>
-                        <input type="text" name="slug" placeholder="اسلاگ دسته‌بندی" class="vafadar-input">
+                        <label class="derakhti-label"> اسلاگ</label>
+                        <input type="text" name="slug" placeholder="اسلاگ دسته‌بندی" class="derakhti-input">
                     </div>
 
                     <!-- تصویر -->
                     <div>
-                        <label class="vafadar-label"> تصویر</label>
-                        <input type="file" name="image_path" class="vafadar-input" style="padding: 8px 12px;">
+                        <label class="derakhti-label"> تصویر</label>
+                        <input type="file" name="image_path" class="derakhti-input" style="padding: 8px 12px;">
                     </div>
                 </div>
 
-                <div class="vafadar-section-title my-5">
+                <div class="derakhti-section-title my-5">
                     <h3>تنظیمات نمایش</h3>
                 </div>
 
-                <div class="vafadar-grid-2 mr-4">
+                <div class="derakhti-grid-2 mr-4">
                     <!-- نمایش در خانه -->
                     <div>
-                        <div class="vafadar-checkbox-group">
-                            <input type="checkbox" name="show_in_home" value="1" class="vafadar-checkbox" id="show_in_home">
+                        <div class="derakhti-checkbox-group">
+                            <input type="checkbox" name="show_in_home" value="1" class="derakhti-checkbox" id="show_in_home">
                             <label for="show_in_home"> نمایش در خانه</label>
                         </div>
                     </div>
 
                     <!-- فعال -->
                     <div>
-                        <div class="vafadar-checkbox-group">
-                            <input type="checkbox" name="is_active" value="1" class="vafadar-checkbox" id="is_active">
+                        <div class="derakhti-checkbox-group">
+                            <input type="checkbox" name="is_active" value="1" class="derakhti-checkbox" id="is_active">
                             <label for="is_active"> فعال</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="vafadar-section-title my-5">
+                <div class="derakhti-section-title my-5">
                     <h3>دسته‌بندی والد</h3>
                 </div>
 
-                <div class="vafadar-categories-box mr-4">
-                    <div class="vafadar-category-item">
-                        <!-- <input type="radio" name="parent_id" value="0" class="vafadar-checkbox" id="parent_0"> -->
+                <div class="derakhti-categories-box mr-4">
+                    <div class="derakhti-category-item">
+                        <!-- <input type="radio" name="parent_id" value="0" class="derakhti-checkbox" id="parent_0"> -->
                         <!-- <label for="parent_0">والد</label> -->
                     </div>
                     {!! $categories !!}
                 </div>
 
             <!-- ===== سکشن: ویژگی‌ها ===== -->
-            <div class="vafadar-section mt-5">
-                <div class="vafadar-section-title">
+            <div class="derakhti-section mt-5">
+                <div class="derakhti-section-title">
                     <h3>ویژگی‌ها</h3>
                 </div>
 
                 <div class="flex flex-col gap-3" id="attributes"></div>
 
-                <button type="button" class="vafadar-add-attr-btn mt-3" onclick="Attributes(this)">
+                <button type="button" class="derakhti-add-attr-btn mt-3" onclick="Attributes(this)">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <path d="M12 5v14M5 12h14"/>
                     </svg>
@@ -527,14 +527,14 @@
             </div>
 
             <!-- ===== دکمه ثبت ===== -->
-            <button class="vafadar-submit-btn mt-2">
+            <button class="derakhti-submit-btn mt-2">
                 <span>ثبت دسته‌بندی</span>
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M5 13l4 4L19 7"/>
                 </svg>
             </button>
 
-            <div class="vafadar-form-footer">
+            <div class="derakhti-form-footer">
                 <span>© ۱۴۰۳ · تمام حقوق محفوظ است</span>
             </div>
 
@@ -551,13 +551,13 @@
         let input = document.createElement('input');
         let Xmark = document.createElement('div');
 
-        div.className = 'vafadar-attr-item';
+        div.className = 'derakhti-attr-item';
         input.className = '';
         input.setAttribute('type', 'text');
         input.setAttribute('name', 'attributes[]');
         input.setAttribute('placeholder', 'عنوان ویژگی...');
 
-        Xmark.className = 'vafadar-attr-remove';
+        Xmark.className = 'derakhti-attr-remove';
         Xmark.innerHTML = '✕';
         Xmark.setAttribute('onclick', 'deleteAttributes(this)');
 

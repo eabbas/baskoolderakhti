@@ -14,17 +14,17 @@
         --metronic-text-hover: #F5F5F5;
         --metronic-blue: #1B84FF;
         
-        --vafadar-green: #8FCBAC;
-        --vafadar-cream: #EEEFD9;
-        --vafadar-mint: #D9E4DE;
-        --vafadar-sky: #A2C3D4;
-        --vafadar-aqua: #B9E5E8;
-        --vafadar-blue-dark: #4A628A;
-        --vafadar-green-light: #7ABA78;
-        --vafadar-green-dark: #0A6847;
-        --vafadar-text: #1a2a3a;
-        --vafadar-text-light: #4a6a7a;
-        --vafadar-white: #ffffff;
+        --derakhti-green: #8FCBAC;
+        --derakhti-cream: #EEEFD9;
+        --derakhti-mint: #D9E4DE;
+        --derakhti-sky: #A2C3D4;
+        --derakhti-aqua: #B9E5E8;
+        --derakhti-blue-dark: #4A628A;
+        --derakhti-green-light: #7ABA78;
+        --derakhti-green-dark: #0A6847;
+        --derakhti-text: #1a2a3a;
+        --derakhti-text-light: #4a6a7a;
+        --derakhti-white: #ffffff;
         
         --shadow-sm: 0 2px 8px rgba(74, 98, 138, 0.06);
         --shadow-md: 0 4px 20px rgba(74, 98, 138, 0.10);
@@ -32,7 +32,7 @@
     }
 
     /* ===== کارت اصلی ===== */
-    .vafadar-profile-card {
+    .derakhti-profile-card {
         background: var(--metronic-content-bg);
         border: 1px solid var(--metronic-border);
         border-radius: 24px;
@@ -43,12 +43,12 @@
         width: 100%;
         margin: 0 auto;
     }
-    .vafadar-profile-card:hover {
+    .derakhti-profile-card:hover {
         box-shadow: var(--shadow-md);
     }
 
     /* ===== هدر ===== */
-    .vafadar-profile-header {
+    .derakhti-profile-header {
         background: linear-gradient(135deg, #F5F5F5, #DBDFE9);
         border-bottom: 2px solid var(--metronic-border);
         padding: 20px 28px;
@@ -59,13 +59,13 @@
         gap: 16px;
     }
 
-    .vafadar-profile-header .title-section {
+    .derakhti-profile-header .title-section {
         display: flex;
         align-items: center;
         gap: 14px;
     }
 
-    .vafadar-profile-header .header-icon {
+    .derakhti-profile-header .header-icon {
         width: 48px;
         height: 48px;
         background: var(--metronic-blue);
@@ -78,21 +78,21 @@
         box-shadow: 0 4px 12px rgba(27, 132, 255, 0.25);
     }
 
-    .vafadar-profile-header h2 {
+    .derakhti-profile-header h2 {
         color: black;
         font-size: 22px;
         font-weight: 700;
         margin: 0;
     }
 
-    .vafadar-profile-header .subtitle {
+    .derakhti-profile-header .subtitle {
         color: var(--metronic-text-dark);
         font-size: 14px;
         margin-top: 2px;
     }
 
     /* ===== دکمه بازگشت ===== */
-    .vafadar-back-btn {
+    .derakhti-back-btn {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -106,7 +106,7 @@
         text-decoration: none;
         transition: all 0.3s ease;
     }
-    .vafadar-back-btn:hover {
+    .derakhti-back-btn:hover {
         background: var(--metronic-blue);
         color: #fff;
         border-color: var(--metronic-blue);
@@ -115,32 +115,32 @@
     }
 
     /* ===== بدنه ===== */
-    .vafadar-profile-body {
+    .derakhti-profile-body {
         padding: 24px 28px 28px;
         background: var(--metronic-content-bg);
     }
 
     /* ===== اطلاعات ===== */
-    .vafadar-info-grid {
+    .derakhti-info-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 12px;
         margin-bottom: 24px;
     }
 
-    .vafadar-info-item {
+    .derakhti-info-item {
         background: var(--metronic-form-bg);
         border: 1px solid var(--metronic-border);
         border-radius: 12px;
         padding: 12px 16px;
         transition: all 0.3s ease;
     }
-    .vafadar-info-item:hover {
+    .derakhti-info-item:hover {
         border-color: var(--metronic-blue);
         box-shadow: var(--shadow-sm);
     }
 
-    .vafadar-info-item .label {
+    .derakhti-info-item .label {
         color: var(--metronic-text-dark);
         font-size: 11px;
         font-weight: 600;
@@ -150,13 +150,13 @@
         margin-bottom: 2px;
     }
 
-    .vafadar-info-item .value {
+    .derakhti-info-item .value {
         color: var(--metronic-dark);
         font-size: 15px;
         font-weight: 600;
     }
 
-    .vafadar-info-item .value .badge {
+    .derakhti-info-item .value .badge {
         display: inline-flex;
         align-items: center;
         gap: 6px;
@@ -165,60 +165,60 @@
         font-size: 12px;
         font-weight: 600;
     }
-    .vafadar-info-item .value .badge.active {
+    .derakhti-info-item .value .badge.active {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
-    .vafadar-info-item .value .badge.inactive {
+    .derakhti-info-item .value .badge.inactive {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-info-item .value .badge.featured {
+    .derakhti-info-item .value .badge.featured {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
-    .vafadar-info-item .value .badge.show-home {
+    .derakhti-info-item .value .badge.show-home {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
 
     /* ===== بخش‌ها ===== */
-    .vafadar-section {
+    .derakhti-section {
         margin-top: 24px;
         padding-top: 24px;
         border-top: 2px solid var(--metronic-border);
     }
 
-    .vafadar-section-title {
+    .derakhti-section-title {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 16px;
     }
-    .vafadar-section-title h3 {
+    .derakhti-section-title h3 {
         color: var(--metronic-dark);
         font-size: 18px;
         font-weight: 700;
         margin: 0;
     }
-    .vafadar-section-title .line {
+    .derakhti-section-title .line {
         flex: 1;
         height: 2px;
         background: linear-gradient(to right, var(--metronic-border), transparent);
     }
 
     /* ===== ویژگی‌ها ===== */
-    .vafadar-attr-list {
+    .derakhti-attr-list {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .vafadar-attr-item {
+    .derakhti-attr-item {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -228,36 +228,36 @@
         padding: 8px 16px;
         transition: all 0.3s ease;
     }
-    .vafadar-attr-item:hover {
+    .derakhti-attr-item:hover {
         border-color: var(--metronic-blue);
         background: var(--metronic-content-bg);
         box-shadow: var(--shadow-sm);
     }
 
-    .vafadar-attr-item .key {
+    .derakhti-attr-item .key {
         color: var(--metronic-text-dark);
         font-size: 13px;
         font-weight: 500;
     }
-    .vafadar-attr-item .divider {
+    .derakhti-attr-item .divider {
         width: 1px;
         height: 20px;
         background: var(--metronic-border);
     }
-    .vafadar-attr-item .val {
+    .derakhti-attr-item .val {
         color: var(--metronic-dark);
         font-size: 14px;
         font-weight: 600;
     }
 
     /* ===== تصاویر ===== */
-    .vafadar-media-grid {
+    .derakhti-media-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 16px;
     }
 
-    .vafadar-media-item {
+    .derakhti-media-item {
         position: relative;
         border-radius: 12px;
         overflow: hidden;
@@ -265,19 +265,19 @@
         transition: all 0.3s ease;
         aspect-ratio: 1;
     }
-    .vafadar-media-item:hover {
+    .derakhti-media-item:hover {
         border-color: var(--metronic-blue);
         transform: scale(1.03);
         box-shadow: var(--shadow-md);
     }
 
-    .vafadar-media-item img {
+    .derakhti-media-item img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .vafadar-media-badge {
+    .derakhti-media-badge {
         position: absolute;
         top: 8px;
         right: 8px;
@@ -287,22 +287,22 @@
         font-weight: 600;
         color: #fff;
     }
-    .vafadar-media-badge.main {
+    .derakhti-media-badge.main {
         background: var(--metronic-blue);
     }
-    .vafadar-media-badge.gallery {
+    .derakhti-media-badge.gallery {
         background: var(--metronic-text-dark);
     }
 
     /* ===== دکمه‌ها ===== */
-    .vafadar-action-buttons {
+    .derakhti-action-buttons {
         display: flex;
         gap: 10px;
         flex-wrap: wrap;
         margin-top: 8px;
     }
 
-    .vafadar-action-btn-lg {
+    .derakhti-action-btn-lg {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -315,37 +315,37 @@
         border: none;
         cursor: pointer;
     }
-    .vafadar-action-btn-lg:hover {
+    .derakhti-action-btn-lg:hover {
         transform: translateY(-2px);
     }
-    .vafadar-action-btn-lg:active {
+    .derakhti-action-btn-lg:active {
         transform: translateY(0) scale(0.97);
     }
 
-    .vafadar-action-btn-lg.edit {
+    .derakhti-action-btn-lg.edit {
         background: var(--metronic-blue);
         color: #fff;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
     }
-    .vafadar-action-btn-lg.edit:hover {
+    .derakhti-action-btn-lg.edit:hover {
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.25);
     }
 
-    .vafadar-action-btn-lg.delete {
+    .derakhti-action-btn-lg.delete {
         background: var(--metronic-dark);
         color: #fff;
         box-shadow: 0 4px 16px rgba(13, 14, 18, 0.15);
     }
-    .vafadar-action-btn-lg.delete:hover {
+    .derakhti-action-btn-lg.delete:hover {
         box-shadow: 0 8px 24px rgba(13, 14, 18, 0.25);
     }
 
-    .vafadar-action-btn-lg.back {
+    .derakhti-action-btn-lg.back {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-action-btn-lg.back:hover {
+    .derakhti-action-btn-lg.back:hover {
         background: var(--metronic-blue);
         color: #fff;
         border-color: var(--metronic-blue);
@@ -353,7 +353,7 @@
     }
 
     /* ===== پکیج‌ها ===== */
-    .vafadar-package-card {
+    .derakhti-package-card {
         background: var(--metronic-form-bg);
         border: 1px solid var(--metronic-border);
         border-radius: 16px;
@@ -361,12 +361,12 @@
         transition: all 0.3s ease;
         margin-bottom: 12px;
     }
-    .vafadar-package-card:hover {
+    .derakhti-package-card:hover {
         border-color: var(--metronic-blue);
         box-shadow: var(--shadow-sm);
     }
 
-    .vafadar-package-card .package-header {
+    .derakhti-package-card .package-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -377,54 +377,54 @@
         border-bottom: 1px solid var(--metronic-border);
     }
 
-    .vafadar-package-card .package-title {
+    .derakhti-package-card .package-title {
         color: var(--metronic-dark);
         font-size: 16px;
         font-weight: 700;
     }
 
-    .vafadar-package-card .package-badge {
+    .derakhti-package-card .package-badge {
         padding: 4px 12px;
         border-radius: 50px;
         font-size: 11px;
         font-weight: 600;
     }
-    .vafadar-package-card .package-badge.active {
+    .derakhti-package-card .package-badge.active {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
-    .vafadar-package-card .package-badge.inactive {
+    .derakhti-package-card .package-badge.inactive {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-package-card .package-badge.featured {
+    .derakhti-package-card .package-badge.featured {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
 
-    .vafadar-package-card .package-info {
+    .derakhti-package-card .package-info {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 8px;
     }
 
-    .vafadar-package-card .package-info-item .label {
+    .derakhti-package-card .package-info-item .label {
         color: var(--metronic-text-dark);
         font-size: 10px;
         font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.3px;
     }
-    .vafadar-package-card .package-info-item .value {
+    .derakhti-package-card .package-info-item .value {
         color: var(--metronic-dark);
         font-size: 14px;
         font-weight: 600;
     }
 
-    .vafadar-package-card .package-actions {
+    .derakhti-package-card .package-actions {
         display: flex;
         gap: 8px;
         margin-top: 12px;
@@ -433,7 +433,7 @@
         flex-wrap: wrap;
     }
 
-    .vafadar-package-card .package-actions .action-btn {
+    .derakhti-package-card .package-actions .action-btn {
         padding: 6px 16px;
         border-radius: 8px;
         font-size: 12px;
@@ -443,104 +443,104 @@
         border: none;
         cursor: pointer;
     }
-    .vafadar-package-card .package-actions .action-btn:hover {
+    .derakhti-package-card .package-actions .action-btn:hover {
         transform: translateY(-2px);
     }
-    .vafadar-package-card .package-actions .action-btn.view {
+    .derakhti-package-card .package-actions .action-btn.view {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-package-card .package-actions .action-btn.view:hover {
+    .derakhti-package-card .package-actions .action-btn.view:hover {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .vafadar-package-card .package-actions .action-btn.edit {
+    .derakhti-package-card .package-actions .action-btn.edit {
         background: var(--metronic-blue);
         color: #fff;
         border: 1px solid var(--metronic-blue);
     }
-    .vafadar-package-card .package-actions .action-btn.edit:hover {
+    .derakhti-package-card .package-actions .action-btn.edit:hover {
         background: var(--metronic-dark);
         color: #fff;
         border-color: var(--metronic-dark);
     }
-    .vafadar-package-card .package-actions .action-btn.delete {
+    .derakhti-package-card .package-actions .action-btn.delete {
         background: var(--metronic-shadow);
         color: var(--metronic-dark);
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-package-card .package-actions .action-btn.delete:hover {
+    .derakhti-package-card .package-actions .action-btn.delete:hover {
         background: var(--metronic-dark);
         color: #fff;
     }
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .vafadar-profile-header {
+        .derakhti-profile-header {
             padding: 16px 18px;
         }
-        .vafadar-profile-header h2 {
+        .derakhti-profile-header h2 {
             font-size: 18px;
         }
-        .vafadar-profile-body {
+        .derakhti-profile-body {
             padding: 16px 18px 20px;
         }
-        .vafadar-info-grid {
+        .derakhti-info-grid {
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         }
-        .vafadar-media-grid {
+        .derakhti-media-grid {
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         }
-        .vafadar-package-card .package-info {
+        .derakhti-package-card .package-info {
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         }
-        .vafadar-action-btn-lg {
+        .derakhti-action-btn-lg {
             padding: 8px 18px;
             font-size: 13px;
         }
-        .vafadar-back-btn {
+        .derakhti-back-btn {
             padding: 8px 16px;
             font-size: 13px;
         }
     }
 
     @media (max-width: 480px) {
-        .vafadar-profile-header {
+        .derakhti-profile-header {
             padding: 12px 14px;
         }
-        .vafadar-profile-header h2 {
+        .derakhti-profile-header h2 {
             font-size: 15px;
         }
-        .vafadar-profile-body {
+        .derakhti-profile-body {
             padding: 12px 14px 16px;
         }
-        .vafadar-info-grid {
+        .derakhti-info-grid {
             grid-template-columns: 1fr 1fr;
         }
-        .vafadar-info-item {
+        .derakhti-info-item {
             padding: 8px 12px;
         }
-        .vafadar-info-item .value {
+        .derakhti-info-item .value {
             font-size: 13px;
         }
-        .vafadar-media-grid {
+        .derakhti-media-grid {
             grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
         }
-        .vafadar-attr-item {
+        .derakhti-attr-item {
             padding: 6px 12px;
             font-size: 12px;
         }
-        .vafadar-package-card {
+        .derakhti-package-card {
             padding: 12px 14px;
         }
-        .vafadar-package-card .package-info {
+        .derakhti-package-card .package-info {
             grid-template-columns: 1fr 1fr;
         }
-        .vafadar-action-buttons {
+        .derakhti-action-buttons {
             flex-direction: column;
         }
-        .vafadar-action-btn-lg {
+        .derakhti-action-btn-lg {
             width: 100%;
             justify-content: center;
         }
@@ -548,10 +548,10 @@
 </style>
 
 <div class="w-full flex justify-center py-6 px-4">
-    <div class="vafadar-profile-card">
+    <div class="derakhti-profile-card">
 
         <!-- ===== هدر ===== -->
-        <div class="vafadar-profile-header">
+        <div class="derakhti-profile-header">
             <div class="title-section">
                 <div class="header-icon">
                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -566,7 +566,7 @@
                     <div class="subtitle">مشاهده جزئیات محصول {{$product->title}}</div>
                 </div>
             </div>
-            <a href="{{route('product.list')}}" class="vafadar-back-btn">
+            <a href="{{route('product.list')}}" class="derakhti-back-btn">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>
@@ -575,52 +575,52 @@
         </div>
 
         <!-- ===== بدنه ===== -->
-        <div class="vafadar-profile-body">
+        <div class="derakhti-profile-body">
 
             <!-- ===== اطلاعات اصلی ===== -->
-            <div class="vafadar-info-grid">
-                <div class="vafadar-info-item">
+            <div class="derakhti-info-grid">
+                <div class="derakhti-info-item">
                     <span class="label"> شناسه</span>
                     <span class="value">#{{$product->id}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> عنوان</span>
                     <span class="value">{{$product->title}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> قیمت</span>
                     <span class="value">{{number_format($product->price)}} تومان</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> قیمت بعد از تخفیف</span>
                     <span class="value">{{number_format($product->discunt)}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> توضیحات</span>
                     <span class="value text-sm">{{$product->description}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> دسته‌بندی</span>
                     <span class="value">{{$product->categories[0]->title ?? 'بدون دسته‌بندی'}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> خلاصه</span>
                     <span class="value text-sm">{{$product->summary}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> برند</span>
                     <span class="value">#{{$product->brand_id}}</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> اسلاگ</span>
                     <span class="value text-sm">{{$product->slug}}</span>
                 </div>
 
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> موجودی</span>
                     <span class="value">{{$product->stock}} عدد</span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> وضعیت</span>
                     <span class="value">
                         <span class="badge {{$product->is_active ? 'active' : 'inactive'}}">
@@ -628,7 +628,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> نمایش در خانه</span>
                     <span class="value">
                         <span class="badge {{$product->show_in_home ? 'show-home' : 'inactive'}}">
@@ -636,7 +636,7 @@
                         </span>
                     </span>
                 </div>
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <span class="label"> ویژه</span>
                     <span class="value">
                         <span class="badge {{$product->featured ? 'featured' : 'inactive'}}">
@@ -647,14 +647,14 @@
             </div>
 
             <!-- ===== ویژگی‌ها ===== -->
-            <div class="vafadar-section">
-                <div class="vafadar-section-title">
+            <div class="derakhti-section">
+                <div class="derakhti-section-title">
                     <h3> ویژگی‌ها</h3>
                     <div class="line"></div>
                 </div>
-                <div class="vafadar-attr-list">
+                <div class="derakhti-attr-list">
                     @forelse($product['attributes'] as $attribute)
-                        <div class="vafadar-attr-item">
+                        <div class="derakhti-attr-item">
                             <span class="key">{{$attribute->title}}</span>
                             <span class="divider"></span>
                             <span class="val">{{$attribute->pivot->value}}</span>
@@ -666,16 +666,16 @@
             </div>
 
             <!-- ===== تصاویر ===== -->
-            <div class="vafadar-section">
-                <div class="vafadar-section-title">
+            <div class="derakhti-section">
+                <div class="derakhti-section-title">
                     <h3> تصاویر</h3>
                     <div class="line"></div>
                 </div>
-                <div class="vafadar-media-grid">
+                <div class="derakhti-media-grid">
                     @forelse($product['medias'] as $media)
-                        <div class="vafadar-media-item">
+                        <div class="derakhti-media-item">
                             <img src="{{asset('storage/product_medias/'.$media->path)}}" alt="{{$product->title}}">
-                            <span class="vafadar-media-badge {{$media->is_main ? 'main' : 'gallery'}}">
+                            <span class="derakhti-media-badge {{$media->is_main ? 'main' : 'gallery'}}">
                                 {{$media->is_main ? 'اصلی' : 'گالری'}}
                             </span>
                         </div>
@@ -686,14 +686,14 @@
             </div>
 
             <!-- ===== پکیج‌ها ===== -->
-            <div class="vafadar-section">
-                <div class="vafadar-section-title">
+            <div class="derakhti-section">
+                <div class="derakhti-section-title">
                     <h3> پکیج‌ها</h3>
                     <div class="line"></div>
                 </div>
                 
                 @forelse($product['packages'] as $package)
-                <div class="vafadar-package-card">
+                <div class="derakhti-package-card">
                     <div class="package-header">
                         <span class="package-title"> پکیج #{{$loop->iteration}}</span>
                         <div class="flex gap-2 flex-wrap">
@@ -739,22 +739,22 @@
                 @endforelse
             </div>
             <!-- ===== دکمه‌های اکشن ===== -->
-            <div class="vafadar-action-buttons">
-                <a href="{{route('product.edit',['product'=>$product->id])}}" class="vafadar-action-btn-lg edit">
+            <div class="derakhti-action-buttons">
+                <a href="{{route('product.edit',['product'=>$product->id])}}" class="derakhti-action-btn-lg edit">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
                         <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
                     </svg>
                     ویرایش محصول
                 </a>
-                <a href="{{route('product.delete',['product'=>$product->id])}}" class="vafadar-action-btn-lg delete" onclick="return confirm('آیا از حذف محصول «{{$product->title}}» مطمئن هستید؟')">
+                <a href="{{route('product.delete',['product'=>$product->id])}}" class="derakhti-action-btn-lg delete" onclick="return confirm('آیا از حذف محصول «{{$product->title}}» مطمئن هستید؟')">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M3 6h18"/>
                         <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
                     </svg>
                     حذف محصول
                 </a>
-                <a href="{{route('product.list')}}" class="vafadar-action-btn-lg back">
+                <a href="{{route('product.list')}}" class="derakhti-action-btn-lg back">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>
