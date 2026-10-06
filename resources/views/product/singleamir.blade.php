@@ -41,7 +41,7 @@
                 </div>
                 <div class="w-[80px] ">
 
-                    <img src="img/file_00000000527881f4835e03acef97b338.png" class = "w-[80px]" alt="">
+                    <img src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" class = "w-[80px]" alt="">
                 </div>
             </div>
 
@@ -64,7 +64,7 @@
     </div>
     <div class="w-full flex gap-10 max-lg:flex-col">
         <div class="w-[50%] flex  gap-5 max-lg:flex-col max-lg:w-full">
-            <div class="w-full h-full rounded-[15px] overflow-hidden bg-[url('img/file_00000000151c82439a17a7e2cf35e05d.png')] bg-center bg-cover flex flex-col items-start justify-between p-6 max-lg:h-[300px]">
+            <div class="w-full h-full rounded-[15px] overflow-hidden bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover flex flex-col items-start justify-between p-6 max-lg:h-[300px]">
                 <div class="w-[100px] h-[40px] flex items-center justify-center bg-[#FBC830] text-[#0E2E48] rounded-[10px] text-[18px]">
                     پر فروش
                 </div>
@@ -78,10 +78,10 @@
                 </div>
             </div>
             <div class="w-[13%] flex items-center justify-start gap-4 flex-col max-lg:flex-row max-lg:w-full max-lg:justify-between max-lg:gap-2 max-lg:overflow-x-auto rounded-[15px]">
-                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="img/file_0000000053cc8210b89a11d9f1be5829.png" alt="">
-                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="img/scale_mobile_768x432-1.png" alt="">
-                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="img/InShot_20260925_130018534.png" alt="">
-                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="img/InShot_20260925_125540709.png" alt="">
+                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829.png')}}" alt="">
+                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="{{asset('assets/img/scale_mobile_768x432-1.png')}}" alt="">
+                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="{{asset('assets/img/InShot_20260925_130018534.png')}}" alt="">
+                <img class = "w-full max-lg:min-w-[25%] rounded-[10px] h-[90px]" src="{{asset('assets/img/InShot_20260925_125540709.png')}}" alt="">
             </div>
         </div>
         <div class="w-[50%] flex flex-col gap-3 items-end max-lg:w-full">
@@ -359,7 +359,7 @@
         <div class = "max-w-[1800px] min-w-[325px] flex gap-4 mx-auto justify-center overflow-x-auto">
             <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img class = "w-full h-[250px]" src="img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png" alt="">
+                    <img class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
                 <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
@@ -372,7 +372,7 @@
             </div>
             <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img class = "w-full h-[250px]" src="img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png" alt="">
+                    <img class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
                 <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
@@ -385,7 +385,7 @@
             </div>
             <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img  class = "w-full h-[250px]" src="img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png" alt="">
+                    <img  class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
                 <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
@@ -398,7 +398,7 @@
             </div>
             <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img  class = "w-full h-[250px]" src="img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png" alt="">
+                    <img  class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
                 <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
@@ -411,7 +411,7 @@
             </div>
             <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img   class = "w-full h-[250px]" src="img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png" alt="">
+                    <img   class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
                 <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
