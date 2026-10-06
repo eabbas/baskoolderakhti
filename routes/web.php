@@ -190,3 +190,6 @@ Route::group([
 
 
 
+Route::get('/single/amir/product' , function(){
+   return view("product.singleamir");
+})->name('single_amir');
