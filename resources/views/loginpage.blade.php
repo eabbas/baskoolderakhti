@@ -6,6 +6,7 @@
     <title>ورود / ثبت نام - تجهیزات پزشکی</title>
     <script src="{{asset('assets/js/tailwind.js')}}"></script>
     <script src="{{asset('assets/js/jquery.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <style>
         /* انیمیشن‌های سفارشی */
         @keyframes float {
@@ -246,9 +247,9 @@
                                 <path d="M22 12h-4l-3 9-4-18-3 9H2"/>
                             </svg>
                         </div>
-                        <div class="text-right">
+                        <div class="text-right flex flex-col gap-3">
                             <h3 class="text-2xl font-bold text-white">ورود به حساب</h3>
-                            <p class="text-sm text-blue-300/70">به سامانه تجهیزات پزشکی خوش آمدید</p>
+                            <p class="text-sm text-blue-300/70">به سامانه فروش باسکول و ترازوی درختی خوش آمدید</p>
                         </div>
                     </div>
 
@@ -304,9 +305,9 @@
                                 <line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/>
                             </svg>
                         </div>
-                        <div class="text-right">
+                        <div class="text-right flex flex-col gap-3">
                             <h3 class="text-2xl font-bold text-white">ثبت نام جدید</h3>
-                            <p class="text-sm text-emerald-300/70">ایجاد حساب کاربری پزشکی</p>
+                            <p class="text-sm text-emerald-300/70">ایجاد حساب کاربری</p>
                         </div>
                     </div>
 

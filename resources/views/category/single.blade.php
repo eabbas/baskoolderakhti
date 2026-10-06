@@ -17,7 +17,7 @@
     }
 
     /* ===== کارت اصلی ===== */
-    .vafadar-profile-card {
+    .derakhti-profile-card {
         background: var(--metronic-content-bg);
         border: 1px solid var(--metronic-border);
         border-radius: 24px;
@@ -28,20 +28,20 @@
         width: 100%;
         margin: 0 auto;
     }
-    .vafadar-profile-card:hover {
+    .derakhti-profile-card:hover {
         box-shadow: 0 8px 40px rgba(13,14,18,0.06);
     }
-    .dark .vafadar-profile-card {
+    .dark .derakhti-profile-card {
         background: var(--metronic-dark);
         border-color: var(--metronic-border);
         box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     }
-    .dark .vafadar-profile-card:hover {
+    .dark .derakhti-profile-card:hover {
         box-shadow: 0 8px 40px rgba(0,0,0,0.4);
     }
 
     /* ===== هدر ===== */
-    .vafadar-profile-header {
+    .derakhti-profile-header {
         background: linear-gradient(135deg, #F5F5F5, #DBDFE9);;
         border-bottom: 2px solid var(--metronic-border);
         padding: 24px 32px;
@@ -51,18 +51,18 @@
         flex-wrap: wrap;
         gap: 16px;
     }
-    .dark .vafadar-profile-header {
+    .dark .derakhti-profile-header {
         background: var(--metronic-dark);
         border-bottom-color: var(--metronic-border);
     }
 
-    .vafadar-profile-header .title-section {
+    .derakhti-profile-header .title-section {
         display: flex;
         align-items: center;
         gap: 14px;
     }
 
-    .vafadar-profile-header .header-icon {
+    .derakhti-profile-header .header-icon {
         width: 48px;
         height: 48px;
         background: var(--metronic-blue);
@@ -73,31 +73,31 @@
         color: #fff;
         font-size: 22px;
     }
-    .dark .vafadar-profile-header .header-icon {
+    .dark .derakhti-profile-header .header-icon {
         background: var(--metronic-blue);
     }
 
-    .vafadar-profile-header h2 {
+    .derakhti-profile-header h2 {
         color: black;
         font-size: 22px;
         font-weight: 700;
         margin: 0;
     }
-    .dark .vafadar-profile-header h2 {
+    .dark .derakhti-profile-header h2 {
         color: var(--metronic-content-bg);
     }
 
-    .vafadar-profile-header .subtitle {
+    .derakhti-profile-header .subtitle {
         color: var(--metronic-text-dark);
         font-size: 14px;
         margin-top: 2px;
     }
-    .dark .vafadar-profile-header .subtitle {
+    .dark .derakhti-profile-header .subtitle {
         color: var(--metronic-text-dark);
     }
 
     /* ===== دکمه بازگشت ===== */
-    .vafadar-back-btn {
+    .derakhti-back-btn {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -111,57 +111,57 @@
         text-decoration: none;
         transition: all 0.3s ease;
     }
-    .vafadar-back-btn:hover {
+    .derakhti-back-btn:hover {
         background: var(--metronic-blue);
         color: #fff;
         border-color: var(--metronic-blue);
         transform: translateX(-4px);
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.2);
     }
-    .dark .vafadar-back-btn {
+    .dark .derakhti-back-btn {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border-color: var(--metronic-border);
     }
-    .dark .vafadar-back-btn:hover {
+    .dark .derakhti-back-btn:hover {
         background: var(--metronic-blue);
         color: #fff;
         border-color: var(--metronic-blue);
     }
 
     /* ===== بدنه ===== */
-    .vafadar-profile-body {
+    .derakhti-profile-body {
         padding: 32px;
         background: var(--metronic-content-bg);
     }
 
     /* ===== اطلاعات ===== */
-    .vafadar-info-grid {
+    .derakhti-info-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    .vafadar-info-item {
+    .derakhti-info-item {
         background: var(--metronic-form-bg);
         border: 1px solid var(--metronic-border);
         border-radius: 14px;
         padding: 16px 20px;
         transition: all 0.3s ease;
     }
-    .vafadar-info-item:hover {
+    .derakhti-info-item:hover {
         border-color: var(--metronic-blue);
         box-shadow: 0 4px 12px rgba(27, 132, 255, 0.04);
     }
-    .dark .vafadar-info-item {
+    .dark .derakhti-info-item {
         background: var(--metronic-dark);
         border-color: var(--metronic-border);
     }
-    .dark .vafadar-info-item:hover {
+    .dark .derakhti-info-item:hover {
         border-color: var(--metronic-blue);
     }
 
-    .vafadar-info-item .label {
+    .derakhti-info-item .label {
         display: flex;
         align-items: center;
         gap: 6px;
@@ -172,21 +172,21 @@
         letter-spacing: 0.5px;
         margin-bottom: 4px;
     }
-    .dark .vafadar-info-item .label {
+    .dark .derakhti-info-item .label {
         color: var(--metronic-text-dark);
     }
 
-    .vafadar-info-item .value {
+    .derakhti-info-item .value {
         color: var(--metronic-dark);
         font-size: 16px;
         font-weight: 600;
         padding-right: 4px;
     }
-    .dark .vafadar-info-item .value {
+    .dark .derakhti-info-item .value {
         color: var(--metronic-content-bg);
     }
 
-    .vafadar-info-item .value .badge {
+    .derakhti-info-item .value .badge {
         display: inline-flex;
         align-items: center;
         gap: 6px;
@@ -195,41 +195,41 @@
         font-size: 13px;
         font-weight: 600;
     }
-    .vafadar-info-item .value .badge.active {
+    .derakhti-info-item .value .badge.active {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .vafadar-info-item .value .badge.inactive {
+    .derakhti-info-item .value .badge.inactive {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
     }
-    .vafadar-info-item .value .badge.show {
+    .derakhti-info-item .value .badge.show {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .vafadar-info-item .value .badge.hide {
+    .derakhti-info-item .value .badge.hide {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
     }
-    .dark .vafadar-info-item .value .badge.active {
+    .dark .derakhti-info-item .value .badge.active {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .dark .vafadar-info-item .value .badge.inactive {
+    .dark .derakhti-info-item .value .badge.inactive {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
     }
-    .dark .vafadar-info-item .value .badge.show {
+    .dark .derakhti-info-item .value .badge.show {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .dark .vafadar-info-item .value .badge.hide {
+    .dark .derakhti-info-item .value .badge.hide {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
     }
 
     /* ===== دکمه‌های اکشن ===== */
-    .vafadar-action-buttons {
+    .derakhti-action-buttons {
         display: flex;
         gap: 12px;
         flex-wrap: wrap;
@@ -237,11 +237,11 @@
         padding-top: 24px;
         border-top: 2px solid var(--metronic-border);
     }
-    .dark .vafadar-action-buttons {
+    .dark .derakhti-action-buttons {
         border-top-color: var(--metronic-border);
     }
 
-    .vafadar-action-btn-lg {
+    .derakhti-action-btn-lg {
         display: inline-flex;
         align-items: center;
         gap: 8px;
@@ -254,53 +254,53 @@
         border: none;
         cursor: pointer;
     }
-    .vafadar-action-btn-lg:hover {
+    .derakhti-action-btn-lg:hover {
         transform: translateY(-2px);
     }
-    .vafadar-action-btn-lg:active {
+    .derakhti-action-btn-lg:active {
         transform: translateY(0) scale(0.97);
     }
 
-    .vafadar-action-btn-lg.edit {
+    .derakhti-action-btn-lg.edit {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .vafadar-action-btn-lg.edit:hover {
+    .derakhti-action-btn-lg.edit:hover {
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.25);
     }
 
-    .vafadar-action-btn-lg.delete {
+    .derakhti-action-btn-lg.delete {
         background: var(--metronic-dark);
         color: #fff;
     }
-    .vafadar-action-btn-lg.delete:hover {
+    .derakhti-action-btn-lg.delete:hover {
         box-shadow: 0 8px 24px rgba(13, 14, 18, 0.25);
     }
 
-    .vafadar-action-btn-lg.back {
+    .derakhti-action-btn-lg.back {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border: 1px solid var(--metronic-border);
     }
-    .vafadar-action-btn-lg.back:hover {
+    .derakhti-action-btn-lg.back:hover {
         background: var(--metronic-blue);
         color: #fff;
         border-color: var(--metronic-blue);
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.2);
     }
-    .dark .vafadar-action-btn-lg.back {
+    .dark .derakhti-action-btn-lg.back {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         border-color: var(--metronic-border);
     }
-    .dark .vafadar-action-btn-lg.back:hover {
+    .dark .derakhti-action-btn-lg.back:hover {
         background: var(--metronic-blue);
         color: #fff;
         border-color: var(--metronic-blue);
     }
 
     /* ===== تصویر ===== */
-    .vafadar-image-section {
+    .derakhti-image-section {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -308,11 +308,11 @@
         padding-bottom: 24px;
         border-bottom: 2px solid var(--metronic-border);
     }
-    .dark .vafadar-image-section {
+    .dark .derakhti-image-section {
         border-bottom-color: var(--metronic-border);
     }
 
-    .vafadar-profile-image {
+    .derakhti-profile-image {
         width: 120px;
         height: 120px;
         border-radius: 16px;
@@ -321,72 +321,72 @@
         flex-shrink: 0;
         transition: all 0.3s ease;
     }
-    .vafadar-profile-image:hover {
+    .derakhti-profile-image:hover {
         border-color: var(--metronic-blue);
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.1);
     }
-    .dark .vafadar-profile-image {
+    .dark .derakhti-profile-image {
         border-color: var(--metronic-border);
     }
-    .dark .vafadar-profile-image:hover {
+    .dark .derakhti-profile-image:hover {
         border-color: var(--metronic-blue);
     }
-    .vafadar-profile-image img {
+    .derakhti-profile-image img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
-    .vafadar-image-info h3 {
+    .derakhti-image-info h3 {
         color: var(--metronic-dark);
         font-size: 18px;
         font-weight: 700;
         margin: 0;
     }
-    .dark .vafadar-image-info h3 {
+    .dark .derakhti-image-info h3 {
         color: var(--metronic-content-bg);
     }
-    .vafadar-image-info p {
+    .derakhti-image-info p {
         color: var(--metronic-text-dark);
         font-size: 13px;
         margin: 4px 0 0;
     }
-    .dark .vafadar-image-info p {
+    .dark .derakhti-image-info p {
         color: var(--metronic-text-dark);
     }
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .vafadar-profile-header {
+        .derakhti-profile-header {
             padding: 18px 20px;
         }
-        .vafadar-profile-header h2 {
+        .derakhti-profile-header h2 {
             font-size: 18px;
         }
-        .vafadar-profile-body {
+        .derakhti-profile-body {
             padding: 20px;
         }
-        .vafadar-info-grid {
+        .derakhti-info-grid {
             grid-template-columns: 1fr;
             gap: 12px;
         }
-        .vafadar-image-section {
+        .derakhti-image-section {
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        .vafadar-profile-image {
+        .derakhti-profile-image {
             width: 100px;
             height: 100px;
         }
-        .vafadar-action-buttons {
+        .derakhti-action-buttons {
             flex-direction: column;
         }
-        .vafadar-action-btn-lg {
+        .derakhti-action-btn-lg {
             width: 100%;
             justify-content: center;
         }
-        .vafadar-profile-header .title-section .header-icon {
+        .derakhti-profile-header .title-section .header-icon {
             width: 40px;
             height: 40px;
             font-size: 18px;
@@ -394,26 +394,26 @@
     }
 
     @media (max-width: 480px) {
-        .vafadar-profile-header {
+        .derakhti-profile-header {
             padding: 14px 16px;
         }
-        .vafadar-profile-header h2 {
+        .derakhti-profile-header h2 {
             font-size: 16px;
         }
-        .vafadar-profile-body {
+        .derakhti-profile-body {
             padding: 14px;
         }
-        .vafadar-info-item {
+        .derakhti-info-item {
             padding: 12px 16px;
         }
-        .vafadar-info-item .value {
+        .derakhti-info-item .value {
             font-size: 14px;
         }
-        .vafadar-profile-image {
+        .derakhti-profile-image {
             width: 80px;
             height: 80px;
         }
-        .vafadar-back-btn {
+        .derakhti-back-btn {
             padding: 8px 14px;
             font-size: 12px;
         }
@@ -421,47 +421,47 @@
 
     
     /* ===== بخش‌ها ===== */
-    .vafadar-section {
+    .derakhti-section {
         margin-top: 24px;
         padding-top: 24px;
         border-top: 2px solid var(--metronic-border);
     }
-    .dark .vafadar-section {
+    .dark .derakhti-section {
         border-top-color: var(--metronic-border);
     }
 
-    .vafadar-section-title {
+    .derakhti-section-title {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 16px;
     }
-    .vafadar-section-title h3 {
+    .derakhti-section-title h3 {
         color: var(--metronic-dark);
         font-size: 18px;
         font-weight: 700;
         margin: 0;
     }
-    .dark .vafadar-section-title h3 {
+    .dark .derakhti-section-title h3 {
         color: var(--metronic-content-bg);
     }
-    .vafadar-section-title .line {
+    .derakhti-section-title .line {
         flex: 1;
         height: 2px;
         background: var(--metronic-border);
     }
-    .dark .vafadar-section-title .line {
+    .dark .derakhti-section-title .line {
         background: var(--metronic-border);
     }
 
     /* ===== ویژگی‌ها ===== */
-    .vafadar-attr-list {
+    .derakhti-attr-list {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    .vafadar-attr-item {
+    .derakhti-attr-item {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -471,52 +471,52 @@
         padding: 8px 16px;
         transition: all 0.3s ease;
     }
-    .vafadar-attr-item:hover {
+    .derakhti-attr-item:hover {
         border-color: var(--metronic-blue);
         background: var(--metronic-shadow);
     }
-    .dark .vafadar-attr-item {
+    .dark .derakhti-attr-item {
         background: var(--metronic-dark);
         border-color: var(--metronic-border);
     }
-    .dark .vafadar-attr-item:hover {
+    .dark .derakhti-attr-item:hover {
         border-color: var(--metronic-blue);
         background: var(--metronic-shadow);
     }
 
-    .vafadar-attr-item .key {
+    .derakhti-attr-item .key {
         color: var(--metronic-text-dark);
         font-size: 13px;
         font-weight: 500;
     }
-    .dark .vafadar-attr-item .key {
+    .dark .derakhti-attr-item .key {
         color: var(--metronic-text-dark);
     }
-    .vafadar-attr-item .divider {
+    .derakhti-attr-item .divider {
         width: 1px;
         height: 20px;
         background: var(--metronic-border);
     }
-    .dark .vafadar-attr-item .divider {
+    .dark .derakhti-attr-item .divider {
         background: var(--metronic-border);
     }
-    .vafadar-attr-item .val {
+    .derakhti-attr-item .val {
         color: var(--metronic-dark);
         font-size: 14px;
         font-weight: 600;
     }
-    .dark .vafadar-attr-item .val {
+    .dark .derakhti-attr-item .val {
         color: var(--metronic-content-bg);
     }
 
     /* ===== جدول زیردسته‌ها ===== */
-    .vafadar-sub-table {
+    .derakhti-sub-table {
         width: 100%;
         border-collapse: collapse;
         border-radius: 12px;
         overflow: hidden;
     }
-    .vafadar-sub-table th {
+    .derakhti-sub-table th {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
         font-size: 11px;
@@ -527,30 +527,30 @@
         border: 1px solid var(--metronic-border);
         text-align: center;
     }
-    .dark .vafadar-sub-table th {
+    .dark .derakhti-sub-table th {
         background: var(--metronic-dark);
         color: var(--metronic-text-dark);
         border-color: var(--metronic-border);
     }
-    .vafadar-sub-table td {
+    .derakhti-sub-table td {
         padding: 8px 12px;
         border: 1px solid var(--metronic-border);
         text-align: center;
         font-size: 13px;
         color: var(--metronic-dark);
     }
-    .dark .vafadar-sub-table td {
+    .dark .derakhti-sub-table td {
         border-color: var(--metronic-border);
         color: var(--metronic-content-bg);
     }
-    .vafadar-sub-table tr:hover td {
+    .derakhti-sub-table tr:hover td {
         background: var(--metronic-shadow);
     }
-    .dark .vafadar-sub-table tr:hover td {
+    .dark .derakhti-sub-table tr:hover td {
         background: var(--metronic-dark);
     }
 
-    .vafadar-sub-table img {
+    .derakhti-sub-table img {
         width: 40px;
         height: 40px;
         object-fit: cover;
@@ -558,7 +558,7 @@
     }
     
     /* ===== دکمه اکشن ===== */
-    .vafadar-action-icon {
+    .derakhti-action-icon {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -568,47 +568,47 @@
         transition: all 0.3s ease;
         border: none;
     }
-    .vafadar-action-icon:hover {
+    .derakhti-action-icon:hover {
         transform: scale(1.05);
     }
-    .vafadar-action-icon.danger {
+    .derakhti-action-icon.danger {
         background: var(--metronic-shadow);
         color: var(--metronic-dark);
     }
-    .vafadar-action-icon.danger:hover {
+    .derakhti-action-icon.danger:hover {
         background: var(--metronic-dark);
         color: #fff;
         box-shadow: 0 4px 12px rgba(13, 14, 18, 0.25);
     }
-    .vafadar-action-icon.success {
+    .derakhti-action-icon.success {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .vafadar-action-icon.success:hover {
+    .derakhti-action-icon.success:hover {
         background: var(--metronic-blue);
         color: #fff;
         box-shadow: 0 4px 12px rgba(27, 132, 255, 0.25);
     }
-    .dark .vafadar-action-icon.danger {
+    .dark .derakhti-action-icon.danger {
         background: var(--metronic-shadow);
         color: var(--metronic-text-dark);
     }
-    .dark .vafadar-action-icon.danger:hover {
+    .dark .derakhti-action-icon.danger:hover {
         background: var(--metronic-dark);
         color: #fff;
     }
-    .dark .vafadar-action-icon.success {
+    .dark .derakhti-action-icon.success {
         background: var(--metronic-blue);
         color: #fff;
     }
-    .dark .vafadar-action-icon.success:hover {
+    .dark .derakhti-action-icon.success:hover {
         background: var(--metronic-blue);
         color: #fff;
     }
 
     
     /* ===== دسته‌بندی والد ===== */
-    .vafadar-categories-box {
+    .derakhti-categories-box {
         width: 100%;
         max-height: 160px;
         overflow-y: auto;
@@ -618,32 +618,32 @@
         border-radius: 12px;
         transition: all 0.3s ease;
     }
-    .vafadar-categories-box:hover {
+    .derakhti-categories-box:hover {
         border-color: var(--metronic-text-dark);
     }
-    .dark .vafadar-categories-box {
+    .dark .derakhti-categories-box {
         background: var(--metronic-dark);
         border-color: var(--metronic-border);
     }
-    .dark .vafadar-categories-box:hover {
+    .dark .derakhti-categories-box:hover {
         border-color: var(--metronic-text-dark);
     }
 
-    .vafadar-categories-box::-webkit-scrollbar {
+    .derakhti-categories-box::-webkit-scrollbar {
         width: 4px;
     }
-    .vafadar-categories-box::-webkit-scrollbar-track {
+    .derakhti-categories-box::-webkit-scrollbar-track {
         background: transparent;
     }
-    .vafadar-categories-box::-webkit-scrollbar-thumb {
+    .derakhti-categories-box::-webkit-scrollbar-thumb {
         background: var(--metronic-text-dark);
         border-radius: 10px;
     }
-    .dark .vafadar-categories-box::-webkit-scrollbar-thumb {
+    .dark .derakhti-categories-box::-webkit-scrollbar-thumb {
         background: var(--metronic-text-dark);
     }
 
-    .vafadar-category-item {
+    .derakhti-category-item {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -651,28 +651,28 @@
         border-radius: 6px;
         transition: all 0.2s ease;
     }
-    .vafadar-category-item:hover {
+    .derakhti-category-item:hover {
         background: var(--metronic-shadow);
     }
-    .dark .vafadar-category-item:hover {
+    .dark .derakhti-category-item:hover {
         background: var(--metronic-shadow);
     }
-    .vafadar-category-item label {
+    .derakhti-category-item label {
         color: var(--metronic-dark);
         font-size: 13px;
         cursor: pointer;
     }
-    .dark .vafadar-category-item label {
+    .dark .derakhti-category-item label {
         color: var(--metronic-content-bg);
     }
 
 </style>
 
 <div class="w-full flex justify-center py-6 px-4">
-    <div class="vafadar-profile-card">
+    <div class="derakhti-profile-card">
 
         <!-- ===== هدر ===== -->
-        <div class="vafadar-profile-header">
+        <div class="derakhti-profile-header">
             <div class="title-section">
                 <div class="header-icon">
                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -685,7 +685,7 @@
                     <div class="subtitle">مشاهده جزئیات دسته‌بندی {{$category->title}}</div>
                 </div>
             </div>
-            <a href="{{route('category.list')}}" class="vafadar-back-btn">
+            <a href="{{route('category.list')}}" class="derakhti-back-btn">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M19 12H5M12 19l-7-7 7-7"/>
                 </svg>
@@ -694,28 +694,28 @@
         </div>
 
         <!-- ===== بدنه ===== -->
-        <div class="vafadar-profile-body">
+        <div class="derakhti-profile-body">
 
             <!-- ===== تصویر ===== -->
-            <div class="vafadar-image-section">
-                <div class="vafadar-profile-image">
+            <div class="derakhti-image-section">
+                <div class="derakhti-profile-image">
                     @if($category->image_path != null)
                         <img src="{{asset('storage/category_medias/'.$category->image_path)}}" alt="{{$category->title}}">
                     @else
                         <span class="w-full h-full flex items-center text-center justify-center text-6xl">📷</span>
                     @endif
                 </div>
-                <div class="vafadar-image-info">
+                <div class="derakhti-image-info">
                     <h3>{{$category->title}}</h3>
                     <p>شناسه: #{{$category->id}} · اسلاگ: {{$category->slug}}</p>
                 </div>
             </div>
 
             <!-- ===== اطلاعات ===== -->
-            <div class="vafadar-info-grid">
+            <div class="derakhti-info-grid">
 
                 <!-- عنوان -->
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <div class="label">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 7h16M4 12h16M4 17h10"/>
@@ -727,7 +727,7 @@
                 </div>
 
                 <!-- اسلاگ -->
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <div class="label">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
@@ -739,7 +739,7 @@
                 </div>
 
                 <!-- توضیحات -->
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <div class="label">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 7h16M4 12h16M4 17h10"/>
@@ -751,7 +751,7 @@
                 </div>
 
                 <!-- خلاصه -->
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <div class="label">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 7h16M4 12h16M4 17h10"/>
@@ -763,7 +763,7 @@
                 </div>
 
                 <!-- نمایش در خانه -->
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <div class="label">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0a1 1 0 01-1-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 01-1 1h-2z"/>
@@ -784,7 +784,7 @@
 
 
                 <!-- وضعیت -->
-                <div class="vafadar-info-item">
+                <div class="derakhti-info-item">
                     <div class="label">
                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -806,8 +806,8 @@
                 @if($category->id!=1)
                     <!-- دسته‌بندی والد -->
                     <div class="mb-4">
-                        <label class="vafadar-label"> دسته‌بندی والد</label>
-                        <div class="vafadar-categories-box">
+                        <label class="derakhti-label"> دسته‌بندی والد</label>
+                        <div class="derakhti-categories-box">
                             {{$category->title}}
                             {!! $subCategories !!}
                         </div>
@@ -817,14 +817,14 @@
             </div>
                 @if($category->id!=1)
                     <!-- ===== ویژگی‌ها ===== -->
-                    <div class="vafadar-section">
-                        <div class="vafadar-section-title">
+                    <div class="derakhti-section">
+                        <div class="derakhti-section-title">
                             <h3>⚙️ ویژگی‌ها</h3>
                             <div class="line"></div>
                         </div>
-                        <div class="vafadar-attr-list">
+                        <div class="derakhti-attr-list">
                             @forelse($category['attributes'] as $attribute)
-                                <div class="vafadar-attr-item">
+                                <div class="derakhti-attr-item">
                                     <span class="key">{{$attribute->title}}</span>
                                 </div>
                             @empty
@@ -838,8 +838,8 @@
 
 
             <!-- ===== دکمه‌های اکشن ===== -->
-            <div class="vafadar-action-buttons">
-                <a href="{{route('category.edit',['category'=>$category->id])}}" class="vafadar-action-btn-lg edit">
+            <div class="derakhti-action-buttons">
+                <a href="{{route('category.edit',['category'=>$category->id])}}" class="derakhti-action-btn-lg edit">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
                         <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
@@ -847,7 +847,7 @@
                     ویرایش دسته‌بندی
                 </a>
                 @if($category->id!=1)
-                <a href="{{route('category.delete',['category'=>$category->id])}}" class="vafadar-action-btn-lg delete" onclick="return confirm('آیا از حذف دسته‌بندی «{{$category->title}}» مطمئن هستید؟')">
+                <a href="{{route('category.delete',['category'=>$category->id])}}" class="derakhti-action-btn-lg delete" onclick="return confirm('آیا از حذف دسته‌بندی «{{$category->title}}» مطمئن هستید؟')">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M3 6h18"/>
                         <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
@@ -855,7 +855,7 @@
                     حذف دسته‌بندی
                 </a>
                 @endif
-                <a href="{{route('category.list')}}" class="vafadar-action-btn-lg back">
+                <a href="{{route('category.list')}}" class="derakhti-action-btn-lg back">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M19 12H5M12 19l-7-7 7-7"/>
                     </svg>

@@ -25,7 +25,7 @@
     }
 
     /* ===== کارت اصلی ===== */
-    .vafadar-form-card {
+    .derakhti-form-card {
         background: var(--metronic-bg-form);
         border: 1px solid var(--metronic-border);
         border-radius: 24px;
@@ -36,19 +36,19 @@
         width: 100%;
         margin: 0 auto;
     }
-    .vafadar-form-card:hover {
+    .derakhti-form-card:hover {
         box-shadow: var(--shadow-md);
     }
 
     /* ===== هدر فرم ===== */
-    .vafadar-form-header {
+    .derakhti-form-header {
         background: linear-gradient(135deg, #F5F5F5, #DBDFE9);
         border-bottom: 2px solid var(--metronic-border);
         padding: 18px 28px;
         border-radius: 24px 24px 0 0;
     }
 
-    .vafadar-form-header h2 {
+    .derakhti-form-header h2 {
         color: #1e293b;
         font-size: 20px;
         font-weight: 700;
@@ -57,7 +57,7 @@
         gap: 10px;
     }
 
-    .vafadar-form-header .header-icon {
+    .derakhti-form-header .header-icon {
         width: 40px;
         height: 40px;
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
@@ -70,12 +70,12 @@
     }
 
     /* ===== بدنه ===== */
-    .vafadar-form-body {
+    .derakhti-form-body {
         padding: 24px 28px 28px;
     }
 
     /* ===== فیلدها ===== */
-    .vafadar-label {
+    .derakhti-label {
         color: #64748b;
         font-size: 13px;
         font-weight: 700;
@@ -85,7 +85,7 @@
         transition: all 0.3s ease;
     }
 
-    .vafadar-input {
+    .derakhti-input {
         width: 100%;
         padding: 12px 16px;
         background: #F5F5F5;
@@ -96,20 +96,20 @@
         transition: all 0.3s ease;
         outline: none;
     }
-    .vafadar-input::placeholder {
+    .derakhti-input::placeholder {
         color: #9A9CAE;
         font-size: 13px;
     }
-    .vafadar-input:hover {
+    .derakhti-input:hover {
         border-color: #4a9fff;
     }
-    .vafadar-input:focus {
+    .derakhti-input:focus {
         border-color: var(--metronic-primary);
         box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
         background: #ffffff;
     }
 
-    .vafadar-select {
+    .derakhti-select {
         width: 100%;
         padding: 12px 16px;
         background: #F5F5F5;
@@ -124,17 +124,17 @@
         background-repeat: no-repeat;
         background-position: left 12px center;
     }
-    .vafadar-select:hover {
+    .derakhti-select:hover {
         border-color: #4a9fff;
     }
-    .vafadar-select:focus {
+    .derakhti-select:focus {
         border-color: var(--metronic-primary);
         box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
         background-color: #ffffff;
     }
 
     /* ===== خطا ===== */
-    .vafadar-error {
+    .derakhti-error {
         color: var(--metronic-danger);
         font-size: 13px;
         font-weight: 700;
@@ -144,7 +144,7 @@
     }
 
     /* ===== توگل ===== */
-    .vafadar-toggle {
+    .derakhti-toggle {
         width: 52px;
         height: 30px;
         padding: 2px;
@@ -157,12 +157,12 @@
         cursor: pointer;
         box-shadow: inset 0 2px 4px rgba(0,0,0,0.04);
     }
-    .vafadar-toggle.active {
+    .derakhti-toggle.active {
         background: var(--metronic-primary);
         border-color: var(--metronic-primary);
     }
 
-    .vafadar-toggle-dot {
+    .derakhti-toggle-dot {
         width: 24px;
         height: 24px;
         border-radius: 50%;
@@ -170,30 +170,30 @@
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    .vafadar-toggle.active .vafadar-toggle-dot {
+    .derakhti-toggle.active .derakhti-toggle-dot {
         transform: translateX(-22px);
     }
 
-    .vafadar-toggle-label {
+    .derakhti-toggle-label {
         display: flex;
         align-items: center;
         gap: 8px;
     }
-    .vafadar-toggle-label span {
+    .derakhti-toggle-label span {
         color: #64748b;
         font-size: 13px;
         font-weight: 700;
     }
 
     /* ===== بخش ویژگی‌ها ===== */
-    .vafadar-attributes-section {
+    .derakhti-attributes-section {
         background: #F5F5F5;
         border-radius: 16px;
         padding: 16px 20px;
         border: 1px solid var(--metronic-border);
     }
 
-    .vafadar-attributes-title {
+    .derakhti-attributes-title {
         color: #fff;
         font-size: 16px;
         font-weight: 700;
@@ -205,7 +205,7 @@
         box-shadow: 0 4px 12px rgba(27, 132, 255, 0.15);
     }
 
-    .vafadar-attr-item {
+    .derakhti-attr-item {
         position: relative;
         display: inline-flex;
         align-items: center;
@@ -216,7 +216,7 @@
         animation: slideIn 0.3s ease;
         box-shadow: 0 2px 8px rgba(27, 132, 255, 0.04);
     }
-    .vafadar-attr-item input {
+    .derakhti-attr-item input {
         padding: 6px 10px;
         background: transparent;
         border: none;
@@ -225,7 +225,7 @@
         outline: none;
         width: 100px;
     }
-    .vafadar-attr-item .remove {
+    .derakhti-attr-item .remove {
         width: 24px;
         height: 24px;
         border-radius: 50%;
@@ -240,14 +240,14 @@
         transition: all 0.3s ease;
         flex-shrink: 0;
     }
-    .vafadar-attr-item .remove:hover {
+    .derakhti-attr-item .remove:hover {
         background: var(--metronic-danger);
         color: #fff;
         transform: rotate(90deg);
     }
 
     /* ===== دکمه ===== */
-    .vafadar-btn {
+    .derakhti-btn {
         padding: 12px 28px;
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
         border: none;
@@ -262,15 +262,15 @@
         gap: 8px;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
     }
-    .vafadar-btn:hover {
+    .derakhti-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.25);
     }
-    .vafadar-btn:active {
+    .derakhti-btn:active {
         transform: translateY(0) scale(0.97);
     }
 
-    .vafadar-btn-success {
+    .derakhti-btn-success {
         padding: 10px 20px;
         background: linear-gradient(135deg, var(--metronic-success), #34d399);
         border: none;
@@ -283,12 +283,12 @@
         text-align: center;
         box-shadow: 0 4px 16px rgba(5, 150, 105, 0.15);
     }
-    .vafadar-btn-success:hover {
+    .derakhti-btn-success:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(5, 150, 105, 0.25);
     }
 
-    .vafadar-btn-warning {
+    .derakhti-btn-warning {
         padding: 10px 20px;
         background: linear-gradient(135deg, var(--metronic-warning), #f59e0b);
         border: none;
@@ -304,13 +304,13 @@
         gap: 6px;
         box-shadow: 0 4px 16px rgba(217, 119, 6, 0.15);
     }
-    .vafadar-btn-warning:hover {
+    .derakhti-btn-warning:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(217, 119, 6, 0.25);
     }
 
     /* ===== پکیج ===== */
-    .vafadar-package-box {
+    .derakhti-package-box {
         position: relative;
         background: #F5F5F5;
         border: 2px solid #059669;
@@ -321,16 +321,16 @@
         box-shadow: 0 4px 16px rgba(5, 150, 105, 0.08);
     }
 
-    .vafadar-package-box .package-grid {
+    .derakhti-package-box .package-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
-    .vafadar-package-box .package-grid .full {
+    .derakhti-package-box .package-grid .full {
         grid-column: 1 / -1;
     }
 
-    .vafadar-package-box .package-title {
+    .derakhti-package-box .package-title {
         color: #1e293b;
         font-size: 16px;
         font-weight: 700;
@@ -340,7 +340,7 @@
         border-bottom: 2px solid #059669;
     }
 
-    .vafadar-package-box .package-remove {
+    .derakhti-package-box .package-remove {
         position: absolute;
         top: -12px;
         right: -12px;
@@ -358,7 +358,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
     }
-    .vafadar-package-box .package-remove:hover {
+    .derakhti-package-box .package-remove:hover {
         background: var(--metronic-danger);
         color: #fff;
         transform: rotate(90deg) scale(1.1);
@@ -367,58 +367,58 @@
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .vafadar-form-body {
+        .derakhti-form-body {
             padding: 16px 18px 20px;
         }
-        .vafadar-form-header {
+        .derakhti-form-header {
             padding: 14px 18px;
         }
-        .vafadar-form-header h2 {
+        .derakhti-form-header h2 {
             font-size: 17px;
         }
-        .vafadar-grid {
+        .derakhti-grid {
             grid-template-columns: 1fr !important;
             gap: 16px !important;
         }
-        .vafadar-toggle-group {
+        .derakhti-toggle-group {
             flex-direction: column;
             align-items: flex-start !important;
             gap: 12px !important;
         }
-        .vafadar-package-box .package-grid {
+        .derakhti-package-box .package-grid {
             grid-template-columns: 1fr;
         }
-        .vafadar-btn {
+        .derakhti-btn {
             padding: 10px 20px;
             font-size: 13px;
             width: 100%;
             justify-content: center;
         }
-        .vafadar-attributes-grid {
+        .derakhti-attributes-grid {
             grid-template-columns: 1fr !important;
         }
     }
 
     @media (max-width: 480px) {
-        .vafadar-form-body {
+        .derakhti-form-body {
             padding: 12px 14px 16px;
         }
-        .vafadar-form-header {
+        .derakhti-form-header {
             padding: 12px 14px;
         }
-        .vafadar-form-header h2 {
+        .derakhti-form-header h2 {
             font-size: 14px;
         }
-        .vafadar-input,
-        .vafadar-select {
+        .derakhti-input,
+        .derakhti-select {
             padding: 8px 12px;
             font-size: 12px;
         }
-        .vafadar-attr-item input {
+        .derakhti-attr-item input {
             width: 70px;
             font-size: 12px;
         }
-        .vafadar-btn-warning {
+        .derakhti-btn-warning {
             padding: 8px 14px;
             font-size: 12px;
         }
@@ -436,7 +436,7 @@
     }
 
     /* ===== چک‌باکس ===== */
-    .vafadar-checkbox {
+    .derakhti-checkbox {
         width: 18px;
         height: 18px;
         accent-color: var(--metronic-primary);
@@ -448,10 +448,10 @@
 $count=0
 ?>
 <div class="w-full flex justify-center py-6 px-4">
-    <div class="vafadar-form-card">
+    <div class="derakhti-form-card">
 
         <!-- ===== هدر ===== -->
-        <div class="vafadar-form-header">
+        <div class="derakhti-form-header">
             <h2>
                 <span class="header-icon">
                     <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -467,46 +467,46 @@ $count=0
         </div>
 
         <!-- ===== فرم ===== -->
-        <form action="{{route('product.store')}}" method="POST" id='form' class="vafadar-form-body" enctype='multipart/form-data'>
+        <form action="{{route('product.store')}}" method="POST" id='form' class="derakhti-form-body" enctype='multipart/form-data'>
             @csrf
             
             <!-- ===== گرید فیلدها ===== -->
-            <div class="vafadar-grid grid grid-cols-2 gap-6">
+            <div class="derakhti-grid grid grid-cols-2 gap-6">
 
                 <!-- عنوان -->
                 <div>
-                    <label class="vafadar-label"> عنوان</label>
-                    <input type="text" placeholder="عنوان محصول" required name='title' class="vafadar-input">
-                    @error('title') <span class="vafadar-error">{{$message}}</span> @enderror
+                    <label class="derakhti-label"> عنوان</label>
+                    <input type="text" placeholder="عنوان محصول" required name='title' class="derakhti-input">
+                    @error('title') <span class="derakhti-error">{{$message}}</span> @enderror
                 </div>
 
                 <!-- تصویر اصلی -->
                 <div>
-                    <label class="vafadar-label"> تصویر اصلی</label>
-                    <input type="file" name='is_main' class="vafadar-input" style="padding: 8px 12px;">
+                    <label class="derakhti-label"> تصویر اصلی</label>
+                    <input type="file" name='is_main' class="derakhti-input" style="padding: 8px 12px;">
                 </div>
 
                 <!-- گالری -->
                 <div>
-                    <label class="vafadar-label"> گالری</label>
-                    <input type="file" name='gallery[]' multiple class="vafadar-input" style="padding: 8px 12px;">
+                    <label class="derakhti-label"> گالری</label>
+                    <input type="file" name='gallery[]' multiple class="derakhti-input" style="padding: 8px 12px;">
                 </div>
 
                 <!-- توضیحات -->
                 <div>
-                    <label class="vafadar-label"> توضیحات</label>
-                    <input type="text" placeholder="توضیحات محصول"    name='description' class="vafadar-input">
-                    @error('description') <span class="vafadar-error">{{$message}}</span> @enderror
+                    <label class="derakhti-label"> توضیحات</label>
+                    <input type="text" placeholder="توضیحات محصول"    name='description' class="derakhti-input">
+                    @error('description') <span class="derakhti-error">{{$message}}</span> @enderror
                 </div>
 
                 <!-- خلاصه -->
                 <div>
-                    <label class="vafadar-label"> خلاصه</label>
-                    <input type="text" placeholder="خلاصه محصول" name='summary' class="vafadar-input">
+                    <label class="derakhti-label"> خلاصه</label>
+                    <input type="text" placeholder="خلاصه محصول" name='summary' class="derakhti-input">
                 </div>
                 <div>
-                    <label class="vafadar-label"> دسته بندی</label>
-                    <select name="category" id="category_select_element" class="vafadar-select" onchange="categoryAttributes(this, true)">
+                    <label class="derakhti-label"> دسته بندی</label>
+                    <select name="category" id="category_select_element" class="derakhti-select" onchange="categoryAttributes(this, true)">
                         @foreach($categories as $category)
                             @if($count==0)
                                 <option selected value="{{$category->id}}">{{$category->title}}</option>
@@ -519,8 +519,8 @@ $count=0
                 </div>
                 <!-- برند -->
                 <div>
-                    <label class="vafadar-label"> برند</label>
-                    <select name="brand_id" class="vafadar-select">
+                    <label class="derakhti-label"> برند</label>
+                    <select name="brand_id" class="derakhti-select">
                         @foreach($brands as $brand)
                             @if($brand->is_active==1)
                                 <option value="{{$brand->id}}">{{$brand->title}}</option>
@@ -531,53 +531,53 @@ $count=0
 
                 <!-- اسلاگ -->
                 <div>
-                    <label class="vafadar-label"> اسلاگ</label>
-                    <input type="text" placeholder="اسلاگ محصول" name='slug' class="vafadar-input">
+                    <label class="derakhti-label"> اسلاگ</label>
+                    <input type="text" placeholder="اسلاگ محصول" name='slug' class="derakhti-input">
                 </div>
 
                 <!-- تخفیف -->
                 <div>
-                    <label class="vafadar-label"> تخفیف</label>
-                    <input type="number" placeholder="مقدار تخفیف" name='discunt' class="vafadar-input">
+                    <label class="derakhti-label"> تخفیف</label>
+                    <input type="number" placeholder="مقدار تخفیف" name='discunt' class="derakhti-input">
                 </div>
 
                 <!-- قیمت -->
                 <div>
-                    <label class="vafadar-label"> قیمت</label>
-                    <input type="number" placeholder="قیمت محصول"    name='price' class="vafadar-input">
-                    @error('price') <span class="vafadar-error">{{$message}}</span> @enderror
+                    <label class="derakhti-label"> قیمت</label>
+                    <input type="number" placeholder="قیمت محصول"    name='price' class="derakhti-input">
+                    @error('price') <span class="derakhti-error">{{$message}}</span> @enderror
                 </div>
 
                 <!-- موجودی -->
                 <div>
-                    <label class="vafadar-label"> موجودی</label>
-                    <input type="number" placeholder="تعداد موجودی"    name='stock' class="vafadar-input">
-                    @error('stock') <span class="vafadar-error">{{$message}}</span> @enderror
+                    <label class="derakhti-label"> موجودی</label>
+                    <input type="number" placeholder="تعداد موجودی"    name='stock' class="derakhti-input">
+                    @error('stock') <span class="derakhti-error">{{$message}}</span> @enderror
                 </div>
 
                 <!-- ===== توگل‌ها ===== -->
-                <div class="vafadar-toggle-group col-span-2 flex gap-8 justify-start items-center flex-wrap">
+                <div class="derakhti-toggle-group col-span-2 flex gap-8 justify-start items-center flex-wrap">
 
-                    <div class="vafadar-toggle-label">
+                    <div class="derakhti-toggle-label">
                         <span> نمایش در خانه</span>
-                        <div class="vafadar-toggle" onclick="toggleState(this)">
-                            <div class="vafadar-toggle-dot"></div>
+                        <div class="derakhti-toggle" onclick="toggleState(this)">
+                            <div class="derakhti-toggle-dot"></div>
                         </div>
                         <input type="number" name='show_in_home' value="0" class="absolute invisible">
                     </div>
 
-                    <div class="vafadar-toggle-label">
+                    <div class="derakhti-toggle-label">
                         <span> محصول ویژه</span>
-                        <div class="vafadar-toggle" onclick="toggleState(this)">
-                            <div class="vafadar-toggle-dot"></div>
+                        <div class="derakhti-toggle" onclick="toggleState(this)">
+                            <div class="derakhti-toggle-dot"></div>
                         </div>
                         <input type="number" name='featured' value="0" class="absolute invisible">
                     </div>
 
-                    <div class="vafadar-toggle-label">
+                    <div class="derakhti-toggle-label">
                         <span> فعال</span>
-                        <div class="vafadar-toggle" onclick="toggleState(this)">
-                            <div class="vafadar-toggle-dot"></div>
+                        <div class="derakhti-toggle" onclick="toggleState(this)">
+                            <div class="derakhti-toggle-dot"></div>
                         </div>
                         <input type="number" name='is_active' value="0" class="absolute invisible">
                     </div>
@@ -587,12 +587,12 @@ $count=0
             </div>
 
             <!-- ===== بخش ویژگی‌ها ===== -->
-            <div class="vafadar-attributes-section mt-6">
-                <div class="vafadar-attributes-title"> ویژگی‌های محصول</div>
+            <div class="derakhti-attributes-section mt-6">
+                <div class="derakhti-attributes-title"> ویژگی‌های محصول</div>
                 
                 <div class="flex flex-wrap gap-2 mt-3" id="attributes_list"></div>
                 
-                <div class="vafadar-btn-success w-full mt-3" id="attribute_conformation_button" onclick="attribute_conformation(this)">
+                <div class="derakhti-btn-success w-full mt-3" id="attribute_conformation_button" onclick="attribute_conformation(this)">
                     ➕ افزودن ویژگی
                 </div>
 
@@ -601,7 +601,7 @@ $count=0
             <!-- ===== پکیج‌ها ===== -->
             <div class="mt-6">
                 <div id="PackageForm" class="flex flex-col gap-4"></div>
-                <div class="createPackageFormButton vafadar-btn-warning w-full justify-center mt-3" onclick="createPackageForm(this,false)">
+                <div class="createPackageFormButton derakhti-btn-warning w-full justify-center mt-3" onclick="createPackageForm(this,false)">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <path d="M12 5v14M5 12h14"/>
                     </svg>
@@ -611,7 +611,7 @@ $count=0
 
             <!-- ===== دکمه ثبت ===== -->
             <div class="flex justify-end mt-6 pt-6 border-t border-[#DBDFE9]">
-                <button type="submit" class="vafadar-btn">
+                <button type="submit" class="derakhti-btn">
                     <span>ثبت محصول</span>
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <path d="M5 13l4 4L19 7"/>
@@ -716,9 +716,9 @@ $count=0
         input.setAttribute('type', 'text');
         input.setAttribute('required', true);
         input.setAttribute('name', 'attributes_value[]');
-        input.classList = 'vafadar-input attributes_inputs max-w-9/12 min-w-9/12';
+        input.classList = 'derakhti-input attributes_inputs max-w-9/12 min-w-9/12';
         select.setAttribute('name', 'attributes_id[]');
-        select.classList = 'vafadar-select attributes_select_element max-w-3/12 min-w-3/12 ';
+        select.classList = 'derakhti-select attributes_select_element max-w-3/12 min-w-3/12 ';
         select.innerHTML=
         `
             <option value='0'></option>
@@ -745,52 +745,52 @@ $count=0
         let cat_id = document.querySelector('.createPackageFormButton').id;
         let randomNumber = Math.random();
         let div = document.createElement('div');
-        div.classList = 'vafadar-package-box';
+        div.classList = 'derakhti-package-box';
         div.innerHTML = `
             <div class='package-title'> پکیج محصول</div>
             <div class='package-grid'>
                 <div class='full'>
-                    <label class='vafadar-label'> تصویر اصلی</label>
-                    <input type="file" name='packages[${randomNumber}][is_main]' class="vafadar-input" style="padding: 8px 12px;">
+                    <label class='derakhti-label'> تصویر اصلی</label>
+                    <input type="file" name='packages[${randomNumber}][is_main]' class="derakhti-input" style="padding: 8px 12px;">
                 </div>
                 <div class='full'>
-                    <label class='vafadar-label'> گالری</label>
-                    <input type="file" name='packages[${randomNumber}][gallery][]' multiple class="vafadar-input" style="padding: 8px 12px;">
+                    <label class='derakhti-label'> گالری</label>
+                    <input type="file" name='packages[${randomNumber}][gallery][]' multiple class="derakhti-input" style="padding: 8px 12px;">
                 </div>
                 <div>
-                    <label class='vafadar-label'> توضیحات</label>
-                    <input type="text"    name="packages[${randomNumber}][description]" class="vafadar-input" placeholder="توضیحات پکیج">
+                    <label class='derakhti-label'> توضیحات</label>
+                    <input type="text"    name="packages[${randomNumber}][description]" class="derakhti-input" placeholder="توضیحات پکیج">
                 </div>
                 <div>
-                    <label class='vafadar-label'> خلاصه</label>
-                    <input type="text" name="packages[${randomNumber}][summary]" class="vafadar-input" placeholder="خلاصه پکیج">
+                    <label class='derakhti-label'> خلاصه</label>
+                    <input type="text" name="packages[${randomNumber}][summary]" class="derakhti-input" placeholder="خلاصه پکیج">
                 </div>
                 <div>
-                    <label class='vafadar-label'> موجودی</label>
-                    <input type="number"    name="packages[${randomNumber}][stock]" class="vafadar-input" placeholder="تعداد موجودی">
+                    <label class='derakhti-label'> موجودی</label>
+                    <input type="number"    name="packages[${randomNumber}][stock]" class="derakhti-input" placeholder="تعداد موجودی">
                 </div>
                 <div>
-                    <label class='vafadar-label'> قیمت</label>
-                    <input type="number"    name="packages[${randomNumber}][price]" class="vafadar-input" placeholder="قیمت پکیج">
+                    <label class='derakhti-label'> قیمت</label>
+                    <input type="number"    name="packages[${randomNumber}][price]" class="derakhti-input" placeholder="قیمت پکیج">
                 </div>
                 <div>
-                    <label class='vafadar-label'> تخفیف</label>
-                    <input type="number" name="packages[${randomNumber}][discunt]" class="vafadar-input" placeholder="تخفیف پکیج">
+                    <label class='derakhti-label'> تخفیف</label>
+                    <input type="number" name="packages[${randomNumber}][discunt]" class="derakhti-input" placeholder="تخفیف پکیج">
                 </div>
                 <div class='flex items-center gap-6'>
-                    <label class="vafadar-toggle-label">
+                    <label class="derakhti-toggle-label">
                         <span> ویژه</span>
-                        <input type="checkbox" name="packages[${randomNumber}]['featured']" value="1" class="vafadar-checkbox">
+                        <input type="checkbox" name="packages[${randomNumber}]['featured']" value="1" class="derakhti-checkbox">
                     </label>
-                    <label class="vafadar-toggle-label">
+                    <label class="derakhti-toggle-label">
                         <span> فعال</span>
-                        <input type="checkbox" name="packages[${randomNumber}]['is_active']" value="1" class="vafadar-checkbox">
+                        <input type="checkbox" name="packages[${randomNumber}]['is_active']" value="1" class="derakhti-checkbox">
                     </label>
                 </div>
                 <div class='full'>
-                    <label class='vafadar-label'> ویژگی‌های پکیج</label>
+                    <label class='derakhti-label'> ویژگی‌های پکیج</label>
                     <div class='packageAttributesList flex flex-wrap gap-2 mt-2'></div>
-                    <div id=${randomNumber} class="createPackageAttribute vafadar-btn-success w-full mt-2" onclick="createPackageAttributeFunction(this)">➕ افزودن ویژگی</div>
+                    <div id=${randomNumber} class="createPackageAttribute derakhti-btn-success w-full mt-2" onclick="createPackageAttributeFunction(this)">➕ افزودن ویژگی</div>
                 </div>
             </div>
             <div onclick='deletePackage(this)' class="package-remove">✕</div>
@@ -832,9 +832,9 @@ $count=0
         input.setAttribute('type', 'text');
         input.setAttribute('required', true);
         input.setAttribute('name', 'packages['+el.id+'][attribute_value][]');
-        input.classList = 'vafadar-input package_attributes_inputs max-w-9/12 min-w-9/12';
+        input.classList = 'derakhti-input package_attributes_inputs max-w-9/12 min-w-9/12';
         select.setAttribute('name', 'packages['+el.id+'][attribute_id][]');
-        select.classList = 'vafadar-select package_attributes_select_element max-w-3/12 min-w-3/12';
+        select.classList = 'derakhti-select package_attributes_select_element max-w-3/12 min-w-3/12';
         select.innerHTML=
         `
             <option value='0'></option>

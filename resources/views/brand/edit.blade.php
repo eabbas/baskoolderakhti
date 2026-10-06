@@ -25,14 +25,14 @@
     }
 
     /* ===== کانتینر اصلی ===== */
-    .vafadar-brand-edit {
+    .derakhti-brand-edit {
         background: var(--metronic-bg-content);
         min-height: 100vh;
         padding: 30px 20px;
     }
 
     /* ===== عنوان صفحه ===== */
-    .vafadar-page-title {
+    .derakhti-page-title {
         font-size: 24px;
         font-weight: 700;
         color: #1e293b;
@@ -41,7 +41,7 @@
         position: relative;
         padding-bottom: 12px;
     }
-    .vafadar-page-title::after {
+    .derakhti-page-title::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -54,7 +54,7 @@
     }
 
     /* ===== کارت فرم ===== */
-    .vafadar-brand-form {
+    .derakhti-brand-form {
         background: var(--metronic-bg-form);
         border: 1px solid var(--metronic-border);
         border-radius: 20px;
@@ -64,19 +64,19 @@
         margin: 0 auto;
         transition: all 0.3s ease;
     }
-    .vafadar-brand-form:hover {
+    .derakhti-brand-form:hover {
         box-shadow: var(--shadow-md);
     }
 
     /* ===== گرید فیلدها ===== */
-    .vafadar-form-grid {
+    .derakhti-form-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
 
     /* ===== فیلدها ===== */
-    .vafadar-label {
+    .derakhti-label {
         color: #64748b;
         font-size: 12px;
         font-weight: 600;
@@ -86,7 +86,7 @@
         transition: all 0.3s ease;
     }
 
-    .vafadar-input {
+    .derakhti-input {
         width: 100%;
         padding: 12px 16px;
         background: #F5F5F5;
@@ -97,21 +97,21 @@
         transition: all 0.3s ease;
         outline: none;
     }
-    .vafadar-input::placeholder {
+    .derakhti-input::placeholder {
         color: #9A9CAE;
         font-size: 12px;
     }
-    .vafadar-input:hover {
+    .derakhti-input:hover {
         border-color: var(--metronic-primary-light);
     }
-    .vafadar-input:focus {
+    .derakhti-input:focus {
         border-color: var(--metronic-primary);
         box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
         background: var(--metronic-bg-form);
     }
 
     /* ===== خطا ===== */
-    .vafadar-error {
+    .derakhti-error {
         color: var(--metronic-danger);
         font-size: 12px;
         margin-top: 4px;
@@ -120,17 +120,17 @@
     }
 
     /* ===== توگل ===== */
-    .vafadar-toggle-wrapper {
+    .derakhti-toggle-wrapper {
         position: relative;
         display: flex;
         align-items: center;
         gap: 12px;
     }
-    .vafadar-toggle-wrapper .vafadar-label {
+    .derakhti-toggle-wrapper .derakhti-label {
         margin-bottom: 0;
     }
 
-    .vafadar-toggle-track {
+    .derakhti-toggle-track {
         width: 52px;
         height: 30px;
         padding: 2px;
@@ -144,12 +144,12 @@
         box-shadow: inset 0 2px 4px rgba(0,0,0,0.04);
         flex-shrink: 0;
     }
-    .vafadar-toggle-track.active {
+    .derakhti-toggle-track.active {
         background: var(--metronic-primary);
         border-color: var(--metronic-primary);
     }
 
-    .vafadar-toggle-dot {
+    .derakhti-toggle-dot {
         width: 24px;
         height: 24px;
         border-radius: 50%;
@@ -157,12 +157,12 @@
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    .vafadar-toggle-track.active .vafadar-toggle-dot {
+    .derakhti-toggle-track.active .derakhti-toggle-dot {
         transform: translateX(-22px);
     }
 
     /* ===== دکمه ثبت ===== */
-    .vafadar-submit-btn {
+    .derakhti-submit-btn {
         padding: 12px 32px;
         background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
         border: none;
@@ -177,16 +177,16 @@
         gap: 8px;
         box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
     }
-    .vafadar-submit-btn:hover {
+    .derakhti-submit-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(27, 132, 255, 0.25);
     }
-    .vafadar-submit-btn:active {
+    .derakhti-submit-btn:active {
         transform: translateY(0) scale(0.97);
     }
 
     /* ===== فوتر فرم ===== */
-    .vafadar-form-footer {
+    .derakhti-form-footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -197,27 +197,27 @@
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .vafadar-form-grid {
+        .derakhti-form-grid {
             grid-template-columns: 1fr;
             gap: 18px;
         }
-        .vafadar-brand-form {
+        .derakhti-brand-form {
             padding: 20px 18px 24px;
             margin: 0 10px;
         }
-        .vafadar-page-title {
+        .derakhti-page-title {
             font-size: 20px;
         }
-        .vafadar-form-footer {
+        .derakhti-form-footer {
             flex-direction: column;
             align-items: stretch;
             gap: 12px;
         }
-        .vafadar-submit-btn {
+        .derakhti-submit-btn {
             width: 100%;
             justify-content: center;
         }
-        .vafadar-toggle-group {
+        .derakhti-toggle-group {
             flex-direction: column;
             align-items: flex-start !important;
             gap: 12px !important;
@@ -225,90 +225,90 @@
     }
 
     @media (max-width: 480px) {
-        .vafadar-brand-form {
+        .derakhti-brand-form {
             padding: 14px 12px 18px;
         }
-        .vafadar-input {
+        .derakhti-input {
             padding: 10px 14px;
             font-size: 12px;
         }
-        .vafadar-page-title {
+        .derakhti-page-title {
             font-size: 17px;
         }
-        .vafadar-toggle-track {
+        .derakhti-toggle-track {
             width: 46px;
             height: 26px;
         }
-        .vafadar-toggle-dot {
+        .derakhti-toggle-dot {
             width: 20px;
             height: 20px;
         }
-        .vafadar-toggle-track.active .vafadar-toggle-dot {
+        .derakhti-toggle-track.active .derakhti-toggle-dot {
             transform: translateX(-20px);
         }
-        .vafadar-submit-btn {
+        .derakhti-submit-btn {
             padding: 10px 20px;
             font-size: 13px;
         }
     }
 </style>
 
-<div class="vafadar-brand-edit">
+<div class="derakhti-brand-edit">
 
     <!-- ===== عنوان ===== -->
-    <h1 class="vafadar-page-title"> ویرایش برند</h1>
+    <h1 class="derakhti-page-title"> ویرایش برند</h1>
 
     <!-- ===== فرم ===== -->
-    <form action="{{route('brand.update',['brand'=>$brand->id])}}" method="POST" id='form' class="vafadar-brand-form" enctype='multipart/form-data'>
+    <form action="{{route('brand.update',['brand'=>$brand->id])}}" method="POST" id='form' class="derakhti-brand-form" enctype='multipart/form-data'>
         @csrf
 
         <!-- ===== گرید فیلدها ===== -->
-        <div class="vafadar-form-grid">
+        <div class="derakhti-form-grid">
 
             <!-- عنوان -->
             <div>
-                <label class="vafadar-label" for="title"> عنوان</label>
-                <input type="text" id="title" value="{{$brand->title}}" placeholder="عنوان برند را وارد کنید" name='title' class="vafadar-input">
-                @error('title') <span class="vafadar-error">{{$message}}</span> @enderror
+                <label class="derakhti-label" for="title"> عنوان</label>
+                <input type="text" id="title" value="{{$brand->title}}" placeholder="عنوان برند را وارد کنید" name='title' class="derakhti-input">
+                @error('title') <span class="derakhti-error">{{$message}}</span> @enderror
             </div>
 
             <!-- اسلاگ -->
             <div>
-                <label class="vafadar-label" for="slug"> اسلاگ</label>
-                <input type="text" id="slug" value="{{$brand->slug}}" placeholder="اسلاگ برند را وارد کنید" name='slug' class="vafadar-input">
-                @error('slug') <span class="vafadar-error">{{$message}}</span> @enderror
+                <label class="derakhti-label" for="slug"> اسلاگ</label>
+                <input type="text" id="slug" value="{{$brand->slug}}" placeholder="اسلاگ برند را وارد کنید" name='slug' class="derakhti-input">
+                @error('slug') <span class="derakhti-error">{{$message}}</span> @enderror
             </div>
 
             <!-- توضیحات -->
             <div>
-                <label class="vafadar-label" for="description"> توضیحات</label>
-                <input type="text" id="description" value="{{$brand->description}}" placeholder="توضیحات برند را وارد کنید" name='description' class="vafadar-input">
+                <label class="derakhti-label" for="description"> توضیحات</label>
+                <input type="text" id="description" value="{{$brand->description}}" placeholder="توضیحات برند را وارد کنید" name='description' class="derakhti-input">
             </div>
 
             <!-- لوگو -->
             <div>
-                <label class="vafadar-label" for="logo_path"> لوگو</label>
-                <input type="text" id="logo_path" value="{{$brand->logo_path}}" placeholder="مسیر لوگو را وارد کنید" name='logo_path' class="vafadar-input">
+                <label class="derakhti-label" for="logo_path"> لوگو</label>
+                <input type="text" id="logo_path" value="{{$brand->logo_path}}" placeholder="مسیر لوگو را وارد کنید" name='logo_path' class="derakhti-input">
             </div>
 
             <!-- ===== توگل‌ها ===== -->
             <div class="col-span-2">
-                <div class="flex gap-8 justify-start items-center flex-wrap vafadar-toggle-group">
+                <div class="flex gap-8 justify-start items-center flex-wrap derakhti-toggle-group">
 
                     <!-- نمایش در خانه -->
-                    <div class="vafadar-toggle-wrapper">
-                        <span class="vafadar-label"> نمایش در خانه</span>
-                        <div class="vafadar-toggle-track {{$brand->show_in_home == 1 ? 'active' : ''}}" onclick="toggleState(this)">
-                            <div class="vafadar-toggle-dot"></div>
+                    <div class="derakhti-toggle-wrapper">
+                        <span class="derakhti-label"> نمایش در خانه</span>
+                        <div class="derakhti-toggle-track {{$brand->show_in_home == 1 ? 'active' : ''}}" onclick="toggleState(this)">
+                            <div class="derakhti-toggle-dot"></div>
                         </div>
                         <input type="number" name='show_in_home' value="{{$brand->show_in_home}}" class="absolute invisible">
                     </div>
 
                     <!-- فعال -->
-                    <div class="vafadar-toggle-wrapper">
-                        <span class="vafadar-label"> فعال</span>
-                        <div class="vafadar-toggle-track {{$brand->is_active == 1 ? 'active' : ''}}" onclick="toggleState(this)">
-                            <div class="vafadar-toggle-dot"></div>
+                    <div class="derakhti-toggle-wrapper">
+                        <span class="derakhti-label"> فعال</span>
+                        <div class="derakhti-toggle-track {{$brand->is_active == 1 ? 'active' : ''}}" onclick="toggleState(this)">
+                            <div class="derakhti-toggle-dot"></div>
                         </div>
                         <input type="number" name='is_active' value="{{$brand->is_active}}" class="absolute invisible">
                     </div>
@@ -319,8 +319,8 @@
         </div>
 
         <!-- ===== فوتر ===== -->
-        <div class="vafadar-form-footer">
-            <button type="submit" class="vafadar-submit-btn">
+        <div class="derakhti-form-footer">
+            <button type="submit" class="derakhti-submit-btn">
                 <span> ذخیره تغییرات</span>
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M5 13l4 4L19 7"/>
