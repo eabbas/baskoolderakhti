@@ -157,7 +157,7 @@
                 <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[46px] ">دقت در وزن کشی</span>
                 <span class = "font-bold text-[#D99A16] text-[60px]  ">سرمایه شماست</span>
                 <p class = "text-[20px] w-[400px] flex items-center justify-center text-start leading-8   max-lg:w-full max-lg:text-center max-lg:px-3">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
-                <a class = "w-[220px] h-[50px] bg-[#D99A16] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[20px] max-lg:mt-3" href="">
+                <a class = "w-[220px] h-[50px] bg-[#D99A16] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[20px] max-lg:mt-3" href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
                     <span>مشاهده محصولات</span>
                 </a>
