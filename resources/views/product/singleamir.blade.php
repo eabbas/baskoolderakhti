@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" type="text/css">
 </head>
 <body class = "relative">
-<header class = "w-full bg-[#0B304A] max-lg:h-[95px]">
-    <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3 ">
+<header class = "w-full bg-[#0B304A]  max-lg:h-30">
+    <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3 py-4">
         <div class="w-full flex items-center gap-30 max-lg:pb-2 max-xl:gap-5  max-lg:justify-between">
             <div class="w-[35%] flex items-center text-white gap-20  max-xl:w-[30%] max-xl:gap-8 max-lg:w-[5%]">
                 <div class="flex items-center gap-4  text-nowrap max-lg:justify-between relative">
@@ -55,17 +55,17 @@
     </div>
 </header>
 <section class = "max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3 max-lg:mt-0">
-    <div class="w-full flex justify-end gap-3 text-[20px] max-lg:my-5 items-center">
+    <div class="w-full flex justify-end gap-3 text-[20px] max-lg:my-5 items-center max-lg:text-[12px]">
         <span>صفحه اصلی</span>
-        <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
+        <svg class = "size-5 max-lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
         <span>محصولات</span>
-        <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
+        <svg class = "size-5 max-lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
         <span>ترازوی فروشگاهی</span>
     </div>
     <div class="w-full flex gap-10 max-lg:flex-col">
         <div class="w-[50%] flex  gap-5 max-lg:flex-col max-lg:w-full">
             <div class="w-full h-full rounded-[15px] overflow-hidden bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover flex flex-col items-start justify-between p-6 max-lg:h-[300px]">
-                <div class="w-[100px] h-[40px] flex items-center justify-center bg-[#FBC830] text-[#0E2E48] rounded-[10px] text-[18px]">
+                <div class="w-[100px] h-[40px] flex items-center justify-center bg-[#FBC830] text-[#0E2E48] rounded-[10px] text-[18px] max-lg:w-[80px] max-lg:text-[14px] max-lg:h-[35px]">
                     پر فروش
                 </div>
                 <div class="w-[150px] flex gap-4 ">
@@ -100,32 +100,32 @@
                     <span class = "text-[#0E2E48]">4.8</span>
                 </div>
             </div>
-            <div class="w-[90%]  text-right mt-3 text-[22px] leading-10 text-gray-400 max-lg:w-full ">
+            <div class="w-[90%]  text-right mt-3 text-[22px] leading-10 text-gray-400 max-lg:w-full max-lg:text-[16px] max-lg:leading-8">
                 <p>ترازوی فروشگاهی CAS مدل ER JR دقت بالا عملکرد پایدار انتخاب ایده ال برای فروشگاها سوپر مارکت ها و مراکز عرضه مواد غذایی است این ترازو با متنوع نیازهای روزمره کسب و کاره شما رابا بهترین شکل برطرف میکند</p>
             </div>
             <div class="w-full flex flex-col gap-3 items-end  mt-3">
-                <div class="flex gap-3 items-center text-[19px]">
+                <div class="flex gap-3 items-center text-[19px] max-lg:text-[16px]">
                     <span class = "text-gray-500">دقت 2 گرم تا 30 کیلوگرم</span>
-                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center">
-                        <svg class = "size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center max-lg:w-[22px] max-lg:h-[22px]">
+                        <svg class = "size-5 fill-white max-lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
                     </div>
                 </div>
-                <div class="flex gap-3 items-center text-[19px]">
+                <div class="flex gap-3 items-center text-[19px] max-lg:text-[16px]">
                     <span class = "text-gray-500">دارای نمیشگر دوطرفه</span>
-                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center">
-                        <svg class = "size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center max-lg:w-[22px] max-lg:h-[22px]">
+                        <svg class = "size-5 fill-white max-lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
                     </div>
                 </div>
-                <div class="flex gap-3 items-center text-[19px]">
+                <div class="flex gap-3 items-center text-[19px] max-lg:text-[16px]">
                     <span class = "text-gray-500">قابلیت اتصال له صندوق فروشگاه</span>
-                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center">
-                        <svg class = "size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center max-lg:w-[22px] max-lg:h-[22px]">
+                        <svg class = "size-5 fill-white max-lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
                     </div>
                 </div>
-                <div class="flex gap-3 items-center text-[19px]">
+                <div class="flex gap-3 items-center text-[19px] max-lg:text-[16px]">
                     <span class = "text-gray-500">دارای باطری داخلی قابل شارژ</span>
-                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center">
-                        <svg class = "size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
+                    <div class="w-[25px] h-[25px] rounded-full bg-green-500 flex items-center justify-center max-lg:w-[22px] max-lg:h-[22px]">
+                        <svg class = "size-5 fill-white max-lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M441 103c9.4 9.4 9.4 24.6 0 33.9L177 401c-9.4 9.4-24.6 9.4-33.9 0L7 265c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l119 119L407 103c9.4-9.4 24.6-9.4 33.9 0z"/></svg>
                     </div>
                 </div>
             </div>
@@ -143,18 +143,18 @@
                     <div class="w-1/3 flex items-center justify-center border-x border-gray-100 text-[20px] text-gray-700 bg-slate-50 border-r border-r-gray-200 border-l border-l-gray-200">1</div>
                     <button class="w-1/3 flex items-center justify-center text-[40px] text-gray-600 transition hover:bg-gray-50 active:scale-95">+</button>
                 </div>
-                <div class="w-[380px] h-16 flex items-center justify-center bg-[#FBC830] text-[#091E2F] rounded-[10px] text-[22px] gap-2 max-lg:w-full max-lg:order-first">
+                <div class="w-[380px] h-16 flex items-center justify-center bg-[#FBC830] text-[#091E2F] rounded-[10px] text-[22px] gap-2 max-lg:w-full max-lg:order-first max-lg:h-13">
                     <span>افزودن به سبد خرید</span>
                     <svg class = "size-7 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
                 </div>
                 <div class="w-16 h-16 flex items-center justify-center border-1 border-gray-200 bg-slate-50 rounded-[10px] max-lg:hidden">
                     <svg class = "size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
                 </div>
-                <div class="w-full flex justify-end lg:hidden gap-3">
-                    <div class="w-20 h-16 flex items-center justify-center border-1 border-gray-200 bg-slate-50 rounded-[10px]">
-                        <svg class = "size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                <div class="w-full flex  lg:hidden gap-3 justify-end">
+                    <div class="w-15 h-13 flex items-center justify-center border-1 border-gray-200 bg-slate-50 rounded-[10px]">
+                        <svg class = "size-8 size-5:" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
                     </div>
-                    <div class="flex w-full max-w-[310px] h-16 overflow-hidden rounded-[10px] border border-gray-200 bg-white">
+                    <div class="flex w-[50%] max-w-[310px] h-13 overflow-hidden rounded-[10px] border border-gray-200 bg-white">
                         <button class="w-1/3 flex items-center justify-center text-[40px] text-gray-600 transition hover:bg-gray-50 active:scale-95">-</button>
                         <div class="w-1/3 flex items-center justify-center border-x border-gray-100 text-[20px] text-gray-700 bg-slate-50 border-r border-r-gray-200 border-l border-l-gray-200">1</div>
                         <button class="w-1/3 flex items-center justify-center text-[40px] text-gray-600 transition hover:bg-gray-50 active:scale-95">+</button>
@@ -221,25 +221,25 @@
                     </div>
                     <div class="w-[100px] h-1 bg-[#F2CE56] rounded-[10px]"></div>
                 </div>
-                <p>برند CAS یکی از معتبر ترین تولید کنندگان تجهیزات توزین در جهان است که کیفیت بالا دقت بی نظیر و عمر طولانی محصولاتش انتخاب اول بسیاری از کسب و کارها در سراسر دنیا است</p>
+                <p class = "max-lg:text-[15px]">برند CAS یکی از معتبر ترین تولید کنندگان تجهیزات توزین در جهان است که کیفیت بالا دقت بی نظیر و عمر طولانی محصولاتش انتخاب اول بسیاری از کسب و کارها در سراسر دنیا است</p>
                 <div class="w-full flex flex-col gap-5">
                     <div class="w-full gap-7 flex items-center justify-end ">
                         <div class="flex flex-col gap-1">
-                            <span class = "text-[#0E2E48] text-[19px]">کیفیت ساخت بالا</span>
-                            <span class = "text-[16px]">با استاندارد های جهانی</span>
+                            <span class = "text-[#0E2E48] text-[19px] max-lg:text-[16px]">کیفیت ساخت بالا</span>
+                            <span class = "text-[16px] max-lg:text-[13px]">با استاندارد های جهانی</span>
                         </div>
-                        <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full">
-                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>
+                        <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full max-lg:w-[45px] max-lg:h-[45px]">
+                            <svg class = "size-7 fill-[#0E2E48] max-lg:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>
                         </div>
                     </div>
                     <div class="w-full gap-7 flex items-center justify-end ">
                         <div class="flex flex-col gap-1">
-                            <span class = "text-[#0E2E48] text-[19px]">طراحی و مدرن مقاومت</span>
-                            <span class = "text-[16px]">مناسب برای محیط های کاری</span>
+                            <span class = "text-[#0E2E48] text-[19px] max-lg:text-[16px]">طراحی و مدرن مقاومت</span>
+                            <span class = "text-[16px] max-lg:text-[13px]">مناسب برای محیط های کاری</span>
                         </div>
-                        <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full">
+                        <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full max-lg:w-[45px] max-lg:h-[45px]">
                             <xml version="1.0" encoding="utf-8">
-                                <svg class = "size-8  fill-[#0E2E48]" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg class = "size-8  fill-[#0E2E48] max-lg:size-5" version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      viewBox="0 0 32 32" xml:space="preserve">
                                     <style type="text/css">
                                         bentblocks_een{fill:#0B1719;}
@@ -266,11 +266,11 @@
                         </div>
                         <div class="w-[70%] gap-7 flex items-start justify-end  max-lg:w-full">
                             <div class="flex flex-col gap-1 ">
-                                <span class = "text-[#0E2E48] text-[19px]">ددقت و رسرعت بالا</span>
-                                <span class = "text-[16px]">در اندازه گیری و وزن</span>
+                                <span class = "text-[#0E2E48] text-[19px] max-lg:text-[16px]">دقت و رسرعت بالا</span>
+                                <span class = "text-[16px] max-lg:text-[13px]">در اندازه گیری و وزن</span>
                             </div>
-                            <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full">
-                                <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full max-lg:w-[45px] max-lg:h-[45px]">
+                                <svg class = "size-7 fill-[#0E2E48] max-lg:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
                             </div>
                         </div>
                     </div>
@@ -347,7 +347,7 @@
         </div>
     </div>
 </section>
-<div class = "max-w-[1800px] min-w-[325px] mx-auto  flex items-center justify-end gap-2 my-10">
+<div class = "max-w-[1800px] min-w-[325px] mx-auto  flex items-center justify-end gap-2 my-10 max-lg:mx-3">
     <div class="w-[70px] h-1 bg-[#F2CE56]"></div>
     <span class="text-[25px] text-[#0E2E48]">محصولات مشابه</span>
 </div>
@@ -361,7 +361,7 @@
                 <div class="w-full">
                     <img class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
+                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
@@ -374,7 +374,7 @@
                 <div class="w-full">
                     <img class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
+                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
@@ -387,7 +387,7 @@
                 <div class="w-full">
                     <img  class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
+                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
@@ -400,7 +400,7 @@
                 <div class="w-full">
                     <img  class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
+                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
@@ -413,7 +413,7 @@
                 <div class="w-full">
                     <img   class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48]">
+                <div class="w-full flex flex-col items-end text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
                     <span>ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
