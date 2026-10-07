@@ -22,7 +22,7 @@
                     <span>تهران و خیابان اصلی</span>
                 </div>
             </div>
-            <div class="w-full flex items-center gap-30 max-lg:pb-2 max-xl:gap-5  max-lg:justify-between">
+            <div class="w-full flex items-center gap-20 max-lg:pb-2 max-xl:gap-5  max-lg:justify-between ">
 
                 <div class="w-[35%] flex items-center  gap-20  max-xl:w-[30%] max-xl:gap-8 max-lg:w-[5%]">
                     @if($user)
@@ -84,7 +84,7 @@
                         </div>
                     @else
                         <div onclick="showLoginForm()" class="flex h-full items-center cursor-pointer">
-                            <svg class="w-5 h-7 max-lg:h-7" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <circle cx="9" cy="21" r="1" /> <circle cx="20" cy="21" r="1" /> <path d="M1 1h4l2.68 13.39A2 2 0 0 0 9.64 16H19a2 2 0 0 0 2-1.72L23 6H6" /> </svg>
+                            <svg class = "size-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
                         </div>
                     @endif
                     @if(Auth::check())
@@ -92,15 +92,24 @@
                             <div class='px-4 py-3 bg-[#EBECEE] shadow-md rounded-xl duration-500 transition-all hover:shadow-[#099975] text-black'>{{Auth::user()->name}}  خوش آمدید</div>
                         </a>
                     @else
+                    <div class="w-30 flex gap-3 items-center text-white text-[20px] text-nowrap">
                         <a href="{{route('user.loginPage')}}">
-                            <svg class='w-5 fill-white'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                            ورود
                         </a>
+                        <div class="w-[2px] h-[22px] bg-white rotate-12"></div>
+                        <a href="{{route('user.loginPage')}}">
+                            ثبت نام
+                        </a>   
+                    </div>
+                        <!-- <a href="{{route('user.loginPage')}}">
+                            <svg class='w-5 fill-white'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
+                        </a> -->
                     @endif
-                    <div class="lg:block hidden w-[370px] h-[45px] bg-white rounded-[10px] transition_fast"id="search">
-                        <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto mt-3 bg-[#f0f0f1] rounded-lg text-black">
+                    <div class="lg:block hidden w-[370px] h-[45px] bg-red-500 rounded-[10px] transition_fast"id="search">
+                        <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full bg-[#f0f0f1] rounded-lg text-black">
                             @csrf
                             <button class="cursor-pointer w-1/10 md:w-10 h-10  flex justify-center items-center">
-                                <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                                <svg class="size-7 ml-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
                             </button>
                             <input type="text" name="title" class="w-full h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
                         </form>

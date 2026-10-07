@@ -24,6 +24,7 @@ class UserController extends Controller
 
     public function create(){
         $roles=role::all();
+        // dd();
         return view('admin.user.create',['roles'=>$roles]);
     }
     public function store(Request $request){
