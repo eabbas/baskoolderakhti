@@ -394,7 +394,6 @@
     @stack('styles')
 </head>
 <body>
-
     <div class="w-12/12 flex min-h-screen transition-all">
         
         <!-- ===== اوورلی ===== -->
