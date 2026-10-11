@@ -274,6 +274,24 @@ class UserController extends Controller
 
         return view('firstPage',['user'=>$user]);
     }
+    public function about_as(){
+        $user=Auth::user();
+        if($user){
+            $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
+            if(count($user->carts)>0){
+                foreach ($user->carts as $cart) {
+                    foreach ($cart->product->medias as $media) {
+                        if($media->is_main==1){
+                            $cart->product->path=$media->path;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    
+        return view('about_as',['user'=>$user]);
+    }
     public function setting(){
         $comments=staticUser::all();
         $products=product::all();
