@@ -67,3 +67,21 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
         background: linear-gradient(180deg,rgba(3, 21, 34, 1) 63%, rgba(3, 21, 34, 0) 85%, rgba(3, 21, 34, 0) 100%);
     }
 }
+
+.leaner_about{
+    background: linear-gradient(90deg,rgba(3, 21, 34, 1) 46%, rgba(3, 21, 34, 0) 103%, rgba(3, 21, 34, 0) 100%);
+    
+}
+
+.clip-pathh{
+    clip-path: polygon(0 0 , 100% 0 , 70% 100% , 0 100%);
+}
+
+.leaner-box{
+    background: #ffeaab;
+    background: linear-gradient(353deg, rgba(255, 234, 171, 1) 28%, rgba(255, 191, 0, 1) 79%);
+}
+
+.clip-pathh1{
+    clip-path: polygon(0 0 , 100% 0 , 90% 100% , 0 100%);
+}
