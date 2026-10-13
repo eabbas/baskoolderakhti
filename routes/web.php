@@ -191,6 +191,8 @@ Route::group([
 
 Route::get('/about/as' , [UserController::class , 'about_as'])->name('about_as');
 
+Route::get('/document/phone' , [UserController::class , 'document_phone'])->name('document_phone');
+
 Route::get('/single/amir/product' , function(){
    return view("product.singleamir");
 })->name('single_amir');

@@ -85,3 +85,7 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
 .clip-pathh1{
     clip-path: polygon(0 0 , 100% 0 , 90% 100% , 0 100%);
 }
+
+.clip-pathh2{
+    clip-path: polygon(0 0 , 100% 0 , 75% 100% , 0 100%);
+}
