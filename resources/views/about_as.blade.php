@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/stylehome.css')}}">
 </head>
 <body>
-        <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] lg:py-3">
+        <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] ">
         <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3 ">
             <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2">
                 <div class="flex items-center text-white gap-3 font-bold">
@@ -159,8 +159,8 @@
         <div class="w-2/3 left-0 top-0 h-full absolute leaner_about z-10 max-lg:w-full max-lg:h-[530px]"></div>
         <!-- <div class="w-1/2 right-0 top-0 h-full absolute leaner-left z-10 max-lg:hidden"></div> -->
         <div class="w-full flex relative max-lg:flex-col justify-end">
-            <div class="w-full max-lg:h-[200px] max-lg:w-full ">
-                <img class = "w-full h-[400px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
+            <div class="w-full  max-lg:h-[200px] max-lg:w-full ">
+                <img class = "w-full h-[457px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
             </div>
             <div class="w-[35%]  max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center gap-3 max-lg:p-0 max-lg:pt-5 max-lg:items-center max-lg:w-full  pl-13 max-lg:order-first">
               <span class = "text-[60px] text-nowrap">درباره <span class = "text-[#FBC830]">ترازوی درختی</span></span>
