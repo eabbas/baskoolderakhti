@@ -1,3 +1,9 @@
+ @import url(./fontiran.css);
+
+*{
+    font-family: "IRANSansXFaNum";
+}
+
 .leaner{
 background: #031522;
 background: linear-gradient(90deg,rgba(3, 21, 34, 1) 64%, rgba(3, 21, 34, 0) 76%, rgba(3, 21, 34, 0) 100%);
@@ -21,17 +27,13 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
 }
 
 
-@font-face{
-    font-family: "MyFont";
+/* @font-face{
+    font-family: "IRANSansX";
     src: url(../font/B-Zar/B\ Zar\ Bold_0.ttf); 
     font-weight: normal;
     font-style: normal;
     font-display: swap;   
-}
-
-*{
-    font-family: "MyFont";
-}
+} */
 
 
 .down_hero{
