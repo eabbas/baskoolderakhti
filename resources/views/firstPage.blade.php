@@ -236,9 +236,9 @@
                     فروش انواع ترازوهای
                     <span class = "text-white">دیجیتال و مکانیکی</span>
                 </p>
-                <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[46px] ">دقت در وزن کشی</span>
-                <span class = "font-bold text-[#D99A16] text-[60px]  ">سرمایه شماست</span>
-                <p class = "text-[20px] w-[400px] flex items-center justify-center text-end leading-8   max-lg:w-full max-lg:text-center max-lg:px-3 max-lg:mb-5">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
+                <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[40px] ">دقت در وزن کشی</span>
+                <span class = "font-bold text-[#D99A16] text-[60px] max-lg:text-[40px]">سرمایه شماست</span>
+                <p class = "text-[20px] w-[400px] flex items-center justify-center text-end leading-8   max-lg:w-full max-lg:text-center max-lg:px-3 max-lg:mb-5 max-lg:text-[15px]">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
                 <a class = "w-[220px] h-[50px] max-lg:h-[40px] bg-[#D99A16]  rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] lg:mt-6" href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
                     <span>مشاهده محصولات</span>
@@ -281,24 +281,24 @@
             <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
                 <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                 <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
-                    <span class = "text-nowrap text-[18px]">کیفیت تضمینی</span>
-                    <span class = "text-[15px] text-nowrap text-gray-400">با ضمانت اصالت کالا</span>
+                    <span class = "text-nowrap text-[18px] max-lg:text-[15px]">کیفیت تضمینی</span>
+                    <span class = "text-[15px] text-nowrap text-gray-400 max-lg:text-[12px]">با ضمانت اصالت کالا</span>
                 </div>
             </div>
             <div class="h-[90%] w-[1px] bg-gray-700"></div>
             <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
                 <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                 <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
-                    <span class = "text-nowrap text-[18px]">ارسال سریع</span>
-                    <span class = "text-[15px] text-nowrap text-gray-400">به سراسر کشور</span>
+                    <span class = "text-nowrap text-[18px max-lg:text-[15px]]">ارسال سریع</span>
+                    <span class = "text-[15px] text-nowrap text-gray-400 max-lg:text-[12px]">به سراسر کشور</span>
                 </div>
             </div>
             <div class="h-[90%] w-[1px] bg-gray-700"></div>
             <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
                 <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                 <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
-                    <span class = "text-nowrap text-[18px]">پشتیبانی تخصصی</span>
-                    <span class = "text-[15px] text-nowrap text-gray-400">پپاسخگویی 24 ساعته</span>
+                    <span class = "text-nowrap text-[18px] max-lg:text-[15px]">پشتیبانی تخصصی</span>
+                    <span class = "text-[15px] text-nowrap text-gray-400 max-lg:text-[12px]">پپاسخگویی 24 ساعته</span>
                 </div>
             </div>
         </div>
@@ -598,7 +598,7 @@ v10H2z"/>
                             </div>
                             <div class="flex flex-col items-end max-lg:items-center">
                                 <span class = "text-[60px] text-nowrap text-center text-[#F8C028] max-lg:text-[50px] max-lg:hidden">ویدیو معرفی</span>
-                                <span class = "text-[60px] text-nowrap text-center text-[#002030] max-lg:text-[50px]">ترازوی حرفه ای</span>
+                                <span class = "text-[60px] text-nowrap text-center text-[#002030] max-lg:text-[45px]">ترازوی حرفه ای</span>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 max-lg:items-center items-end">
@@ -720,7 +720,7 @@ v10H2z"/>
         <div class="w-[75%] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover"></div>
         <div class=" flex flex-col  w-[520px] bg-[#002030] gap-3 rounded-[10px] p-12 justify-center bg items-end">
                 <div class="w-full flex flex-col  text-white  items-end gap-2">
-                    <a href = "" class="w-[180px] text-[18px] h-[35px] flex items-center justify-center rounded-[30px] bg-[#F8C028] text-[#002030]">محصولات پرطرفدار</a>   
+                    <a href = "" class="w-[180px] text-[18px] h-[35px] flex items-center justify-center rounded-[30px] bg-[#F8C028] text-[#002030] ">محصولات پرطرفدار</a>   
                     <span class = "text-[30px]">ترازوهای فروشگاهی و صنعتی</span>
                 </div>
                 <div class="w-[300px] flex flex-col 0 items-end">
@@ -741,23 +741,23 @@ v10H2z"/>
                 <span>مشاهده همه</span>
             </a href = "">
             <div class=" flex gap-3 t  justify-center items-center text-[30px] max-lg:text-[22px] max-lg:w-full">
-                <div class="w-[80px] h-1 rounded-[2px] bg-[#D99A16] max-lg:w-[20%]"></div>
-                <span>محصولات پر فروش</span>
-                <div class="w-[20%] h-1 rounded-[2px] bg-[#D99A16] lg:hidden"></div>
+                <div class="w-[80px] h-1 rounded-[2px] bg-[#D99A16] max-lg:w-[15%]"></div>
+                <span class = "max-lg:text-[17px] ">محصولات پر فروش</span>
+                <div class="w-[20%] h-1 rounded-[2px] bg-[#D99A16] lg:hidden max-lg:w-[15%]"></div>
             </div>
         </div>
         <div class="w-full lg:hidden flex flex-col relative mb-30 overflow-hidden rounded-[15px]">
             <div class="w-full h-[400px] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/scale_mobile_768x432-1.png')}}')] bg-center bg-cover max-lg:"></div>
             <div class="w-[100px] h-[120px] bg-[#F8C028] -skew-x-35 absolute z-20 bottom-0 -right-22"></div>
             <div class="w-[90px] h-[130px] bg-[#F8C028]  absolute -skew-x-35 top-60 -right-20"></div>
-            <div class="w-full h-[8px] bg-[#F8C028] absolute -skew-y-6 top-92"></div>
+            <div class="w-full h-[8px] bg-[#F8C028] absolute -skew-y-6 top-92 max-lg:top-90"></div>
             <div class="w-full h-1/2  absolute bg-[#0B304A] -bottom-10 -skew-y-6"></div>
             <div class="w-full flex flex-col items-center justify-center pb-10  text-white gap-3 ">
-                <div class="w-[175px] h-[37px] bg-[#F8C028] flex items-center justify-center z-10 gap-2 rounded-[20px] text-black">
+                <div class="w-[190px] h-[37px] bg-[#F8C028] flex items-center justify-center z-10 gap-2 rounded-[20px] text-black p-2 text-nowrap">
                     <svg class = " size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     <span>تضمین کیفیت و دقت</span>
                 </div>
-                <span class = "text-[30px] z-10">ترازوهای دیجیتال صنعتی</span>
+                <span class = "text-[30px] z-10 max-lg:text-[25px]">ترازوهای دیجیتال صنعتی</span>
                 <div class="w-full flex flex-col gap-2 items-center z-10">
                     <span class = "text-gray-400">دقت بالا , عمر طولانی و عملکرد مطمئن</span>
                     <span class = "text-gray-400">برای کسب و کار های صنعتی و تجاری</span>
@@ -774,7 +774,7 @@ v10H2z"/>
 
 
 
-        <section class="max-w-[1800px] min-w-[325px] mx-auto">
+        <section class="max-w-[1800px] min-w-[325px] mx-auto -mt-20">
             <div class="w-full  bg-slate-50 border-1 border-slate-100 shadow-sm p-2 rounded-[15px]">
                 <div class="w-full flex justify-between items-center max-lg:flex-col  max-lg:justify-center ">
                     <div class="flex flex-col   max-lg:w-full max-lg:items-center max-lg:justify-center gap-2">
@@ -1098,7 +1098,7 @@ v10H2z"/>
             <div class="flex w-[62%] justify-between  max-lg:w-full">
                 <div class="flex gap-2 max-lg:text-[18px] items-center  max-lg:justify-end  text-[20px] max-lg max-lg:text-center max-lg:leading-8">
                     <svg class = "size-5 fill-white max-lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
-                    <span>طراحی و توسعه توسط اندیشه گران طراحان دیجیتال شرکت فائوس</span>
+                    <span>طراحی و توسعه وب سایت،اندیشه گران طراحان دیجیتال فائوس</span>
                 </div>
                 <div class="flex flex-col gap-2 max-lg:hidden">
                     <span>کلیه خقوق این سایت متعلق به باسکول درختی میباشد</span>
