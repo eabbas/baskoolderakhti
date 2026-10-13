@@ -76,11 +76,12 @@
 	font-weight: normal;
 	src: url('../fonts/woff/DimaShekasteh.woff') format('woff'),
 		url('../fonts/woff2/DimaShekasteh.woff2') format('woff2');
+		
 }
 
 
 @font-face {
-	font-family: "ُSamim";
+	font-family: "ÙSamim";
 	font-style: normal;
 	font-weight: bold;
 	src: url('../fonts/woff/Samim-Bold.woff') format('woff'),
@@ -89,7 +90,7 @@
 
 
 @font-face {
-	font-family: "ُSamim";
+	font-family: "ÙSamim";
 	font-style: normal;
 	font-weight: normal;
 	src: url('../fonts/woff/Samim.woff') format('woff'),
@@ -98,7 +99,7 @@
 
 
 @font-face {
-	font-family: "ُSamim";
+	font-family: "ÙSamim";
 	font-style: normal;
 	font-weight: 400;
 	src: url('../fonts/woff/Samim-Medium.woff') format('woff'),

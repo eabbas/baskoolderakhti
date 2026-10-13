@@ -127,14 +127,17 @@
                         </form>
                 </div>
                 @else
-                <div class=" flex gap-3 items-center text-white text-[20px] text-nowrap ">
-                    <a href="{{route('user.loginPage')}}">
-                        ورود
-                    </a>
-                    <div class="w-[2px] h-[22px] bg-white rotate-12"></div>
-                    <a href="{{route('user.loginPage')}}">
-                        ثبت نام
-                    </a>   
+                <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
+                    <div class=" flex items-center gap-3">
+
+                        <a href="{{route('user.loginPage')}}">
+                            ورود
+                        </a>
+                        <div class="w-[2px] h-[22px] bg-white rotate-12"></div>
+                        <a href="{{route('user.loginPage')}}">
+                            ثبت نام
+                        </a>   
+                    </div>
                     <div class="lg:block hidden w-[370px] h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
                             <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full  rounded-lg text-black">
                                 @csrf
@@ -228,15 +231,15 @@
             <div class="w-[60%] max-lg:h-[200px] max-lg:w-full ">
                 <img class = "w-full h-full" src="{{asset('assets/img/scale.png')}}" alt="">
             </div>
-            <div class="w-[30%] max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center  p-5 max-lg:p-0 max-lg:pt-5 max-lg:items-center max-lg:w-full  pl-13 max-lg:order-first">
-                <p class = "text-[#D99A16] text-[25px] max-2xl:text-[20px] max-lg:text-[20px]">
+            <div class="w-[30%] max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center  p-5 max-lg:p-1  max-lg:items-center max-lg:w-full  lg:pl-13 max-lg:order-first ">
+                <p class = "text-[#D99A16] text-[25px] max-2xl:text-[20px] max-lg:text-[20px] max-lg:hidden">
                     فروش انواع ترازوهای
                     <span class = "text-white">دیجیتال و مکانیکی</span>
                 </p>
                 <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[46px] ">دقت در وزن کشی</span>
                 <span class = "font-bold text-[#D99A16] text-[60px]  ">سرمایه شماست</span>
                 <p class = "text-[20px] w-[400px] flex items-center justify-center text-end leading-8   max-lg:w-full max-lg:text-center max-lg:px-3 max-lg:mb-5">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
-                <a class = "w-[220px] h-[50px] max-lg:h-[40px] bg-[#D99A16]  rounded-[30px] flex items-center justify-center gap-5 text-black text-[20px] lg:mt-10 " href="{{route('single_amir')}}">
+                <a class = "w-[220px] h-[50px] max-lg:h-[40px] bg-[#D99A16]  rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] lg:mt-6" href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
                     <span>مشاهده محصولات</span>
                 </a>
@@ -244,33 +247,33 @@
             </div>
             <div class="w-[17%] h-[300px] rounded-l-[40px] text-white top-15 z-10 bg-[#0B304A]/20 flex flex-col p-8 items-center absolute gap-3 right-0 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
                 <div class="w-full flex  items-end justify-end gap-6  max-2xl:justify-center max-2xl:items-center">
-                    <div class="flex flex-col  items-end ">
+                    <div class="w-[55px] h-[55px] border rounded-full border-slate-600 flex items-center justify-center  p-2 max-2xl:justify-center max-2xl:items-center">
+                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
+                    </div>
+                    <div class="flex flex-col  gap-2">
                         <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
                         <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
-                    </div>
-                    <div class="w-[50px] h-[50px] border rounded-full border-slate-600 flex items-center justify-center  p-2 max-2xl:justify-center max-2xl:items-center">
-                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                 </div>
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
                 <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
-                    <div class="flex flex-col items-end">
+                    <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600 ">
+                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
+                    </div>
+                    <div class="flex flex-col gap-2">
                         <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
                         <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
-                    </div>
-                    <div class="w-[50px] h-[50px] border rounded-full flex items-center justify-center border-slate-600 ">
-                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                 </div>
                 
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
                 <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
-                    <div class="flex flex-col items-end">
+                    <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600">
+                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
+                    </div>
+                    <div class="flex flex-col gap-2">
                         <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
                         <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
-                    </div>
-                    <div class="w-[50px] h-[50px] border rounded-full flex items-center justify-center border-slate-600">
-                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                 </div>
         </div>
@@ -313,7 +316,7 @@
                     </div>
                     <div class="w-full flex flex-col gap-1 items-center ">
                         <span class = "text-[30px] text-[#0B304A]">مناسب برای همه صنایع</span>
-                        <span class = "text-gray-400 text-center">ترازوهای ما در انواع کسب و کارها و صنایع مختلف کارایی و دقت بالا دارند</span>
+                        <span class = "text-gray-400 text-center leading-7">ترازوهای ما در انواع کسب و کارها و صنایع مختلف کارایی و دقت بالا دارند</span>
                     </div>
                 </div>
                 <div class="w-full grid grid-cols-3 gap-8 mt-5 max-lg:grid-cols-1">
@@ -325,8 +328,8 @@
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 items-end text-white max-lg:justify-center">
-                            <span class = "text-[28px] max-lg:text-[18px] text-nowrap">فروشگاهای سوپرمارکت ها</span>
-                            <span class = "text-[24px] max-lg:text-[15px] text-gray-400">ترازوهای فروشگاهی</span>
+                            <span class = "text-[26px] max-lg:text-[18px] text-nowrap">فروشگاهای سوپرمارکت ها</span>
+                            <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای فروشگاهی</span>
                         </div>
                         <div class="w-[20%] bg-black/20 flex items-center  justify-center">
 
@@ -366,8 +369,8 @@ C382.837,10.843,371.985,0,358.612,0H81.106c-13.38,0-24.219,10.848-24.219,24.225c
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                            <span class = "text-[28px] max-lg:text-[18px]">کارخانه های تولیدی ها</span>
-                            <span class = "text-[24px] max-lg:text-[15px] text-gray-400">ترازو های صنعتی و دقیق</span>
+                            <span class = "text-[26px] max-lg:text-[18px]">کارخانه های تولیدی ها</span>
+                            <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازو های صنعتی و دقیق</span>
                         </div>
                         <div class="w-[20%] flex items-center justify-center">
 <xml version="1.0" encoding="utf-8">
@@ -390,8 +393,8 @@ v10H2z"/>
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                            <span class = "text-[28px] max-lg:text-[18px]">صنایع غذایی و رستوران ها</span>
-                            <span class = "text-[24px] max-lg:text-[15px] text-gray-400">ترازوهای اشپزخانه و صنعتی</span>
+                            <span class = "text-[26px] max-lg:text-[18px]">صنایع غذایی و رستوران ها</span>
+                            <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای اشپزخانه و صنعتی</span>
                         </div>
                         <div class="w-[20%] flex items-center justify-center">
 
@@ -410,8 +413,8 @@ v10H2z"/>
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                            <span class = "text-[28px] max-lg:text-[18px]">انبار ها و مراکز توزیع</span>
-                            <span class = "text-[24px] max-lg:text-[15px] text-gray-400">ترازوهای بالت و باسکول</span>
+                            <span class = "text-[26px] max-lg:text-[18px]">انبار ها و مراکز توزیع</span>
+                            <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای بالت و باسکول</span>
                         </div>
                         
                         <div class="w-[20%] flex items-center justify-center">
@@ -432,8 +435,8 @@ v10H2z"/>
                             </a>
                         </div>
                             <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                        <span class = "text-[28px] max-lg:text-[18px]">کشاورزی و دامداری</span>
-                        <span class = "text-[24px] max-lg:text-[15px] text-gray-400">ترازوهای محصولا ت کشاورزی</span>
+                        <span class = "text-[26px] max-lg:text-[18px]">کشاورزی و دامداری</span>
+                        <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای محصولا ت کشاورزی</span>
                     </div>
                             <div class="w-[20%] flex items-center justify-center">
 
@@ -480,8 +483,8 @@ v10H2z"/>
                             </a>
                         </div>
                                   <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                        <span class = "text-[28px] max-lg:text-[18px]">حمل و نقل و لجستیک</span>
-                        <span class = "text-[24px] max-lg:text-[15px] text-gray-400">باسکول و ترازوهای جاده ای</span>
+                        <span class = "text-[26px] max-lg:text-[18px]">حمل و نقل و لجستیک</span>
+                        <span class = "text-[22px] max-lg:text-[15px] text-gray-400">باسکول و ترازوهای جاده ای</span>
                     </div>
                             <div class="w-[20%] flex items-center justify-center">
 <xml version="1.0" encoding="iso-8859-1">
@@ -552,9 +555,9 @@ v10H2z"/>
                                 
                             </svg>
                             </div>
-                            <div class="flex flex-col ">
+                            <div class="flex flex-col gap-2">
                                 <span class = "text-[30px] text-[#F8C028]">پشتیبانی واقعی</span>
-                                <span class = "text-gray-600 text-[25px]">پاسخگویی سریع و دقیق</span>
+                                <span class = "text-gray-600 text-[21px]">پاسخگویی سریع و دقیق</span>
                             </div>
                         </div>
                         <div class="w-[80%] h-[1px] bg-slate-600"></div>
@@ -563,9 +566,9 @@ v10H2z"/>
                             <div class="flex w-[80px] h-[80px] rounded-full border border-[#F8C028] items-center justify-center">
                                 <svg class = "size-13 fill-[#F8C028] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M288.8 81.7c3.5-12.8 16.7-20.3 29.5-16.8s20.3 16.7 16.8 29.5l-4.5 16.4c-5.5 20.2-13.9 39.3-24.7 56.9c-3.1 4.9-3.2 11.1-.4 16.2s8.2 8.2 14 8.2H448c17.7 0 32 14.3 32 32c0 11.3-5.9 21.3-14.8 27c-7.2 4.6-9.5 13.9-5.3 21.3c2.6 4.6 4.1 10 4.1 15.7c0 12.4-7 23.1-17.3 28.5c-4.2 2.2-7.3 6.1-8.3 10.8s.1 9.5 3 13.2c4.2 5.4 6.7 12.2 6.7 19.5c0 14.2-9.2 26.3-22.1 30.4c-7.8 2.5-12.4 10.6-10.7 18.6c.5 2.2 .7 4.5 .7 6.9c0 17.7-14.3 32-32 32H294.5c-15.8 0-31.2-4.7-44.4-13.4l-38.5-25.7c-9-6-16.6-13.7-22.4-22.6c-4.9-7.4-14.8-9.4-22.2-4.6s-9.4 14.8-4.6 22.2c8.1 12.3 18.7 23.1 31.4 31.6l38.5 25.7c18.4 12.3 40 18.8 62.1 18.8H384c35.3 0 64-28.7 64-64l0-.6c19.1-11.1 32-31.7 32-55.4c0-8.7-1.8-17.1-4.9-24.7C487.9 323.6 496 306.8 496 288c0-6.5-1-12.8-2.8-18.7C504.8 257.7 512 241.7 512 224c0-35.3-28.7-64-64-64H346.4c6.2-13.1 11.3-26.7 15.1-40.9l4.5-16.4c8.1-29.8-9.5-60.6-39.3-68.8s-60.6 9.5-68.8 39.3l-4.5 16.4c-8.9 32.6-29.6 60.8-58.2 79l-3.1 2c-11.8 7.5-21.7 17.1-29.5 28.2c-5.1 7.2-3.3 17.2 4 22.3s17.2 3.3 22.3-4c5.4-7.7 12.2-14.4 20.4-19.5l3.1-2c35.3-22.4 60.9-57.2 71.9-97.5l4.5-16.4zM32 224H96V448H32V224zM0 224V448c0 17.7 14.3 32 32 32H96c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32H32c-17.7 0-32 14.3-32 32z"/></svg>
                             </div>
-                            <div class="flex flex-col ">
+                            <div class="flex flex-col gap-2">
                                 <span class = "text-[30px] text-[#F8C028]">پشتیبانی واقعی</span>
-                                <span class = "text-gray-600 text-[25px]">پاسخگویی سریع و دقیق</span>
+                                <span class = "text-gray-600 text-[21px]">پاسخگویی سریع و دقیق</span>
                             </div>
                         </div>
                         <div class="w-[80%] h-[1px] bg-slate-600"></div>
@@ -577,9 +580,9 @@ v10H2z"/>
                                         <path d="M28.641 26.578l-3.799-6.364c1.805-2.055 2.907-4.767 2.907-7.736 0-6.489-5.26-11.749-11.749-11.749s-11.749 5.26-11.749 11.749c0 2.943 1.082 5.633 2.87 7.695l-0.012-0.015-3.832 6.422c-0.111 0.183-0.176 0.404-0.176 0.64 0 0.691 0.56 1.251 1.251 1.251 0.071 0 0.14-0.006 0.207-0.017l-0.007 0.001 2.602-0.426 0.947 2.426c0.175 0.44 0.581 0.753 1.065 0.791l0.004 0c0.032 0.002 0.063 0.004 0.095 0.004 0.46-0 0.863-0.249 1.080-0.619l0.003-0.006 3.775-6.54c0.562 0.1 1.212 0.16 1.875 0.165l0.004 0c0.64-0.005 1.263-0.060 1.87-0.162l-0.069 0.010 3.769 6.526c0.22 0.376 0.622 0.625 1.082 0.625h0c0.031 0 0.063-0.002 0.094-0.004 0.488-0.037 0.896-0.35 1.067-0.783l0.003-0.008 0.947-2.426 2.602 0.426c0.060 0.010 0.129 0.016 0.2 0.016 0.691 0 1.251-0.56 1.251-1.251 0-0.236-0.065-0.457-0.179-0.645l0.003 0.006zM9.48 27.123l-0.369-0.945c-0.193-0.469-0.647-0.793-1.177-0.793-0.067 0-0.132 0.005-0.196 0.015l0.007-0.001-0.947 0.156 2.181-3.655c0.765 0.581 1.638 1.084 2.572 1.47l0.078 0.029zM6.75 12.5c0-5.109 4.141-9.25 9.25-9.25s9.25 4.141 9.25 9.25c0 5.109-4.141 9.25-9.25 9.25v0c-5.106-0.006-9.244-4.144-9.25-9.249v-0.001zM24.168 25.396c-0.060-0.010-0.129-0.016-0.199-0.016-0.527 0-0.978 0.326-1.163 0.787l-0.003 0.008-0.369 0.945-2.135-3.697c1.016-0.408 1.894-0.905 2.693-1.502l-0.031 0.022 2.155 3.609zM16 4.75c-4.28 0-7.75 3.47-7.75 7.75s3.47 7.75 7.75 7.75c4.28 0 7.75-3.47 7.75-7.75v0c-0.005-4.278-3.472-7.745-7.75-7.75h-0zM16 17.75c-2.899 0-5.25-2.351-5.25-5.25s2.351-5.25 5.25-5.25c2.899 0 5.25 2.351 5.25 5.25v0c-0.004 2.898-2.352 5.246-5.25 5.25h-0zM18.666 10.651h-1.129l-0.349-1.072c-0.208-0.459-0.662-0.772-1.188-0.772s-0.981 0.313-1.185 0.764l-0.003 0.008-0.349 1.072h-1.128c-0 0-0 0-0 0-0.69 0-1.25 0.559-1.25 1.25 0 0.414 0.201 0.781 0.512 1.009l0.004 0.002 0.912 0.664-0.349 1.071c-0.039 0.116-0.061 0.249-0.061 0.387 0 0.69 0.56 1.25 1.25 1.25 0.276 0 0.531-0.089 0.738-0.241l-0.004 0.002 0.913-0.663 0.913 0.663c0.203 0.149 0.458 0.238 0.734 0.238 0.69 0 1.25-0.56 1.25-1.25 0-0.138-0.022-0.271-0.064-0.396l0.003 0.009-0.348-1.071 0.912-0.663c0.314-0.23 0.516-0.597 0.516-1.012 0-0.69-0.56-1.25-1.25-1.25-0 0-0 0-0 0h0z"></path>
                                     </svg>
                                 </div>
-                                <div class="flex flex-col ">
+                                <div class="flex flex-col gap-2">
                                     <span class = "text-[30px] text-[#F8C028]">پشتیبانی واقعی</span>
-                                    <span class = "text-gray-600 text-[25px]">پاسخگویی سریع و دقیق</span>
+                                    <span class = "text-gray-600 text-[21px]">پاسخگویی سریع و دقیق</span>
                                 </div>
                         </div>
                     </div>
@@ -594,13 +597,13 @@ v10H2z"/>
                                 <span>معرفی ما</span>
                             </div>
                             <div class="flex flex-col items-end max-lg:items-center">
-                                <span class = "text-[70px] text-nowrap text-center text-[#F8C028] max-lg:text-[50px]">ویدیو معرفی</span>
-                                <span class = "text-[70px] text-nowrap text-center text-[#002030] max-lg:text-[50px]">ترازوی حرفه ای</span>
+                                <span class = "text-[60px] text-nowrap text-center text-[#F8C028] max-lg:text-[50px] max-lg:hidden">ویدیو معرفی</span>
+                                <span class = "text-[60px] text-nowrap text-center text-[#002030] max-lg:text-[50px]">ترازوی حرفه ای</span>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 max-lg:items-center items-end">
                             <span class = "  text-left text-[25px] text-gray-400 max-lg:text-[20px] max-lg:text-center">در این ویدیو با مجموع انواع ترازو خدمات و توانمندی های ما بیشتر اشنا شوید</span>
-                            <div class="w-[250px] h-[55px] text-[25px] flex items-center justify-center bg-[#F8C028] rounded-[25px] gap-3  text-white ">
+                            <div class="w-[250px] h-[55px] text-[25px] flex items-center justify-center bg-[#F8C028] rounded-[25px] gap-3  text-white max-lg:hidden">
                                 <span>تماشای ویدیو</span>
                                 <svg class = "size-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                             </div>
@@ -718,10 +721,10 @@ v10H2z"/>
         <div class=" flex flex-col  w-[520px] bg-[#002030] gap-3 rounded-[10px] p-12 justify-center bg items-end">
                 <div class="w-full flex flex-col  text-white  items-end gap-2">
                     <a href = "" class="w-[180px] text-[18px] h-[35px] flex items-center justify-center rounded-[30px] bg-[#F8C028] text-[#002030]">محصولات پرطرفدار</a>   
-                    <span class = "text-[40px]">ترازوهای فروشگاهی و صنعتی</span>
+                    <span class = "text-[30px]">ترازوهای فروشگاهی و صنعتی</span>
                 </div>
                 <div class="w-[300px] flex flex-col 0 items-end">
-                    <p class = "text-gray-300 text-[23px] text-justify">از ترازوهای فروشگاهی تا مدل های صنعتی همه انچه کسب و کارشما لازم است در یکجکا فراهم شده است</p>
+                    <p class = "text-gray-300 text-[21px] text-justify">از ترازوهای فروشگاهی تا مدل های صنعتی همه انچه کسب و کارشما لازم است در یکجکا فراهم شده است</p>
                     <a class = "w-[230px] h-[65px] bg-[#F8C028] mt-5 rounded-[30px] flex items-center justify-center gap-5  text-[20px] text-[#002030]" href="">
                         <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"/></svg>
                 <span>مشاهده محصولات</span>
@@ -1091,21 +1094,25 @@ v10H2z"/>
         </div>
         
         <div class="w-[95%] h-[0.5px] bg-white"></div>
-        <div class="w-[95%] flex items-end justify-between pb-5 text-white  max-lg:flex-col max-lg:items-center max-lg:gap-2 ">
-            <div class="flex gap-2">
-                <div class="flex gap-2 max-lg:text-[18px]   max-lg:justify-end max-lg:text-nowrap lg:text-[20px] ">
-                    <svg class = "size-5 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
-                    <span>طراحی و توسعه توسط تیم فائوس</span>
+         <div class="w-[95%] flex items-end justify-between pb-5 text-white  max-lg:flex-col max-lg:items-center max-lg:gap-2 ">
+            <div class="flex w-[62%] justify-between  max-lg:w-full">
+                <div class="flex gap-2 max-lg:text-[18px] items-center  max-lg:justify-end  text-[20px] max-lg max-lg:text-center max-lg:leading-8">
+                    <svg class = "size-5 fill-white max-lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>
+                    <span>طراحی و توسعه توسط اندیشه گران طراحان دیجیتال شرکت فائوس</span>
+                </div>
+                <div class="flex flex-col gap-2 max-lg:hidden">
+                    <span>کلیه خقوق این سایت متعلق به باسکول درختی میباشد</span>
+                    <span>طراحی وب سایت و مشاوره کسب و کار انلاین</span>
                 </div>
             </div>
-            <div class="flex flex-col gap-2 max-lg:hidden text-[20px]">
-                <span>کلیه خقوق این سایت متعلق به باسکول دزختی میباشد</span>
-                <span>طراحی وب سایت و مشاوره کسب و کار انلاین</span>
-            </div>
-            <div class="flex gap-2">
+           
+            <div class="flex gap-2 ">
                 <svg class = "size-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M375.8 275.2c-16.4-7-35.4-2.4-46.7 11.4l-33.2 40.6c-46-26.7-84.4-65.1-111.1-111.1L225.3 183c13.8-11.3 18.5-30.3 11.4-46.7l-48-112C181.2 6.7 162.3-3.1 143.6 .9l-112 24C13.2 28.8 0 45.1 0 64v0C0 300.7 183.5 494.5 416 510.9c4.5 .3 9.1 .6 13.7 .8c0 0 0 0 0 0c0 0 0 0 .1 0c6.1 .2 12.1 .4 18.3 .4l0 0c18.9 0 35.2-13.2 39.1-31.6l24-112c4-18.7-5.8-37.6-23.4-45.1l-112-48zM447.7 480C218.1 479.8 32 293.7 32 64v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0-3.8 2.6-7 6.3-7.8l112-24c3.7-.8 7.5 1.2 9 4.7l48 112c1.4 3.3 .5 7.1-2.3 9.3l-40.6 33.2c-12.1 9.9-15.3 27.2-7.4 40.8c29.5 50.9 71.9 93.3 122.7 122.7c13.6 7.9 30.9 4.7 40.8-7.4l33.2-40.6c2.3-2.8 6.1-3.7 9.3-2.3l112 48c3.5 1.5 5.5 5.3 4.7 9l-24 112c-.8 3.7-4.1 6.3-7.8 6.3c-.1 0-.2 0-.3 0z"/></svg>
-                <span class = "text-[20px] max-lg:text-[18px]">0914 779 4595</span>
+                <span class = "text-[20px] max-lg:text-[18px]">09145718265</span>
             </div>
+
+
+        </div>
 
             
         </div>
