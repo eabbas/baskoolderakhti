@@ -46,6 +46,20 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     background: linear-gradient(0deg,rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0) 100%);
 }
 
+.leaner_about{
+    background: linear-gradient(90deg, rgba(3, 21, 34, 1) 45%, rgba(3, 21, 34, 0) 100%, rgba(3, 21, 34, 0) 100%);
+    
+}
+
+.clip-pathh{
+    clip-path: polygon(0 0 , 100% 0 , 70% 100% , 0 100%);
+}
+
+
+.clip-pathh1{
+    clip-path: polygon(0 0 , 100% 0 , 90% 100% , 0 100%);
+}
+
 @media(max-width:1406px){
     .fonts{
         font-size: 17px;
@@ -66,27 +80,28 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
 }
 @media(max-width:1024px){
     .leaner{
-        background: linear-gradient(180deg,rgba(3, 21, 34, 1) 53%, rgba(3, 21, 34, 0) 72%, rgba(3, 21, 34, 0) 100%);
+        background: linear-gradient(180deg, rgba(3, 21, 34, 1) 54%, rgba(3, 21, 34, 0) 80%, rgba(3, 21, 34, 0) 100%);
+    }
+    .leaner_about{
+        background: linear-gradient(180deg, rgba(3, 21, 34, 1) 54%, rgba(3, 21, 34, 0) 80%, rgba(3, 21, 34, 0) 100%);
+    }
+    .clip-pathh{
+    clip-path: polygon(0 0 , 100% 0 , 100% 40% , 80% 100% , 0% 100%);
+    }
+    .clip-pathh1{
+    clip-path: polygon(0 0 , 100% 0 , 100% 87% , 0 100%);
+}
+    .imgg{
+        clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
     }
 }
 
-.leaner_about{
-    background: linear-gradient(90deg,rgba(3, 21, 34, 1) 46%, rgba(3, 21, 34, 0) 103%, rgba(3, 21, 34, 0) 100%);
-    
-}
-
-.clip-pathh{
-    clip-path: polygon(0 0 , 100% 0 , 70% 100% , 0 100%);
-}
 
 .leaner-box{
     background: #ffeaab;
     background: linear-gradient(353deg, rgba(255, 234, 171, 1) 28%, rgba(255, 191, 0, 1) 79%);
 }
 
-.clip-pathh1{
-    clip-path: polygon(0 0 , 100% 0 , 90% 100% , 0 100%);
-}
 
 .clip-pathh2{
     clip-path: polygon(0 0 , 100% 0 , 75% 100% , 0 100%);

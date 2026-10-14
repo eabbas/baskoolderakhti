@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="{{asset('assets/css/stylehome.css')}}">
 </head>
 <body>
-        <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] ">
-        <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3 ">
-            <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2">
+        <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] mt-35">
+        <div class="w-full bg-[#0E2E48] top-0 fixed z-40 left-0 -translate-x-0">
+        <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3">
+            <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2  my-3">
                 <div class="flex items-center text-white gap-3 font-bold">
                     <svg class = "size-6 fill-[#F5B83D]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M375.8 275.2c-16.4-7-35.4-2.4-46.7 11.4l-33.2 40.6c-46-26.7-84.4-65.1-111.1-111.1L225.3 183c13.8-11.3 18.5-30.3 11.4-46.7l-48-112C181.2 6.7 162.3-3.1 143.6 .9l-112 24C13.2 28.8 0 45.1 0 64v0C0 300.7 183.5 494.5 416 510.9c4.5 .3 9.1 .6 13.7 .8c0 0 0 0 0 0c0 0 0 0 .1 0c6.1 .2 12.1 .4 18.3 .4l0 0c18.9 0 35.2-13.2 39.1-31.6l24-112c4-18.7-5.8-37.6-23.4-45.1l-112-48zM447.7 480C218.1 479.8 32 293.7 32 64v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0-3.8 2.6-7 6.3-7.8l112-24c3.7-.8 7.5 1.2 9 4.7l48 112c1.4 3.3 .5 7.1-2.3 9.3l-40.6 33.2c-12.1 9.9-15.3 27.2-7.4 40.8c29.5 50.9 71.9 93.3 122.7 122.7c13.6 7.9 30.9 4.7 40.8-7.4l33.2-40.6c2.3-2.8 6.1-3.7 9.3-2.3l112 48c3.5 1.5 5.5 5.3 4.7 9l-24 112c-.8 3.7-4.1 6.3-7.8 6.3c-.1 0-.2 0-.3 0z"></svg>
                     <span>09027139373</span>
@@ -22,8 +23,8 @@
                     <span>تهران و خیابان اصلی</span>
                 </div>
             </div>
-            <div class="w-full flex items-center gap-20 max-lg:pb-2 max-xl:gap-5  max-lg:justify-between ">
-                <div class="w-[25%] flex items-center justify-end gap-4 max-lg:hidden  lg:mb-3">
+            <div class="w-full flex items-center gap-10 max-lg:pb-2  max-lg:justify-between max-lg:py-4 ">
+                <div class="w-[25%] flex items-center mb-3 gap-4 max-lg:hidden ">
                     <div class="w-[80px] ">
     
                         <img src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" class = "w-[80px]" alt="">
@@ -33,81 +34,32 @@
                     <span class = "text-[14px] text-nowrap">دقت در اندازه گیری و اعتبار در کسب و کار</span>
                 </div>
             </div>
-              <div class="w-[70%] flex items-center justify-around gap-10 max-2xl:gap-5 max-2xl:w-[80%] text-white  text-[18px] font-bold   parent_font max-lg:hidden">
-                <a class = " text-center fonts" href="">تماس باما</a>
+            <div class="w-[70%] flex items-center justify-around gap-10 max-2xl:gap-5 max-2xl:w-[80%] text-white  text-[18px] font-bold   parent_font max-lg:hidden">
+                <a class = " text-center fonts" href="{{route('document_phone')}}">تماس باما</a>
                 <a class = " text-center fonts" href="{{route('about_as')}}">درباره ما</a>
                 <a class = " text-center fonts" href="">محصولات خدمات</a>
                 <a class = " text-center fonts" href="">صفحه اصلی</a>
             </div>
-                <div class="w-[35%] flex items-center  gap-20  max-xl:w-[30%] max-xl:gap-8 max-lg:w-[5%]">
-                    @if($user)
-                        <div class='relative'>
-                            <div class="flex h-full items-center cursor-pointer" onclick="showCart()">
-                                <svg class="size-7" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <circle cx="9" cy="21" r="1" /> <circle cx="20" cy="21" r="1" /> <path d="M1 1h4l2.68 13.39A2 2 0 0 0 9.64 16H19a2 2 0 0 0 2-1.72L23 6H6" /> </svg>
-                            </div>
-                            <div id='cart' class='absolute hidden border-3 rounded-xl w-120 h-110 -right-130 bg-white '>
-                                @if(Auth::check())
-                                    <div class='absolute -top-2 -right-2 bg-red-600 px-2 py-1 rounded-full cursor-pointer' onclick="hiddenCart(this)">x</div>
-                                    <?php
-                                        $count=0;
-                                        $total_price=0;
-                                    ?>
-                                        <div class='w-full h-full'>
-                                            <div id='cart_list' class='w-full h-95 overflow-y-auto flex flex-col gap-2 p-5'>
-                                                @foreach($user->carts as $cart)
-                                                    <?php
-                                                        $count++;
-                                                        $total_price+=$cart->product->price * $cart->quantity;
-                                                    ?>
-                                                    <div class='parent_cart w-full flex justify-between border-2 gap-4'>
-                                                        <div class='w-1/5 p-2'>
-                                                            @if(count($cart->product->medias)>0)
-                                                                <img class='w-full h-20 rounded-xl' src="{{asset('storage/product_medias/'.$cart->product->path)}}" alt="">
-                                                            @else
-                                                                <div> 🖼 </div>
-                                                            @endif
-                                                        </div>
-                                                        <div class='w-4/5 flex flex-col justify-evenly '>
-                                                            <div class='text-xl text-center items-center'>
-                                                                <span> {{$cart->product->title}} </span>
-                                                            </div>
-                                                            <div class='flex justify-between px-4'>
-                                                                <div class='grid grid-cols-3 w-20 border-1 overflow-hidden rounded-full items-center text-center'>
-                                                                    <div onclick="updateCart(this,{{$cart->id}},'plus')" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></div>
-                                                                    <div class='p-2 text-center items-center flex justify-center '><input type="number" class='w-10 font-bold outline-none text-center items-center text-black' readonly value="{{$cart->quantity}}"></div>
-                                                                    @if($cart->quantity==1)
-                                                                        <div onclick="trash(this,{{$cart->id}} , {{$cart->product->id}})" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg class='fill-rose-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg></div>
-                                                                    @else
-                                                                        <div onclick="updateCart(this,{{$cart->id}},'minus')" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></div>
-                                                                    @endif
-                                                                </div>
-                                                                
-                                                                <div class='text-black text-xl'> {{$cart->product->price}} </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                @endforeach
-                                            </div>
-                                            <div id="cart_buttons" class=' grid grid-cols-2 items-center text-center p-1 gap-2 '>
-                                                <a href="{{route('cart.userCartList')}}" class='bg-green-200 p-2 rounded-sm cursor-pointer'> تکمیل سفارش </a>
-                                                <div class='bg-red-200 p-2 rounded-sm '> <span> قیمت کل: </span><input type="number" value={{$total_price}} disabled class='w-24 text-black font-bold text-sm' id="total_price"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="cart_counter" class='absolute -top-3 -left-3 bg-green-800 px-2 py-1 text-xs rounded-full cursor-pointer text-white'>{{$count}}</div>
-                                @endif
-                        </div>
-                    @else
-                        <div onclick="showLoginForm()" class="flex h-full items-center cursor-pointer">
-                            <svg class = "size-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                        </div>
-                    @endif
-                    @if(Auth::check())
-                        <a href="{{route('user.profile')}}">
-                            <div class='px-4 py-3 bg-[#EBECEE] shadow-md rounded-xl duration-500 transition-all hover:shadow-[#099975] text-black'>{{Auth::user()->name}}  خوش آمدید</div>
-                        </a>
-                    @else
-                    <div class="w-30 flex gap-3 items-center text-white text-[20px] text-nowrap">
+            <svg  onclick = "bar_menu()" class = "size-8 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
+
+            <div class="w-[35%] flex items-center  gap-10  max-xl:w-[30%] max-xl:gap-8   max-lg:w-[70%] max-lg:justify-end ">
+                @if(Auth::check())
+                <a href="{{route('user.profile')}}">
+                    <div class='w-30 px-4 py-1 bg-[#EBECEE] shadow-md rounded-xl duration-500 transition-all hover:shadow-[#099975] text-black text-center'>{{Auth::user()->name}}  خوش آمدید</div>
+                </a>
+                <div class="lg:block hidden w-[370px] h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
+                        <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full  rounded-lg text-black">
+                            @csrf
+                            <button class="cursor-pointer w-[13%] md:w-10 h-10  flex justify-center items-center p-2">
+                                <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                            </button>
+                            <input type="text" name="title" class="w-[87%] h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
+                        </form>
+                </div>
+                @else
+                <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
+                    <div class=" flex items-center gap-3">
+
                         <a href="{{route('user.loginPage')}}">
                             ورود
                         </a>
@@ -116,186 +68,196 @@
                             ثبت نام
                         </a>   
                     </div>
-                        <!-- <a href="{{route('user.loginPage')}}">
-                            <svg class='w-5 fill-white'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>
-                        </a> -->
+                    <div class="lg:block hidden w-[370px] h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
+                            <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full  rounded-lg text-black">
+                                @csrf
+                                <button class="cursor-pointer w-[13%] md:w-10 h-10  flex justify-center items-center p-2">
+                                    <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                                </button>
+                                <input type="text" name="title" class="w-[87%] h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
+                            </form>
+                    </div>
+                    </div>
                     @endif
-                    <div class="lg:block hidden w-[370px] h-[45px] bg-red-500 rounded-[10px] transition_fast"id="search">
-                        <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full bg-[#f0f0f1] rounded-lg text-black">
-                            @csrf
-                            <button class="cursor-pointer w-1/10 md:w-10 h-10  flex justify-center items-center">
-                                <svg class="size-7 m-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
-                            </button>
-                            <input type="text" name="title" class="w-full h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
-                        </form>
-                        <!--  -->
-                    <!--⏬ یدونه دیو بسته نزاشتی پارتیشن ها به هم میخوره منم نزاشتم که  قاطی نشه -->
-                        <!--  -->
-                    <!-- <div class="w-[370px] h-[45px] bg-white rounded-[10px] flex max-lg:hidden">
-                        <input class = "w-[85%]  outline-none text-black text-right " type="text" name="" id="" placeholder = "...جستو جوی محصول و برند">
-                        <div class="w-[15%] flex items-center justify-center ">
-                            <svg class = "size-6 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M384 208A176 176 0 1 0 32 208a176 176 0 1 0 352 0zM343.3 366C307 397.2 259.7 416 208 416C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208c0 51.7-18.8 99-50 135.3L507.3 484.7c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0L343.3 366z"></svg>
-                    </div> -->
-                </div>
+                    @if($user)
+                        <div class='relative'>
+                            <div class="flex h-full items-center cursor-pointer " onclick="showCart()">
+                                    <svg class="size-7" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <circle cx="9" cy="21" r="1" /> <circle cx="20" cy="21" r="1" /> <path d="M1 1h4l2.68 13.39A2 2 0 0 0 9.64 16H19a2 2 0 0 0 2-1.72L23 6H6" /> </svg>
+                                </div>
+                                <div id='cart' class='absolute hidden border-3 rounded-xl w-120 h-110 -right-130 bg-white '>
+                                    @if(Auth::check())
+                                        <div class='absolute -top-2 -right-2 bg-red-600 px-2 py-1 rounded-full cursor-pointer' onclick="hiddenCart(this)">x</div>
+                                        <?php
+                                            $count=0;
+                                            $total_price=0;
+                                        ?>
+                                            <div class='w-full h-full'>
+                                                <div id='cart_list' class='w-full h-95 overflow-y-auto flex flex-col gap-2 p-5'>
+                                                    @foreach($user->carts as $cart)
+                                                        <?php
+                                                            $count++;
+                                                            $total_price+=$cart->product->price * $cart->quantity;
+                                                        ?>
+                                                        <div class='parent_cart w-full flex justify-between border-2 gap-4'>
+                                                            <div class='w-1/5 p-2'>
+                                                                @if(count($cart->product->medias)>0)
+                                                                    <img class='w-full h-20 rounded-xl' src="{{asset('storage/product_medias/'.$cart->product->path)}}" alt="">
+                                                                @else
+                                                                    <div> 🖼 </div>
+                                                                @endif
+                                                            </div>
+                                                            <div class='w-4/5 flex flex-col justify-evenly '>
+                                                                <div class='text-xl text-center items-center'>
+                                                                    <span> {{$cart->product->title}} </span>
+                                                                </div>
+                                                                <div class='flex justify-between px-4'>
+                                                                    <div class='grid grid-cols-3 w-20 border-1 overflow-hidden rounded-full items-center text-center'>
+                                                                        <div onclick="updateCart(this,{{$cart->id}},'plus')" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></div>
+                                                                        <div class='p-2 text-center items-center flex justify-center '><input type="number" class='w-10 font-bold outline-none text-center items-center text-black' readonly value="{{$cart->quantity}}"></div>
+                                                                        @if($cart->quantity==1)
+                                                                            <div onclick="trash(this,{{$cart->id}} , {{$cart->product->id}})" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg class='fill-rose-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg></div>
+                                                                        @else
+                                                                            <div onclick="updateCart(this,{{$cart->id}},'minus')" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></div>
+                                                                        @endif
+                                                                    </div>
+                                                                    
+                                                                    <div class='text-black text-xl'> {{$cart->product->price}} </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    @endforeach
+                                                </div>
+                                                <div id="cart_buttons" class=' grid grid-cols-2 items-center text-center p-1 gap-2 '>
+                                                    <a href="{{route('cart.userCartList')}}" class='bg-green-200 p-2 rounded-sm cursor-pointer'> تکمیل سفارش </a>
+                                                    <div class='bg-red-200 p-2 rounded-sm '> <span> قیمت کل: </span><input type="number" value={{$total_price}} disabled class='w-24 text-black font-bold text-sm' id="total_price"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="cart_counter" class='absolute -top-3 -left-3 bg-[#FBC830] px-2 py-1 text-xs rounded-full cursor-pointer text-white'>{{$count}}</div>
+                                    @endif
+                            </div>
+                        @else
+                            <div onclick="showLoginForm()" class="flex h-full items-center cursor-pointer">
+                                <svg class = "size-8 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                            </div>
+                    @endif
+                    
             </div>
-          
-            <svg class = "size-8 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
-          
-            
-           
         </div>
-        <div class="w-full h-[45px] bg-white rounded-[10px] transition_fast lg:hidden"id="search">
-            <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto mt-3 bg-[#f0f0f1] rounded-lg text-black">
+        <div class="w-full  bg-white rounded-[20px] transition_fast lg:hidden my-3"id="search">
+            <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto   rounded-lg text-black items-center justify-center">
                 @csrf
-                <button class="cursor-pointer w-1/10 md:w-10 h-10  flex justify-center items-center">
+                <button class="cursor-pointer w-[13%]  md:w-10   flex justify-center items-center p-2">
                     <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
                 </button>
-                <input type="text" name="title" class="w-full h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
+                <input type="text" name="title" class="w-[87%] h-[40px] outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
             </form>
         </div>
     </div>
+        </div>
     <!-- bg-[#061F35] -->
     <div class="max-w-[21000px] min-w-[325px] relative">
         <div class="w-2/3 left-0 top-0 h-full absolute leaner_about z-10 max-lg:w-full max-lg:h-[530px]"></div>
         <!-- <div class="w-1/2 right-0 top-0 h-full absolute leaner-left z-10 max-lg:hidden"></div> -->
         <div class="w-full flex relative max-lg:flex-col justify-end">
-            <div class="w-full  max-lg:h-[200px] max-lg:w-full ">
-                <img class = "w-full h-[457px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
+            <div class="w-full   max-lg:w-full ">
+                <img class = "w-full max-lg:h-[210px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
             </div>
             <div class="w-[35%]  max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center gap-3 max-lg:p-0 max-lg:pt-5 max-lg:items-center max-lg:w-full  pl-13 max-lg:order-first">
-              <span class = "text-[60px] text-nowrap">درباره <span class = "text-[#FBC830]">ترازوی درختی</span></span>
-              <div class="flex flex-col items-end text-[30px]">
+              <span class = "text-[60px] text-nowrap max-lg:text-[45px]">درباره <span class = "text-[#FBC830]">ترازوی درختی</span></span>
+              <div class="flex flex-col items-end text-[30px] max-lg:text-[25px]">
                   <span>تخصص , کیفیت و دقت</span>
                   <div class="w-[40px] h-1 bg-[#FBC830]"></div>
                 </div>
-                <p class = "text-[20px] text-justify">ما در ترازوی درختی با سال ها تجربه در زمینه فروش و خدمات ترازوهای صنعتی و ازمایشگاهی همواره مطمئن کسب و کار شما هستیم</p>
+                <p class = "text-[20px] text-justify max-lg:text-[16px] max-lg:text-center">ما در ترازوی درختی با سال ها تجربه در زمینه فروش و خدمات ترازوهای صنعتی و ازمایشگاهی همواره مطمئن کسب و کار شما هستیم</p>
                 <a class = "w-[220px] h-[50px] bg-[#D99A16] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[25px] max-lg:mt-3 " href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
                     <span>تماس باما</span>
                 </a>
                
             </div>
-            <!-- <div class="w-[17%] h-[300px] rounded-l-[40px] text-white top-15 z-10 bg-[#0B304A]/20 flex flex-col p-8 items-center absolute gap-3 right-0 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
-                <div class="w-full flex  items-end justify-end gap-6  max-2xl:justify-center max-2xl:items-center">
-                    <div class="flex flex-col  items-end ">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
-                    </div>
-                    <div class="w-[50px] h-[50px] border rounded-full border-slate-600 flex items-center justify-center  p-2 max-2xl:justify-center max-2xl:items-center">
-                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
-                    </div>
-                </div>
-                <div class="w-[140px] h-[1px] bg-slate-800"></div>
-                <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
-                    <div class="flex flex-col items-end">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
-                    </div>
-                    <div class="w-[50px] h-[50px] border rounded-full flex items-center justify-center border-slate-600 ">
-                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
-                    </div>
-                </div>
-                
-                <div class="w-[140px] h-[1px] bg-slate-800"></div>
-                <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
-                    <div class="flex flex-col items-end">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
-                    </div>
-                    <div class="w-[50px] h-[50px] border rounded-full flex items-center justify-center border-slate-600">
-                        <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
-                    </div>
-                </div>
-        </div> -->
-        <div class="w-full absolute h-37 flex justify-center items-center lg:hidden -bottom-34 bg-[#0B304A] rounded-[15px] border-1 shadow-sm shadow-[#0B304A] border-gray-400 gap-1">
-            <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
-                <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
-                <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
-                    <span class = "text-nowrap text-[18px]">کیفیت تضمینی</span>
-                    <span class = "text-[15px] text-nowrap text-gray-400">با ضمانت اصالت کالا</span>
-                </div>
-            </div>
-            <div class="h-[90%] w-[1px] bg-gray-700"></div>
-            <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
-                <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
-                <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
-                    <span class = "text-nowrap text-[18px]">ارسال سریع</span>
-                    <span class = "text-[15px] text-nowrap text-gray-400">به سراسر کشور</span>
-                </div>
-            </div>
-            <div class="h-[90%] w-[1px] bg-gray-700"></div>
-            <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
-                <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
-                <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
-                    <span class = "text-nowrap text-[18px]">پشتیبانی تخصصی</span>
-                    <span class = "text-[15px] text-nowrap text-gray-400">پپاسخگویی 24 ساعته</span>
-                </div>
-            </div>
-        </div>
+          
+        
     </div>
     </header>
 
-    <main class = "max-w-[21000px] min-w-[325px] my-10 max-lg:mt-40">
+    <main class = "max-w-[21000px] min-w-[325px] my-10 ">
         <section class = "max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3">
-            <div class="w-full flex gap-10  justify-between ">
-                <div class="w-[55%] flex flex-col gap-3 items-end">
-                    <div class="w-full flex flex-col">
+            <div class="w-full flex gap-10  justify-between max-lg:flex-col max-lg:gap-5">
+                <div class="w-full flex flex-col items-center lg:hidden">
+                    <div class="flex gap-2 items-center">
+                        <div class="w-10 h-1 bg-[#FBC830] "></div>
+                        <span class = "text-[#002030] text-[22px]">داستان ما</span>
+                        <div class="w-10 h-1 bg-[#FBC830]"></div>
+                    </div>
+                    <span class = "text-[23px] text-[#002030] text-nowrap">از یک ایده,تا یک مجموعه معتبر</span>
+                </div>
+                <div class="w-full text-gray-500  text-justify text-[20px] leading-13 order-2 lg:hidden">
+                    <p>ترازو درخشی با هدف تأمین نیازهای صنعت و کسب‌وکارهای مختلف در زمینه ترازوهای صنعتی، فروش، تعمیر و کالیبراسیون فعالیت خود را آغاز کرد. ما با تکیه بر دانش فنی، تجربه عملی و بهره‌گیری از تجهیزات مدرن، همواره در تلاشیم تا بهترین کیفیت و دقیق‌ترین خدمات را به مشتریان خود ارائه دهیم.
+                اعتماد شما، سرمایه اصلی ماست و ما با تعهد و مسئولیت‌پذیری در کنار شما هستیم تا در هر مرحله از خرید تا پشتیبانی، بهترین تجربه را برایتان رقم بزنیم.</p>
+                </div>
+                <div class="w-50 h-10 bg-[#FBC830] flex items-center justify-center text-[#0E2E48] gap-3 text-[20px] rounded-[20px] order-last self-center lg:hidden">
+                    <span>بیشتر بخوانید</span>
+                    <svg class = "fill-[#0E2E48] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                </div>
+                <div class="w-[55%] flex flex-col gap-3 items-end max-lg:w-full max-lg:hidden">
+                    <div class="w-full flex flex-col items-center ">
                         <div class="flex gap-2 items-center">
                             <span class = "text-[#002030] text-[22px]">داستان ما</span>
                             <div class="w-10 h-1 bg-[#FBC830]"></div>
                         </div>
-                        <span class = "text-[50px] text-[#002030]">از یک ایده,تا یک مجموعه معتبر</span>
+                        <span class = "text-[48px] text-[#002030] max-lg:text-[30px]">از یک ایده,تا یک مجموعه معتبر</span>
                     </div>
-                    <div class="w-full text-gray-500  text-justify text-[28px] leading-13">
+                    <div class="w-full text-gray-500  text-justify text-[26px] leading-13 ">
                         <p>ترازو درخشی با هدف تأمین نیازهای صنعت و کسب‌وکارهای مختلف در زمینه ترازوهای صنعتی، فروش، تعمیر و کالیبراسیون فعالیت خود را آغاز کرد. ما با تکیه بر دانش فنی، تجربه عملی و بهره‌گیری از تجهیزات مدرن، همواره در تلاشیم تا بهترین کیفیت و دقیق‌ترین خدمات را به مشتریان خود ارائه دهیم.
 اعتماد شما، سرمایه اصلی ماست و ما با تعهد و مسئولیت‌پذیری در کنار شما هستیم تا در هر مرحله از خرید تا پشتیبانی، بهترین تجربه را برایتان رقم بزنیم.</p>
                     </div>
                     <div class="w-50 h-10 bg-[#FBC830] flex items-center justify-center text-[#0E2E48] gap-3 text-[20px] rounded-[20px]">
-                        <svg class = "fill-[#0E2E48] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                         <span>بیشتر بخوانید</span>
+                        <svg class = "fill-[#0E2E48] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                     </div>
                 </div>
-                <div class="w-[40%] bg-red-500 rounded-lg overflow-hidden relative">
+                <div class="w-[40%]  rounded-lg overflow-hidden relative max-lg:order-1 max-lg:w-full">
                     <div class="w-40 h-50 bg-[#FBC830] absolute -skew-x-20 bottom-0 -right-32"></div>
                     <div class="w-40 h-50 bg-[#FBC830] absolute -skew-x-20 -left-34"></div>
-                    <img class = "w-full h-110 " src="{{asset('assets/img/file_0000000032ac81f499cdabd6758572c0.png')}}" alt="">                                                        
+                    <img class = "w-full h-110 max-lg:h-80" src="{{asset('assets/img/file_0000000032ac81f499cdabd6758572c0.png')}}" alt="">                                                        
                 </div>
             </div>
         </section>
-        <section class = " max-w-[21000px] min-w-[325px] mx-auto mt-10 p-3 bg-slate-100 py-9 ">
-            <div class="max-w-[1800px] min-w-[325px]  flex gap-8 mx-auto max-lg:px-3">
-                <div class="w-[25%] rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
-                    <div class="w-17 h-17 flex items-center justify-center rounded-full bg-[#091E2F]">
-                        <svg class = "fill-[#F2CE56] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192zM96 296c0-13.3 10.7-24 24-24H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H120c-13.3 0-24-10.7-24-24zm24 72H232c13.3 0 24 10.7 24 24s-10.7 24-24 24H120c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg>
+        <section class = " max-w-[21000px] min-w-[325px] mx-auto mt-10 lg:p-3 bg-slate-100 py-9 max-lg:py-5 rounded-[8px]">
+            <div class="max-w-[1800px] min-w-[325px]  flex gap-8 mx-auto max-lg:px-3 max-lg:flex-col">
+                <div class="w-[25%] max-lg:w-full rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
+                    <div class="w-17 h-17 flex items-center justify-center rounded-full leaner-box">
+                        <svg class = "fill-[#091E2F] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192zM96 296c0-13.3 10.7-24 24-24H328c13.3 0 24 10.7 24 24s-10.7 24-24 24H120c-13.3 0-24-10.7-24-24zm24 72H232c13.3 0 24 10.7 24 24s-10.7 24-24 24H120c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg>
                     </div>
                     <span class = "text-[35px] text-[#0E2E48]">15+</span>
                     <span class = "text-[25px] mb-2 text-[#0E2E48]">سال تجربه</span>
                 </div>
-                <div class="w-[25%] rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
-                    <div class="w-17 h-17 flex items-center justify-center rounded-full bg-[#091E2F]">
-                        <svg class = "fill-[#F2CE56] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg>
+                <div class="w-[25%] max-lg:w-full rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
+                    <div class="w-17 h-17 flex items-center justify-center rounded-full leaner-box">
+                        <svg class = "fill-[#091E2F] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8 47.8 192 106.7 192h42.7c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2 0-.4 0-.7 0H21.3C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8 43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7h42.7C592.2 192 640 239.8 640 298.7c0 11.8-9.6 21.3-21.3 21.3H405.3zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3 352H378.7C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7H154.7c-14.7 0-26.7-11.9-26.7-26.7z"/></svg>
                     </div>
                     <span class = "text-[35px] text-[#0E2E48]">1000+</span>
                     <span class = "text-[25px] mb-2 text-[#0E2E48]">مشتری راضی</span>
                 </div>
-                <div class="w-[25%] rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
-                    <div class="w-17 h-17 flex items-center justify-center rounded-full bg-[#091E2F]">
-                        <svg class = "fill-[#F2CE56] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M240 48H416c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H240V48zm-48 0V464H128c-8.8 0-16-7.2-16-16V416h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H112V280h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H112V144h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H112V64c0-8.8 7.2-16 16-16h64zM64 416v32c0 35.3 28.7 64 64 64H416c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H128C92.7 0 64 28.7 64 64V96H24C10.7 96 0 106.7 0 120s10.7 24 24 24H64v88H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v88H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64z"/></svg>
+                <div class="w-[25%] max-lg:w-full rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
+                    <div class="w-17 h-17 flex items-center justify-center rounded-full leaner-box">
+                        <svg class = "fill-[#091E2F] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M240 48H416c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H240V48zm-48 0V464H128c-8.8 0-16-7.2-16-16V416h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H112V280h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H112V144h24c13.3 0 24-10.7 24-24s-10.7-24-24-24H112V64c0-8.8 7.2-16 16-16h64zM64 416v32c0 35.3 28.7 64 64 64H416c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H128C92.7 0 64 28.7 64 64V96H24C10.7 96 0 106.7 0 120s10.7 24 24 24H64v88H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v88H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64z"/></svg>
                     </div>
                     <span class = "text-[35px] text-[#0E2E48]">500+</span>
                     <span class = "text-[25px] mb-2 text-[#0E2E48]">پروژه انجام شده</span>
                 </div>
-                <div class="w-[25%] rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
-                    <div class="w-17 h-17 flex items-center justify-center rounded-full bg-[#091E2F]">
+                <div class="w-[25%] max-lg:w-full rounded-xl gap-3 p-4 bg-white border-1 border-gray-200 shadow-sm flex flex-col items-center justify-center">
+                    <div class="w-17 h-17 flex items-center justify-center rounded-full leaner-box">
                         <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             
-                            <svg class = "size-9" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#F2CE56">
+                            <svg class = "size-9" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#091E2F">
                                 
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                                 
                                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
                                 
-                                <g id="SVGRepo_iconCarrier"> <path d="M15.668 6.017c-0.957-3.557-3.863-6.017-7.168-6.017-3.295 0-6.212 2.464-7.168 6.017-0.747 0.082-1.332 0.712-1.332 1.483v4c0 0.625 0.382 1.16 0.924 1.385 0.194 1.747 1.663 3.115 3.461 3.115h2.707c0.207 0.581 0.757 1 1.408 1h3c0.827 0 1.5-0.673 1.5-1.5s-0.673-1.5-1.5-1.5h-3c-0.651 0-1.201 0.419-1.408 1h-2.707c-1.208 0-2.217-0.86-2.449-2h1.064v-1h1v-5h-1v-1h-0.606c0.913-2.961 3.352-5 6.106-5 2.762 0 5.193 2.037 6.106 5h-0.606v1h-1v5h1v1h1.506c0.824 0 1.494-0.673 1.494-1.5v-4c0-0.771-0.585-1.401-1.332-1.483zM8.5 15h3c0.275 0 0.5 0.224 0.5 0.5s-0.225 0.5-0.5 0.5h-3c-0.275 0-0.5-0.224-0.5-0.5s0.225-0.5 0.5-0.5zM2 12h-0.506c-0.272 0-0.494-0.224-0.494-0.5v-4c0-0.276 0.222-0.5 0.494-0.5h0.506v5zM16 11.5c0 0.276-0.222 0.5-0.494 0.5h-0.506v-5h0.506c0.272 0 0.494 0.224 0.494 0.5v4z" fill="#F8D048"/> </g>
+                                <g id="SVGRepo_iconCarrier"> <path d="M15.668 6.017c-0.957-3.557-3.863-6.017-7.168-6.017-3.295 0-6.212 2.464-7.168 6.017-0.747 0.082-1.332 0.712-1.332 1.483v4c0 0.625 0.382 1.16 0.924 1.385 0.194 1.747 1.663 3.115 3.461 3.115h2.707c0.207 0.581 0.757 1 1.408 1h3c0.827 0 1.5-0.673 1.5-1.5s-0.673-1.5-1.5-1.5h-3c-0.651 0-1.201 0.419-1.408 1h-2.707c-1.208 0-2.217-0.86-2.449-2h1.064v-1h1v-5h-1v-1h-0.606c0.913-2.961 3.352-5 6.106-5 2.762 0 5.193 2.037 6.106 5h-0.606v1h-1v5h1v1h1.506c0.824 0 1.494-0.673 1.494-1.5v-4c0-0.771-0.585-1.401-1.332-1.483zM8.5 15h3c0.275 0 0.5 0.224 0.5 0.5s-0.225 0.5-0.5 0.5h-3c-0.275 0-0.5-0.224-0.5-0.5s0.225-0.5 0.5-0.5zM2 12h-0.506c-0.272 0-0.494-0.224-0.494-0.5v-4c0-0.276 0.222-0.5 0.494-0.5h0.506v5zM16 11.5c0 0.276-0.222 0.5-0.494 0.5h-0.506v-5h0.506c0.272 0 0.494 0.224 0.494 0.5v4z" /> </g>
                                 
                             </svg>
                     </div>
@@ -304,37 +266,41 @@
                 </div>
             </div>
         </section>
+
+
         <section class="max-w-[1800px] min-w-[325px]  flex gap-8 mx-auto max-lg:px-3 mt-10">
             <div class="w-full flex flex-col gap-5">
-                <div class="w-full flex flex-col items-center ">
+                <div class="w-full flex flex-col items-center max-lg:gap-3 ">
                     <div class="flex gap-2 items-center justify-center text-[20px]">
                         <div class="w-10 h-[2px] bg-[#FBC830]"></div>
                         <span>مزایا ها</span>
                         <div class="w-10 h-[2px] bg-[#FBC830]"></div>
                     </div>
                         <span class = "text-[40px]">چرا تراروی درختی؟</span>
-                        <span class = "w-150  text-center text-[20px] text-gray-500">
+                        <span class = "w-150  text-center text-[20px] text-gray-500 max-lg:w-full">
                             باما ارائه خدمات و محصولات با کیفیت تلاش میکنیم تا بهترین تجربه را برای شما فراهم کنیم رضایت شما افتخار ماست
                         </span>
                 </div>
-                <div class="w-full flex gap-3 justify-between">
-                    <div class="w-[19%] flex flex-col gap-3 p-3 items-center justify-center border-1 border-gray-200 shadow-sm">
-                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F]">
+                <div class="w-full flex gap-3 justify-between max-lg:flex-col">
+                    <div class="w-[19%] max-lg:w-full flex flex-col gap-3 p-3 items-center  border-1 border-gray-200 shadow-sm max-lg:flex-row max-lg:h-50">
+                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F] max-lg:w-20 max-lg:h-17">
                     <xml version="1.0" encoding="utf-8">
-                        <svg class = "size-10 fill-[#F8C028] " viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <svg class = "size-10 fill-[#F8C028] max-lg:size-8" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <title>award</title>
                             <path d="M28.641 26.578l-3.799-6.364c1.805-2.055 2.907-4.767 2.907-7.736 0-6.489-5.26-11.749-11.749-11.749s-11.749 5.26-11.749 11.749c0 2.943 1.082 5.633 2.87 7.695l-0.012-0.015-3.832 6.422c-0.111 0.183-0.176 0.404-0.176 0.64 0 0.691 0.56 1.251 1.251 1.251 0.071 0 0.14-0.006 0.207-0.017l-0.007 0.001 2.602-0.426 0.947 2.426c0.175 0.44 0.581 0.753 1.065 0.791l0.004 0c0.032 0.002 0.063 0.004 0.095 0.004 0.46-0 0.863-0.249 1.080-0.619l0.003-0.006 3.775-6.54c0.562 0.1 1.212 0.16 1.875 0.165l0.004 0c0.64-0.005 1.263-0.060 1.87-0.162l-0.069 0.010 3.769 6.526c0.22 0.376 0.622 0.625 1.082 0.625h0c0.031 0 0.063-0.002 0.094-0.004 0.488-0.037 0.896-0.35 1.067-0.783l0.003-0.008 0.947-2.426 2.602 0.426c0.060 0.010 0.129 0.016 0.2 0.016 0.691 0 1.251-0.56 1.251-1.251 0-0.236-0.065-0.457-0.179-0.645l0.003 0.006zM9.48 27.123l-0.369-0.945c-0.193-0.469-0.647-0.793-1.177-0.793-0.067 0-0.132 0.005-0.196 0.015l0.007-0.001-0.947 0.156 2.181-3.655c0.765 0.581 1.638 1.084 2.572 1.47l0.078 0.029zM6.75 12.5c0-5.109 4.141-9.25 9.25-9.25s9.25 4.141 9.25 9.25c0 5.109-4.141 9.25-9.25 9.25v0c-5.106-0.006-9.244-4.144-9.25-9.249v-0.001zM24.168 25.396c-0.060-0.010-0.129-0.016-0.199-0.016-0.527 0-0.978 0.326-1.163 0.787l-0.003 0.008-0.369 0.945-2.135-3.697c1.016-0.408 1.894-0.905 2.693-1.502l-0.031 0.022 2.155 3.609zM16 4.75c-4.28 0-7.75 3.47-7.75 7.75s3.47 7.75 7.75 7.75c4.28 0 7.75-3.47 7.75-7.75v0c-0.005-4.278-3.472-7.745-7.75-7.75h-0zM16 17.75c-2.899 0-5.25-2.351-5.25-5.25s2.351-5.25 5.25-5.25c2.899 0 5.25 2.351 5.25 5.25v0c-0.004 2.898-2.352 5.246-5.25 5.25h-0zM18.666 10.651h-1.129l-0.349-1.072c-0.208-0.459-0.662-0.772-1.188-0.772s-0.981 0.313-1.185 0.764l-0.003 0.008-0.349 1.072h-1.128c-0 0-0 0-0 0-0.69 0-1.25 0.559-1.25 1.25 0 0.414 0.201 0.781 0.512 1.009l0.004 0.002 0.912 0.664-0.349 1.071c-0.039 0.116-0.061 0.249-0.061 0.387 0 0.69 0.56 1.25 1.25 1.25 0.276 0 0.531-0.089 0.738-0.241l-0.004 0.002 0.913-0.663 0.913 0.663c0.203 0.149 0.458 0.238 0.734 0.238 0.69 0 1.25-0.56 1.25-1.25 0-0.138-0.022-0.271-0.064-0.396l0.003 0.009-0.348-1.071 0.912-0.663c0.314-0.23 0.516-0.597 0.516-1.012 0-0.69-0.56-1.25-1.25-1.25-0 0-0 0-0 0h0z"></path>
                     </svg>
                 </div>
-                <span class = "text-[32px] text-[#0E2E48]">کیفیت بالا</span>
-                <span class = "w-50 text-center text-[25px] text-gray-500 mb-4">استفاده از بهترین برندها و قطعات اصلی برای کیفیت ماندگار</span>
+                <div class="w-full flex flex-col items-center  max-lg:w-[90%] max-lg:items-start ">
+                    <span class = "text-[32px] text-[#0E2E48] truncate max-w-full max-lg:text-[23px] max-lg:p-2">کیفیت بالا</span>
+                    <span class = "w-50 text-center text-[25px] text-gray-500 mb-4 max-lg:w-full max-lg:text-[18px] max-lg:text-start max-lg:p-2">استفاده از بهترین برندها و قطعات اصلی برای کیفیت ماندگار</span>
+                </div>
             </div>
-            <div class="w-[19%] flex flex-col gap-3 p-3 items-center justify-center border-1 border-gray-200 shadow-sm">
-                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F]">
+            <div class="w-[19%] max-lg:w-full flex flex-col gap-3 p-3 items-center  border-1 border-gray-200 shadow-sm max-lg:flex-row max-lg:h-50">
+                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F] max-lg:w-20 max-lg:h-17">
 
                     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                     
-                    <svg class = "size-10" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="800px" height="800px" fill="#F8D048">
+                    <svg class = "size-11" version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xml:space="preserve" width="800px" height="800px" fill="#F8D048">
                         
                         <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                         
@@ -344,97 +310,167 @@
                         
                     </svg>
                 </div>
-                <span class = "text-[32px] text-[#0E2E48]">دقت و کابیراسیون</span>
-                <span class = "w-50 text-center text-[25px] text-gray-500 mb-4">ارائه ترازوهای دقیق و کالبیره شده مطلق استانداردهای جهانی</span>
-            </div>
-            <div class="w-[19%] flex flex-col gap-3 p-3 items-center justify-center border-1 border-gray-200 shadow-sm">
-                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F]">
-                    <svg  class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M192 416c0-17.7-14.3-32-32-32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H309.3c-6.9 0-13.7 2.2-19.2 6.4L192 464V416zM64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h64 32v32 48c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm64 232a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm128 0a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm152-24a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"/></svg>
+                <div class="w-full flex flex-col items-center  max-lg:w-[90%] max-lg:items-start ">
+                    <span class = "text-[32px] text-[#0E2E48] truncate max-w-full max-lg:text-[23px] max-lg:p-2">دقت و کابیراسیون</span>
+                    <span class = "w-50 text-center text-[25px] text-gray-500 mb-4 max-lg:w-full max-lg:text-[18px] max-lg:text-start max-lg:p-2">ارائه ترازوهای دقیق و کالبیره شده مطلق استانداردهای جهانی</span>
                 </div>
-                <span class = "text-[32px] text-[#0E2E48]">مشاوره تخصصی</span>
-                <span class = "w-50 text-center text-[25px] text-gray-500 mb-4">راهنمایی حرفه ای برای انتخاب بهترین ترازو مناسب کسب و کار شما</span>
             </div>
-            <div class="w-[19%] flex flex-col gap-3 p-3 items-center justify-center border-1 border-gray-200 shadow-sm">
-                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F]">
-                    <svg  class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48.5 114.9L256 34.3l207.5 80.5c2.7 45.6-4.5 116.8-34.7 186.3S345.4 438.4 256 477.1C166.6 438.4 113.4 370.7 83.2 301.2S45.8 160.5 48.5 114.9zm447-1.9l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM363.3 203.3L374.6 192 352 169.4l-11.3 11.3L224 297.4l-52.7-52.7L160 233.4 137.4 256l11.3 11.3 64 64L224 342.6l11.3-11.3 128-128z"/></svg>
+            <div class="w-[19%] max-lg:w-full flex flex-col gap-3 p-3 items-center  border-1 border-gray-200 shadow-sm max-lg:flex-row max-lg:h-50">
+                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F] max-lg:w-20 max-lg:h-17">
+                    <svg  class = "size-10 fill-[#FBC830] max-lg:size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M192 416c0-17.7-14.3-32-32-32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H309.3c-6.9 0-13.7 2.2-19.2 6.4L192 464V416zM64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h64 32v32 48c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zm64 232a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm128 0a24 24 0 1 0 0-48 24 24 0 1 0 0 48zm152-24a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z"/></svg>
                 </div>
-                <span class = "text-[32px] text-[#0E2E48]">خدمات پس از فروش</span>
-                <span class = "w-50 text-center text-[25px] text-gray-500 mb-4">پشتیبانی سریع و قابل اعتماد پس از خرید</span>
+                <div class="w-full flex flex-col items-center  max-lg:w-[90%] max-lg:items-start ">
+                    <span class = "text-[32px] text-[#0E2E48] truncate max-w-full max-lg:text-[23px] max-lg:p-2">مشاوره تخصصی</span>
+                    <span class = "w-50 text-center text-[25px] text-gray-500 mb-4 max-lg:w-full max-lg:text-[18px] max-lg:text-start max-lg:p-2">راهنمایی حرفه ای برای انتخاب بهترین ترازو مناسب کسب و کار شما</span>
+                </div>
             </div>
-            <div class="w-[19%] flex flex-col gap-3 p-3 items-center justify-center border-1 border-gray-200 shadow-sm">
-                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F]">
-                    <svg class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M7 47L47 7c8.5-8.5 22-9.4 31.6-2.1l104 80c5.9 4.5 9.4 11.6 9.4 19v64 8 4.7L287.3 276c30.3-24.7 75-22.9 103.3 5.4l112 112c12.5 12.5 12.5 32.8 0 45.3l-64 64c-12.5 12.5-32.8 12.5-45.3 0l-112-112c-28.3-28.3-30-73-5.4-103.3L180.7 192H176h-8H104c-7.5 0-14.5-3.5-19-9.4L5 78.6C-2.4 69.1-1.5 55.6 7 47zM168 176h8v-8V104c0-2.5-1.2-4.8-3.1-6.3l-104-80c-3.2-2.4-7.7-2.2-10.5 .7l-40 40c-2.8 2.8-3.1 7.3-.7 10.5l80 104c1.5 2 3.9 3.1 6.3 3.1h64zM379.3 292.7c-23.9-23.9-62.7-23.9-86.6 0s-23.9 62.7 0 86.6l112 112c6.2 6.2 16.4 6.2 22.6 0l64-64c6.2-6.2 6.2-16.4 0-22.6l-112-112zM21.5 386.5L170.1 237.9l11.3 11.3L32.9 397.8C22.1 408.6 16 423.2 16 438.5C16 470.2 41.8 496 73.5 496c15.3 0 29.9-6.1 40.7-16.9L230.2 363.2c1.5 5.7 3.4 11.3 5.8 16.8L125.5 490.5C111.7 504.3 93 512 73.5 512C32.9 512 0 479.1 0 438.5c0-19.5 7.7-38.2 21.5-52zM496 160c0-17.2-3-33.6-8.5-48.9L416 182.6c-6 6-14.1 9.4-22.6 9.4H352c-17.7 0-32-14.3-32-32V118.6c0-8.5 3.4-16.6 9.4-22.6l71.5-71.5C385.6 19 369.2 16 352 16c-50.7 0-95.3 26.2-121 65.8l-12.7-9.8C246.9 28.6 296.1 0 352 0c20.1 0 39.4 3.7 57.1 10.5c10 3.8 11.8 16.5 4.3 24.1l-72.7 72.7c-3 3-4.7 7.1-4.7 11.3V160c0 8.8 7.2 16 16 16h41.4c4.2 0 8.3-1.7 11.3-4.7l72.7-72.7c7.6-7.6 20.3-5.7 24.1 4.3c6.8 17.7 10.5 37 10.5 57.1c0 53.8-26.5 101.3-67.2 130.3l-11.5-11.5C471.2 252.9 496 209.3 496 160zM80 416a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
+            <div class="w-[19%] max-lg:w-full flex flex-col gap-3 p-3 items-center  border-1 border-gray-200 shadow-sm max-lg:flex-row max-lg:h-50">
+                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F] max-lg:w-20 max-lg:h-17">
+                    <svg  class = "size-10 fill-[#FBC830] max-lg:size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48.5 114.9L256 34.3l207.5 80.5c2.7 45.6-4.5 116.8-34.7 186.3S345.4 438.4 256 477.1C166.6 438.4 113.4 370.7 83.2 301.2S45.8 160.5 48.5 114.9zm447-1.9l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM363.3 203.3L374.6 192 352 169.4l-11.3 11.3L224 297.4l-52.7-52.7L160 233.4 137.4 256l11.3 11.3 64 64L224 342.6l11.3-11.3 128-128z"/></svg>
                 </div>
-                <span class = "text-[32px] text-[#0E2E48]">تعمیر و پشتیبانی</span>
-                <span class = "w-50 text-center text-[25px] text-gray-500 mb-4">تعمیرات تخصصی با تجهیزات مدرن و قطعات اصلی</span>
+                <div class="w-full flex flex-col items-center  max-lg:w-[90%] max-lg:items-start ">
+                    <span class = "text-[32px] text-[#0E2E48] truncate max-w-full max-lg:text-[23px] max-lg:p-2">خدمات پس از فروش</span>
+                    <span class = "w-50 text-center text-[25px] text-gray-500 mb-4 max-lg:w-full max-lg:text-[18px] max-lg:text-start max-lg:p-2">پشتیبانی سریع و قابل اعتماد پس از خرید</span>
+                </div>
+            </div>
+            <div class="w-[19%] max-lg:w-full flex flex-col gap-3 p-3 items-center  border-1 border-gray-200 shadow-sm max-lg:flex-row max-lg:h-50">
+                <div class="w-19 h-19 rounded-full flex items-center justify-center bg-[#091E2F] max-lg:w-20 max-lg:h-17">
+                    <svg class = "size-10 fill-[#FBC830] max-lg:size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M7 47L47 7c8.5-8.5 22-9.4 31.6-2.1l104 80c5.9 4.5 9.4 11.6 9.4 19v64 8 4.7L287.3 276c30.3-24.7 75-22.9 103.3 5.4l112 112c12.5 12.5 12.5 32.8 0 45.3l-64 64c-12.5 12.5-32.8 12.5-45.3 0l-112-112c-28.3-28.3-30-73-5.4-103.3L180.7 192H176h-8H104c-7.5 0-14.5-3.5-19-9.4L5 78.6C-2.4 69.1-1.5 55.6 7 47zM168 176h8v-8V104c0-2.5-1.2-4.8-3.1-6.3l-104-80c-3.2-2.4-7.7-2.2-10.5 .7l-40 40c-2.8 2.8-3.1 7.3-.7 10.5l80 104c1.5 2 3.9 3.1 6.3 3.1h64zM379.3 292.7c-23.9-23.9-62.7-23.9-86.6 0s-23.9 62.7 0 86.6l112 112c6.2 6.2 16.4 6.2 22.6 0l64-64c6.2-6.2 6.2-16.4 0-22.6l-112-112zM21.5 386.5L170.1 237.9l11.3 11.3L32.9 397.8C22.1 408.6 16 423.2 16 438.5C16 470.2 41.8 496 73.5 496c15.3 0 29.9-6.1 40.7-16.9L230.2 363.2c1.5 5.7 3.4 11.3 5.8 16.8L125.5 490.5C111.7 504.3 93 512 73.5 512C32.9 512 0 479.1 0 438.5c0-19.5 7.7-38.2 21.5-52zM496 160c0-17.2-3-33.6-8.5-48.9L416 182.6c-6 6-14.1 9.4-22.6 9.4H352c-17.7 0-32-14.3-32-32V118.6c0-8.5 3.4-16.6 9.4-22.6l71.5-71.5C385.6 19 369.2 16 352 16c-50.7 0-95.3 26.2-121 65.8l-12.7-9.8C246.9 28.6 296.1 0 352 0c20.1 0 39.4 3.7 57.1 10.5c10 3.8 11.8 16.5 4.3 24.1l-72.7 72.7c-3 3-4.7 7.1-4.7 11.3V160c0 8.8 7.2 16 16 16h41.4c4.2 0 8.3-1.7 11.3-4.7l72.7-72.7c7.6-7.6 20.3-5.7 24.1 4.3c6.8 17.7 10.5 37 10.5 57.1c0 53.8-26.5 101.3-67.2 130.3l-11.5-11.5C471.2 252.9 496 209.3 496 160zM80 416a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
+                </div>
+                <div class="w-full flex flex-col items-center  max-lg:w-[90%] max-lg:items-start ">
+                    <span class = "text-[32px] text-[#0E2E48] truncate max-w-full max-lg:text-[23px] max-lg:p-2">تعمیر و پشتیبانی</span>
+                    <span class = "w-50 text-center text-[25px] text-gray-500 mb-4 max-lg:w-full max-lg:text-[18px] max-lg:text-start max-lg:p-2">تعمیرات تخصصی با تجهیزات مدرن و قطعات اصلی</span>
+                </div>
             </div>
         </div>
     </div>
         </section>
-        <section class = " max-w-[21000px] min-w-[325px] mx-auto mt-10 p-3 bg-slate-100 py-15">
-            <div class="max-w-[1800px] min-w-[325px] mx-auto max-lg:px-3 flex">
-                <div class="w-[70%] flex flex-col gap-3">
-                    <div class="flex gap-2 items-center text-[20px]">
-                        <div class="w-10 h-1 bg-[#FBC830]"></div>
+        <section class = " max-w-[21000px] min-w-[325px] mx-auto mt-10 bg-slate-100 max-lg:pt-5">
+            <div class="max-w-[1800px] min-w-[325px] mx-auto max-lg:p-3 flex max-lg:flex-col">
+                <div class="w-[70%] flex flex-col gap-3 max-lg:w-full  max-lg:my-5">
+                    <div class="flex gap-2 items-center text-[20px] max-lg:justify-center">
+                        <div class="w-10 h-1 bg-[#FBC830] max-lg:hidden"></div>
+                        <div class="w-10 h-1 bg-[#FBC830] lg:hidden"></div>
                         <span>مسیر تحول ما</span>
+                        <div class="w-10 h-1 bg-[#FBC830] lg:hidden"></div>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <span class = "text-[50px] text-[#0E2E48]">مسیر رشد ترازوی درختی</span>
-                        <span class = "text-[30px] text-gray-500">از اغاز تا امروز همواره در کنار مشتریان خود بوده ایم</span>
+                        <span class = "text-[50px] text-[#0E2E48] max-lg:text-[30px] max-lg:text-center">مسیر رشد ترازوی درختی</span>
+                        <span class = "text-[30px] text-gray-500 max-lg:text-[20px] max-lg:text-center">از اغاز تا امروز همواره در کنار مشتریان خود بوده ایم</span>
                     </div>
-                    <div class="w-full flex items-center relative gap-8 mr-15 mt-5 ">
+                    <div class="w-full flex items-center relative gap-8 mr-15 mt-5 max-lg:hidden">
                         <div class="w-228 h-1 bg-[#FBC830] absolute top-8 right-15"></div>
-                       <div class="flex flex-col  w-[13%] gap-1 items-center justify-center p-3">
+                       <div class="flex flex-col h-60 w-[13%] gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
-                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M520.6 120.9l0 0c18.7 29.6 .3 66.6-29.2 70.6c-2.6 .3-5.2 .5-7.9 .5c-16.5 0-31.2-7.2-41.5-18.5c-6.1-6.7-14.7-10.5-23.7-10.5s-17.6 3.8-23.7 10.5c-10.2 11.2-24.8 18.4-41.4 18.4c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C254 184.8 239.3 192 222.7 192c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C123.6 184.8 109 192 92.4 192c-2.6 0-5.2-.2-7.9-.5c-29.3-4-47.7-41-29.1-70.6l0 0L111.6 32H464.4l56.2 88.9zM483.4 224c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-11.9c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-12c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.8 0 37.8-6.5 52.3-17.3c4.7-3.5 9-7.4 12.9-11.7c3.9 4.3 8.3 8.3 13 11.8c14.5 10.7 32.5 17.2 52.2 17.2zM80 256c-8.8 0-16 7.2-16 16v80 16 16 64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 368 352 272c0-8.8-7.2-16-16-16s-16 7.2-16 16v80H96V272c0-8.8-7.2-16-16-16zM96 384H480v64c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384z"/></svg>
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M520.6 120.9l0 0c18.7 29.6 .3 66.6-29.2 70.6c-2.6 .3-5.2 .5-7.9 .5c-16.5 0-31.2-7.2-41.5-18.5c-6.1-6.7-14.7-10.5-23.7-10.5s-17.6 3.8-23.7 10.5c-10.2 11.2-24.8 18.4-41.4 18.4c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C254 184.8 239.3 192 222.7 192c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C123.6 184.8 109 192 92.4 192c-2.6 0-5.2-.2-7.9-.5c-29.3-4-47.7-41-29.1-70.6l0 0L111.6 32H464.4l56.2 88.9zM483.4 224c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-11.9c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-12c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.8 0 37.8-6.5 52.3-17.3c4.7-3.5 9-7.4 12.9-11.7c3.9 4.3 8.3 8.3 13 11.8c14.5 10.7 32.5 17.2 52.2 17.2zM80 256c-8.8 0-16 7.2-16 16v80 16 16 64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 368 352 272c0-8.8-7.2-16-16-16s-16 7.2-16 16v80H96V272c0-8.8-7.2-16-16-16zM96 384H480v64c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384z"/></svg>
                         </div>
                         <span class = "text-[#0E2E48] text-[27px]">1382</span>
                         <span class = "text-[#0E2E48] text-[21px] text-center">تاسیس مجموعه قطعات اصولی</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
-                       <div class="flex flex-col  w-[13%] gap-1 items-center justify-center p-3">
+                       <div class="flex flex-col h-60 w-[13%] gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
-                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>                                           
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>                                           
                         </div>
                         <span class = "text-[#0E2E48] text-[27px]">1392</span>
                         <span class = "text-[#0E2E48] text-[21px] text-center">گسترش تنوع محصولات</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
-                       <div class="flex flex-col  w-[13%] gap-1 items-center justify-center p-3">
+                       <div class="flex flex-col h-60 w-[13%] gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
-                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>                                           
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>                                           
                         </div>
                         <span class = "text-[#0E2E48] text-[27px]">1398</span>
                         <span class = "text-[#0E2E48] text-[21px] text-center">راه اندازی قطعات و تعمیر</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
-                       <div class="flex flex-col  w-[13%] gap-1 items-center justify-center p-3">
+                       <div class="flex flex-col h-60 w-[13%] gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
-                            <svg class = "size-6 fill-[#091E2F] z-10"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>                                           
+                            <svg class = "size-6 fill-[#091E2F] z-10"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>                                           
                         </div>
                         <span class = "text-[#0E2E48] text-[27px]">1402</span>
                         <span class = "text-[#0E2E48] text-[21px] text-center">افزایش تعداد مشتری و همکار</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
-                       <div class="flex flex-col  w-[13%] gap-1 items-center justify-center p-3">
+                       <div class="flex flex-col h-60 w-[13%] gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
-                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>                                           
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>                                           
                         </div>
                         <span class = "text-[#0E2E48] text-[27px]">امروز</span>
                         <span class = "text-[#0E2E48] text-[21px] text-center">ادامه مسیر با هدف رشد بیشتر</span>
                        </div>
                     </div>
                 </div>
-                <div class="w-[35%] relative  flex  justify-end">
-                    <div class="w-10 h-80 bg-[#FBC830] absolute -skew-x-25 right-10 top-1 rounded-[5px]"></div>
-                        <div class="w-full h-full clip-pathh overflow-hidden rounded-[15px] ">
+                    <div class="w-[35%] relative  flex  justify-end max-lg:order-first max-lg:w-full">
+                    <div class="w-10 h-80 bg-[#FBC830] absolute -skew-x-25 right-10 top-1 rounded-[5px] max-lg:hidden"></div>
+                        <div class="w-full h-full clip-pathh  rounded-[15px] relative overflow-hidden">
+                            <div class="w-14 h-20 bg-[#FBC830] absolute -left-7 -top-7 rotate-35"></div>
                             <img class = "w-full h-full" src="{{asset('assets/img/file_0000000032ac81f499cdabd6758572c0.png')}}" alt="">
+                            <div class="w-[12%] h-57 bg-[#FBC830] bottom-0 absolute  right-0 -skew-x-28"></div>
                     </div>
                 </div>
+                    <div class="w-full flex flex-col items-center relative lg:hidden gap-3">
+                        <div class="w-full flex  justify-center gap-3 relative">
+                            <div class="w-[80%] h-[1px] bg-[#FBC830] absolute top-5"></div>
+                            <div class="flex flex-col h-60  gap-1 items-center w-full max-lg:h-45">
+                                <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
+                                    <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M520.6 120.9l0 0c18.7 29.6 .3 66.6-29.2 70.6c-2.6 .3-5.2 .5-7.9 .5c-16.5 0-31.2-7.2-41.5-18.5c-6.1-6.7-14.7-10.5-23.7-10.5s-17.6 3.8-23.7 10.5c-10.2 11.2-24.8 18.4-41.4 18.4c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C254 184.8 239.3 192 222.7 192c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C123.6 184.8 109 192 92.4 192c-2.6 0-5.2-.2-7.9-.5c-29.3-4-47.7-41-29.1-70.6l0 0L111.6 32H464.4l56.2 88.9zM483.4 224c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-11.9c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-12c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.8 0 37.8-6.5 52.3-17.3c4.7-3.5 9-7.4 12.9-11.7c3.9 4.3 8.3 8.3 13 11.8c14.5 10.7 32.5 17.2 52.2 17.2zM80 256c-8.8 0-16 7.2-16 16v80 16 16 64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 368 352 272c0-8.8-7.2-16-16-16s-16 7.2-16 16v80H96V272c0-8.8-7.2-16-16-16zM96 384H480v64c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384z"/></svg>
+                        </div>
+                        <span class = "text-[#0E2E48] text-[24px]">1382</span>
+                        <span class = "text-[#0E2E48] text-[14px] text-center">تاسیس مجموعه قطعات اصولی</span>
+                       </div>
+                       <div class="h-18 w-[1px] bg-gray-300 mt-23"></div>
+                       <div class="flex flex-col h-60  gap-1 items-center w-full max-lg:h-45">
+                        <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>                                           
+                        </div>
+                        <span class = "text-[#0E2E48] text-[24px]">1392</span>
+                        <span class = "text-[#0E2E48] text-[14px] text-center ">گسترش تنوع محصولات</span>
+                       </div>
+                       <div class="h-18 w-[1px] bg-gray-300 mt-23"></div>
+                       <div class="flex flex-col h-60  gap-1 items-center w-full max-lg:h-45">
+                        <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>                                           
+                        </div>
+                        <span class = "text-[#0E2E48] text-[24px]">1398</span>
+                        <span class = "text-[#0E2E48] text-[14px] text-center ">راه اندازی قطعات و تعمیر</span>
+                    </div>
+                </div>
+
+                       <div class="w-full flex justify-center gap-3 relative">
+                            <div class="w-[80%] h-[1px] bg-[#FBC830] absolute top-5"></div>
+
+                           <div class="flex flex-col h-60  gap-1 items-center w-full max-lg:h-45">
+                               <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
+                                   <svg class = "size-6 fill-[#091E2F] z-10"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>                                           
+                                </div>
+                        <span class = "text-[#0E2E48] text-[24px]">1402</span>
+                        <span class = "text-[#0E2E48] text-[14px] text-center ">افزایش تعداد مشتری و همکار</span>
+                       </div>
+                       <div class="h-18 w-[1px] bg-gray-300 mt-23"></div>
+                           <div class="flex flex-col h-60  gap-1 items-center w-full max-lg:h-45">
+                               <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
+                                   <svg class = "size-6 fill-[#091E2F] z-10"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>                                           
+                                </div>
+                        <span class = "text-[#0E2E48] text-[24px]">1402</span>
+                        <span class = "text-[#0E2E48] text-[14px] text-center ">افزایش تعداد مشتری و همکار</span>
+                       </div>
+                       <div class="h-18 w-[1px] bg-gray-300 mt-23"></div>
+                       <div class="flex flex-col h-60  gap-1 items-center w-full max-lg:h-45">
+                        <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
+                            <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>                                           
+                        </div>
+                        <span class = "text-[#0E2E48] text-[24px]">امروز</span>
+                        <span class = "text-[#0E2E48] text-[14px] text-center ">ادامه مسیر با هدف رشد بیشتر</span>
+                    </div>
+                    </div>
+                </div>
+            </div>                                                         
+            
             </div>
         </section>
         <section class = "max-w-[1800px] min-w-[325px] mx-auto max-lg:px-3 mt-10">
-            <div class="w-full flex flex-col gap-3">
+            <div class="w-full flex flex-col gap-3 ">
                 <div class="w-full flex flex-col gap-2 items-center">
                     <div class="flex gap-3 items-center">
                         <div class="w-10 h-1 bg-[#FBC830]"></div>
@@ -442,82 +478,83 @@
                         <div class="w-10 h-1 bg-[#FBC830]"></div>
                     </div>
                     
-                    <h3 class = "text-[40px] text-[#0E2E48]">خدمات تخصصی ترازوی درختی</h3>
-                    <span class = "text-[28px] text-gray-500">مادر تمام مراحل خرید و استفاده از ترازو خمراه شما هستیم</span>
+                    <h3 class = "text-[40px] text-[#0E2E48] max-lg:text-[24px]">خدمات تخصصی ترازوی درختی</h3>
+                    <span class = "text-[28px] text-gray-500 max-lg:text-[20px] max-lg:text-center">مادر تمام مراحل خرید و استفاده از ترازو خمراه شما هستیم</span>
                 </div>
-                <div class="w-full flex gap-5">
-                    <div class="w-3/9 flex flex-col p-3 rounded-[10px] bg-white border-1 border-gray-200 shadow-sm gap-5 relative">
+                <div class="w-full flex gap-5 max-lg:flex-col">
+                    <div class="w-3/9 max-lg:w-full flex flex-col p-3 rounded-[10px] bg-white border-1 border-gray-200 shadow-sm gap-5 relative">
                         <a href = "" class="w-15 h-15 flex items-center justify-center leaner-box rounded-full absolute top-48 right-10">
-                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
                         </a>
                         <div class="w-full rounded-[10px] overflow-hidden ">
                             <img class = "w-full h-55" src="{{asset('assets/img/file_00000000b22081f4b29f589514c81a87.png')}}" alt="">
                         </div>
                         <div class="w-full flex flex-col gap-2 p-3">
-                            <h2 class = "text-[#0E2E48] text-[35px]">فروش ترازو</h2>
+                            <h2 class = "text-[#0E2E48] text-[35px] max-lg:text-[28px] font-bold">فروش ترازو</h2>
                             <span >انواع ترازوهای صنعتی،فروشگاهی،ازمایشکاهی و با بهترین قیمت</span>
                         </div>
-                        <a class = " text-[#0E2E48] flex items-center gap-3 pr-3 text-[22px]" href="">
+                        <a class = " text-[#0E2E48] flex items-center gap-3 pr-3 text-[22px] max-lg:self-end" href="">
                                 <span>مشاهده جزئیات</span>
-                                <svg class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                                <svg class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                             </a>
                     </div>
-                    <div class="w-3/9 flex flex-col p-3 rounded-[10px] bg-white border-1 border-gray-200 shadow-sm gap-5 relative">
+                    <div class="w-3/9 max-lg:w-full flex flex-col p-3 rounded-[10px] bg-white border-1 border-gray-200 shadow-sm gap-5 relative">
                         <a href = "" class="w-15 h-15 flex items-center justify-center leaner-box rounded-full absolute top-48 right-10">
-                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
                         </a>
                         <div class="w-full rounded-[10px] overflow-hidden ">
                             <img class = "w-full h-55" src="{{asset('assets/img/file_000000007efc81f4849eca10879d8b83.png')}}" alt="">
                         </div>
                         <div class="w-full flex flex-col gap-2 p-3">
-                            <h2 class = "text-[#0E2E48] text-[35px]">فروش ترازو</h2>
+                            <h2 class = "text-[#0E2E48] text-[35px] max-lg:text-[28px] font-bold">فروش ترازو</h2>
                             <span >انواع ترازوهای صنعتی،فروشگاهی،ازمایشکاهی و با بهترین قیمت</span>
                         </div>
-                        <a class = " text-[#0E2E48] flex items-center gap-3 pr-3 text-[22px]" href="">
+                        <a class = " text-[#0E2E48] flex items-center gap-3 pr-3 text-[22px] max-lg:self-end" href="">
                                 <span>مشاهده جزئیات</span>
-                                <svg class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                                <svg class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                             </a>
                     </div>
-                    <div class="w-3/9 flex flex-col p-3 rounded-[10px] bg-white border-1 border-gray-200 shadow-sm gap-5 relative">
+                    <div class="w-3/9 max-lg:w-full flex flex-col p-3 rounded-[10px] bg-white border-1 border-gray-200 shadow-sm gap-5 relative">
                         <a href = "" class="w-15 h-15 flex items-center justify-center leaner-box rounded-full absolute top-48 right-10">
-                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
                         </a>
                         <div class="w-full rounded-[10px] overflow-hidden ">
                             <img class = "w-full h-55" src="{{asset('assets/img/file_0000000081e48243a085d8cff601cd60.png')}}" alt="">
                         </div>
                         <div class="w-full flex flex-col gap-2 p-3">
-                            <h2 class = "text-[#0E2E48] text-[35px]">فروش ترازو</h2>
+                            <h2 class = "text-[#0E2E48] text-[35px] max-lg:text-[28px] font-bold">فروش ترازو</h2>
                             <span >انواع ترازوهای صنعتی،فروشگاهی،ازمایشکاهی و با بهترین قیمت</span>
                         </div>
-                        <a class = " text-[#0E2E48] flex items-center gap-3 pr-3 text-[22px]" href="">
+                        <a class = " text-[#0E2E48] flex items-center gap-3 pr-3 text-[22px] max-lg:self-end" href="">
                                 <span>مشاهده جزئیات</span>
-                                <svg class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                                <svg class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                             </a>
                         </div>
                 </div>
             </div>
         </section>
-        <section class = "max-w-[1800px] min-w-[325px] mx-auto max-lg:px-3 mt-10">
-                <div class="w-full flex relative">
-                    <div class="w-[40%]"></div>
-                    <div class="w-[50%] absolute right-0 ">
+        <section class = "max-w-[1800px] min-w-[325px] mx-auto max-lg:px-3 mt-10 max-lg:mb-50 ">
+                <div class="w-full flex relative max-lg:flex-col">
+                    <div class="w-[40%] max-lg:hidden"></div>
+                    <div class="w-[50%] absolute right-0 max-lg:w-full max-lg:-bottom-35 imgg">
                         <img class = "w-full h-[212px] rounded-[10px]" src="{{asset('assets/img/file_00000000588881f48ceb936670889db4.png')}}" alt="">
                     </div>
-                    <div class="w-15 h-[213px] bg-[#F2CE56] -skew-x-27 rounded-[7px] absolute right-185 "></div>
-                    <div class="w-[60%] flex justify-end bg-[#0E2E48] p-5 py-6 rounded-[15px] clip-pathh1">
-                        <div class="w-[70%] flex flex-col items-end text-white gap-2">
-                            <h2 class = "text-[40px]">برای انتخاب <span class = "text-[#F2CE56] ">بهترین ترازو</span>با ما در ارتباط باشید</h2>
-                            <span class = "text-[25px] text-gray-500">مشاوره ما اماده پاسخگویی به سوالات ما هستند</span>
-                            <div class="w-53 h-13 flex items-center justify-center gap-5 bg-[#FBC830] rounded-[30px] text-[#0E2E48] text-[20px]">
+                    <div class="w-15 h-[213px] bg-[#F2CE56] -skew-x-27 rounded-[7px] absolute right-185 max-lg:hidden"></div>
+                    <div class="w-[60%] flex justify-end bg-[#0E2E48] p-5 py-6 rounded-[15px] clip-pathh1 max-lg:w-full relative max-lg:flex-col max-lg:pb-20 max-lg:pt-10 max-lg:justify-between max-lg:items-center max-lg:gap-3">
+                    <div class="w-30 h-40 bg-[#FBC830] absolute z-20 -bottom-4 rotate-30 -right-18 lg:hidden"></div>
+                        <div class="w-[70%] flex flex-col items-end text-white gap-2 max-lg:w-full">
+                            <h2 class = "text-[40px] max-lg:text-[20px] max-lg:text-center">برای انتخاب <span class = "text-[#F2CE56] ">بهترین ترازو</span>با ما در ارتباط باشید</h2>
+                            <span class = "text-[20px] text-gray-500 max-lg:text-center">مشاوره ما اماده پاسخگویی به سوالات ما هستند</span>
+                            <div class="w-53 h-13 flex items-center justify-center gap-5 bg-[#FBC830] rounded-[30px] text-[#0E2E48] text-[20px] max-lg:self-center max-lg:w-48 max-lg:h-10 max-lg:text-[18px]">
                                 <span>تماس باما</span>
-                                <svg class = "fill-[#0E2E48] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                                <svg class = "fill-[#0E2E48] size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                             </div>
                         </div>
-                        <div class="w-[20%] flex items-center justify-center">
-                            <div class="w-32 h-32 flex items-center justify-center rounded-full border-1 border-gray-400">
+                        <div class="w-[20%] flex items-center justify-center max-lg:order-first max-lg:w-full ">
+                            <div class="w-32 h-32 flex items-center justify-center rounded-full border-1 border-gray-400 max-lg:w-20 max-lg:h-20">
                                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             
-                            <svg class = "size-14 fill-[#F8C028] " viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                            <svg class = "size-14 fill-[#F8C028] max-lg:size-10" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                                 
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                                 
