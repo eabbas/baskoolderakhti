@@ -171,7 +171,7 @@
              <h2 class = "text-[25px] w-125  text-justify leading-12 text-gray-300">در رصورت داشتن هرگونه سوال پیشنهاد با نیاز به مشاوره می توانید از طریق راه های ارتبازی زیر با ما در تماس باشید</h2>
              <a class = "w-[260px] h-[50px] bg-[#F2CE56] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[23px] max-lg:mt-3 " href="{{route('single_amir')}}">
                  <span>بازگشت به صفحه اصلی</span>
-                 <svg class = "size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                 <svg class = "size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                 </a>
                
             </div>
@@ -240,7 +240,7 @@
             <div class="w-full flex gap-6">
                 <div class="w-[25%] flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
-                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg> 
+                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg> 
                     </div>
                     <span class = "text-[25px] text-[#0E2E48]">ساعات کاری</span>
                     <div class="flex flex-col gap-1 items-center text-[17px] text-gray-500">
@@ -248,26 +248,26 @@
                         <span>8 صبح تا 5 عصر</span>
                     </div>
                     <div class="w-45 h-12 bg-blue-50 flex items-center gap-2 text-[15px] text-[#0E2E48] justify-center rounded-[10px]">
-                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
                         <span>مشاهده زمان ها</span>
                     </div>
                 </div>
                 <div class="w-[25%] flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
-                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                     </div>
                     <span class = "text-[25px] text-[#0E2E48]">ایمیل</span>
                     <div class="flex flex-col gap-1 items-center text-[17px] text-gray-500 my-3">
                         <span>amir@gmail.com</span>
                     </div>
                     <div class="w-45 h-12 bg-blue-50 flex items-center gap-2 text-[15px] text-[#0E2E48] justify-center rounded-[10px]">
-                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
                         <span>ارسال ایمیل</span>
                     </div>
                 </div>
                 <div class="w-[25%] flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
-                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
+                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
                     </div>
                     <span class = "text-[25px] text-[#0E2E48]">ساعات کاری</span>
                     <div class="flex flex-col gap-1 items-center text-[17px] text-gray-500">
@@ -275,13 +275,13 @@
                         <span>09122146589</span>
                     </div>
                     <div class="w-45 h-12 bg-blue-50 flex items-center gap-2 text-[15px] text-[#0E2E48] justify-center rounded-[10px]">
-                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         <span>تماس بگیرید</span>
                     </div>
                 </div>
                 <div class="w-[25%] flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
-                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                     </div>
                     <span class = "text-[25px] text-[#0E2E48]">ساعات کاری</span>
                     <div class="flex flex-col gap-1 items-center text-[17px] text-gray-500">
@@ -289,7 +289,7 @@
                         <span>8 صبح تا 5 عصر</span>
                     </div>
                     <div class="w-45 h-12 bg-blue-50 flex items-center gap-2 text-[15px] text-[#0E2E48] justify-center rounded-[10px]">
-                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                         <span>مشاهده نقشه</span>
                     </div>
                 </div>
@@ -298,43 +298,39 @@
         <section class = "max-w-[1800px] min-w-[325px] mx-auto max-lg:px-3 mt-10 mb-30">
             <div class="w-full flex bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-8">
                 <div class="w-[40%]"></div>
-                <div class="w-[60%] flex flex-col items-end gap-2">
+                <div class="w-[60%] flex flex-col items-end gap-4">
                     <div class="flex gap-3 items-center text-[20px]">
                         <span>ارسال پیام</span>
                         <div class="w-8 h-1 bg-[#FBC830]"></div>
                     </div>
-                    <span class = "text-[#0E2E48] text-[45px]">فرم تماس با ما</span>
+                    <span class = "text-[#0E2E48] text-[45px] font-bold">فرم تماس با ما</span>
                     <span class = "text-[23px] text-gray-500 mb-3">لطفا اطلاعات خود را وارد کنید تا در سریعترین زمان ممکن با شما تماس بگیریم</span>
-                    <div class="w-full flex flex-col gap-6">
-                        <div class="w-full flex gap-6">
-                            <div class="w-[50%] flex bg-white border-1 border-gray-300 rounded-[10px] ">
-                                <div class="w-[5%] flex items-center justify-center m-2 mr-4">
-                                    <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
-                                </div>
-                                <input class = "w-[95%] outline-none text-[#0E2E48] h-15 text-[25px] focus:bg-blue-50  focus:border-gray-600 rounded-[10px] p-3 transition-all duration-300" type="text" name="" id="" placeholder = "نام و نام خانوادگی">
+                    <div class="w-full flex gap-5 ">
+                        <div class="w-2/4 flex items-center border-1 border-gray-200 p-5 rounded-[10px]">
+                            <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                            <input type="text" class = "w-full outline-none pr-4 placeholder-[#0E2E48] font-bold" placeholder = "نام و نام خانوادگی">
+                        </div>
+                        <div class="w-2/4 flex items-center border-1 border-gray-200 p-5 rounded-[10px]">
+                            <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M96 16C69.5 16 48 37.5 48 64V448c0 26.5 21.5 48 48 48H288c26.5 0 48-21.5 48-48V64c0-26.5-21.5-48-48-48H96zM32 64C32 28.7 60.7 0 96 0H288c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V64zM144 432h96c4.4 0 8 3.6 8 8s-3.6 8-8 8H144c-4.4 0-8-3.6-8-8s3.6-8 8-8z"/></svg>
+                            <input type="text" class = "w-full outline-none pr-4 placeholder-[#0E2E48] font-bold" placeholder = "شماره تلفن*">
+                        </div>
+                        </div>
+                         <div class="w-full flex items-center border-1 border-gray-200 p-5 rounded-[10px]">
+                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                            <input type="text" class = "w-full outline-none pr-4 placeholder-[#0E2E48] " placeholder = "ایمیل(اختیاری)">
+                         </div>
+                        <div class="w-full flex items-center gap-4 p-5 border-1 border-gray-200 rounded-[10px]">
+                            <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 416c0-17.7-14.3-32-32-32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32H448c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H309.3c-6.9 0-13.7 2.2-19.2 6.4L192 464V416zM64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h64 32v32 48c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM80 224c-8.8 0-16 7.2-16 16s7.2 16 16 16H304c8.8 0 16-7.2 16-16s-7.2-16-16-16H80zm288 0c-8.8 0-16 7.2-16 16s7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H368zM80 288c-8.8 0-16 7.2-16 16s7.2 16 16 16h96c8.8 0 16-7.2 16-16s-7.2-16-16-16H80zm160 0c-8.8 0-16 7.2-16 16s7.2 16 16 16H432c8.8 0 16-7.2 16-16s-7.2-16-16-16H240z"/></svg>
+                            <div class="w-full flex flex-col gap-2 ">
+                                <span class = "font-bold">موضوع پیام</span>
+                                <select class = "w-full h-full flex items-center justify-between outline-none cursor-pointer " name="" id="">
+                                    <option value="">انتخاب کنید</option>
+                                </select>
                             </div>
-                        <div class="w-[50%] flex bg-white border-1 border-gray-300 rounded-[10px]">
-                            <div class="w-[5%] flex items-center justify-center m-2 mr-4">
-                                <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M96 16C69.5 16 48 37.5 48 64V448c0 26.5 21.5 48 48 48H288c26.5 0 48-21.5 48-48V64c0-26.5-21.5-48-48-48H96zM32 64C32 28.7 60.7 0 96 0H288c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V64zM144 432h96c4.4 0 8 3.6 8 8s-3.6 8-8 8H144c-4.4 0-8-3.6-8-8s3.6-8 8-8z"/></svg>
-                            </div>
-                            <input class = "w-[95%] outline-none text-[#0E2E48] h-15 text-[25px] focus:bg-blue-50  focus:border-gray-600 rounded-[10px] p-3 transition-all duration-300" type="text" name="" id="" placeholder = "شماره موبایل">
+                        </div>   
+                        <div class="w-full flex items-center">
+                            
                         </div>
-                    </div>
-                    <div class="w-full flex bg-white border-1 border-gray-300 rounded-[10px]">
-                        <div class="w-[2.5%] flex items-center justify-center m-2 mr-4">
-                            <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-                        </div>
-                        <input class = "w-[98.5%] outline-none text-[#0E2E48] h-15 text-[25px] focus:bg-blue-50  focus:border-gray-600 rounded-[10px] p-3 transition-all duration-300" type="text" name="" id="" placeholder = "ایمیل (اختیاری)">
-                        </div>
-                        <div class="w-full flex justify-between items-center bg-white border-1 border-gray-300 rounded-[10px]">
-                            <div class="flex gap-2">
-                                <div class="flex flex-col">
-                                    <span>موضوع پیام</span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
