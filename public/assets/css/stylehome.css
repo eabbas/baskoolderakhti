@@ -60,6 +60,10 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     clip-path: polygon(0 0 , 100% 0 , 90% 100% , 0 100%);
 }
 
+.clip-pathh2{
+    clip-path: polygon(0 0 , 100% 0 , 75% 100% , 0 100%);
+}
+
 @media(max-width:1406px){
     .fonts{
         font-size: 17px;
@@ -94,6 +98,9 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     .imgg{
         clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
     }
+    .clip-pathh2{
+    clip-path: polygon(0 0 , 100% 0 , 100% 90% , 0 100%);
+    }
 }
 
 
@@ -103,6 +110,9 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
 }
 
 
-.clip-pathh2{
-    clip-path: polygon(0 0 , 100% 0 , 75% 100% , 0 100%);
+
+
+.leanerrr{
+    background: #ffeaab;
+    background: linear-gradient(71deg, rgba(255, 234, 171, 0) 17%, rgba(255, 191, 0, 0.19) 50%, rgba(255, 191, 0, 0) 100%);
 }
