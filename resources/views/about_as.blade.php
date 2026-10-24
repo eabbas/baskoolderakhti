@@ -235,7 +235,7 @@
                 <img class = "w-full max-lg:h-[210px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
             </div>
             <div class="w-[35%]  max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center gap-3 max-lg:p-0 max-lg:pt-5 max-lg:items-center max-lg:w-full  pl-13 max-lg:order-first">
-              <span class = "text-[60px] text-nowrap max-lg:text-[45px]">درباره <span class = "text-[#FBC830]">ترازوی درختی</span></span>
+              <span class = "text-[60px] text-nowrap max-lg:text-[45px] max-sm:text-[40px]">درباره <span class = "text-[#FBC830]">ترازوی درختی</span></span>
               <div class="flex flex-col items-end text-[30px] max-lg:text-[25px]">
                   <span>تخصص , کیفیت و دقت</span>
                   <div class="w-[40px] h-1 bg-[#FBC830]"></div>
