@@ -80,7 +80,7 @@
         </div>
     </div>
 
-    <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] mt-35">
+    <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] mt-30">
         <div class="w-full bg-[#0E2E48] top-0 fixed z-40">
         <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3">
             <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2  my-3">
@@ -778,7 +778,7 @@ v10H2z"/>
 
 
 
-        <section class="max-w-[1800px] min-w-[325px] mx-auto -mt-20">
+        <section class="max-w-[1800px] min-w-[325px] mx-auto max-lg:-mt-20">
             <div class="w-full  bg-slate-50 border-1 border-slate-100 shadow-sm p-2 rounded-[15px]">
                 <div class="w-full flex justify-between items-center max-lg:flex-col  max-lg:justify-center ">
                     <div class="flex flex-col   max-lg:w-full max-lg:items-center max-lg:justify-center gap-2">
