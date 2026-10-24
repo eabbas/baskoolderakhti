@@ -64,7 +64,7 @@
                 </div>
             </a>
             <div class="w-full bg-gray-600 min-h-[1px]"></div>
-            <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+            <a href = "{{route('about_as')}}" class="w-full flex items-center justify-between max-h-20 ">
                 <div class="flex gap-3  text-[20px]">
                     <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c-13.3 0-24 10.7-24 24V264c0 13.3 10.7 24 24 24s24-10.7 24-24V152c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
                     <span>درباره</span>
@@ -778,7 +778,7 @@ v10H2z"/>
 
 
 
-        <section class="max-w-[1800px] min-w-[325px] mx-auto -mt-20">
+        <section class="max-w-[1800px] min-w-[325px] mx-auto max-lg:-mt-20">
             <div class="w-full  bg-slate-50 border-1 border-slate-100 shadow-sm p-2 rounded-[15px]">
                 <div class="w-full flex justify-between items-center max-lg:flex-col  max-lg:justify-center ">
                     <div class="flex flex-col   max-lg:w-full max-lg:items-center max-lg:justify-center gap-2">
