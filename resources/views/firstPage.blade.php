@@ -10,7 +10,7 @@
 </head>
 <body class = "relative">
     <div class="w-full h-full absolute z-40 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
-    <div class="fixed w-75 h-[97%] bg-[#091E2F] z-50 px-7 py-3 text-white flex flex-col  m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
+    <div class="fixed w-70 h-[84%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
             <div class="w-full  flex items-center justify-between  ">
                 <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
                     <img class = "w-15" src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" alt="">
@@ -71,7 +71,7 @@
                 </div>
             </a>
                     <div class="w-full bg-gray-600 min-h-[1px]"></div>
-            <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+            <a href = "{{route('document_phone')}}" class="w-full flex items-center justify-between max-h-20 ">
                 <div class="flex gap-3  text-[20px]">
                     <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg> 
                     <span>تماس با ما</span>

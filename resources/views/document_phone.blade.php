@@ -8,7 +8,78 @@
     <script src="{{asset('assets/js/jquery.js')}}"></script>
     <link rel="stylesheet" href="{{asset('assets/css/stylehome.css')}}">
 </head>
-<body class = "bg-blue-50">
+<body class = "bg-blue-50 relative">
+    <div class="w-full h-full absolute z-40 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
+    <div class="fixed w-70 h-[84%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
+            <div class="w-full  flex items-center justify-between  ">
+                <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
+                    <img class = "w-15" src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" alt="">
+                    <span>ترازوی درختی</span>
+                </div>
+                <xml version="1.0" encoding="utf-8">
+                    <svg  onclick = "bar_menu()" class = "size-7 fill-white" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.207 6.207a1 1 0 0 0-1.414-1.414L12 10.586 6.207 4.793a1 1 0 0 0-1.414 1.414L10.586 12l-5.793 5.793a1 1 0 1 0 1.414 1.414L12 13.414l5.793 5.793a1 1 0 0 0 1.414-1.414L13.414 12l5.793-5.793z"/></svg>
+            </div>
+            <div class="w-full flex flex-col overflow-y-auto gap-5 ">
+
+                <a href = "#" class="w-full max-h-20 flex items-center gap-3  text-[20px]   ">
+                    <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M272.5 5.7c9-7.6 22.1-7.6 31.1 0l264 224c10.1 8.6 11.4 23.7 2.8 33.8s-23.7 11.3-33.8 2.8L512 245.5V432c0 44.2-35.8 80-80 80H144c-44.2 0-80-35.8-80-80V245.5L39.5 266.3c-10.1 8.6-25.3 7.3-33.8-2.8s-7.3-25.3 2.8-33.8l264-224zM288 55.5L112 204.8V432c0 17.7 14.3 32 32 32h48V312c0-22.1 17.9-40 40-40H344c22.1 0 40 17.9 40 40V464h48c17.7 0 32-14.3 32-32V204.8L288 55.5zM240 464h96V320H240V464z"/></svg>
+                    <span>صفحه اصلی</span>
+                </a>
+                <div class="w-full bg-gray-700 h-[1px]"></div>
+
+        <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+            <div class="flex flex-row-reverse gap-3  text-[20px]">
+                <span>محصولات</span>
+                <xml version="1.0" encoding="utf-8">
+                    <svg class = "size-8 fill-white" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.5777 3.38197L17.5777 4.43152C19.7294 5.56066 20.8052 6.12523 21.4026 7.13974C22 8.15425 22 9.41667 22 11.9415V12.0585C22 14.5833 22 15.8458 21.4026 16.8603C20.8052 17.8748 19.7294 18.4393 17.5777 19.5685L15.5777 20.618C13.8221 21.5393 12.9443 22 12 22C11.0557 22 10.1779 21.5393 8.42229 20.618L6.42229 19.5685C4.27063 18.4393 3.19479 17.8748 2.5974 16.8603C2 15.8458 2 14.5833 2 12.0585V11.9415C2 9.41667 2 8.15425 2.5974 7.13974C3.19479 6.12523 4.27063 5.56066 6.42229 4.43152L8.42229 3.38197C10.1779 2.46066 11.0557 2 12 2C12.9443 2 13.8221 2.46066 15.5777 3.38197Z" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M21 7.5L17 9.5M12 12L3 7.5M12 12V21.5M12 12C12 12 14.7426 10.6287 16.5 9.75C16.6953 9.65237 17 9.5 17 9.5M17 9.5V13M17 9.5L7.5 4.5" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+            </div>
+            <svg class = "size-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+        <div class="w-full bg-gray-600 min-h-[1px]"></div>
+        <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+            <div class="flex gap-3  text-[20px]">
+                <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M32 229.5V80c0-8.8 7.2-16 16-16H197.5c8.5 0 16.6 3.4 22.6 9.4l176 176c12.5 12.5 12.5 32.8 0 45.3L262.6 428.1c-12.5 12.5-32.8 12.5-45.3 0l-176-176L18.7 274.7l22.6-22.6c-6-6-9.4-14.1-9.4-22.6zm-32 0c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7H48C21.5 32 0 53.5 0 80V229.5zM112 168a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg>
+                <span>برندها</span>
+            </div>   
+            <svg class = "size-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </a>
+        <div class="w-full bg-gray-600 min-h-[1px]"></div>
+        <a href = "#" class="w-full flex items-center justify-between max-h-20">
+            <div class="flex gap-3  text-[20px]">
+                <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M322.3 268c9.4 2.6 19.3 4 29.7 4c60.5 0 109.8-48 111.9-108l-25.3 25.3c-12 12-28.3 18.7-45.3 18.7H368c-35.3 0-64-28.7-64-64V118.6c0-17 6.7-33.3 18.7-45.3l0 0L348 48.1C288 50.1 240 99.5 240 160c0 10.3 1.4 20.3 4 29.7c4.6 16.6-.2 34.4-12.4 46.6L57.1 410.7c-5.9 5.8-9.1 13.8-9.1 22.1C48 450 62 464 79.2 464c8.3 0 16.2-3.3 22.1-9.1L275.7 280.4c12.2-12.2 30-16.9 46.6-12.4zM424.6 39.4l-67.9 67.9c-3 3-4.7 7.1-4.7 11.3V144c0 8.8 7.2 16 16 16h25.4c4.2 0 8.3-1.7 11.3-4.7l67.9-67.9c7.2-7.2 19.3-5.9 23.7 3.3c10.1 21 15.7 44.5 15.7 69.3c0 88.4-71.6 160-160 160c-14.7 0-28.9-2-42.3-5.7L135.2 488.8c-14.9 14.9-35 23.2-56 23.2C35.5 512 0 476.5 0 432.8c0-21 8.3-41.1 23.2-56L197.7 202.3C194 188.9 192 174.7 192 160C192 71.6 263.6 0 352 0c24.8 0 48.3 5.7 69.3 15.7c9.2 4.4 10.5 16.5 3.3 23.7zM88 408a16 16 0 1 1 0 32 16 16 0 1 1 0-32z"/></svg>
+                <span>خدمات وپشتیبانی</span>
+            </div>
+        </a>
+        <div class="w-full bg-gray-600 min-h-[1px]"></div>
+        <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+            <div class="flex flex-row-reverse gap-3  text-[20px]">
+                <span>صنایع و کاربردی</span>
+                <xml version="1.0" encoding="utf-8">
+                    <svg class = "size-7 fill-white" viewBox="0 0 16 16" id="factory-16px" xmlns="http://www.w3.org/2000/svg">
+                        <path id="Path_109" data-name="Path 109" d="M-6.5,16h-15a.5.5,0,0,1-.5-.5V.5a.5.5,0,0,1,.5-.5h4a.5.5,0,0,1,.5.5V8.691l5.276-2.638a.5.5,0,0,1,.487.022A.5.5,0,0,1-11,6.5V8.617l4.243-2.546a.5.5,0,0,1,.5-.006A.5.5,0,0,1-6,6.5v9A.5.5,0,0,1-6.5,16ZM-21,15H-7V7.383l-4.243,2.546a.5.5,0,0,1-.5.006A.5.5,0,0,1-12,9.5V7.309l-5.276,2.638a.5.5,0,0,1-.487-.022A.5.5,0,0,1-18,9.5V1h-3Z" transform="translate(22)"/>
+                    </svg>
+                </div>
+            </a>
+            <div class="w-full bg-gray-600 min-h-[1px]"></div>
+            <a href = "{{route('about_as')}}" class="w-full flex items-center justify-between max-h-20 ">
+                <div class="flex gap-3  text-[20px]">
+                    <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c-13.3 0-24 10.7-24 24V264c0 13.3 10.7 24 24 24s24-10.7 24-24V152c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+                    <span>درباره</span>
+                </div>
+            </a>
+                    <div class="w-full bg-gray-600 min-h-[1px]"></div>
+            <a href = "{{route('document_phone')}}" class="w-full flex items-center justify-between max-h-20 ">
+                <div class="flex gap-3  text-[20px]">
+                    <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg> 
+                    <span>تماس با ما</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A]">
        <div class="w-full bg-[#0E2E48] top-0 fixed z-40">
         <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3">
@@ -333,7 +404,7 @@
             </div>
         </div>
         </section>
-        <section class = "max-w-[1800px] min-w-[320px] mx-auto bg-white rounded-[10px] max-lg:mx-3 max-lg:bg-inherit mt-10">
+        <section class = "max-w-[1800px] min-w-[320px] mx-auto bg-white rounded-[10px] max-lg:px-3 max-lg:bg-inherit mt-10">
             <div class="w-full flex gap-10 p-8 max-lg:p-0 max-lg:flex-col">
                 <div class="w-3/7 flex flex-col relative items-end justify-between gap-10 p-8 py-12 max-lg:w-full max-lg:bg-white max-lg:border-1 max-lg:border-gray-200 max-lg:rounded-[15px] max-lg:shadow-md">
                     <img class = "absolute w-[60%] top-10 right-0 opacity-10" src="{{asset('assets/img/building1.png')}}" alt="">
@@ -362,7 +433,7 @@
                         <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M248 72c0-13.3-10.7-24-24-24s-24 10.7-24 24V232H40c-13.3 0-24 10.7-24 24s10.7 24 24 24H200V440c0 13.3 10.7 24 24 24s24-10.7 24-24V280H408c13.3 0 24-10.7 24-24s-10.7-24-24-24H248V72z"/></svg>
                     </div>
                 </div>
-                <div class="w-full bg-white p-5 lg:hidden rounded-[15px]">
+                <div class="w-full bg-white p-5 lg:hidden rounded-[15px] shadow-md border-1 border-gray-200">
                     <div class="w-full flex justify-between items-end p-3 bg-[url({{asset('assets/img/formobile.jpg')}})] bg-cover be-center rounded-[20px] h-100">
                         <div class="w-40 h-10 flex items-center justify-center gap-2 bg-[#FBC830] rounded-[30px] font-bold self-start">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
@@ -476,5 +547,15 @@
         </div>
     </footer>
 
+    <script>
+         function bar_menu(){
+            let menu = document.getElementById('menu')
+            let document_black = document.getElementById('document_black')
+            console.log(document_black)
+            menu.classList.toggle('translate-x-150')
+            document_black.classList.toggle('invisible')
+            document_black.classList.toggle('opacity-0')
+        }
+    </script>
 </body>
 </html>
