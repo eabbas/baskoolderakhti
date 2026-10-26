@@ -376,10 +376,10 @@
         .derakhti-form-header h2 {
             font-size: 17px;
         }
-        .derakhti-grid {
+        /* .derakhti-grid {
             grid-template-columns: 1fr !important;
             gap: 16px !important;
-        }
+        } */
         .derakhti-toggle-group {
             flex-direction: column;
             align-items: flex-start !important;
@@ -471,7 +471,7 @@ $count=0
             @csrf
             
             <!-- ===== گرید فیلدها ===== -->
-            <div class="derakhti-grid grid grid-cols-2 gap-6">
+            <div class="derakhti-grid md:grid md:grid-cols-2 flex flex-col  gap-6">
 
                 <!-- عنوان -->
                 <div>
