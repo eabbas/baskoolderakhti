@@ -8,6 +8,8 @@
     <script src="{{asset('assets/js/jquery.js')}}"></script>
     <link rel="stylesheet" href="{{asset('assets/css/index.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         /* ===== پالت رنگی مترونیک ===== */
         :root {
@@ -408,7 +410,7 @@
             <!-- لوگو -->
             <div class="flex items-center gap-3 px-6 py-6 bg-gradient-to-r from-[#0D0E12] to-[#1a1a20]">
                 <div class="w-11 h-11 rounded-2xl logo-gradient flex items-center justify-center text-white text-xl shadow-lg shadow-[#1B84FF]/25">
-                    <i class="fas fa-heartbeat"></i>
+                    <i class="fas fa-weight-scale"></i>
                 </div>
                 <div>
                     <h1 class="text-xl font-bold text-white">باسکول درختی </h1>
