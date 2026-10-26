@@ -10,7 +10,7 @@
 </head>
 <body class = "bg-blue-50 relative">
     <div class="w-full h-full absolute z-40 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
-    <div class="fixed w-70 h-[84%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
+    <div class="fixed w-70 h-[83%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
             <div class="w-full  flex items-center justify-between  ">
                 <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
                     <img class = "w-15" src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" alt="">
@@ -21,7 +21,7 @@
             </div>
             <div class="w-full flex flex-col overflow-y-auto gap-5 ">
 
-                <a href = "#" class="w-full max-h-20 flex items-center gap-3  text-[20px]   ">
+                <a href = "{{route('firstpage')}}" class="w-full max-h-20 flex items-center gap-3  text-[20px]   ">
                     <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M272.5 5.7c9-7.6 22.1-7.6 31.1 0l264 224c10.1 8.6 11.4 23.7 2.8 33.8s-23.7 11.3-33.8 2.8L512 245.5V432c0 44.2-35.8 80-80 80H144c-44.2 0-80-35.8-80-80V245.5L39.5 266.3c-10.1 8.6-25.3 7.3-33.8-2.8s-7.3-25.3 2.8-33.8l264-224zM288 55.5L112 204.8V432c0 17.7 14.3 32 32 32h48V312c0-22.1 17.9-40 40-40H344c22.1 0 40 17.9 40 40V464h48c17.7 0 32-14.3 32-32V204.8L288 55.5zM240 464h96V320H240V464z"/></svg>
                     <span>صفحه اصلی</span>
                 </a>
@@ -67,7 +67,7 @@
             <a href = "{{route('about_as')}}" class="w-full flex items-center justify-between max-h-20 ">
                 <div class="flex gap-3  text-[20px]">
                     <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c-13.3 0-24 10.7-24 24V264c0 13.3 10.7 24 24 24s24-10.7 24-24V152c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
-                    <span>درباره</span>
+                    <span>درباره ما</span>
                 </div>
             </a>
                     <div class="w-full bg-gray-600 min-h-[1px]"></div>
@@ -234,12 +234,16 @@
                 <img class = "w-full h-[457px] relative z-10 max-lg:h-[380px]" src="{{asset('assets/img/file_00000000d6188243b80c993b60cf3bc7.png')}}" alt="">
             </div>
             <div class="w-[55%] h-[457px] flex flex-col items-end text-white relative z-30 justify-center gap-1 max-lg:gap-0 max-lg:p-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full pl-15 clip-pathh2 bg-[#091E2F] max-lg:pt-5">
-             <span class = "text-[20px] ">خانه / تماس باما</span>
+             <div class="w-full flex gap-2 items-center justify-end font-bold max-lg:justify-center">
+                <a href="{{route('firstpage')}}">خانه</a>
+                <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                <a href="#">تماس باما</a>
+             </div>   
              <span class = "text-[65px] font-bold max-lg:text-[50px]">تماس با <span class = "text-[#F2CE56]">ما</span></span>
              <span class = "text-[40px] max-sm:text-[25px] text-nowrap">ما همیشه در کنار شما هستیم</span>
              <h2 class = "text-[25px] w-125  text-justify leading-12 text-gray-300 max-lg:w-full max-lg:text-[18px] max-lg:leading-10">در رصورت داشتن هرگونه سوال پیشنهاد با نیاز به مشاوره می توانید از طریق راه های ارتبازی زیر با ما در تماس باشید</h2>
-             <a class = "w-[260px] h-[50px] bg-[#FBC830] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] max-lg:mt-3 max-sm:w-[200px] max-lg:text-[15px] max-lg:gap-2 max-lg:h-[45px] max-lg:self-end" href="{{route('single_amir')}}">
-                 <span>بازگشت به صفحه اصلی</span>
+             <a href = "{{route('about_as')}}" class = "w-[260px] h-[50px] bg-[#FBC830] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] max-lg:mt-3 max-sm:w-[200px] max-lg:text-[15px] max-lg:gap-2 max-lg:h-[45px] max-lg:self-end" href="{{route('single_amir')}}">
+                 <span>درباره ما</span>
                  <svg class = "size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                 </a>
                

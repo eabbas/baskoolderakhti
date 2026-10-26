@@ -10,7 +10,7 @@
 </head>
 <body class = "relative">
 <div class="w-full h-dvh fixed top-0 right-0 z-40 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
-<div class="fixed w-75 h-[97%] bg-[#091E2F] z-50 px-7 py-3 text-white flex flex-col  m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
+<div class="fixed w-75 h-[83%] bg-[#091E2F] z-50 px-7 py-3 text-white flex flex-col  bottom-0 m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
     <div class="w-full  flex items-center justify-between  ">
         <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
             <img class = "w-15" src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" alt="">
@@ -21,7 +21,7 @@
     </div>
     <div class="w-full flex flex-col overflow-y-auto gap-5 ">
 
-        <a href = "#" class="w-full max-h-20 flex items-center gap-3  text-[20px]   ">
+        <a href = "{{route('firstpage')}}" class="w-full max-h-20 flex items-center gap-3  text-[20px]   ">
             <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M272.5 5.7c9-7.6 22.1-7.6 31.1 0l264 224c10.1 8.6 11.4 23.7 2.8 33.8s-23.7 11.3-33.8 2.8L512 245.5V432c0 44.2-35.8 80-80 80H144c-44.2 0-80-35.8-80-80V245.5L39.5 266.3c-10.1 8.6-25.3 7.3-33.8-2.8s-7.3-25.3 2.8-33.8l264-224zM288 55.5L112 204.8V432c0 17.7 14.3 32 32 32h48V312c0-22.1 17.9-40 40-40H344c22.1 0 40 17.9 40 40V464h48c17.7 0 32-14.3 32-32V204.8L288 55.5zM240 464h96V320H240V464z"/></svg>
             <span>صفحه اصلی</span>
         </a>
@@ -64,14 +64,14 @@
             </div>
         </a>
         <div class="w-full bg-gray-600 min-h-[1px]"></div>
-        <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+        <a href = "{{route('about_as')}}" class="w-full flex items-center justify-between max-h-20 ">
             <div class="flex gap-3  text-[20px]">
                 <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c-13.3 0-24 10.7-24 24V264c0 13.3 10.7 24 24 24s24-10.7 24-24V152c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
-                <span>درباره</span>
+                <span>درباره ما</span>
             </div>
         </a>
         <div class="w-full bg-gray-600 min-h-[1px]"></div>
-        <a href = "#" class="w-full flex items-center justify-between max-h-20 ">
+        <a href = "{{route('document_phone')}}" class="w-full flex items-center justify-between max-h-20 ">
             <div class="flex gap-3  text-[20px]">
                 <svg class = "size-7 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                 <span>تماس با ما</span>
@@ -235,13 +235,18 @@
                 <img class = "w-full max-lg:h-[210px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
             </div>
             <div class="w-[35%]  max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center gap-3 max-lg:p-0 max-lg:pt-5 max-lg:items-center max-lg:w-full  pl-13 max-lg:order-first">
+                <div class="w-full flex gap-2 font-bold items-center max-lg:justify-center">
+                    <a href="{{route('firstpage')}}">خانه</a>
+                    <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                    <a href="">درباره ما</a>
+                </div>
               <span class = "text-[60px] text-nowrap max-lg:text-[45px] max-sm:text-[40px]">درباره <span class = "text-[#FBC830]">ترازوی درختی</span></span>
               <div class="flex flex-col items-end text-[30px] max-lg:text-[25px]">
                   <span>تخصص , کیفیت و دقت</span>
                   <div class="w-[40px] h-1 bg-[#FBC830]"></div>
                 </div>
                 <p class = "text-[20px] text-justify max-lg:text-[16px] max-lg:text-center">ما در ترازوی درختی با سال ها تجربه در زمینه فروش و خدمات ترازوهای صنعتی و ازمایشگاهی همواره مطمئن کسب و کار شما هستیم</p>
-                <a class = "w-[220px] h-[50px] bg-[#D99A16] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[25px] max-lg:mt-3 max-lg:w-[190px] max-lg:h-[45px] max-lg:text-[20px]" href="{{route('single_amir')}}">
+                <a href = "{{route('document_phone')}}" class = "w-[220px] h-[50px] bg-[#FBC830] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[25px] max-lg:mt-3 max-lg:w-[190px] max-lg:h-[45px] max-lg:text-[20px]" href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
                     <span>تماس باما</span>
                 </a>
