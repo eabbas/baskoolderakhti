@@ -20,7 +20,7 @@ use App\Http\Controllers\AddressController;
 use App\Http\Middleware\checkUserExist;
 use App\Http\Middleware\checkAuthUser;
 
-Route::get('/',[UserController::class,'firstPage']);
+Route::get('/',[UserController::class,'firstPage'])->name('firstpage');
 Route::get('/setting',[UserController::class,'setting']);
 Route::get('/1',function (){
     return view('1');
@@ -194,5 +194,6 @@ Route::get('/about/as' , [UserController::class , 'about_as'])->name('about_as')
 Route::get('/document/phone' , [UserController::class , 'document_phone'])->name('document_phone');
 
 Route::get('/single/amir/product' , function(){
-   return view("product.singleamir");
+    $user = Auth::user();
+   return view("product.singleamir" , ['user' => $user]);
 })->name('single_amir');
