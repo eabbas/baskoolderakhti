@@ -228,14 +228,14 @@
         </div>
     <div class="max-w-[21000px] min-w-[320px] relative max-lg:mt-20 mt-35">
         <div class="w-full flex relative max-lg:flex-col justify-end">
-            <div class="w-[100%] h-10 absolute bg-[#FBC830] bottom-3 z-30 lg:hidden left-1/2 -translate-x-1/2 -rotate-6 -skew-x-13 max-[380px]:-rotate-7"></div>
+            <div class="w-[99%] h-10 absolute bg-[#FBC830] bottom-3 z-30 lg:hidden left-1/2 -translate-x-1/2 -rotate-6 -skew-x-13 max-[380px]:-rotate-7"></div>
             <div class="w-[61%] max-lg:h-[120px] max-lg:w-full absolute right-0 !z-20 ">
             <div class="w-12 h-114 absolute bg-[#FBC830] left-42 z-25 -skew-x-30 max-lg:hidden"></div>
                 <img class = "w-full h-[457px] relative z-10 max-lg:h-[380px]" src="{{asset('assets/img/file_00000000d6188243b80c993b60cf3bc7.png')}}" alt="">
             </div>
-            <div class="w-[55%] h-[457px] flex flex-col items-end text-white relative z-30 justify-center gap-1 max-lg:gap-0 max-lg:p-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full pl-15 clip-pathh2 bg-[#091E2F]">
-             <span class = "text-[20px]">خانه / تماس باما</span>
-             <span class = "text-[65px] font-bold">تماس با <span class = "text-[#F2CE56]">ما</span></span>
+            <div class="w-[55%] h-[457px] flex flex-col items-end text-white relative z-30 justify-center gap-1 max-lg:gap-0 max-lg:p-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full pl-15 clip-pathh2 bg-[#091E2F] max-lg:pt-5">
+             <span class = "text-[20px] ">خانه / تماس باما</span>
+             <span class = "text-[65px] font-bold max-lg:text-[50px]">تماس با <span class = "text-[#F2CE56]">ما</span></span>
              <span class = "text-[40px] max-sm:text-[25px] text-nowrap">ما همیشه در کنار شما هستیم</span>
              <h2 class = "text-[25px] w-125  text-justify leading-12 text-gray-300 max-lg:w-full max-lg:text-[18px] max-lg:leading-10">در رصورت داشتن هرگونه سوال پیشنهاد با نیاز به مشاوره می توانید از طریق راه های ارتبازی زیر با ما در تماس باشید</h2>
              <a class = "w-[260px] h-[50px] bg-[#FBC830] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] max-lg:mt-3 max-sm:w-[200px] max-lg:text-[15px] max-lg:gap-2 max-lg:h-[45px] max-lg:self-end" href="{{route('single_amir')}}">
@@ -314,14 +314,14 @@
                     <div class="w-13 h-80 bg-[#FBC830] absolute skew-x-30 bottom-0 -left-10"></div>
                     <div class="w-13 h-80  absolute skew-x-30 bottom-0 left-3 leanerrr"></div>
                     <div class="w-10 h-1 bg-[#F2CE56] max-lg:hidden"></div>
-                    <span class = "text-[#FBC830] text-[30px] font-bold max-sm:text-[25px] max-lg:self-center">با <span class = "text-white">ما در ارتباط باشید</span></span>
-                    <p class = "text-gray-300 text-[20px] leading-9 w-[85%] max-lg:w-full max-lg:text-justify">ما به پیام های شما اسرع وقت شاسخ خواهیم داد و از اینکه وقت خود را برای ما میگذارید سپاسگزاریم</p>
+                    <span class = "text-[#FBC830] text-[30px] font-bold max-sm:text-[28px] max-[400px]:text-[25px] max-lg:self-center">با <span class = "text-white">ما در ارتباط باشید</span></span>
+                    <p class = "text-gray-300 text-[20px] leading-9 w-[85%] max-lg:w-full max-lg:text-justify max-lg:text-[18px]">ما به پیام های شما اسرع وقت شاسخ خواهیم داد و از اینکه وقت خود را برای ما میگذارید سپاسگزاریم</p>
                     <div class="w-full flex flex-col gap-10 max-lg:gap-5">
                         <div class="w-full flex gap-5 max-lg:flex-col max-lg:items-center max-lg:gap-2">
-                            <div class="w-30 h-25 max-lg:w-25  rounded-full border-1 border-gray-300 flex items-center justify-center">
+                            <div class="w-30 h-25 max-lg:w-18 max-lg:h-18  rounded-full border-1 border-gray-300 flex items-center justify-center">
                                  <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             
-                            <svg class = "size-10 fill-[#F8C028] " viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                            <svg class = "size-10 fill-[#F8C028] max-lg:size-9" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                                 
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
                                 
@@ -332,38 +332,38 @@
                             </svg>
                             </div>
                             <div class="w-full flex flex-col justify-center gap-2 max-lg:items-center max-lg:text-center">
-                                <h3 class = "text-[25px] text-gray-300">پشتیبانی سریع</h3>
-                                <span class = "text-[18px] text-gray-400">پاسخ گویی در کوتاه ترین زمان</span>
+                                <h3 class = "text-[25px] text-gray-300 max-lg:text-[22px]">پشتیبانی سریع</h3>
+                                <span class = "text-[18px] text-gray-400 max-lg:text-[16px]">پاسخ گویی در کوتاه ترین زمان</span>
                             </div>
                         </div>
                         <div class="w-full flex gap-5 max-lg:flex-col max-lg:items-center max-lg:gap-2">
-                            <div class="w-30 h-25 max-lg:w-25 rounded-full border-1 border-gray-300 flex items-center justify-center">
-                               <svg class = "size-11 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M243.5 37.3c8-3.4 17-3.4 25 0l176.7 75c11.3 4.8 18.9 15.5 18.8 27.6c-.5 94-39.4 259.8-195.5 334.5c-7.9 3.8-17.2 3.8-25.1 0C87.3 399.6 48.5 233.8 48 139.8c-.1-12.1 7.5-22.8 18.8-27.6l176.7-75zM281 7.8c-16-6.8-34-6.8-50 0L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L281 7.8zm82.3 195.5c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L224 297.4l-52.7-52.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l64 64c6.2 6.2 16.4 6.2 22.6 0l128-128z"/></svg>
+                            <div class="w-30 h-25 max-lg:w-18 max-lg:h-18 rounded-full border-1 border-gray-300 flex items-center justify-center">
+                               <svg class = "size-11 fill-[#FBC830] max-lg:size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M243.5 37.3c8-3.4 17-3.4 25 0l176.7 75c11.3 4.8 18.9 15.5 18.8 27.6c-.5 94-39.4 259.8-195.5 334.5c-7.9 3.8-17.2 3.8-25.1 0C87.3 399.6 48.5 233.8 48 139.8c-.1-12.1 7.5-22.8 18.8-27.6l176.7-75zM281 7.8c-16-6.8-34-6.8-50 0L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L281 7.8zm82.3 195.5c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L224 297.4l-52.7-52.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l64 64c6.2 6.2 16.4 6.2 22.6 0l128-128z"/></svg>
                             </div>
                             <div class="w-full flex flex-col justify-center gap-2 max-lg:items-center max-lg:text-center">
-                                <h3 class = "text-[25px] text-gray-300">شماوره تخصصی</h3>
-                                <span class = "text-[18px] text-gray-400">راهنمایی قبا از خرید</span>
+                                <h3 class = "text-[25px] text-gray-300 max-lg:text-[22px]">شماوره تخصصی</h3>
+                                <span class = "text-[18px] text-gray-400 max-lg:text-[16px]">راهنمایی قبا از خرید</span>
                             </div>
                         </div>
                         <div class="w-full flex gap-5 max-lg:flex-col max-lg:items-center max-lg:gap-2">
-                            <div class="w-30 h-25 max-lg:w-25 rounded-full border-1 border-gray-300 flex items-center justify-center">
-                              <svg class = "size-11 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M352 48c8.8 0 16 7.2 16 16V352c0 8.8-7.2 16-16 16H320 243.2c-16.6-28.7-47.6-48-83.2-48s-66.6 19.3-83.2 48H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H352zm32 368c0 53 43 96 96 96s96-43 96-96h40c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8V245.3c0-14.9-5.9-29.1-16.4-39.6l-93.3-93.3C487.8 101.9 473.6 96 458.7 96H416V64c0-35.3-28.7-64-64-64H64C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64c0 53 43 96 96 96s96-43 96-96h64 32 24 8zM557.7 239.6c.1 .1 .3 .3 .4 .4H416V144h42.7c2.1 0 4.2 .8 5.7 2.3l93.3 93.3zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>                                                  
+                            <div class="w-30 h-25 max-lg:w-18 max-lg:h-18 rounded-full border-1 border-gray-300 flex items-center justify-center">
+                              <svg class = "size-11 fill-[#FBC830] max-lg:size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M352 48c8.8 0 16 7.2 16 16V352c0 8.8-7.2 16-16 16H320 243.2c-16.6-28.7-47.6-48-83.2-48s-66.6 19.3-83.2 48H64c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H352zm32 368c0 53 43 96 96 96s96-43 96-96h40c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8V245.3c0-14.9-5.9-29.1-16.4-39.6l-93.3-93.3C487.8 101.9 473.6 96 458.7 96H416V64c0-35.3-28.7-64-64-64H64C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64c0 53 43 96 96 96s96-43 96-96h64 32 24 8zM557.7 239.6c.1 .1 .3 .3 .4 .4H416V144h42.7c2.1 0 4.2 .8 5.7 2.3l93.3 93.3zM112 416a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm368-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
                             </div>
                             <div class="w-full flex flex-col justify-center gap-2 max-lg:items-center max-lg:text-center">
-                                <h3 class = "text-[25px] text-gray-300 z-20">ارسال ی هسراسر کشور</h3>
-                                <span class = "text-[18px] text-gray-400 z-20">با بهترین روش های حمل و نقل</span>
+                                <h3 class = "text-[25px] text-gray-300 z-20 max-lg:text-[22px]">ارسال ی هسراسر کشور</h3>
+                                <span class = "text-[18px] text-gray-400 z-20 max-lg:text-[16px]">با بهترین روش های حمل و نقل</span>
                             </div>
                         </div>
                     </div>
                     </div>
-                <div class="w-[60%] flex flex-col items-end max-lg:items-center gap-4 p-5 max-lg:w-full max-lg:p-2">
+                <div class="w-[60%] flex flex-col items-end max-lg:items-center gap-4 p-5 max-lg:w-full max-lg:p-2 ">
                     <div class="flex gap-3 items-center text-[20px] ">
                         <div class="w-8 h-1 bg-[#FBC830] lg:hidden"></div>
                         <span>ارسال پیام</span>
                         <div class="w-8 h-1 bg-[#FBC830]"></div>
                     </div>
-                    <span class = "text-[#0E2E48] text-[45px] font-bold">فرم تماس با ما</span>
-                    <span class = "text-[23px] text-gray-500 mb-3 max-lg:text-center">لطفا اطلاعات خود را وارد کنید تا در سریعترین زمان ممکن با شما تماس بگیریم</span>
+                    <span class = "text-[#0E2E48] text-[45px] font-bold max-lg:text-[40px]">فرم تماس با ما</span>
+                    <span class = "text-[23px] text-gray-500 mb-3 max-lg:text-center max-lg:text-[20px]">لطفا اطلاعات خود را وارد کنید تا در سریعترین زمان ممکن با شما تماس بگیریم</span>
                     <div class="w-full flex flex-col gap-7">
                         <div class="w-full flex gap-5 max-lg:flex-col">
                             <div class="w-2/4 flex items-center border-1 border-gray-200 p-5 rounded-[10px] max-lg:w-full">
@@ -396,7 +396,7 @@
                                 <textarea placeholder = "متن پیام خود ر ااینجا بنویسید..." class = "w-full outline-none pr-14" name="" id="" cols = "110" rows = "5"></textarea>
                             </div>
                         </div>
-                        <a class = "w-58 h-15 flex gap-3 bg-[#FBC830] rounded-[30px] items-center justify-center font-bold mt-5" href="">
+                        <a class = "w-58 h-15 flex gap-3 bg-[#FBC830] rounded-[30px] items-center justify-center font-bold mt-5 max-lg:mt-0 max-lg:h-11 max-lg:w-50" href="">
                             <span>ارسال پیام</span>
                             <svg class = "size-6 fill-[#0E2E48]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg>
                         </a>
@@ -410,12 +410,12 @@
                     <img class = "absolute w-[60%] top-10 right-0 opacity-10" src="{{asset('assets/img/building1.png')}}" alt="">
                     <div class=" flex items-center gap-3">
                         <span class = "text-[28px] font-bold text-[#0E2E48]">موقعیت ما</span>
-                        <div class="w-13 h-13 rounded-full flex items-center justify-center bg-[#FBC830] gap-3">
-                            <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        <div class="w-13 h-13 rounded-full flex items-center justify-center bg-[#FBC830] max-lg:w-10 max-lg:h-10 ">
+                            <svg class = "size-7 fill-[#0E2E48] max-lg:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                         </div>
                     </div>
                     <span class = "text-[20px] text-gray-800 z-10">تهران خیابان ولیعصر کوچه شهید رجایی پلاک 12</span>
-                    <a href = "" class="w-48 h-15 border-1 border-gray-300 flex items-center justify-center gap-4 text-[19px] text-[#0E2E48] rounded-[30px] font-bold">
+                    <a href = "" class="w-48 h-15 border-1 border-gray-300 flex items-center justify-center gap-4 text-[19px] text-[#0E2E48] rounded-[30px] font-bold max-lg:w-42 max-lg:h-12">
                         <svg class = "size-6 fill-[#0E2E48]" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M41.4193 7.30899C41.4193 7.30899 45.3046 5.79399 44.9808 9.47328C44.8729 10.9883 43.9016 16.2908 43.1461 22.0262L40.5559 39.0159C40.5559 39.0159 40.3401 41.5048 38.3974 41.9377C36.4547 42.3705 33.5408 40.4227 33.0011 39.9898C32.5694 39.6652 24.9068 34.7955 22.2086 32.4148C21.4531 31.7655 20.5897 30.4669 22.3165 28.9519L33.6487 18.1305C34.9438 16.8319 36.2389 13.8019 30.8426 17.4812L15.7331 27.7616C15.7331 27.7616 14.0063 28.8437 10.7686 27.8698L3.75342 25.7055C3.75342 25.7055 1.16321 24.0823 5.58815 22.459C16.3807 17.3729 29.6555 12.1786 41.4193 7.30899Z" fill="#000000"/>
                         </svg>
