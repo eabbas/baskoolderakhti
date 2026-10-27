@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{asset('assets/css/stylehome.css')}}">
 </head>
 <body class = "relative">
-    <!-- <div class="w-full h-full -top-35 absolute z-50 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div> -->
+    <div class="w-full h-dvh top-0 fixed z-50 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
     <div class="fixed w-70 h-[98%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 top-0 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
             <div class="w-full  flex items-center justify-between  ">
                 <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
@@ -240,8 +240,8 @@
                     فروش انواع ترازوهای
                     <span class = "text-white">دیجیتال و مکانیکی</span>
                 </p>
-                <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[40px] ">دقت در وزن کشی</span>
-                <span class = "font-bold text-[#FBC830] text-[60px] max-lg:text-[40px]">سرمایه شماست</span>
+                <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[40px] lg:text-nowrap">دقت در وزن کشی</span>
+                <span class = "font-bold text-[#FBC830] text-[60px] max-lg:text-[40px] lg:text-nowrap">سرمایه شماست</span>
                 <p class = "text-[20px] w-[400px] flex items-center justify-center text-end leading-8   max-lg:w-full max-lg:text-center max-lg:px-3 max-lg:mb-5 max-lg:text-[15px]">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
                 <a class = "w-[220px] h-[50px] max-lg:h-[40px] bg-[#FBC830]  rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] lg:mt-6" href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
@@ -332,7 +332,7 @@
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 items-end text-white max-lg:justify-center">
-                            <span class = "text-[26px] max-lg:text-[18px] text-nowrap">فروشگاهای سوپرمارکت ها</span>
+                            <span class = "text-[26px] max-lg:text-[18px] lg:text-nowrap text-nowrap">فروشگاهای سوپرمارکت ها</span>
                             <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای فروشگاهی</span>
                         </div>
                         <div class="w-[20%] bg-black/20 flex items-center  justify-center">
@@ -373,7 +373,7 @@ C382.837,10.843,371.985,0,358.612,0H81.106c-13.38,0-24.219,10.848-24.219,24.225c
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                            <span class = "text-[26px] max-lg:text-[18px]">کارخانه های تولیدی ها</span>
+                            <span class = "text-[26px] max-lg:text-[18px] lg:text-nowrap">کارخانه های تولیدی ها</span>
                             <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازو های صنعتی و دقیق</span>
                         </div>
                         <div class="w-[20%] flex items-center justify-center">
@@ -397,7 +397,7 @@ v10H2z"/>
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                            <span class = "text-[26px] max-lg:text-[18px]">صنایع غذایی و رستوران ها</span>
+                            <span class = "text-[26px] max-lg:text-[18px] lg:text-nowrap">صنایع غذایی و رستوران ها</span>
                             <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای اشپزخانه و صنعتی</span>
                         </div>
                         <div class="w-[20%] flex items-center justify-center">
@@ -417,7 +417,7 @@ v10H2z"/>
                             </a>
                         </div>
                         <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                            <span class = "text-[26px] max-lg:text-[18px]">انبار ها و مراکز توزیع</span>
+                            <span class = "text-[26px] max-lg:text-[18px] lg:text-nowrap">انبار ها و مراکز توزیع</span>
                             <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای بالت و باسکول</span>
                         </div>
                         
@@ -439,7 +439,7 @@ v10H2z"/>
                             </a>
                         </div>
                             <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                        <span class = "text-[26px] max-lg:text-[18px]">کشاورزی و دامداری</span>
+                        <span class = "text-[26px] max-lg:text-[18px] lg:text-nowrap">کشاورزی و دامداری</span>
                         <span class = "text-[22px] max-lg:text-[15px] text-gray-400">ترازوهای محصولا ت کشاورزی</span>
                     </div>
                             <div class="w-[20%] flex items-center justify-center">
@@ -487,7 +487,7 @@ v10H2z"/>
                             </a>
                         </div>
                                   <div class="w-[60%] flex flex-col gap-2 text-white max-lg:justify-center items-end">
-                        <span class = "text-[26px] max-lg:text-[18px]">حمل و نقل و لجستیک</span>
+                        <span class = "text-[26px] max-lg:text-[18px] lg:text-nowrap">حمل و نقل و لجستیک</span>
                         <span class = "text-[22px] max-lg:text-[15px] text-gray-400">باسکول و ترازوهای جاده ای</span>
                     </div>
                             <div class="w-[20%] flex items-center justify-center">
@@ -644,7 +644,7 @@ v10H2z"/>
                                 
                             </svg>
                         </div>
-                        <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا</span>
+                        <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا در اندازه کشی ترازو</span>
                         <div class="w-full text-center mb-8 max-lg:mb-2">
                             <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
                         </div>
@@ -722,7 +722,7 @@ v10H2z"/>
 
     <div class="w-full relative mt-10 overflow-hidden flex h-[400px] rounded-[15px] max-lg:hidden">
         <div class="w-[75%] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover"></div>
-        <div class=" flex flex-col  w-[520px] bg-[#002030] gap-3 rounded-[10px] p-12 justify-center bg items-end">
+        <div class=" flex flex-col  w-[700px] bg-[#002030] gap-3 rounded-[10px] p-12 justify-center bg items-end clip-path-3 absolute left-0">
                 <div class="w-full flex flex-col  text-white  items-end gap-2">
                     <a href = "" class="w-[180px] text-[18px] h-[35px] flex items-center justify-center rounded-[30px] bg-[#F8C028] text-[#002030] ">محصولات پرطرفدار</a>   
                     <span class = "text-[30px]">ترازوهای فروشگاهی و صنعتی</span>
@@ -734,7 +734,6 @@ v10H2z"/>
                 <span>مشاهده محصولات</span>
             </a>
         </div>
-                <div class="w-[30%] -skew-x-25 ml-20 absolute left-0 h-full top-0 rounded-[10px] bg-[#002030]  -z-10"></div>
             </div>
             <div class="w-[120px] h-[300px] bg-[#F8C028] -skew-x-25 absolute  bottom-0 -right-20"></div>
         </div>
