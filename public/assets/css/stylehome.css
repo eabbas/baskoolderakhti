@@ -109,7 +109,9 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     background: linear-gradient(353deg, rgba(255, 234, 171, 1) 28%, rgba(255, 191, 0, 1) 79%);
 }
 
-
+.clip-path-3{
+    clip-path: polygon(0 0 , 100% 0% , 70% 100% , 0 100%);
+}
 
 
 .leanerrr{
