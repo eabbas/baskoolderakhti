@@ -118,3 +118,10 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     background: #ffeaab;
     background: linear-gradient(71deg, rgba(255, 234, 171, 0) 17%, rgba(255, 191, 0, 0.19) 50%, rgba(255, 191, 0, 0) 100%);
 }
+
+/* @media(max-width:1600px){
+    .leaner_about {
+        background: linear-gradient(90deg, rgba(3, 21, 34, 1) 55%, rgba(3, 21, 34, 0) 100%, rgba(3, 21, 34, 0) 100%);
+    }
+    
+} */

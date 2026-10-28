@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/stylehome.css')}}">
 </head>
 <body class = "bg-blue-50 relative">
-    <div class="w-full h-full absolute z-40 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
-    <div class="fixed w-70 h-[83%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
+    <div class="w-full h-dvh top-0 fixed z-50 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
+    <div class="fixed w-70 h-[97%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 top-1 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
             <div class="w-full  flex items-center justify-between  ">
                 <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
                     <img class = "w-15" src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" alt="">
