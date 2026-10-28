@@ -10,7 +10,7 @@
 </head>
 <body class = "relative">
     <div class="w-full h-dvh top-0 fixed z-50 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
-    <div class="fixed w-70 h-[98%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 top-0 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
+    <div class="fixed w-70 h-[97%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 top-1 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
             <div class="w-full  flex items-center justify-between  ">
                 <div class="flex items-center text-[22px] gap-3 text-nowrap  ">
                     <img class = "w-15" src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" alt="">
@@ -102,7 +102,7 @@
                     </div>
                 <div class="flex flex-col gap-2  text-white">
                     <span class = "text-[35px] font-bold text-nowrap">ترازو درختی</span>
-                    <span class = "text-[14px] text-nowrap">دقت در اندازه گیری و اعتبار در کسب و کار</span>
+                    <span class = "text-[14px] text-nowrap ">دقت در اندازه گیری و اعتبار در کسب و کار</span>
                 </div>
             </div>
             <div class="w-[70%] flex items-center justify-around gap-10 max-2xl:gap-5 max-2xl:w-[80%] text-white  text-[18px] font-bold   parent_font max-lg:hidden">
@@ -630,7 +630,7 @@ v10H2z"/>
                     <p class = "text-gray-500 text-[15px] text-center max-lg:w-[300px] mb-3">ما در ترازوی درختی با تکیه بر تجربه تکنولوژی روز و پشتیبان واقعی به شما کمک میکنیم تا با اطمینان دقیق ترین اندازی گیری هارا داشته باشید</p>
                 </div>
                 <div class="w-full flex gap-4 max-lg:grid max-lg:grid-cols-2">
-                    <div class="w-[20%] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-5 items-center rounded-[15px] px-13 max-lg:p-4">
+                    <div class="max-w-[300px] min-w-[150px] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-4 items-center rounded-[15px] px-8 max-lg:p-3">
                         <div class="w-[70px] h-[70px] max-lg:w-[57px] max-lg:h-[57px] rounded-full bg-[#001020] flex items-center justify-center">
                             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             
@@ -644,21 +644,21 @@ v10H2z"/>
                                 
                             </svg>
                         </div>
-                        <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا در اندازه کشی ترازو</span>
+                        <span class = "text-[25px] max-lg:text-[20px] text-[#002030]  text-center">پشتیبانی واقعی</span>
                         <div class="w-full text-center mb-8 max-lg:mb-2">
-                            <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
+                            <span class = "text-gray-400 text-[19px] max-lg:text-[15px]">پاسخگویی سریع و مشاوره تخصصی</span>
                         </div>
                     </div>
-                    <div class="w-[20%] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-5 items-center rounded-[15px] px-13 max-lg:p-4">
+                    <div class="max-w-[300px] min-w-[150px] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-4 items-center rounded-[15px] px-8 max-lg:p-3">
                         <div class="w-[70px] h-[70px] max-lg:w-[57px] max-lg:h-[57px] rounded-full bg-[#001020] flex items-center justify-center">
                             <svg class = "fill-[#F8D048] size-10 max-lg:size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M243.5 37.3c8-3.4 17-3.4 25 0l176.7 75c11.3 4.8 18.9 15.5 18.8 27.6c-.5 94-39.4 259.8-195.5 334.5c-7.9 3.8-17.2 3.8-25.1 0C87.3 399.6 48.5 233.8 48 139.8c-.1-12.1 7.5-22.8 18.8-27.6l176.7-75zM281 7.8c-16-6.8-34-6.8-50 0L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L281 7.8zm82.3 195.5c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L224 297.4l-52.7-52.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l64 64c6.2 6.2 16.4 6.2 22.6 0l128-128z"/></svg>
                         </div>
-                        <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا</span>
+                        <span class = "text-[25px] max-lg:text-[20px] text-[#002030] text-center">گارانتی معنبر</span>
                         <div class="w-full text-center mb-8 max-lg:mb-2">
-                            <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
+                            <span class = "text-gray-400 text-[19px] max-lg:text-[15px]">همراه با ضمانت نامه اصالت و خدمات پس از فروش</span>
                         </div>
                     </div>
-                    <div class="w-[20%] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-5 items-center rounded-[15px] px-13 max-lg:p-4">
+                    <div class="max-w-[300px] min-w-[150px] max-lg:w-full flex flex-col gap-6 max-lg:gap-2  border-1 border-slate-100 shadow-sm p-4 items-center rounded-[15px] px-8 max-lg:p-3">
                         <div class="w-[70px] h-[70px] max-lg:w-[57px] max-lg:h-[57px] rounded-full bg-[#001020] flex items-center justify-center">
                             <xml version="1.0" encoding="utf-8">
                                 <svg class = "size-10 max-lg:size-8 fill-[#F8D048]" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -666,21 +666,21 @@ v10H2z"/>
                                     <path d="M28.641 26.578l-3.799-6.364c1.805-2.055 2.907-4.767 2.907-7.736 0-6.489-5.26-11.749-11.749-11.749s-11.749 5.26-11.749 11.749c0 2.943 1.082 5.633 2.87 7.695l-0.012-0.015-3.832 6.422c-0.111 0.183-0.176 0.404-0.176 0.64 0 0.691 0.56 1.251 1.251 1.251 0.071 0 0.14-0.006 0.207-0.017l-0.007 0.001 2.602-0.426 0.947 2.426c0.175 0.44 0.581 0.753 1.065 0.791l0.004 0c0.032 0.002 0.063 0.004 0.095 0.004 0.46-0 0.863-0.249 1.080-0.619l0.003-0.006 3.775-6.54c0.562 0.1 1.212 0.16 1.875 0.165l0.004 0c0.64-0.005 1.263-0.060 1.87-0.162l-0.069 0.010 3.769 6.526c0.22 0.376 0.622 0.625 1.082 0.625h0c0.031 0 0.063-0.002 0.094-0.004 0.488-0.037 0.896-0.35 1.067-0.783l0.003-0.008 0.947-2.426 2.602 0.426c0.060 0.010 0.129 0.016 0.2 0.016 0.691 0 1.251-0.56 1.251-1.251 0-0.236-0.065-0.457-0.179-0.645l0.003 0.006zM9.48 27.123l-0.369-0.945c-0.193-0.469-0.647-0.793-1.177-0.793-0.067 0-0.132 0.005-0.196 0.015l0.007-0.001-0.947 0.156 2.181-3.655c0.765 0.581 1.638 1.084 2.572 1.47l0.078 0.029zM6.75 12.5c0-5.109 4.141-9.25 9.25-9.25s9.25 4.141 9.25 9.25c0 5.109-4.141 9.25-9.25 9.25v0c-5.106-0.006-9.244-4.144-9.25-9.249v-0.001zM24.168 25.396c-0.060-0.010-0.129-0.016-0.199-0.016-0.527 0-0.978 0.326-1.163 0.787l-0.003 0.008-0.369 0.945-2.135-3.697c1.016-0.408 1.894-0.905 2.693-1.502l-0.031 0.022 2.155 3.609zM16 4.75c-4.28 0-7.75 3.47-7.75 7.75s3.47 7.75 7.75 7.75c4.28 0 7.75-3.47 7.75-7.75v0c-0.005-4.278-3.472-7.745-7.75-7.75h-0zM16 17.75c-2.899 0-5.25-2.351-5.25-5.25s2.351-5.25 5.25-5.25c2.899 0 5.25 2.351 5.25 5.25v0c-0.004 2.898-2.352 5.246-5.25 5.25h-0zM18.666 10.651h-1.129l-0.349-1.072c-0.208-0.459-0.662-0.772-1.188-0.772s-0.981 0.313-1.185 0.764l-0.003 0.008-0.349 1.072h-1.128c-0 0-0 0-0 0-0.69 0-1.25 0.559-1.25 1.25 0 0.414 0.201 0.781 0.512 1.009l0.004 0.002 0.912 0.664-0.349 1.071c-0.039 0.116-0.061 0.249-0.061 0.387 0 0.69 0.56 1.25 1.25 1.25 0.276 0 0.531-0.089 0.738-0.241l-0.004 0.002 0.913-0.663 0.913 0.663c0.203 0.149 0.458 0.238 0.734 0.238 0.69 0 1.25-0.56 1.25-1.25 0-0.138-0.022-0.271-0.064-0.396l0.003 0.009-0.348-1.071 0.912-0.663c0.314-0.23 0.516-0.597 0.516-1.012 0-0.69-0.56-1.25-1.25-1.25-0 0-0 0-0 0h0z"></path>
                                 </svg>
                             </div>
-                            <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا</span>
+                            <span class = "text-[25px] max-lg:text-[20px] text-[#002030] text-center">کیفیت و ساخت بالا</span>
                             <div class="w-full text-center mb-8 max-lg:mb-2">
-                                <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
+                                <span class = "text-gray-400 text-[19px] max-lg:text-[15px]">استفاده از بهترین مواد اولیه و تکنولوژی روز دنیا</span>
                             </div>
                     </div>
-                    <div class="w-[20%] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-5 items-center rounded-[15px] px-13 max-lg:p-4">
+                    <div class="max-w-[300px] min-w-[150px] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-4 items-center rounded-[15px] px-8 max-lg:p-3">
                         <div class="w-[70px] h-[70px] max-lg:w-[57px] max-lg:h-[57px] rounded-full bg-[#001020] flex items-center justify-center">
                             <svg class = "size-10 max-lg:size-8 fill-[#F8D048]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M112 0C85.5 0 64 21.5 64 48V96H16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 272c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 48c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 240c8.8 0 16 7.2 16 16s-7.2 16-16 16H64 16c-8.8 0-16 7.2-16 16s7.2 16 16 16H64 208c8.8 0 16 7.2 16 16s-7.2 16-16 16H64V416c0 53 43 96 96 96s96-43 96-96H384c0 53 43 96 96 96s96-43 96-96h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V288 256 237.3c0-17-6.7-33.3-18.7-45.3L512 114.7c-12-12-28.3-18.7-45.3-18.7H416V48c0-26.5-21.5-48-48-48H112zM544 237.3V256H416V160h50.7L544 237.3zM160 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm272 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z"/></svg>
                         </div>
-                        <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا</span>
+                        <span class = "text-[25px] max-lg:text-[20px] text-[#002030] text-center">ارسال سریع</span>
                         <div class="w-full text-center mb-8 max-lg:mb-2">
-                            <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
+                            <span class = "text-gray-400 text-[19px] max-lg:text-[15px]">به سراسر کشور با بسته بندی دقیق</span>
                         </div>
                     </div>
-                    <div class="w-[20%] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-5 items-center rounded-[15px] px-13 max-lg:p-4">
+                    <div class="max-w-[300px] min-w-[150px] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-4 items-center rounded-[15px] px-8 max-lg:p-3">
                         <div class="w-[70px] h-[70px] max-lg:w-[57px] max-lg:h-[57px] rounded-full bg-[#001020] flex items-center justify-center">
                             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             
@@ -694,21 +694,21 @@ v10H2z"/>
                                 
                             </svg>
                         </div>
-                        <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا</span>
+                        <span class = "text-[25px] max-lg:text-[20px] text-[#002030]">دقت بالا</span>
                         <div class="w-full text-center mb-8 max-lg:mb-2">
-                            <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
+                            <span class = "text-gray-400 text-[19px] max-lg:text-[15px]">ترازوهای کالبیره شده و دقیق</span>
                         </div>
                     </div>
-                    <div class="w-[20%] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-5 items-center rounded-[15px] px-13 max-lg:p-4">
+                    <div class="max-w-[300px] min-w-[150px] max-lg:w-full flex flex-col gap-6 max-lg:gap-2 bg-white border-1 border-slate-100 shadow-sm p-4 items-center rounded-[15px] px-8 max-lg:p-3">
                         <div class="w-[70px] h-[70px] max-lg:w-[57px] max-lg:h-[57px] rounded-full bg-[#001020] flex items-center justify-center z-10">
                             <xml version="1.0" encoding="utf-8">
                                 <svg class = "fill-[#F8D048] size-10 max-lg:size-8" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M31.835 9.233l-4.371-8.358c-0.255-0.487-0.915-0.886-1.464-0.886h-10.060c-0.011-0.001-0.022-0.003-0.033-0.004-0.009 0-0.018 0.003-0.027 0.004h-9.88c-0.55 0-1.211 0.398-1.47 0.883l-4.359 8.197c-0.259 0.486-0.207 1.248 0.113 1.696l15.001 20.911c0.161 0.224 0.375 0.338 0.588 0.338 0.212 0 0.424-0.11 0.587-0.331l15.247-20.758c0.325-0.444 0.383-1.204 0.128-1.691zM29.449 8.988h-5.358l2.146-6.144zM17.979 1.99h6.436l-1.997 5.716zM20.882 8.988h-9.301l4.396-6.316zM9.809 8.034l-2.006-6.044h6.213zM21.273 10.988l-5.376 15.392-5.108-15.392h10.484zM13.654 25.971l-10.748-14.983h5.776zM23.392 10.988h5.787l-11.030 15.018zM5.89 2.575l2.128 6.413h-5.539z"></path>
                                 </svg>
                             </div>
-                            <span class = "text-[30px] max-lg:text-[25px] text-[#002030]">دقت بالا</span>
+                            <span class = "text-[25px] max-lg:text-[20px] text-[#002030] text-center">تنوع در محصولات</span>
                             <div class="w-full text-center mb-8 max-lg:mb-2">
-                                <span class = "text-gray-400 text-[22px] max-lg:text-[17px]">مناسب برای تمامی کسب و صنایع</span>
+                                <span class = "text-gray-400 text-[19px] max-lg:text-[15px]">مناسب برای تمامی کسب و صنایع</span>
                             </div>
                         </div>
                 </div>
