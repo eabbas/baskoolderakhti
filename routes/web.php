@@ -26,6 +26,11 @@ Route::get('/1',function (){
     return view('1');
 });
 
+Route::get('/login/amir' , function(){
+    $user = Auth::user();
+    return view('admin.user.document_login_amir' , ['user' => $user]);
+});;
+
 Route::get('/search', function(){
     return view('search');
 });
@@ -197,3 +202,12 @@ Route::get('/single/amir/product' , function(){
     $user = Auth::user();
    return view("product.singleamir" , ['user' => $user]);
 })->name('single_amir');
+
+Route::get('/singup/amir' , function(){
+    $user = Auth::user();
+    return view("admin.user.document_singup_amir" , ['user' => $user]);
+});
+Route::get('/login/amir' , function(){
+    $user = Auth::user();
+    return view("admin.user.document_login_amir" , ['user' => $user]);
+});
