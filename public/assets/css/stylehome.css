@@ -87,7 +87,7 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
         background: linear-gradient(180deg, rgba(3, 21, 34, 1) 54%, rgba(3, 21, 34, 0) 80%, rgba(3, 21, 34, 0) 100%);
     }
     .leaner_about{
-        background: linear-gradient(180deg, rgba(3, 21, 34, 1) 54%, rgba(3, 21, 34, 0) 80%, rgba(3, 21, 34, 0) 100%);
+        background: linear-gradient(180deg, rgba(3, 21, 34, 1) 60%, rgba(3, 21, 34, 0) 83%, rgba(3, 21, 34, 0) 100%);
     }
     .clip-pathh{
     clip-path: polygon(0 0 , 100% 0 , 100% 40% , 80% 100% , 0% 100%);
