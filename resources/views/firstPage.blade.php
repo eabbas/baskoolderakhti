@@ -130,13 +130,8 @@
                 @else
                 <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
                     <div class=" flex items-center gap-3">
-
-                        <a href="{{route('user.loginPage')}}">
-                            ورود
-                        </a>
-                        <div class="w-[2px] h-[22px] bg-white rotate-12"></div>
-                        <a href="{{route('user.loginPage')}}">
-                            ثبت نام
+                        <a href="{{url('login')}}">
+                            ورود / ثبت نام
                         </a>   
                     </div>
                     <div class="lg:block hidden w-[370px] h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
