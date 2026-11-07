@@ -250,40 +250,40 @@
                
             </div>
             <div class="w-[17%] h-[300px] rounded-l-[40px] text-white top-15 z-10 bg-[#0B304A]/20 flex flex-col p-8 items-center absolute gap-3 right-0 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
-                <div class="w-full flex  items-end justify-end gap-6  max-2xl:justify-center max-2xl:items-center">
+                <div class="w-full flex  items-end  gap-6  max-2xl:justify-center max-2xl:items-center">
                     <div class="w-[55px] h-[55px] border rounded-full border-slate-600 flex items-center justify-center  p-2 max-2xl:justify-center max-2xl:items-center">
                         <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                     <div class="flex flex-col  gap-2">
                         <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
+                        <span class = "text-gray-400 text-[16px]">با ضمانت و اصالت بالا</span>
                     </div>
                 </div>
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
-                <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
+                <div class="w-full flex  items-end  gap-6 max-2xl:justify-center max-2xl:items-center">
                     <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600 ">
                         <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
+                        <span class = "font-bold text-[23px]">ارسال سریع</span>
+                        <span class = "text-gray-400 text-[16px]">به سراسر کشور</span>
                     </div>
                 </div>
                 
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
-                <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
+                <div class="w-full flex  items-end gap-6 max-2xl:justify-center max-2xl:items-center">
                     <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600">
                         <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                     <div class="flex flex-col gap-2">
                         <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
+                        <span class = "text-gray-400 text-[16px]">پاسخگویی 24 ساعته</span>
                     </div>
                 </div>
         </div>
         <div class="w-full absolute h-37 flex justify-center items-center lg:hidden -bottom-34 bg-[#0B304A] rounded-[15px] border-1 shadow-sm shadow-[#0B304A] border-gray-400 gap-1">
             <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
-                <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
+                <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 127L256 49.4 439 127c5.9 2.5 9.1 7.8 9 12.8c-.4 91.4-38.4 249.3-186.3 320.1c-3.6 1.7-7.8 1.7-11.3 0C102.4 389 64.5 231.2 64 139.7c0-5 3.1-10.2 9-12.8zM457.7 82.8L269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.8 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
                 <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
                     <span class = "text-nowrap text-[18px] max-lg:text-[15px]">کیفیت تضمینی</span>
                     <span class = "text-[15px] text-nowrap text-gray-400 max-lg:text-[12px]">با ضمانت اصالت کالا</span>
@@ -291,8 +291,8 @@
             </div>
             <div class="h-[90%] w-[1px] bg-gray-700"></div>
             <div class="w-[35%] flex flex-col gap-2 items-center justify-center   h-[140px]">
-                <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                 <div class="w-full flex flex-col gap-3 items-center justify-center text-white">
+                    <svg class = "fill-[#D99A16] size-8 mt-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M352 48H128c-8.8 0-16 7.2-16 16V96H240c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16H64V64C64 28.7 92.7 0 128 0H352c35.3 0 64 28.7 64 64V96h42.7c14.9 0 29.1 5.9 39.6 16.4l93.3 93.3c10.5 10.5 16.4 24.7 16.4 39.6V368h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H576c0 53-43 96-96 96s-96-43-96-96h-8H352 320 256c0 53-43 96-96 96s-96-43-96-96V368 288h48v44.8c14.1-8.2 30.5-12.8 48-12.8c35.5 0 66.6 19.3 83.2 48H320h32c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16zM557.7 239.6l-93.3-93.3c-1.5-1.5-3.5-2.3-5.7-2.3H416v96H558l-.2-.2-.2-.2zM208 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm272 48a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM48 160H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H48c-8.8 0-16-7.2-16-16s7.2-16 16-16zM16 224H240c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
                     <span class = "text-nowrap text-[18px max-lg:text-[15px]]">ارسال سریع</span>
                     <span class = "text-[15px] text-nowrap text-gray-400 max-lg:text-[12px]">به سراسر کشور</span>
                 </div>
@@ -597,12 +597,12 @@ v10H2z"/>
                     </div>
                      <div class="w-[30%] flex flex-col  gap-3  max-lg:w-full max-lg:items-center">
                         <div class="flex flex-col gap-3 max-lg:items-center  items-end">
-                            <div class="w-[160px] h-[50px] text-[25px] flex items-center justify-center bg-[#F8C028] rounded-[25px] max-lg:w-[200px] max-lg:text-[30px] text-white">
+                            <div class="w-[160px] h-[50px] text-[25px] flex items-center justify-center bg-[#F8C028] rounded-[25px] max-lg:w-[170px] max-lg:text-[25px] text-white">
                                 <span>معرفی ما</span>
                             </div>
                             <div class="flex flex-col items-end max-lg:items-center">
                                 <span class = "text-[60px] text-nowrap text-center text-[#F8C028] max-lg:text-[50px] max-lg:hidden">ویدیو معرفی</span>
-                                <span class = "text-[60px] text-nowrap text-center text-[#002030] max-lg:text-[45px]">ترازوی حرفه ای</span>
+                                <span class = "text-[60px] text-nowrap text-center text-[#002030] max-lg:text-[38px]">ترازوی حرفه ای</span>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 max-lg:items-center items-end">
@@ -740,8 +740,8 @@ v10H2z"/>
         
         <div class="w-full mx-auto flex items-center justify-between my-5  max-lg:flex-col max-lg:gap-3 max-lg:my-0 max-lg:mb-5 ">
             <a href = "" class="flex gap-3 items-center max-lg:order-1">
-                <svg class = "size-5 fill-[#0B304A]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                 <span>مشاهده همه</span>
+                <svg class = "size-5 fill-[#0B304A]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
             </a href = "">
             <div class=" flex gap-3 t  justify-center items-center text-[30px] max-lg:text-[22px] max-lg:w-full">
                 <div class="w-[80px] h-1 rounded-[2px] bg-[#D99A16] max-lg:w-[15%]"></div>
@@ -833,14 +833,14 @@ v10H2z"/>
                         </div>
                         <div class="w-full flex flex-col gap-2  max-lg:items-center">
                             <span class = "text-[#0B304A] text-[50px] max-lg:text-[30px]">مناسب برای همه صنایع</span>
-                            <span class = "text-gray-400 text-[25px]  max-lg:text-[20px]">ترازوی مناسب راهکاری برای رشد کسب و کارها</span>
+                            <span class = "text-gray-400 text-[25px]  max-lg:text-[18px] text-center">ترازوی مناسب راهکاری برای رشد کسب و کارها</span>
                         </div>
-                        <a href = "#" class="w-[220px] h-[50px]  bg-purple-600 flex items-center justify-center gap-4 text-white rounded-[25px] text-[20px] max-lg:hidden">
+                        <a href = "#" class="w-[220px] h-[50px]  bg-purple-600 flex items-center justify-center gap-4 text-white rounded-[25px] text-[18px] max-lg:hidden">
                             <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"/></svg>
                             <span>مشاهده همه صنایع</span>
                         </a>
                     </div>
-                    <a href = "#" class="w-[220px] h-[50px]  bg-purple-600 flex items-center justify-center gap-4 text-white rounded-[25px] text-[20px] lg:hidden order-2 mb-4">
+                    <a href = "#" class="w-[220px] h-[50px]  bg-purple-600 flex items-center justify-center gap-4 text-white rounded-[25px] text-[18px] lg:hidden order-2 mb-4">
                                <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"/></svg>
                                <span>مشاهده همه صنایع</span>
                            </a>
