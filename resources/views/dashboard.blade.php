@@ -687,15 +687,15 @@
             </header>
 
             <!-- ===== محتوای داشبورد ===== -->
-            <div class="p-3 lg:p-8">
+            <div class="p-3 lg:p-8  bg-[url({{asset('assets/img/file_00000000780c81f4bdf8e7d80669e56b.png')}})] bg-cover ">
                 @yield('content')
-            </div>
-            
-            <!-- ===== فوتر ===== -->
-            <div class="px-3 sm:px-5 lg:px-8 pb-4 sm:pb-6 mt-10">
-                <div class="footer-divider"></div>
-                <div class="text-center text-[10px] sm:text-xs text-[#9A9CAE] pt-4 sm:pt-6">
-                    <p>© ۱۴۰۳ تمامی حقوق محفوظ است | باسکول درختی - پنل مدیریت </p>
+                
+                <!-- ===== فوتر ===== -->
+                <div class="px-3 sm:px-5 lg:px-8 pb-4 sm:pb-6 mt-10">
+                    <div class="footer-divider"></div>
+                    <div class="text-center text-[10px] sm:text-xs pt-4 sm:pt-6">
+                        <p>© ۱۴۰۳ تمامی حقوق محفوظ است | باسکول درختی - پنل مدیریت </p>
+                    </div>
                 </div>
             </div>
             

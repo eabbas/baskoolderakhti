@@ -3,6 +3,42 @@
 @section('title', 'پروفایل کاربر')
 
 @section('content')
+
+<style>
+    :root {
+        --gold: #FBC830;
+        --gold-deep: #E0A800;
+        --navy: #0E2E48;
+        --navy-line: rgba(14, 46, 72, 0.08);
+        --bg-soft: #F7F8FA;
+        --text-muted: #5A6B7B;
+    }
+
+    /* آبی → طلایی */
+    .bg-gradient-to-br.from-\[\#1B84FF\].to-\[\#0a6fd6\] {
+        background-image: linear-gradient(to bottom right, #FBC830, #E0A800) !important;
+    }
+    .bg-\[\#1B84FF\] { background-color: #FBC830 !important; }
+    .hover\:bg-\[\#0a6fd6\]:hover { background-color: #E0A800 !important; }
+    .bg-\[\#1B84FF\]\/10 { background-color: rgba(251, 200, 48, 0.15) !important; }
+    .text-\[\#1B84FF\] { color: #0E2E48 !important; }
+    .border-\[\#1B84FF\]\/20 { border-color: #FBC830 !important; }
+
+    /* خاکستری‌ها → سرمه‌ای */
+    .text-\[\#1e293b\] { color: #0E2E48 !important; }
+    .text-\[\#9A9CAE\] { color: #5A6B7B !important; }
+    .border-\[\#DBDFE9\] { border-color: rgba(14, 46, 72, 0.08) !important; }
+    .bg-\[\#F5F5F5\]\/50 { background-color: #F7F8FA !important; }
+    .bg-\[\#F5F5F5\] { background-color: #F7F8FA !important; }
+
+    /* ring فوکوس آبی → طلایی (فقط فیلدهای غیر رمز) */
+    .focus\:ring-\[\#1B84FF\]:focus { --tw-ring-color: #FBC830 !important; }
+
+    /* shadow آبی → طلایی */
+    .shadow-\[\#1B84FF\]\/25 { --tw-shadow-color: rgba(251, 200, 48, 0.25) !important; }
+    .shadow-\[\#1B84FF\]\/20 { --tw-shadow-color: rgba(251, 200, 48, 0.20) !important; }
+    .hover\:shadow-\[\#0a6fd6\]\/30:hover { --tw-shadow-color: rgba(224, 168, 0, 0.30) !important; }
+</style>
 <div class="max-w-6xl mx-auto">
     
     <!-- عنوان صفحه با استایل جدید -->
@@ -17,7 +53,7 @@
                     <p class="text-sm text-[#9A9CAE] mt-0.5">اطلاعات شخصی خود را مدیریت کنید</p>
                 </div>
             </div>
-            <span class="px-4 py-2 bg-[#1B84FF]/10 text-[#1B84FF] text-sm font-medium rounded-xl border border-[#1B84FF]/20">
+            <span class="px-4 py-2 bg-[#FBC830] text-[#1B84FF] text-sm font-medium rounded-xl border border-[#1B84FF]/20">
                 <i class="fas fa-check-circle ml-1"></i> حساب تایید شده
             </span>
         </div>
@@ -31,9 +67,9 @@
 
             <!-- ===== کارت ویرایش اطلاعات ===== -->
             <div class="bg-white rounded-2xl shadow-md border border-[#DBDFE9] overflow-hidden">
-                <div class="flex justify-between px-6 py-4 border-b border-[#DBDFE9] bg-[#F5F5F5]/50">
-                    <h3 class="text-base font-bold text-[#1e293b] flex items-center gap-2.5">
-                        <span class="w-8 h-8 rounded-xl bg-[#1B84FF]/10 flex items-center justify-center text-[#1B84FF]">
+                <div class="flex justify-between px-6 py-4 border-b border-[#DBDFE9] bg-[#0E2E48] text-[#FFFFFF]">
+                    <h3 class="text-base font-bold flex items-center gap-2.5">
+                        <span class="w-8 h-8 rounded-xl bg-[#FBC830] flex items-center justify-center text-[#FFFFFF]">
                             <i class="fas fa-edit text-sm"></i>
                         </span>
                         ویرایش اطلاعات شخصی
@@ -54,7 +90,7 @@
                             <i class="fas fa-camera text-xs"></i>
                         </label>
                         <input type="file" id="avatarUpload" class="hidden" accept="image/*">
-                        <span class='absolute top-0 -right-17 font-bold text-[#1e293b] text-sm'> عکس پروفایل </span>
+                        <span class='absolute top-0 -right-17 font-bold text-sm'> عکس پروفایل </span>
                     </div>
                 </div>
 
@@ -130,8 +166,8 @@
 
             <!-- ===== کارت تغییر رمز عبور ===== -->
             <div class="bg-white rounded-2xl shadow-md border border-[#DBDFE9] overflow-hidden">
-                <div class="px-6 py-4 border-b border-[#DBDFE9] bg-[#F5F5F5]/50">
-                    <h3 class="text-base font-bold text-[#1e293b] flex items-center gap-2.5">
+                <div class="px-6 py-4 border-b border-[#DBDFE9] bg-[#0E2E48] text-[#FFFFFF]">
+                    <h3 class="text-base font-bold  flex items-center gap-2.5">
                         <span class="w-8 h-8 rounded-xl bg-red-50 flex items-center justify-center text-red-500">
                             <i class="fas fa-lock text-sm"></i>
                         </span>
