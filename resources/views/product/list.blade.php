@@ -3,39 +3,60 @@
 @section('content')
 
 <style>
-    /* ===== پالت رنگی مترونیک (Metronic) ===== */
     :root {
-        --metronic-dark: #0D0E12;
-        --metronic-content-bg: #FCFCFC;
-        --metronic-form-bg: #FFFFFF;
-        --metronic-shadow: #F5F5F5;
-        --metronic-border: #DBDFE9;
-        --metronic-text-dark: #9A9CAE;
-        --metronic-text-hover: #F5F5F5;
-        --metronic-blue: #1B84FF;
+        --gold: #FBC830;
+        --navy: #0E2E48;
+        --white: #FFFFFF;
+
+        --gold-soft: #FDD968;
+        --gold-deep: #E0A800;
+        --gold-glow: rgba(251, 200, 48, 0.25);
+
+        --navy-line: rgba(14, 46, 72, 0.08);
+
+        --text-primary: #0E2E48;
+        --text-muted: #5A6B7B;
+        --text-placeholder: #9AA5B1;
+
+        --bg-page: #FFFFFF;
+        --bg-soft: #F7F8FA;
+
+        --shadow-sm: 0 2px 8px rgba(14, 46, 72, 0.06);
+        --shadow-md: 0 8px 24px rgba(14, 46, 72, 0.10);
+        --shadow-gold: 0 8px 24px rgba(251, 200, 48, 0.30);
+
+        --radius-sm: 10px;
+        --radius-md: 14px;
+        --radius-lg: 20px;
     }
-    
+
     /* ===== کارت اصلی ===== */
     .derakhti-table-card {
-        background: var(--metronic-content-bg);
-        border: 1px solid var(--metronic-border);
-        border-radius: 20px;
-        box-shadow: 0 4px 20px rgba(13,14,18,0.03);
-        transition: all 0.3s ease;
+        background: var(--white);
+        border: 1px solid var(--navy-line);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        transition: box-shadow 0.3s ease;
         overflow: hidden;
+        position: relative;
     }
-    .derakhti-table-card:hover {
-        box-shadow: 0 8px 40px rgba(13,14,18,0.06);
+    .derakhti-table-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gold) 0%, var(--gold-deep) 100%);
+        z-index: 1;
     }
+    .derakhti-table-card:hover { box-shadow: var(--shadow-md); }
 
     /* ===== هدر جدول ===== */
     .derakhti-table-header {
-        background: var(--metronic-shadow);
-        border-bottom: 2px solid var(--metronic-border);
+        background: var(--bg-soft);
+        border-bottom: 2px solid var(--navy-line);
     }
-
     .derakhti-table-header th {
-        color: var(--metronic-text-dark);
+        color: var(--text-muted);
         font-size: 11px;
         font-weight: 700;
         text-transform: uppercase;
@@ -47,25 +68,22 @@
 
     /* ===== ردیف‌ها ===== */
     .derakhti-table-row {
-        border-bottom: 1px solid var(--metronic-border);
-        transition: all 0.3s ease;
-        background: var(--metronic-content-bg);
+        border-bottom: 1px solid var(--navy-line);
+        transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+        background: var(--white);
     }
     .derakhti-table-row:nth-child(even) {
-        background: var(--metronic-shadow);
+        background: rgba(247, 248, 250, 0.6);
     }
     .derakhti-table-row:hover {
-        background: var(--metronic-shadow);
+        background: rgba(251, 200, 48, 0.06);
         transform: translateX(-4px);
-        box-shadow: 0 4px 12px rgba(13,14,18,0.04);
+        box-shadow: 0 4px 12px rgba(14, 46, 72, 0.04);
     }
-    .derakhti-table-row:last-child {
-        border-bottom: none;
-    }
-
+    .derakhti-table-row:last-child { border-bottom: none; }
     .derakhti-table-row td {
         padding: 12px 16px;
-        color: var(--metronic-dark);
+        color: var(--navy);
         font-size: 13px;
         vertical-align: middle;
     }
@@ -79,9 +97,9 @@
         border-radius: 50px;
         font-size: 12px;
         font-weight: 600;
-        background: var(--metronic-shadow);
-        color: var(--metronic-text-dark);
-        border: 1px solid var(--metronic-border);
+        background: var(--bg-soft);
+        color: var(--navy);
+        border: 1px solid var(--navy-line);
     }
 
     /* ===== وضعیت ===== */
@@ -95,30 +113,26 @@
         font-weight: 600;
     }
     .derakhti-status.active {
-        background: var(--metronic-blue);
-        color: #fff;
-        border: 1px solid var(--metronic-blue);
+        background: var(--gold);
+        color: var(--navy);
+        border: 1px solid var(--gold);
+        box-shadow: 0 2px 8px rgba(251, 200, 48, 0.30);
     }
     .derakhti-status.inactive {
-        background: var(--metronic-shadow);
-        color: var(--metronic-text-dark);
-        border: 1px solid var(--metronic-border);
+        background: var(--bg-soft);
+        color: var(--text-muted);
+        border: 1px solid var(--navy-line);
     }
-
     .derakhti-status .dot {
-        width: 6px;
-        height: 6px;
+        width: 6px; height: 6px;
         border-radius: 50%;
         display: inline-block;
     }
     .derakhti-status.active .dot {
-        background: #fff;
+        background: var(--navy);
         animation: pulse-dot 2s infinite;
     }
-    .derakhti-status.inactive .dot {
-        background: var(--metronic-text-dark);
-    }
-
+    .derakhti-status.inactive .dot { background: var(--text-muted); }
     @keyframes pulse-dot {
         0%, 100% { opacity: 1; transform: scale(1); }
         50% { opacity: 0.3; transform: scale(0.8); }
@@ -134,20 +148,17 @@
         font-size: 11px;
         font-weight: 600;
     }
-    .derakhti-feature-badge.featured {
-        background: var(--metronic-blue);
-        color: #fff;
-        border: 1px solid var(--metronic-blue);
-    }
+    .derakhti-feature-badge.featured,
     .derakhti-feature-badge.show-home {
-        background: var(--metronic-blue);
-        color: #fff;
-        border: 1px solid var(--metronic-border);
+        background: var(--gold);
+        color: var(--navy);
+        border: 1px solid var(--gold);
+        box-shadow: 0 2px 6px rgba(251, 200, 48, 0.25);
     }
     .derakhti-feature-badge.normal {
-        background: var(--metronic-shadow);
-        color: var(--metronic-text-dark);
-        border: 1px solid var(--metronic-border);
+        background: var(--bg-soft);
+        color: var(--text-muted);
+        border: 1px solid var(--navy-line);
     }
 
     /* ===== دکمه‌های اکشن ===== */
@@ -158,14 +169,13 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-
     .derakhti-action-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
         padding: 6px 12px;
-        border-radius: 10px;
+        border-radius: var(--radius-sm);
         font-size: 12px;
         font-weight: 600;
         transition: all 0.3s ease;
@@ -173,47 +183,44 @@
         border: 1px solid transparent;
         cursor: pointer;
     }
-    .derakhti-action-btn:hover {
-        transform: translateY(-2px);
-    }
-    .derakhti-action-btn:active {
-        transform: translateY(0) scale(0.95);
-    }
+    .derakhti-action-btn:hover { transform: translateY(-2px); }
+    .derakhti-action-btn:active { transform: translateY(0) scale(0.95); }
 
     .derakhti-action-btn.view {
-        color: var(--metronic-text-dark);
-        background: var(--metronic-shadow);
-        border-color: var(--metronic-border);
+        color: var(--navy);
+        background: var(--bg-soft);
+        border-color: var(--navy-line);
     }
     .derakhti-action-btn.view:hover {
-        background: var(--metronic-blue);
-        color: #fff;
-        box-shadow: 0 4px 16px rgba(27, 132, 255, 0.25);
-        border-color: var(--metronic-blue);
+        background: var(--gold);
+        color: var(--navy);
+        border-color: var(--gold);
+        box-shadow: var(--shadow-gold);
     }
 
     .derakhti-action-btn.edit {
-        color: #fff;
-        background: var(--metronic-blue);
-        border-color: var(--metronic-blue);
+        color: var(--navy);
+        background: var(--gold);
+        border-color: var(--gold);
+        box-shadow: 0 4px 16px rgba(251, 200, 48, 0.25);
     }
     .derakhti-action-btn.edit:hover {
-        background: var(--metronic-blue);
-        color: #fff;
-        box-shadow: 0 4px 16px rgba(27, 132, 255, 0.25);
-        border-color: var(--metronic-blue);
+        background: var(--gold-deep);
+        color: var(--navy);
+        border-color: var(--gold-deep);
+        box-shadow: 0 8px 24px rgba(251, 200, 48, 0.40);
     }
 
     .derakhti-action-btn.delete {
-        color: var(--metronic-dark);
-        background: var(--metronic-shadow);
-        border-color: var(--metronic-border);
+        color: #DC2626;
+        background: #FEE2E2;
+        border-color: #FCA5A5;
     }
     .derakhti-action-btn.delete:hover {
-        background: var(--metronic-dark);
-        color: #fff;
-        box-shadow: 0 4px 16px rgba(13, 14, 18, 0.25);
-        border-color: var(--metronic-dark);
+        background: #DC2626;
+        color: var(--white);
+        border-color: #DC2626;
+        box-shadow: 0 4px 16px rgba(220, 38, 38, 0.25);
     }
 
     /* ===== شمارنده ===== */
@@ -221,61 +228,62 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: var(--metronic-shadow);
-        color: var(--metronic-text-dark);
+        background: var(--bg-soft);
+        color: var(--navy);
         font-size: 13px;
         font-weight: 700;
         padding: 6px 16px;
         border-radius: 50px;
-        border: 1px solid var(--metronic-border);
+        border: 1px solid var(--navy-line);
     }
 
     /* ===== سرچ ===== */
     .derakhti-search {
-        background: var(--metronic-shadow);
-        border: 1px solid var(--metronic-border);
-        border-radius: 12px;
+        background: var(--bg-soft);
+        border: 1.5px solid transparent;
+        border-radius: var(--radius-sm);
         padding: 10px 16px 10px 44px;
-        color: var(--metronic-dark);
+        color: var(--navy);
         font-size: 14px;
         transition: all 0.3s ease;
         width: 100%;
         max-width: 300px;
         outline: none;
     }
-    .derakhti-search::placeholder {
-        color: var(--metronic-text-dark);
+    .derakhti-search::placeholder { color: var(--text-placeholder); }
+    .derakhti-search:hover {
+        background: var(--white);
+        border-color: var(--navy-line);
     }
     .derakhti-search:focus {
-        border-color: var(--metronic-blue);
-        box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
-        background: var(--metronic-form-bg);
+        background: var(--white);
+        border-color: var(--gold);
+        box-shadow: 0 0 0 4px rgba(251, 200, 48, 0.15);
     }
 
-    .derakhti-search-wrap {
-        position: relative;
-    }
+    .derakhti-search-wrap { position: relative; }
     .derakhti-search-wrap .search-icon {
         position: absolute;
         left: 14px;
         top: 50%;
         transform: translateY(-50%);
-        color: var(--metronic-text-dark);
+        color: var(--text-muted);
     }
 
     /* ===== اسکرول ===== */
     .derakhti-table-wrap {
         overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: var(--gold) transparent;
     }
-    .derakhti-table-wrap::-webkit-scrollbar {
-        height: 4px;
-    }
-    .derakhti-table-wrap::-webkit-scrollbar-track {
-        background: var(--metronic-shadow);
-    }
+    .derakhti-table-wrap::-webkit-scrollbar { height: 6px; }
+    .derakhti-table-wrap::-webkit-scrollbar-track { background: transparent; }
     .derakhti-table-wrap::-webkit-scrollbar-thumb {
-        background: var(--metronic-blue);
+        background: var(--gold);
         border-radius: 10px;
+    }
+    .derakhti-table-wrap::-webkit-scrollbar-thumb:hover {
+        background: var(--gold-deep);
     }
 
     /* ===== خالی ===== */
@@ -284,18 +292,18 @@
         text-align: center;
     }
     .derakhti-empty svg {
-        width: 64px;
-        height: 64px;
-        fill: var(--metronic-border);
+        width: 64px; height: 64px;
+        fill: none;
+        stroke: var(--gold);
         margin: 0 auto 16px;
     }
     .derakhti-empty h3 {
-        color: var(--metronic-dark);
+        color: var(--navy);
         font-size: 18px;
         font-weight: 600;
     }
     .derakhti-empty p {
-        color: var(--metronic-text-dark);
+        color: var(--text-muted);
         font-size: 14px;
         margin-top: 4px;
     }
@@ -306,132 +314,100 @@
         align-items: center;
         gap: 8px;
         padding: 10px 20px;
-        background: var(--metronic-blue);
-        color: #fff;
-        border-radius: 12px;
-        font-weight: 600;
+        background: var(--gold);
+        color: var(--navy);
+        border-radius: var(--radius-md);
+        font-weight: 700;
         font-size: 14px;
-        transition: all 0.3s ease;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         text-decoration: none;
         border: none;
-        box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
+        box-shadow: 0 4px 16px rgba(251, 200, 48, 0.30);
+        position: relative;
+        overflow: hidden;
     }
+    .derakhti-add-btn::before {
+        content: '';
+        position: absolute;
+        top: 0; left: -100%;
+        width: 100%; height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        transition: left 0.6s ease;
+    }
+    .derakhti-add-btn:hover::before { left: 100%; }
     .derakhti-add-btn:hover {
+        background: var(--gold-deep);
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(27, 132, 255, 0.25);
-        color: #fff;
+        box-shadow: 0 8px 24px rgba(251, 200, 48, 0.45);
+        color: var(--navy);
     }
-    .derakhti-add-btn:active {
-        transform: translateY(0) scale(0.97);
-    }
+    .derakhti-add-btn:active { transform: translateY(0) scale(0.97); }
 
     /* ===== تصویر کوچک ===== */
     .derakhti-thumb {
-        width: 40px;
-        height: 40px;
+        width: 40px; height: 40px;
         border-radius: 10px;
         object-fit: cover;
-        border: 2px solid var(--metronic-border);
+        border: 2px solid var(--navy-line);
         transition: all 0.3s ease;
     }
     .derakhti-thumb:hover {
         transform: scale(1.1);
-        border-color: var(--metronic-blue);
-        box-shadow: 0 4px 12px rgba(27, 132, 255, 0.15);
+        border-color: var(--gold);
+        box-shadow: 0 4px 12px rgba(251, 200, 48, 0.20);
     }
-
     .derakhti-thumb-placeholder {
-        width: 40px;
-        height: 40px;
+        width: 40px; height: 40px;
         border-radius: 10px;
-        background: var(--metronic-shadow);
+        background: var(--bg-soft);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 18px;
-        border: 2px solid var(--metronic-border);
+        border: 2px solid var(--navy-line);
     }
 
     /* ===== قیمت ===== */
     .derakhti-price {
         font-weight: 700;
-        color: var(--metronic-dark);
-        background: var(--metronic-shadow);
+        color: var(--navy);
+        background: var(--bg-soft);
         padding: 2px 10px;
         border-radius: 8px;
         display: inline-block;
+        border: 1px solid var(--navy-line);
     }
-
     .derakhti-discount {
-        background: var(--metronic-shadow);
-        color: var(--metronic-text-dark);
+        background: rgba(251, 200, 48, 0.15);
+        color: var(--navy);
         padding: 2px 8px;
         border-radius: 8px;
         font-size: 11px;
         font-weight: 700;
         margin-right: 4px;
+        border: 1px solid var(--gold);
     }
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 768px) {
-        .derakhti-table-row td {
-            padding: 10px 12px;
-            font-size: 12px;
-        }
-        .derakhti-table-header th {
-            padding: 10px 12px;
-            font-size: 10px;
-        }
-        .derakhti-action-btn {
-            padding: 5px 10px;
-            font-size: 11px;
-        }
-        .derakhti-action-btn span {
-            display: none;
-        }
-        .derakhti-search {
-            max-width: 100%;
-            font-size: 13px;
-        }
-        .derakhti-counter {
-            font-size: 12px;
-            padding: 4px 12px;
-        }
-        .derakhti-add-btn {
-            padding: 8px 14px;
-            font-size: 13px;
-        }
+        .derakhti-table-row td { padding: 10px 12px; font-size: 12px; }
+        .derakhti-table-header th { padding: 10px 12px; font-size: 10px; }
+        .derakhti-action-btn { padding: 5px 10px; font-size: 11px; }
+        .derakhti-action-btn span { display: none; }
+        .derakhti-search { max-width: 100%; font-size: 13px; }
+        .derakhti-counter { font-size: 12px; padding: 4px 12px; }
+        .derakhti-add-btn { padding: 8px 14px; font-size: 13px; }
         .derakhti-thumb,
-        .derakhti-thumb-placeholder {
-            width: 32px;
-            height: 32px;
-            font-size: 14px;
-        }
+        .derakhti-thumb-placeholder { width: 32px; height: 32px; font-size: 14px; }
     }
-
     @media (max-width: 480px) {
-        .derakhti-table-row td {
-            padding: 8px 8px;
-            font-size: 11px;
-        }
-        .derakhti-table-header th {
-            padding: 8px 8px;
-            font-size: 9px;
-        }
-        .derakhti-action-btn {
-            padding: 4px 7px;
-            font-size: 10px;
-        }
+        .derakhti-table-row td { padding: 8px 8px; font-size: 11px; }
+        .derakhti-table-header th { padding: 8px 8px; font-size: 9px; }
+        .derakhti-action-btn { padding: 4px 7px; font-size: 10px; }
         .derakhti-thumb,
-        .derakhti-thumb-placeholder {
-            width: 28px;
-            height: 28px;
-            font-size: 12px;
-            border-radius: 6px;
-        }
+        .derakhti-thumb-placeholder { width: 28px; height: 28px; font-size: 12px; border-radius: 6px; }
     }
 </style>
-
 <div class="w-full">
     
     <!-- ===== هدر لیست ===== -->
@@ -441,12 +417,6 @@
             <p class="text-sm mt-1" style="color: var(--metronic-text-dark);">مدیریت و مشاهده تمام محصولات فروشگاه</p>
         </div>
         <div class="flex items-center gap-3 flex-wrap">
-            <span class="derakhti-counter">
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                </svg>
-                {{ count($products) }} محصول
-            </span>
             <a href="{{route('product.create')}}" class="derakhti-add-btn">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M12 5v14M5 12h14"/>
@@ -495,11 +465,9 @@
                         </td>
                         <td>
                             @if(isset($product->is_main_media))
-                                <img class="derakhti-thumb" 
-                                     src="{{asset('storage/product_medias/'.$product->is_main_media)}}" 
-                                     alt="{{$product->title}}">
+                                <img class="derakhti-thumb" src="{{asset('storage/product_medias/'.$product->is_main_media)}}" alt="{{$product->title}}">
                             @else
-                                <div class="derakhti-thumb-placeholder"></div>
+                                <img class="derakhti-thumb" src="{{asset('assets/img/defaultPicture.png')}}" alt="{{$product->title}}">
                             @endif
                         </td>
                         <td>

@@ -4,132 +4,170 @@
 @section('content')
 
 <style>
-    /* ===== پالت رنگی مترونیک ===== */
+    /* ===== پالت اختصاصی ===== */
     :root {
-        --metronic-primary: #1B84FF;
-        --metronic-primary-dark: #0a6fd6;
-        --metronic-primary-light: #4a9fff;
-        --metronic-sidebar: #0D0E12;
-        --metronic-bg-content: #FCFCFC;
-        --metronic-bg-form: #FFFFFF;
-        --metronic-shadow-form: #F5F5F5;
-        --metronic-border: #DBDFE9;
-        --metronic-text: #9A9CAE;
-        --metronic-text-hover: #1B84FF;
-        --metronic-success: #059669;
-        --metronic-danger: #dc2626;
-        --metronic-warning: #d97706;
-        
-        --shadow-sm: 0 2px 8px rgba(27, 132, 255, 0.06);
-        --shadow-md: 0 4px 20px rgba(27, 132, 255, 0.10);
-        --shadow-lg: 0 8px 40px rgba(27, 132, 255, 0.14);
+        --gold: #FBC830;
+        --navy: #0E2E48;
+        --white: #FFFFFF;
+
+        --gold-soft: #FDD968;
+        --gold-deep: #E0A800;
+        --gold-glow: rgba(251, 200, 48, 0.25);
+
+        --navy-line: rgba(14, 46, 72, 0.08);
+
+        --text-primary: #0E2E48;
+        --text-muted: #5A6B7B;
+        --text-placeholder: #9AA5B1;
+
+        --bg-page: #FFFFFF;
+        --bg-soft: #F7F8FA;
+
+        --shadow-sm: 0 2px 8px rgba(14, 46, 72, 0.06);
+        --shadow-md: 0 8px 24px rgba(14, 46, 72, 0.10);
+        --shadow-gold: 0 8px 24px rgba(251, 200, 48, 0.30);
+
+        --radius-sm: 10px;
+        --radius-md: 14px;
+        --radius-lg: 20px;
     }
 
     /* ===== کارت اصلی ===== */
     .vafadar-form-card {
-        background: var(--metronic-bg-form);
-        border: 1px solid var(--metronic-border);
-        border-radius: 24px;
+        background: var(--white);
+        border: 1px solid var(--navy-line);
+        border-radius: var(--radius-lg);
         box-shadow: var(--shadow-sm);
-        transition: all 0.3s ease;
+        transition: box-shadow 0.3s ease;
         overflow: hidden;
         margin: 0 auto;
+        position: relative;
     }
-    .vafadar-form-card:hover {
-        box-shadow: var(--shadow-md);
+    .vafadar-form-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--gold) 0%, var(--gold-deep) 100%);
+        z-index: 1;
     }
+    .vafadar-form-card:hover { box-shadow: var(--shadow-md); }
 
     /* ===== هدر فرم ===== */
     .vafadar-form-header {
-        background: linear-gradient(135deg, #F5F5F5, #DBDFE9);
-        border-bottom: 2px solid var(--metronic-border);
-        padding: 20px 28px;
+        background: var(--navy);
+        padding: 24px 32px;
+        position: relative;
+        overflow: hidden;
     }
-
+    .vafadar-form-header::after {
+        content: '';
+        position: absolute;
+        top: -40px; left: -40px;
+        width: 160px; height: 160px;
+        background: radial-gradient(circle, var(--gold-glow) 0%, transparent 70%);
+        pointer-events: none;
+    }
     .vafadar-form-header h1 {
-        color: #1e293b;
+        color: var(--white);
         font-size: 18px;
         font-weight: 700;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 14px;
+        position: relative;
+        z-index: 1;
+        margin: 0;
     }
-
     .vafadar-form-header .header-icon {
-        width: 40px;
-        height: 40px;
-        background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
-        border-radius: 12px;
+        width: 46px; height: 46px;
+        background: var(--gold);
+        border-radius: var(--radius-md);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
-        box-shadow: 0 4px 12px rgba(27, 132, 255, 0.25);
+        color: var(--navy);
+        box-shadow: 0 6px 20px rgba(251, 200, 48, 0.35);
+        flex-shrink: 0;
     }
-
     .vafadar-form-header .sub-text {
-        color: #9A9CAE;
+        color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
         margin-top: 4px;
-        margin-right: 52px;
+        margin-right: 60px;
     }
 
     /* ===== فیلدها ===== */
     .vafadar-label {
-        color: #64748b;
-        font-size: 12px;
+        color: var(--navy);
+        font-size: 13px;
         font-weight: 600;
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
         padding-right: 4px;
+    }
+    .vafadar-label::after {
+        content: '';
+        display: inline-block;
+        width: 5px; height: 5px;
+        background: var(--gold);
+        border-radius: 50%;
+        margin-right: 6px;
+        vertical-align: middle;
+        opacity: 0.8;
     }
 
     .vafadar-input {
         width: 100%;
-        padding: 11px 16px;
-        background: #F5F5F5;
-        border: 1.5px solid var(--metronic-border);
-        border-radius: 12px;
-        color: #1e293b;
+        padding: 12px 16px;
+        background: var(--bg-soft);
+        border: 1.5px solid transparent;
+        border-radius: var(--radius-sm);
+        color: var(--navy);
         font-size: 14px;
-        transition: all 0.3s ease;
+        transition: all 0.25s ease;
         outline: none;
     }
     .vafadar-input::placeholder {
-        color: #9A9CAE;
+        color: var(--text-placeholder);
+        font-size: 13px;
     }
     .vafadar-input:hover {
-        border-color: var(--metronic-primary-light);
+        background: var(--white);
+        border-color: var(--navy-line);
     }
     .vafadar-input:focus {
-        border-color: var(--metronic-primary);
-        box-shadow: 0 0 0 4px rgba(27, 132, 255, 0.08);
-        background: var(--metronic-bg-form);
+        background: var(--white);
+        border-color: var(--gold);
+        box-shadow: 0 0 0 4px rgba(251, 200, 48, 0.15);
     }
 
     /* ===== بخش دسترسی‌ها ===== */
     .vafadar-permisions-box {
-        background: #F5F5F5;
-        border: 1.5px solid var(--metronic-border);
-        border-radius: 12px;
+        background: var(--bg-soft);
+        border: 1.5px solid transparent;
+        border-radius: var(--radius-sm);
         padding: 8px 4px;
         max-height: 160px;
         overflow-y: auto;
         transition: all 0.3s ease;
+        scrollbar-width: thin;
+        scrollbar-color: var(--gold) transparent;
     }
-    .vafadar-permisions-box:hover {
-        border-color: var(--metronic-primary-light);
+    .vafadar-permisions-box:hover { border-color: var(--navy-line); }
+    .vafadar-permisions-box:focus-within {
+        border-color: var(--gold);
+        background: var(--white);
+        box-shadow: 0 0 0 4px rgba(251, 200, 48, 0.12);
     }
-
-    .vafadar-permisions-box::-webkit-scrollbar {
-        width: 4px;
-    }
-    .vafadar-permisions-box::-webkit-scrollbar-track {
-        background: transparent;
-    }
+    .vafadar-permisions-box::-webkit-scrollbar { width: 6px; }
+    .vafadar-permisions-box::-webkit-scrollbar-track { background: transparent; }
     .vafadar-permisions-box::-webkit-scrollbar-thumb {
-        background: var(--metronic-primary-light);
+        background: var(--gold);
         border-radius: 10px;
+    }
+    .vafadar-permisions-box::-webkit-scrollbar-thumb:hover {
+        background: var(--gold-deep);
     }
 
     .vafadar-permision-item {
@@ -143,77 +181,78 @@
         margin: 1px 0;
     }
     .vafadar-permision-item:hover {
-        background: rgba(27, 132, 255, 0.06);
+        background: rgba(251, 200, 48, 0.10);
         transform: translateX(4px);
     }
-
-    .vafadar-permision-item label {
-        color: #1e293b;
+    .vafadar-permision-item label,
+    .vafadar-permision-item span {
+        color: var(--navy);
         font-size: 13px;
         cursor: pointer;
         user-select: none;
-        transition: all 0.2s ease;
+        transition: color 0.2s ease;
     }
-    .vafadar-permision-item:hover label {
-        color: var(--metronic-primary);
+    .vafadar-permision-item:hover label,
+    .vafadar-permision-item:hover span {
+        color: var(--gold-deep);
     }
 
     .vafadar-checkbox {
-        width: 17px;
-        height: 17px;
-        accent-color: var(--metronic-primary);
+        width: 18px; height: 18px;
+        accent-color: var(--gold-deep);
         cursor: pointer;
         border-radius: 5px;
-        transition: all 0.2s ease;
+        transition: transform 0.2s ease;
         flex-shrink: 0;
     }
-    .vafadar-checkbox:hover {
-        transform: scale(1.1);
-    }
+    .vafadar-checkbox:hover { transform: scale(1.1); }
 
     /* ===== دکمه ثبت ===== */
     .vafadar-btn {
         width: 100%;
-        padding: 13px 24px;
-        background: linear-gradient(135deg, var(--metronic-primary), var(--metronic-primary-dark));
+        padding: 15px 24px;
+        background: var(--gold);
         border: none;
-        border-radius: 12px;
-        color: #fff;
+        border-radius: var(--radius-md);
+        color: var(--navy);
         font-size: 15px;
-        font-weight: 600;
+        font-weight: 800;
         cursor: pointer;
         transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
-        box-shadow: 0 4px 16px rgba(27, 132, 255, 0.15);
+        gap: 10px;
+        box-shadow: 0 6px 20px rgba(251, 200, 48, 0.35);
+        position: relative;
+        overflow: hidden;
     }
+    .vafadar-btn::before {
+        content: '';
+        position: absolute;
+        top: 0; left: -100%;
+        width: 100%; height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        transition: left 0.6s ease;
+    }
+    .vafadar-btn:hover::before { left: 100%; }
     .vafadar-btn:hover {
+        background: var(--gold-deep);
         transform: translateY(-2px);
-        box-shadow: 0 12px 30px rgba(27, 132, 255, 0.25);
+        box-shadow: 0 10px 32px rgba(251, 200, 48, 0.45);
     }
-    .vafadar-btn:active {
-        transform: translateY(0) scale(0.97);
-    }
+    .vafadar-btn:active { transform: translateY(0) scale(0.98); }
 
     .vafadar-btn svg {
-        width: 18px;
-        height: 18px;
-        fill: #fff;
+        width: 18px; height: 18px;
+        fill: var(--navy);
         transition: transform 0.3s ease;
     }
-    .vafadar-btn:hover svg {
-        transform: translateX(4px);
-    }
+    .vafadar-btn:hover svg { transform: translateX(4px); }
 
     /* ===== بخش‌های فرم ===== */
-    .vafadar-form-section {
-        padding: 20px 28px;
-    }
-    .vafadar-form-section:last-of-type {
-        border-bottom: none;
-    }
+    .vafadar-form-section { padding: 20px 28px; }
+    .vafadar-form-section:last-of-type { border-bottom: none; }
 
     .vafadar-section-title {
         display: flex;
@@ -222,75 +261,51 @@
         margin-bottom: 14px;
     }
     .vafadar-section-title svg {
-        width: 18px;
-        height: 18px;
-        fill: var(--metronic-primary);
+        width: 18px; height: 18px;
+        fill: var(--gold-deep);
     }
     .vafadar-section-title span {
-        color: #64748b;
-        font-size: 12px;
-        font-weight: 600;
+        color: var(--navy);
+        font-size: 13px;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
     .vafadar-section-title .line {
         flex: 1;
-        height: 1.5px;
-        background: var(--metronic-border);
+        height: 1px;
+        background: var(--navy-line);
     }
 
     /* ===== فوتر ===== */
     .vafadar-form-footer {
         padding: 16px 28px;
-        background: #F5F5F5;
-        border-top: 1px solid var(--metronic-border);
+        background: var(--bg-soft);
+        border-top: 1px solid var(--navy-line);
         text-align: center;
     }
     .vafadar-form-footer span {
-        color: #9A9CAE;
-        font-size: 11px;
+        color: var(--text-muted);
+        font-size: 12px;
     }
 
     /* ===== ریسپانسیو ===== */
     @media (max-width: 640px) {
-        .vafadar-form-header {
-            padding: 16px 20px;
-        }
-        .vafadar-form-header h1 {
-            font-size: 16px;
-        }
-        .vafadar-form-section {
-            padding: 16px 20px;
-        }
-        .vafadar-form-footer {
-            padding: 12px 20px;
-        }
-        .vafadar-input {
-            padding: 10px 14px;
-            font-size: 13px;
-        }
-        .vafadar-permision-item {
-            padding: 6px 10px;
-        }
-        .vafadar-permision-item label {
-            font-size: 12px;
-        }
-        .vafadar-btn {
-            padding: 12px 20px;
-            font-size: 14px;
-        }
+        .vafadar-form-header { padding: 20px; }
+        .vafadar-form-header h1 { font-size: 16px; }
+        .vafadar-form-header .sub-text { margin-right: 0; }
+        .vafadar-form-section { padding: 16px 20px; }
+        .vafadar-form-footer { padding: 12px 20px; }
+        .vafadar-input { padding: 10px 14px; font-size: 13px; }
+        .vafadar-permision-item { padding: 6px 10px; }
+        .vafadar-permision-item span { font-size: 12px; }
+        .vafadar-btn { padding: 13px 20px; font-size: 14px; }
     }
 
     /* ===== انیمیشن ===== */
     @keyframes fadeSlideUp {
-        from {
-            opacity: 0;
-            transform: translateY(15px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        from { opacity: 0; transform: translateY(15px); }
+        to   { opacity: 1; transform: translateY(0); }
     }
     .animate-in {
         animation: fadeSlideUp 0.4s ease forwards;

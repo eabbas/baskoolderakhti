@@ -4,16 +4,58 @@
 
 @section('content')
 <style>
-    /* ===== پالت رنگی مترونیک (Metronic) ===== */
+    /* ===== پالت اختصاصی ===== */
     :root {
-        --metronic-dark: #0D0E12;
-        --metronic-content-bg: #FCFCFC;
+        --metronic-dark: #0E2E48;
+        --metronic-content-bg: #FFFFFF;
         --metronic-form-bg: #FFFFFF;
-        --metronic-shadow: #F5F5F5;
-        --metronic-border: #DBDFE9;
-        --metronic-text-dark: #9A9CAE;
-        --metronic-text-hover: #F5F5F5;
-        --metronic-blue: #1B84FF;
+        --metronic-shadow: #F7F8FA;
+        --metronic-border: rgba(14, 46, 72, 0.08);
+        --metronic-text-dark: #5A6B7B;
+        --metronic-text-hover: #FBC830;
+        --metronic-blue: #FBC830;
+    }
+
+    /* ===== focus / hover فیلدها ===== */
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+        border-color: #FBC830 !important;
+        box-shadow: 0 0 0 4px rgba(251, 200, 48, 0.15) !important;
+        background: #FFFFFF !important;
+    }
+    input[type="text"]:hover,
+    input[type="email"]:hover,
+    input[type="password"]:hover {
+        background: #FFFFFF !important;
+        border-color: rgba(14, 46, 72, 0.15) !important;
+    }
+
+    /* ===== دکمه ذخیره تغییرات ===== */
+    #profileFormButton {
+        background: #FBC830 !important;
+        color: #0E2E48 !important;
+        box-shadow: 0 4px 16px rgba(251, 200, 48, 0.35) !important;
+    }
+    #profileFormButton:hover {
+        background: #E0A800 !important;
+    }
+
+    /* ===== دکمه تغییر رمز عبور ===== */
+    #passwordForm button[type="submit"] {
+        background: #0E2E48 !important;
+        color: #FFFFFF !important;
+        box-shadow: 0 4px 16px rgba(14, 46, 72, 0.25) !important;
+    }
+    #passwordForm button[type="submit"]:hover {
+        background: #E0A800 !important;
+        color: #0E2E48 !important;
+    }
+
+    /* ===== دکمه دوربین آواتار ===== */
+    label[for="avatarUpload"] {
+        background: #FBC830 !important;
+        color: #0E2E48 !important;
     }
 </style>
 
@@ -105,12 +147,12 @@
 
             <!-- ===== کارت ویرایش اطلاعات ===== -->
             <div class="rounded-2xl shadow-md overflow-hidden" style="background: var(--metronic-content-bg); border: 1px solid var(--metronic-border);">
-                <div class="px-6 py-4 border-b" style="border-color: var(--metronic-border); background: var(--metronic-shadow);">
-                    <h3 class="text-base font-bold flex items-center gap-2.5" style="color: var(--metronic-dark);">
+                <div class="px-6 py-4 border-b bg-[#0E2E48] text-white" style="border-color: var(--metronic-border);">
+                    <h3 class="text-base font-bold flex items-center gap-2.5" style="">
                         <span class="w-8 h-8 rounded-xl flex items-center justify-center" style="background: var(--metronic-shadow); color: var(--metronic-blue);">
                             <i class="fas fa-edit text-sm"></i>
                         </span>
-                        ویرایش اطلاعات شخصی
+                        ویرایش اطلاعات کاربر
                     </h3>
                 </div>
 
