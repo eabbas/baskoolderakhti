@@ -46,14 +46,15 @@ class UserController extends Controller
     }
     public function store(Request $request){
         $phone_code=phone_code::where('phoneNumber',$request->phoneNumber)->first();
-        if($phone_code->code!=$request->code){
-            return to_route("user.loginPage");
-        }
+        // if($phone_code->code!=$request->code){
+            // return to_route("user.loginPage");
+        // }
+        // dd($request->all());
         $validation=$request->validate(
             [
                 'name'=>['required','max:255'],
                 'family'=>['required','max:255'],
-                'phoneNumber'=>['required','max:11'],
+                'phoneNumber'=>['required','min:11'],
                 // 'email'=>['required','max:255'],
                 'password'=>['required','max:255'],
             ],[
@@ -69,7 +70,8 @@ class UserController extends Controller
                 'password.max'=>'تعداد کاراکتر های مجاز 255 تا میباشد',
             ]
         );
-
+                // dd();
+        // dd();
         $user=User::where('phoneNumber',$validation['phoneNumber'])->first();
         if($user){
             Auth::login($user);
@@ -97,7 +99,6 @@ class UserController extends Controller
                 'name'=>['required','max:255'],
                 'family'=>['required','max:255'],
                 'phoneNumber'=>['required','max:11'],
-                // 'email'=>['required','max:255'],
                 'password'=>['required','max:255'],
             ],[
                 'name.required'=>'لطفا فیلد مورد نظر را پر فرمایید',
@@ -106,8 +107,6 @@ class UserController extends Controller
                 'family.max'=>'تعداد کاراکتر های مجاز 255 تا میباشد',
                 'phoneNumber.required'=>'لطفا فیلد مورد نظر را پر فرمایید',
                 'phoneNumber.max'=>'تعداد کاراکتر های مجاز 11 تا میباشد',
-                // 'email.required'=>'لطفا فیلد مورد نظر را پر فرمایید',
-                // 'email.max'=>'تعداد کاراکتر های مجاز 255 تا میباشد',
                 'password.requi$'=>'لطفا فیلد مورد نظر را پر فرمایید',
                 'password.max'=>'تعداد کاراکتر های مجاز 255 تا میباشد',
             ]

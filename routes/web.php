@@ -26,8 +26,8 @@ Route::get('/1',function (){
     return view('1');
 });
 
-Route::get('/login', function () { return view('login'); })->middleware(checkAuthUser::class);
-Route::get('/signup', function () { return view('signup'); })->middleware(checkAuthUser::class);
+Route::get('/login', function () { $user = Auth::user(); return view('login' , ['user' => $user]); })->middleware(checkAuthUser::class);
+Route::get('/signup', function () { $user = Auth::user(); return view('signup' , ['user' => $user]); })->middleware(checkAuthUser::class);
 
 Route::get('/login/amir' , function(){
     $user = Auth::user();
