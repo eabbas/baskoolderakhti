@@ -253,21 +253,21 @@
     </header>
 
     <main class = "max-w-[2100px] min-w-[320px] bg-[url('{{asset('assets/img/file_00000000780c81f4bdf8e7d80669e56b.png')}}')] bg-cover bg-center bg-no-repeat mx-auto pb-5 pt-10">
-            <section class = "max-w-[800px] min-w-[320px] mx-auto">
+            <section class = "max-w-[800px] min-w-[320px] mx-auto max-lg:px-3">
                 <div class="w-full flex flex-col  items-center justify-between bg-white px-10 py-3 rounded-[15px] border-1 border-gray-300 shadow-md">
                     <svg class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M224 48a80 80 0 1 1 0 160 80 80 0 1 1 0-160zm0 208A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 96h91.4c65.7 0 120.1 48.7 129 112H49.3c8.9-63.3 63.3-112 129-112zm0-48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3zM504 312c0 13.3 10.7 24 24 24s24-10.7 24-24V248h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H552V136c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H440c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
                     <div class="w-full flex flex-col gap-3 items-center mb-5">
                         <h2 class = "text-[30px] font-bold text-[#0E2E48]">ایجاد حساب کابری</h2>
-                        <span class = "text-[17px] text-gray-600">لطفا اطلاعات خود را وارد کنید تا حساب کاربری شما ایجاد شود</span>
+                        <span class = "text-[17px] text-gray-600 max-lg:text-[15px] max-lg:text-center max-lg:leading-8">لطفا اطلاعات خود را وارد کنید تا حساب کاربری شما ایجاد شود</span>
                     </div>
                     <div class="w-full">
                     <form class = "w-full flex flex-col gap-5" id='form' method = "POST" action="{{route('user.login')}}">
                     @csrf
                     <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
-                        <div class="w-1/14 pr-5">
+                        <div class="w-1/14 pr-5 max-md:w-2/14">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         </div>
-                        <input class = "w-13/14 h-15 outline-none " name = "phoneNumber" id = "phoneNumber" placeholder = "شماره موبایل" type="text">
+                        <input class = "w-13/14 h-15 outline-none max-md:w-12/14" name = "phoneNumber" id = "phoneNumber" placeholder = "شماره موبایل" type="text">
                     </div>
                     <div class="w-full hidden gap-3 flex" id = "code">
                          <div class="w-8/12 pr-5 flex gap-3 items-center border-1 border-gray-200 rounded-[15px]">
@@ -282,25 +282,25 @@
                             <input class = "w-13/14 h-15 outline-none " name = "code" id = "" placeholder = "کد ورود" type="text">
                         </div>
                     </div>
-                   <div class="w-full text-blue-500 ">
+                   <div class="w-full text-blue-500 max-md:text-[14px]">
                     <span id = "passing1" class = "cursor-pointer" onclick = "login_stat(this)">ورود با رمز یک بار مصرف</span>
                     <span class = "hidden cursor-pointer" id = "passing2" onclick = "login_stat(this)">ورود با رمز عبور</span>
                    </div>
-                    <button class = "w-full bg-[#FBC830] flex items-center justify-center rounded-[40px] h-14 text-[#0E2E48] text-[18px] gap-4 font-bold">
+                    <button class = "w-full bg-[#FBC830] flex items-center justify-center rounded-[40px] h-12 text-[#0E2E48] text-[18px] gap-4 font-bold">
                         <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M272 49.7V464H112l0-371.2L272 49.7zM320 464V42.4C320 19 301 0 277.6 0c-3.7 0-7.4 .5-11 1.5L99.5 46.4C78.6 52.1 64 71.1 64 92.8V464H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64 96h16H272h48V464zM224 288c13.2 0 24-14.4 24-32s-10.8-32-24-32s-24 14.4-24 32s10.7 32 24 32zM352 112H456c4.4 0 8 3.6 8 8V488c0 13.3 10.7 24 24 24h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H512V120c0-30.9-25.1-56-56-56H352v48z"/></svg>
                         <span>ورود</span>
                     </button>
                     </form>
 
-                    <a class = "w-full flex items-center justify-center gap-3 text-blue-500 text-[18px] my-8" href="">
+                    <a class = "w-full flex items-center justify-center gap-3 text-blue-500 text-[18px] my-8 max-md:text-[16px]" href="">
                         <span>رمز عبور خود را فراموش کرده اید</span>
-                        <svg class = "size-5 fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                        <svg class = "size-5 fill-blue-500 max-md:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                     </a>
                     <div class="w-full flex gap-4 h-20 bg-slate-100 rounded-[15px] items-center justify-center">
-                        <span class = "text-gray-500 text-[18px]"> حساب کاربری ندارید؟</span>
-                        <a class = "flex gap-2 items-center text-blue-500" href="{{url('signup')}}">
+                        <span class = "text-gray-500 text-[18px] max-md:text-[15px]" > حساب کاربری ندارید؟</span>
+                        <a class = "flex gap-2 items-center text-blue-500 max-md:text-[14px]" href="{{url('signup')}}">
                             <span>ثبت نام کنید</span>
-                            <svg class = "size-5 fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                            <svg class = "size-5 fill-blue-500 max-md:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                         </a>
                     </div>
                 </div>

@@ -237,57 +237,57 @@
                     <svg class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 48a80 80 0 1 1 0 160 80 80 0 1 1 0-160zm0 208A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 96h91.4c65.7 0 120.1 48.7 129 112H49.3c8.9-63.3 63.3-112 129-112zm0-48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3zM504 312c0 13.3 10.7 24 24 24s24-10.7 24-24V248h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H552V136c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H440c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
                     <div class="w-full flex flex-col gap-3 items-center mb-5">
                         <h2 class = "text-[30px] font-bold text-[#0E2E48]">ایجاد حساب کابری</h2>
-                        <span class = "text-[17px] text-gray-600">لطفا اطلاعات خود را وارد کنید تا حساب کاربری شما ایجاد شود</span>
+                        <span class = "text-[17px] text-gray-600 max-lg:text-[15px] max-lg:text-center max-lg:leading-8">لطفا اطلاعات خود را وارد کنید تا حساب کاربری شما ایجاد شود</span>
                     </div>
                     <div class="w-full">
                         <form class = "w-full flex flex-col gap-5" action="{{route('user.store')}}" method = "post">
                         @csrf
                         <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
-                            <div class="w-1/14 pr-5 ">
+                            <div class="w-1/14 pr-5 max-md:w-2/12 ">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
                         </div>
-                        <input class = "w-13/14 h-15 outline-none " name = "name" id = "" placeholder = "نام" type="text" value = "{{old('name')}}">
+                        <input class = "w-13/14 max-md:w-12/14 h-15 outline-none " name = "name" id = "" placeholder = "نام" type="text" value = "{{old('name')}}">
                     </div>
                     @error('name')
                       <div class="text-red-500">{{ $message }}</div>
                     @enderror
                     <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
-                        <div class="w-1/14 pr-5">
+                        <div class="w-1/14 pr-5 max-md:w-2/12 ">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
                         </div>
-                        <input class = "w-13/14 h-15 outline-none " name = "family" id = "" placeholder = "نام خانوادگی" type="text" value = "{{old('family')}}">
+                        <input class = "w-13/14 max-md:w-12/14 h-15 outline-none " name = "family" id = "" placeholder = "نام خانوادگی" type="text" value = "{{old('family')}}">
                     </div>
                     @error('family')
                       <div class="text-red-500">{{ $message }}</div>
                     @enderror
                     <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
-                        <div class="w-1/14 pr-5">
+                        <div class="w-1/14 pr-5 max-md:w-2/12 ">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         </div>
-                        <input class = "w-13/14 h-15 outline-none " name = "phoneNumber" id = "phoneNumber" placeholder = "شماره موبایل" type="text" value = "{{old('phoneNumber')}}">
+                        <input class = "w-13/14 max-md:w-12/14 h-15 outline-none " name = "phoneNumber" id = "phoneNumber" placeholder = "شماره موبایل" type="text" value = "{{old('phoneNumber')}}">
                     </div>
                     @error('phoneNumber')
                       <div class="text-red-500">{{ $message }}</div>
                     @enderror
                     <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
-                        <div class="w-1/14 pr-5">
+                        <div class="w-1/14 pr-5 max-md:w-2/12 ">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 48c44.2 0 80 35.8 80 80v64H144V128c0-44.2 35.8-80 80-80zM96 128v64H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V128C352 57.3 294.7 0 224 0S96 57.3 96 128zM64 240H384c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm184 80c0-13.3-10.7-24-24-24s-24 10.7-24 24v64c0 13.3 10.7 24 24 24s24-10.7 24-24V320z"/></svg>
                         </div>
-                        <input class = "w-13/14 h-15 outline-none " name = "password" id = "" placeholder = "رمز عبور" type="text" value = "{{old('password')}}">
+                        <input class = "w-13/14 max-md:w-12/14 h-15 outline-none " name = "password" id = "" placeholder = "رمز عبور" type="text" value = "{{old('password')}}">
                     </div>
                     @error('password')
                       <div class="text-red-500">{{ $message }}</div>
                     @enderror
                     <div class="w-full flex items-center rounded-[15px] gap-3">
                       <input type="checkbox" value="1" onclick='checkAccess(this)' required>
-                      <span class = "text-[18px]">من با قوانین و مقررات سایت مقررات <a class = "text-[#F2CE56]" href="">قوانین و مقررات</a></span>
+                      <span class = "text-[18px] max-lg:text-[15px] max-lg:text-cenetr">من با قوانین و مقررات سایت مقررات <a class = "text-[#F2CE56]" href="">قوانین و مقررات</a></span>
                     </div>
                      <div class="w-full gap-3 flex" id = "code">
                          <div class="w-8/12 pr-5 flex gap-3 items-center border-1 border-gray-200 rounded-[15px]">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 48c44.2 0 80 35.8 80 80v64H144V128c0-44.2 35.8-80 80-80zM96 128v64H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V128C352 57.3 294.7 0 224 0S96 57.3 96 128zM64 240H384c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm184 80c0-13.3-10.7-24-24-24s-24 10.7-24 24v64c0 13.3 10.7 24 24 24s24-10.7 24-24V320z"/></svg>
                             <input class = "w-13/14 h-15 outline-none " name = "code" id = "" placeholder = "کد عبور" type="text" required>
                         </div>
-                        <div id="counter" onclick = 'sendCodeSignup("signup" , this)'  class = "w-4/12 h-15 bg-[#0E2E48] text-white rounded-[15px] flex items-center justify-center cursor-pointer">دریافت کد</div>
+                        <div id="counter" onclick = 'sendCodeSignup("signup" , this)'  class = "w-4/12 h-15 bg-[#0E2E48] text-white rounded-[15px] flex items-center justify-center cursor-pointer max-md:text-[14px]">دریافت کد</div>
                     </div>
                     <button id='formButton' type="submit" disabled class = "w-full bg-red-300 flex items-center cursor-pointer justify-center rounded-[40px] h-14 text-[#0E2E48] text-[18px] gap-4 font-bold">
                         <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 48a80 80 0 1 1 0 160 80 80 0 1 1 0-160zm0 208A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 96h91.4c65.7 0 120.1 48.7 129 112H49.3c8.9-63.3 63.3-112 129-112zm0-48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3zM504 312c0 13.3 10.7 24 24 24s24-10.7 24-24V248h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H552V136c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H440c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
@@ -296,10 +296,10 @@
                         </form>
 
                     <div class="w-full flex gap-4 h-20 bg-slate-100 rounded-[15px] items-center justify-center mt-5">
-                        <span class = "text-gray-500 text-[18px]">قبلا حساب کاربری دارید؟</span>
+                        <span class = "text-gray-500 text-[18px] max-md:text-[15px]">قبلا حساب کاربری دارید؟</span>
                         <a class = "flex gap-2 items-center text-blue-500" href="{{url('login')}}">
                             <span>وارد شوید</span>
-                            <svg class = "size-5 fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+                            <svg class = "size-5 fill-blue-500 max-md:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                         </a>
                     </div>
                 </div>
