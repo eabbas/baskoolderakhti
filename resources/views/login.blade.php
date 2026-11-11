@@ -272,14 +272,14 @@
                     <div class="w-full hidden gap-3 flex" id = "code">
                          <div class="w-8/12 pr-5 flex gap-3 items-center border-1 border-gray-200 rounded-[15px]">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 48c44.2 0 80 35.8 80 80v64H144V128c0-44.2 35.8-80 80-80zM96 128v64H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V128C352 57.3 294.7 0 224 0S96 57.3 96 128zM64 240H384c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm184 80c0-13.3-10.7-24-24-24s-24 10.7-24 24v64c0 13.3 10.7 24 24 24s24-10.7 24-24V320z"/></svg>
-                            <input class = "w-13/14 h-15 outline-none " name = "password" id = "" placeholder = "رمز عبور" type="text">
+                            <input class = "w-13/14 h-15 outline-none " name = "code" id = "" placeholder = "کد عبور" type="text">
                         </div>
                         <div id="counter" onclick = "sendcode('signin' , this)" class = "w-4/12 h-15 bg-[#0E2E48] text-white rounded-[15px] flex items-center justify-center cursor-pointer">دریافت کد</div>
                     </div>
                     <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]" id = "pass">
                         <div class="w-8/12 pr-5 flex gap-3 items-center ">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 48c44.2 0 80 35.8 80 80v64H144V128c0-44.2 35.8-80 80-80zM96 128v64H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V128C352 57.3 294.7 0 224 0S96 57.3 96 128zM64 240H384c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm184 80c0-13.3-10.7-24-24-24s-24 10.7-24 24v64c0 13.3 10.7 24 24 24s24-10.7 24-24V320z"/></svg>
-                            <input class = "w-13/14 h-15 outline-none " name = "code" id = "" placeholder = "کد ورود" type="text">
+                            <input class = "w-13/14 h-15 outline-none " name = "password" id = "" placeholder = "رمز ورود" type="text">
                         </div>
                     </div>
                    <div class="w-full text-blue-500 max-md:text-[14px]">
