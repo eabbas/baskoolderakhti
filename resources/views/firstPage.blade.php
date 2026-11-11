@@ -80,9 +80,9 @@
         </div>
     </div>
 
-    <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] mt-30">
-        <div class="w-full bg-[#0E2E48] top-0 fixed z-40">
-        <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3">
+    <header class = "max-w-[2500px] min-w-[325px] mx-auto bg-[#0B304A] mt-30">
+        <div class="w-[2100px]  translate-x-1/2 right-1/2 mx-auto bg-[#0E2E48] top-0 fixed  z-40">
+        <div class="w-10/12 mx-auto flex flex-col max-lg:px-3">
             <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2  my-3">
                 <div class="flex items-center text-white gap-3 font-bold">
                     <svg class = "size-6 fill-[#F5B83D]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M375.8 275.2c-16.4-7-35.4-2.4-46.7 11.4l-33.2 40.6c-46-26.7-84.4-65.1-111.1-111.1L225.3 183c13.8-11.3 18.5-30.3 11.4-46.7l-48-112C181.2 6.7 162.3-3.1 143.6 .9l-112 24C13.2 28.8 0 45.1 0 64v0C0 300.7 183.5 494.5 416 510.9c4.5 .3 9.1 .6 13.7 .8c0 0 0 0 0 0c0 0 0 0 .1 0c6.1 .2 12.1 .4 18.3 .4l0 0c18.9 0 35.2-13.2 39.1-31.6l24-112c4-18.7-5.8-37.6-23.4-45.1l-112-48zM447.7 480C218.1 479.8 32 293.7 32 64v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0-3.8 2.6-7 6.3-7.8l112-24c3.7-.8 7.5 1.2 9 4.7l48 112c1.4 3.3 .5 7.1-2.3 9.3l-40.6 33.2c-12.1 9.9-15.3 27.2-7.4 40.8c29.5 50.9 71.9 93.3 122.7 122.7c13.6 7.9 30.9 4.7 40.8-7.4l33.2-40.6c2.3-2.8 6.1-3.7 9.3-2.3l112 48c3.5 1.5 5.5 5.3 4.7 9l-24 112c-.8 3.7-4.1 6.3-7.8 6.3c-.1 0-.2 0-.3 0z"></svg>
@@ -226,11 +226,11 @@
     <div class="max-w-[21000px] min-w-[320px] relative">
         <div class="w-1/2 left-0 top-0 h-full absolute leaner z-10 max-lg:w-full max-lg:h-[530px]"></div>
         <div class="w-1/2 right-0 top-0 h-full absolute leaner-left z-10 max-lg:hidden"></div>
-        <div class="w-full flex relative max-lg:flex-col justify-end">
+        <div class="w-11/12 mx-auto flex relative max-lg:flex-col justify-end">
             <div class="w-[60%] max-lg:h-[200px] max-lg:w-full ">
                 <img class = "w-full h-full" src="{{asset('assets/img/scale.png')}}" alt="">
             </div>
-            <div class="w-[30%] max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center  p-5 max-lg:p-1  max-lg:items-center max-lg:w-full  lg:pl-13 max-lg:order-first ">
+            <div class="w-[30%] max-xl:w-[40%] flex flex-col  items-end text-white z-20  justify-center  max-lg:p-1  max-lg:items-center max-lg:w-full   max-lg:order-first ">
                 <p class = "text-[#D99A16] text-[25px] max-2xl:text-[20px] max-lg:text-[20px] max-lg:hidden">
                     فروش انواع ترازوهای
                     <span class = "text-white">دیجیتال و مکانیکی</span>
@@ -244,34 +244,34 @@
                 </a>
                
             </div>
-            <div class="w-[17%] h-[300px] rounded-l-[40px] text-white top-15 z-10 bg-[#0B304A]/20 flex flex-col p-8 items-center absolute gap-3 right-0 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
-                <div class="w-full flex  items-end justify-end gap-6  max-2xl:justify-center max-2xl:items-center">
+            <div class="w-[20%] h-[300px]  rounded-l-[40px] text-white top-15 z-10 bg-[#0B304A]/20 flex flex-col p-8 items-center absolute gap-3 -right-20 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
+                <div class="w-full flex  items-end  gap-6  max-2xl:justify-center max-2xl:items-center ">
                     <div class="w-[55px] h-[55px] border rounded-full border-slate-600 flex items-center justify-center  p-2 max-2xl:justify-center max-2xl:items-center">
                         <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
-                    <div class="flex flex-col  gap-2">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
+                    <div class="flex flex-col items-start  gap-2">
+                        <span class = "font-bold text-[20px]">کیفیت تضمینی</span>
                         <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
                     </div>
                 </div>
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
-                <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
+                <div class="w-full flex  items-end  gap-6 max-2xl:justify-center max-2xl:items-center">
                     <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600 ">
                         <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
+                        <span class = "font-bold text-[20px]">کیفیت تضمینی</span>
                         <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
                     </div>
                 </div>
                 
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
-                <div class="w-full flex  items-end justify-end gap-6 max-2xl:justify-center max-2xl:items-center">
+                <div class="w-full flex  items-end  gap-6 max-2xl:justify-center max-2xl:items-center">
                     <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600">
                         <svg class = "fill-[#D99A16] size-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class = "font-bold text-[23px]">کیفیت تضمینی</span>
+                        <span class = "font-bold text-[20px]">کیفیت تضمینی</span>
                         <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
                     </div>
                 </div>
@@ -304,8 +304,8 @@
     </div>
     </header>
 
-  <main class = "max-w-[21000px] min-w-[325px] my-10 max-lg:mt-40">
-     <section class = "max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3"> 
+  <main class = "w-11/12 2xl:max-w-[2100px] mx-auto max-lg:mt-40">
+     <section class = "w-full mx-auto mt-10 max-lg:px-3"> 
             <div class="w-full mx-auto flex flex-col items-center">
                 <div class="w-[300px] flex flex-col items-center  ">
                     <div class="w-full flex gap-2 items-center justify-center ">
@@ -533,7 +533,7 @@ v10H2z"/>
                 </div>
             </div>
        </section> 
-              <section  class = "max-w-[1800px] min-w-[325px] mx-auto justify-center mt-10 max-lg:px-3">
+              <section  class = "w-full mx-auto justify-center mt-10 max-lg:px-3">
                 <div class="w-full relative flex -z-20 bg-[url('{{asset('assets/img/file_00000000e7948243afb2f2c8987fa0cb.png')}}')]  p-6 overflow-hidden rounded-[15px] px-20 bg-center bg-cover max-lg:p-5 max-lg:flex-col max-lg:gap-5">
                     <div class="absolute w-[10px] h-[200px] bg-[#F8C028] left-0 rotate-30 -top-10"></div>
                     <div class="absolute w-[10px] h-[200px] bg-[#F8C028] right-3 rotate-30 -bottom-10 -z-10"></div>
@@ -613,7 +613,7 @@ v10H2z"/>
             </section>
 
      
-         <section class = "max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3">
+         <section class = "w-full mx-auto mt-10 max-lg:px-3">
             <div class="w-full flex flex-col items-center">
                 <div class="w-full flex items-center justify-center gap-2 max-lg:mx-3 ">
                     <div class="w-[50px] h-[3px] bg-[#F8C028] max-lg:w-[40px]"></div>
@@ -713,7 +713,7 @@ v10H2z"/>
 
 
  
-<section class="max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3">
+<section class="w-full mx-auto mt-10 max-lg:px-3">
 
     <div class="w-full relative mt-10 overflow-hidden flex h-[400px] rounded-[15px] max-lg:hidden">
         <div class="w-[75%] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover"></div>
@@ -734,15 +734,15 @@ v10H2z"/>
         </div>
         
         <div class="w-full mx-auto flex items-center justify-between my-5  max-lg:flex-col max-lg:gap-3 max-lg:my-0 max-lg:mb-5 ">
-            <a href = "" class="flex gap-3 items-center max-lg:order-1">
-                <svg class = "size-5 fill-[#0B304A]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
-                <span>مشاهده همه</span>
-            </a href = "">
             <div class=" flex gap-3 t  justify-center items-center text-[30px] max-lg:text-[22px] max-lg:w-full">
                 <div class="w-[80px] h-1 rounded-[2px] bg-[#D99A16] max-lg:w-[15%]"></div>
                 <span class = "max-lg:text-[17px] ">محصولات پر فروش</span>
                 <div class="w-[20%] h-1 rounded-[2px] bg-[#D99A16] lg:hidden max-lg:w-[15%]"></div>
             </div>
+            <a href = "" class="flex gap-3 items-center max-lg:order-1">
+                <span>مشاهده همه</span>
+                <svg class = "size-5 fill-[#0B304A]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
+            </a href = "">
         </div>
         <div class="w-full lg:hidden flex flex-col relative mb-30 overflow-hidden rounded-[15px]">
             <div class="w-full h-[400px] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/scale_mobile_768x432-1.png')}}')] bg-center bg-cover max-lg:"></div>
@@ -772,7 +772,7 @@ v10H2z"/>
 
 
 
-        <section class="max-w-[1800px] min-w-[325px] mx-auto max-lg:-mt-20">
+        <section class="w-full mx-auto max-lg:-mt-20">
             <div class="w-full  bg-slate-50 border-1 border-slate-100 shadow-sm p-2 rounded-[15px]">
                 <div class="w-full flex justify-between items-center max-lg:flex-col  max-lg:justify-center ">
                     <div class="flex flex-col   max-lg:w-full max-lg:items-center max-lg:justify-center gap-2">
@@ -819,7 +819,7 @@ v10H2z"/>
             </div>
         </section> 
 
-         <section  class="max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3">
+         <section  class="w-full mx-auto mt-10 max-lg:px-3">
                 <div class="w-full flex  border-1 border-slate-200 rounded-[15px] max-lg:flex-col max-lg:items-center ">
                    
                     <div class="w-[40%] flex flex-col p-3  justify-center gap-5  max-lg:w-full max-lg:items-center ">
@@ -1018,8 +1018,8 @@ v10H2z"/>
                 </div>
         </section> 
     </main>
-      <footer class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#061F35] flex flex-col items-center gap-8 max-lg:px-3 max-lg:gap-4">
-        <div class="w-[94.5%] flex mx-auto text-white pt-5 max-lg:flex-col max-lg:items-end">
+      <footer class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#061F35] flex flex-col items-center gap-8 max-lg:px-3 max-lg:gap-4 mt-10">
+        <div class="w-11/12 flex mx-auto text-white pt-5 max-lg:flex-col max-lg:items-end ">
 
          <div class="w-[25%] flex flex-col  justify-start  gap-5  max-lg:w-full max-lg:justify-center max-lg:items-center ">
                 <div class="flex gap-3 items-center max-lg:flex-col">
@@ -1091,8 +1091,8 @@ v10H2z"/>
             </div>
         </div>
         
-        <div class="w-[95%] h-[0.5px] bg-white"></div>
-         <div class="w-[95%] flex items-end justify-between pb-5 text-white  max-lg:flex-col max-lg:items-center max-lg:gap-2 ">
+        <div class="w-11/12 h-[0.5px] bg-white"></div>
+         <div class="w-11/12 flex items-end justify-between pb-5 text-white  max-lg:flex-col max-lg:items-center max-lg:gap-2 ">
             <div class="flex w-[62%] justify-between  max-lg:w-full">
                 <div class="flex gap-2 max-lg:text-[18px] items-center  max-lg:justify-end  text-[20px] max-lg max-lg:text-center max-lg:leading-8">
                     <svg class = "size-5 fill-white max-lg:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z"/></svg>

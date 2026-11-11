@@ -232,7 +232,7 @@
     </header>
 
     <main class = "max-w-[2100px] min-w-[320px] bg-[url('{{asset('assets/img/file_00000000780c81f4bdf8e7d80669e56b.png')}}')] bg-cover bg-center bg-no-repeat mx-auto pb-5 pt-10">
-            <section class = "max-w-[800px] min-w-[320px] mx-auto">
+            <section class = "max-w-[800px] min-w-[320px] mx-auto max-lg:px-3">
                 <div class="w-full flex flex-col  items-center justify-between bg-white px-10 py-3 rounded-[15px] border-1 border-gray-300 shadow-md">
                     <svg class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 48a80 80 0 1 1 0 160 80 80 0 1 1 0-160zm0 208A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 96h91.4c65.7 0 120.1 48.7 129 112H49.3c8.9-63.3 63.3-112 129-112zm0-48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3zM504 312c0 13.3 10.7 24 24 24s24-10.7 24-24V248h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H552V136c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H440c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
                     <div class="w-full flex flex-col gap-3 items-center mb-5">
@@ -280,7 +280,7 @@
                     @enderror
                     <div class="w-full flex items-center rounded-[15px] gap-3">
                       <input type="checkbox" value="1" onclick='checkAccess(this)' required>
-                      <span class = "text-[18px] max-lg:text-[15px] max-lg:text-cenetr">من با قوانین و مقررات سایت مقررات <a class = "text-[#F2CE56]" href="">قوانین و مقررات</a></span>
+                      <span class = "text-[18px] max-lg:text-[15px] max-lg:text-cenetr">من با <a class = "text-[#FBC830]" href="">قوانین و مقررات </a>سایت موافقم</span>
                     </div>
                      <div class="w-full gap-3 flex" id = "code">
                          <div class="w-8/12 pr-5 flex gap-3 items-center border-1 border-gray-200 rounded-[15px]">
@@ -296,8 +296,8 @@
                         </form>
 
                     <div class="w-full flex gap-4 h-20 bg-slate-100 rounded-[15px] items-center justify-center mt-5">
-                        <span class = "text-gray-500 text-[18px] max-md:text-[15px]">قبلا حساب کاربری دارید؟</span>
-                        <a class = "flex gap-2 items-center text-blue-500" href="{{url('login')}}">
+                        <span class = "text-gray-500 text-[18px] max-md:text-[14px]">قبلا حساب کاربری دارید؟</span>
+                        <a class = "flex gap-2 items-center text-blue-500 max-md:text-[14px]" href="{{url('login')}}">
                             <span>وارد شوید</span>
                             <svg class = "size-5 fill-blue-500 max-md:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                         </a>
