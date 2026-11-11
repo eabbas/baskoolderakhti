@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <script src="{{asset('assets/js/tailwind.js')}}"></script>
+    <script src="{{asset('assets/js/jodit.js')}}"></script>
     <script src="{{asset('assets/js/jquery.js')}}"></script>
     <link rel="stylesheet" href="{{asset('assets/css/index.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/jodit.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <script>
+        let url="{{ url('/') }}/"
+        let api="{{ url('/api') }}/"
+        let storage="{{ asset('/storage') }}/"
+        let assets="{{ asset('/assets') }}/"
+        let userLoggedIn = "{{ Auth::check() }}"
+    </script>
     <style>
         /* ===== پالت رنگی مترونیک ===== */
         :root {

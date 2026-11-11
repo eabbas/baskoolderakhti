@@ -624,11 +624,6 @@
         .derakhti-form-header { padding: 20px; }
         .derakhti-form-header h2 { font-size: 18px; }
         .derakhti-form-header .sub-text { margin-right: 0; }
-        .derakhti-toggle-group {
-            flex-direction: column;
-            align-items: flex-start !important;
-            gap: 12px !important;
-        }
         .derakhti-package-box .package-grid { grid-template-columns: 1fr; }
         .derakhti-btn {
             padding: 12px 24px;
@@ -694,13 +689,6 @@ $count = 1;
                 <div>
                     <label class="derakhti-label"> گالری</label>
                     <input type="file" name='gallery[]' multiple class="derakhti-input" style="padding: 8px 12px;">
-                </div>
-
-                <!-- توضیحات -->
-                <div>
-                    <label class="derakhti-label"> توضیحات</label>
-                    <input type="text" placeholder="توضیحات محصول" value="{{$product->description}}"    name='description' class="derakhti-input">
-                    <span class="derakhti-error">@error('description') {{$message}} @enderror</span>
                 </div>
 
                 <!-- خلاصه -->
@@ -786,6 +774,14 @@ $count = 1;
 
                 </div>
 
+                <!-- توضیحات -->
+                <div class='col-span-2'>
+                    <label class="derakhti-label "> توضیحات</label>
+                    <textarea id="editor" placeholder="توضیحات محصول" rows='4'  name='description' class="derakhti-input">{!! $product->description !!}</textarea>
+                    @error('description') <span class="derakhti-error">{{$message}}</span> @enderror
+                </div>
+
+
             </div>
 
             <!-- ===== تصاویر محصول ===== -->
@@ -840,7 +836,7 @@ $count = 1;
             </div>
 
             <!-- ===== پکیج‌های موجود ===== -->
-            @if(count($product['packages']) > 0)
+            <!-- @if(count($product['packages']) > 0)
                 <div class="mt-4">
                     <h3 class="derakhti-label" style="font-size:15px;color:#1e293b;"> پکیج‌های موجود</h3>
 
@@ -878,7 +874,7 @@ $count = 1;
                                     <input type="number" name="createdPackages[{{$package->id}}][discunt]" value="{{$package->discunt}}" class="derakhti-input" placeholder="تخفیف">
                                 </div>
 
-                                <!-- توگل‌های پکیج -->
+                                توگل‌های پکیج
                                 <div class="flex items-center gap-6 flex-wrap">
                                     <div class="derakhti-toggle-label">
                                         <span> فعال</span>
@@ -896,7 +892,7 @@ $count = 1;
                                     </div>
                                 </div>
 
-                                <!-- تصاویر پکیج -->
+                                تصاویر پکیج
                                 @if(count($package['medias']) > 0)
                                     <div class="full">
                                         <label class="derakhti-label"> تصاویر پک</label>
@@ -914,7 +910,7 @@ $count = 1;
                                     </div>
                                 @endif
 
-                                <!-- ویژگی‌های پکیج -->
+                                ویژگی‌های پکیج
                                 @if(count($package['attributes']) > 0)
                                     <div class="full">
                                         <label class="derakhti-label"> ویژگی‌های پک</label>
@@ -930,7 +926,7 @@ $count = 1;
                                     </div>
                                 @endif
 
-                                <!-- افزودن ویژگی به پکیج -->
+                                افزودن ویژگی به پکیج
                                 <div class="full">
                                     <label class="derakhti-label"> افزودن ویژگی به پک</label>
                                     <div class="packageAttributesList flex flex-wrap gap-2 mt-2"></div>
@@ -942,10 +938,10 @@ $count = 1;
                         </div>
                     @endforeach
                 </div>
-            @endif
+            @endif -->
 
             <!-- ===== ایجاد پکیج جدید ===== -->
-            <div class="mt-4">
+            <!-- <div class="mt-4">
                 <div id="PackageForm" class="flex flex-col gap-4"></div>
                 <div class="derakhti-btn-warning w-full justify-center mt-3" onclick="createPackageForm(this,false)">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -953,7 +949,7 @@ $count = 1;
                     </svg>
                     ایجاد پکیج جدید
                 </div>
-            </div>
+            </div> -->
 
             <!-- ===== دکمه ثبت ===== -->
             <div class="flex justify-end mt-6 pt-6 border-t" style="border-color:var(--metronic-border);">
@@ -1292,5 +1288,6 @@ $count = 1;
     }
     
 </script>
+<script src="{{asset('assets/js/product.js')}}"></script>
 
 @endsection
