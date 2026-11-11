@@ -856,4 +856,33 @@ class ProductController extends Controller
     }
 
 
+    public function uploadImage(Request $request){
+        $request->validate([
+            'files' => 'required|array',
+            'files.*' => 'required|image|max:2048',
+        ]);
+
+        $uploadedFiles = [];
+
+        foreach ($request->file('files') as $file) {
+            $path = $file->store(
+                'articles',
+                'public'
+            );
+
+            $uploadedFiles[] = [
+                'name' => $file->getClientOriginalName(),
+                'url' => asset('storage/' . $path),
+            ];
+        }
+
+        return response()->json([
+            'success' => true,
+            'data' => [
+                'files' => $uploadedFiles,
+            ],
+        ]);
+    }
+
+
 }

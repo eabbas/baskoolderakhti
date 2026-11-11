@@ -488,11 +488,6 @@
         .derakhti-form-body { padding: 22px 20px 26px; }
         .derakhti-form-header { padding: 20px; }
         .derakhti-form-header h2 { font-size: 18px; }
-        .derakhti-toggle-group {
-            flex-direction: column;
-            align-items: flex-start !important;
-            gap: 12px !important;
-        }
         .derakhti-package-box .package-grid { grid-template-columns: 1fr; }
         .derakhti-btn { padding: 12px 24px; font-size: 14px; width: 100%; justify-content: center; }
     }
@@ -555,16 +550,9 @@ $count=0
                     <input type="file" name='gallery[]' multiple class="derakhti-input" style="padding: 8px 12px;">
                 </div>
 
-                <!-- توضیحات -->
-                <div>
-                    <label class="derakhti-label"> توضیحات</label>
-                    <input type="text" placeholder="توضیحات محصول"    name='description' class="derakhti-input">
-                    @error('description') <span class="derakhti-error">{{$message}}</span> @enderror
-                </div>
-
                 <!-- خلاصه -->
                 <div>
-                    <label class="derakhti-label"> خلاصه</label>
+                    <label class="derakhti-label"> خلاصه توضیحات</label>
                     <input type="text" placeholder="خلاصه محصول" name='summary' class="derakhti-input">
                 </div>
                 <div>
@@ -647,6 +635,14 @@ $count=0
 
                 </div>
 
+                <!-- توضیحات -->
+                <div class='col-span-2'>
+                    <label class="derakhti-label "> توضیحات</label>
+                    <textarea id="editor" placeholder="توضیحات محصول" rows='4'  name='description' class="derakhti-input"></textarea>
+                    @error('description') <span class="derakhti-error">{{$message}}</span> @enderror
+                </div>
+
+
             </div>
 
             <!-- ===== بخش ویژگی‌ها ===== -->
@@ -662,7 +658,7 @@ $count=0
             </div>
 
             <!-- ===== پکیج‌ها ===== -->
-            <div class="mt-6">
+            <!-- <div class="mt-6">
                 <div id="PackageForm" class="flex flex-col gap-4"></div>
                 <div class="createPackageFormButton derakhti-btn-warning w-full justify-center mt-3" onclick="createPackageForm(this,false)">
                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -670,7 +666,7 @@ $count=0
                     </svg>
                     ایجاد پکیج جدید
                 </div>
-            </div>
+            </div> -->
 
             <!-- ===== دکمه ثبت ===== -->
             <div class="flex justify-end mt-6 pt-6 border-t border-[#DBDFE9]">
@@ -915,5 +911,6 @@ $count=0
     }
 
 </script>
+<script src="{{asset('assets/js/product.js')}}"></script>
 
 @endsection

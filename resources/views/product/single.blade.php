@@ -560,16 +560,13 @@
                     <span class="label"> قیمت بعد از تخفیف</span>
                     <span class="value">{{number_format($product->discunt)}}</span>
                 </div>
-                <div class="derakhti-info-item">
-                    <span class="label"> توضیحات</span>
-                    <span class="value text-sm">{{$product->description}}</span>
-                </div>
+
                 <div class="derakhti-info-item">
                     <span class="label"> دسته‌بندی</span>
                     <span class="value">{{$product->categories[0]->title ?? 'بدون دسته‌بندی'}}</span>
                 </div>
                 <div class="derakhti-info-item">
-                    <span class="label"> خلاصه</span>
+                    <span class="label"> خلاصه توضیحات</span>
                     <span class="value text-sm">{{$product->summary}}</span>
                 </div>
                 <div class="derakhti-info-item">
@@ -608,6 +605,13 @@
                             {{$product->featured ? '⭐ ویژه' : 'معمولی'}}
                         </span>
                     </span>
+                </div>
+            </div>
+
+            <div class='w-full '>
+                <div class="derakhti-info-item">
+                    <span class="label"> توضیحات</span>
+                    <span class="value text-sm">{!!$product->description!!}</span>
                 </div>
             </div>
 
@@ -651,7 +655,7 @@
             </div>
 
             <!-- ===== پکیج‌ها ===== -->
-            <div class="derakhti-section">
+            <!-- <div class="derakhti-section">
                 <div class="derakhti-section-title">
                     <h3> پکیج‌ها</h3>
                     <div class="line"></div>
@@ -702,7 +706,7 @@
                 @empty
                 <span class="text-[#4a6a7a] text-sm">هیچ پکیجی ثبت نشده است</span>
                 @endforelse
-            </div>
+            </div> -->
             <!-- ===== دکمه‌های اکشن ===== -->
             <div class="derakhti-action-buttons">
                 <a href="{{route('product.edit',['product'=>$product->id])}}" class="derakhti-action-btn-lg edit">

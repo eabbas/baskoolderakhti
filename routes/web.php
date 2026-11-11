@@ -19,6 +19,14 @@ use App\Http\Controllers\HeaderSettingController;
 use App\Http\Controllers\AddressController;
 use App\Http\Middleware\checkUserExist;
 use App\Http\Middleware\checkAuthUser;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+Route::get('/test',function(){
+    Schema::table('products',function(Blueprint $table){
+        $table->longText('description')->nullable()->change();
+    });
+});
 
 Route::get('/',[UserController::class,'firstPage'])->name('firstpage');
 Route::get('/setting',[UserController::class,'setting']);
