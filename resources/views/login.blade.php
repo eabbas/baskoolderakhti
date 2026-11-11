@@ -286,18 +286,13 @@
                     <span id = "passing1" class = "cursor-pointer" onclick = "login_stat(this)">ورود با رمز یک بار مصرف</span>
                     <span class = "hidden cursor-pointer" id = "passing2" onclick = "login_stat(this)">ورود با رمز عبور</span>
                    </div>
-                    <button class = "w-full bg-[#FBC830] flex items-center justify-center rounded-[40px] h-12 text-[#0E2E48] text-[18px] gap-4 font-bold">
+                    <button class = "w-full bg-[#FBC830] flex items-center justify-center rounded-[40px] h-13 text-[#0E2E48] text-[18px] gap-4 font-bold cursor-pointer">
                         <svg class = "size-7 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M272 49.7V464H112l0-371.2L272 49.7zM320 464V42.4C320 19 301 0 277.6 0c-3.7 0-7.4 .5-11 1.5L99.5 46.4C78.6 52.1 64 71.1 64 92.8V464H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64 96h16H272h48V464zM224 288c13.2 0 24-14.4 24-32s-10.8-32-24-32s-24 14.4-24 32s10.7 32 24 32zM352 112H456c4.4 0 8 3.6 8 8V488c0 13.3 10.7 24 24 24h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H512V120c0-30.9-25.1-56-56-56H352v48z"/></svg>
                         <span>ورود</span>
                     </button>
                     </form>
-
-                    <a class = "w-full flex items-center justify-center gap-3 text-blue-500 text-[18px] my-8 max-md:text-[16px]" href="">
-                        <span>رمز عبور خود را فراموش کرده اید</span>
-                        <svg class = "size-5 fill-blue-500 max-md:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
-                    </a>
-                    <div class="w-full flex gap-4 h-20 bg-slate-100 rounded-[15px] items-center justify-center">
-                        <span class = "text-gray-500 text-[18px] max-md:text-[15px]" > حساب کاربری ندارید؟</span>
+                    <div class="w-full flex gap-4 h-20 bg-slate-100 rounded-[15px] items-center justify-center mt-5">
+                        <span class = "text-gray-500 text-[18px] max-md:text-[14px]" > حساب کاربری ندارید؟</span>
                         <a class = "flex gap-2 items-center text-blue-500 max-md:text-[14px]" href="{{url('signup')}}">
                             <span>ثبت نام کنید</span>
                             <svg class = "size-5 fill-blue-500 max-md:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
@@ -403,6 +398,15 @@
     </footer>
 <script>
 
+      function bar_menu(){
+        let menu = document.getElementById('menu')
+        let document_black = document.getElementById('document_black')
+        console.log(document_black)
+        menu.classList.toggle('translate-x-150')
+        document_black.classList.toggle('invisible')
+        document_black.classList.toggle('opacity-0')
+    }
+    
     function login_stat(el){
         let pass1 = document.getElementById('passing1')
         let pass2 = document.getElementById('passing2')
