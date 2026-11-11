@@ -105,8 +105,8 @@
     </div>
 
     <header class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#0B304A] mt-30">
-        <div class="w-full bg-[#0E2E48] top-0 fixed z-40">
-        <div class="max-w-[1800px] min-w-[325px] mx-auto flex flex-col max-lg:px-3">
+         <div class="w-full  translate-x-1/2 right-1/2 mx-auto bg-[#0E2E48] top-0 fixed  z-40">
+        <div class="w-11/12  mx-auto flex flex-col max-lg:px-3 ">
             <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2  my-3">
                 <div class="flex items-center text-white gap-3 font-bold">
                     <svg class = "size-6 fill-[#F5B83D]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M375.8 275.2c-16.4-7-35.4-2.4-46.7 11.4l-33.2 40.6c-46-26.7-84.4-65.1-111.1-111.1L225.3 183c13.8-11.3 18.5-30.3 11.4-46.7l-48-112C181.2 6.7 162.3-3.1 143.6 .9l-112 24C13.2 28.8 0 45.1 0 64v0C0 300.7 183.5 494.5 416 510.9c4.5 .3 9.1 .6 13.7 .8c0 0 0 0 0 0c0 0 0 0 .1 0c6.1 .2 12.1 .4 18.3 .4l0 0c18.9 0 35.2-13.2 39.1-31.6l24-112c4-18.7-5.8-37.6-23.4-45.1l-112-48zM447.7 480C218.1 479.8 32 293.7 32 64v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0-3.8 2.6-7 6.3-7.8l112-24c3.7-.8 7.5 1.2 9 4.7l48 112c1.4 3.3 .5 7.1-2.3 9.3l-40.6 33.2c-12.1 9.9-15.3 27.2-7.4 40.8c29.5 50.9 71.9 93.3 122.7 122.7c13.6 7.9 30.9 4.7 40.8-7.4l33.2-40.6c2.3-2.8 6.1-3.7 9.3-2.3l112 48c3.5 1.5 5.5 5.3 4.7 9l-24 112c-.8 3.7-4.1 6.3-7.8 6.3c-.1 0-.2 0-.3 0z"></svg>
@@ -118,10 +118,9 @@
                     <span>تهران و خیابان اصلی</span>
                 </div>
             </div>
-            <div class="w-full flex items-center gap-20 max-lg:pb-2  max-lg:justify-between max-lg:py-4">
-                <div class="w-[25%] flex items-center mb-3 gap-4 max-lg:hidden ">
-                    <div class="w-[80px] ">
-    
+            <div class="w-full   flex items-center gap-5 max-lg:pb-2  max-lg:justify-between max-lg:py-4">
+                <div class="w-3/12 flex items-center mb-3 gap-4 max-lg:hidden ">
+                    <div class="w-[80px]">
                         <img src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" class = "w-[80px]" alt="">
                     </div>
                 <div class="flex flex-col gap-2  text-white">
@@ -129,20 +128,20 @@
                     <span class = "text-[14px] text-nowrap ">دقت در اندازه گیری و اعتبار در کسب و کار</span>
                 </div>
             </div>
-            <div class="w-[70%] flex items-center justify-around gap-10 max-2xl:gap-5 max-2xl:w-[80%] text-white  text-[18px] font-bold   parent_font max-lg:hidden">
-                <a class = " text-center fonts" href="{{route('document_phone')}}">تماس باما</a>
-                <a class = " text-center fonts" href="{{route('about_as')}}">درباره ما</a>
-                <a class = " text-center fonts" href="">محصولات خدمات</a>
-                <a class = " text-center fonts" href="">صفحه اصلی</a>
+            <div class="w-5/12 flex items-center justify-around gap-5  max-2xl:w-[80%] text-white  text-[16px] font-bold   parent_font max-lg:hidden">
+                <a class = " text-center fonts text-nowrap" href="{{route('document_phone')}}">تماس باما</a>
+                <a class = " text-center fonts text-nowrap" href="{{route('about_as')}}">درباره ما</a>
+                <a class = " text-center fonts text-nowrap" href="">محصولات خدمات</a>
+                <a class = " text-center fonts text-nowrap" href="">صفحه اصلی</a>
             </div>
             <svg  onclick = "bar_menu()" class = "size-8 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
 
-            <div class="w-[35%] flex items-center  gap-10  max-xl:w-[30%] max-xl:gap-8   max-lg:w-[70%] max-lg:justify-end ">
+            <div class="w-4/12 flex items-center  gap-10  max-xl:w-[30%] max-xl:gap-8   max-lg:w-[70%] max-lg:justify-end ">
                 @if(Auth::check())
                 <a href="{{route('user.profile')}}">
                     <div class='w-30 px-4 py-1 bg-[#EBECEE] shadow-md rounded-xl duration-500 transition-all hover:shadow-[#099975] text-black text-center'>{{Auth::user()->name}}  خوش آمدید</div>
                 </a>
-                <div class="lg:block hidden w-[370px] h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
+                <div class="lg:block hidden w-full h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
                         <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full  rounded-lg text-black">
                             @csrf
                             <button class="cursor-pointer w-[13%] md:w-10 h-10  flex justify-center items-center p-2">
@@ -154,16 +153,11 @@
                 @else
                 <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
                     <div class=" flex items-center gap-3">
-
-                        <a href="{{route('user.loginPage')}}">
-                            ورود
-                        </a>
-                        <div class="w-[2px] h-[22px] bg-white rotate-12"></div>
-                        <a href="{{route('user.loginPage')}}">
-                            ثبت نام
+                        <a href="{{url('login')}}">
+                            ورود / ثبت نام
                         </a>   
                     </div>
-                    <div class="lg:block hidden w-[370px] h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
+                    <div class="lg:block hidden w-full h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
                             <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full  rounded-lg text-black">
                                 @csrf
                                 <button class="cursor-pointer w-[13%] md:w-10 h-10  flex justify-center items-center p-2">
@@ -250,6 +244,7 @@
         </div>
     </div>
         </div>
+                                                                                
     </header>
 
     <main class = "max-w-[2100px] min-w-[320px] bg-[url('{{asset('assets/img/file_00000000780c81f4bdf8e7d80669e56b.png')}}')] bg-cover bg-center bg-no-repeat mx-auto pb-5 pt-10">
