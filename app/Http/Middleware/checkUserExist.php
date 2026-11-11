@@ -23,7 +23,7 @@ class checkUserExist
         $result= '';
         $user=User::where('phoneNumber',$request->phoneNumber)->first();
         if($user){
-            if(isset($request['code'])){
+            if(isset($request->code)){
                 $phone_code=phone_code::where('phoneNumber',$request->phoneNumber)->first();
                 if($phone_code){
                     if($phone_code->code == $request->code && $request->phoneNumber == $phone_code->phoneNumber){
