@@ -234,11 +234,11 @@
         </div>
     <div class="max-w-[21000px] min-w-[320px] relative max-lg:mt-20 mt-35">
         <div class="w-full flex relative max-lg:flex-col justify-end">
-            <div class="w-[99%] h-10 absolute bg-[#FBC830] bottom-3 z-30 lg:hidden left-1/2 -translate-x-1/2 -rotate-6 -skew-x-13 max-[380px]:-rotate-7"></div>
+            <div class="w-[99%] h-10 absolute bg-[#FBC830] bottom-3 z-30 lg:hidden left-1/2 -translate-x-1/2 -rotate-5 -skew-x-13 max-[380px]:-rotate-7"></div>
             <div class="w-[61%] max-lg:h-[120px] max-lg:w-full absolute right-0 !z-20 ">
                 <img class = "w-full h-[457px] relative z-10 max-lg:h-[380px]" src="{{asset('assets/img/file_00000000d6188243b80c993b60cf3bc7.png')}}" alt="">
             </div>
-            <div class="w-[55%] h-[457px] flex flex-col items-end text-white relative z-30 justify-center gap-1 max-lg:gap-0 max-lg:p-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full pl-15 clip-pathh2 bg-[#091E2F] max-lg:pt-5">
+            <div class="w-[55%] h-[400px] flex flex-col items-end text-white relative z-30 justify-center gap-1 max-lg:gap-0 max-lg:p-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full pl-15 clip-pathh2 bg-[#091E2F]">
                 <div class="w-12 h-114 absolute bg-[#FBC830] right-25 z-30 -skew-x-25 max-lg:hidden"></div>
              <div class="w-full flex gap-2 items-center justify-end font-bold max-lg:justify-center">
                 <a href="{{route('firstpage')}}">خانه</a>
