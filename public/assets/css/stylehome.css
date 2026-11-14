@@ -36,6 +36,15 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
 } */
 
 
+.clip-path-phone{
+    clip-path: polygon(30% 0 , 100% 0% , 100% 100% , 0 100%);
+    
+}
+
+.clip-path-img{
+    clip-path: polygon(32% 0 , 100% 0% , 100% 100% , 0 100%);
+}
+
 .down_hero{
     background: #031522;
     background: linear-gradient(0deg,rgba(3, 21, 34, 1) 56%, rgba(3, 21, 34, 0) 172%, rgba(3, 21, 34, 0) 100%);
@@ -100,6 +109,12 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     }
     .clip-pathh2{
     clip-path: polygon(0 0 , 100% 0 , 100% 90% , 0 100%);
+    }
+    .clip-path-img{
+        clip-path: polygon(0 25% , 100% 10% , 100% 100% , 0 100%);
+    }
+    .clip-path-phone{
+        clip-path: polygon(0 20% , 100% 5% , 100% 100% , 0 100%);
     }
 }
 

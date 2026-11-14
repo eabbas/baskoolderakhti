@@ -93,7 +93,7 @@
                     <span>تهران و خیابان اصلی</span>
                 </div>
             </div>
-            <div class="w-full  flex items-center gap-5 max-lg:pb-2  max-lg:justify-between max-lg:py-4">
+            <div class="w-full  flex items-center gap-5 max-lg:pb-2  max-lg:justify-between max-lg:py-4 ">
                 <div class="w-3/12 flex items-center mb-3 gap-4 max-lg:hidden ">
                     <div class="w-[80px]">
                         <img src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" class = "w-[80px]" alt="">
