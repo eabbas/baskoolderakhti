@@ -233,12 +233,12 @@
     </div>
         </div>
     <div class="max-w-[21000px] min-w-[320px] relative max-lg:mt-20 mt-35 bg-[#091E2F]">
-        <div class="w-22/23 flex relative max-lg:flex-col justify-end ">
+        <div class="w-22/23 flex relative max-lg:flex-col justify-end max-lg:w-full">
             <!-- <div class="w-[99%] h-10 absolute bg-[#FBC830] bottom-3 z-30 lg:hidden left-1/2 -translate-x-1/2 -rotate-5 -skew-x-13 max-[380px]:-rotate-7"></div> -->
             <div class="w-4/7  max-lg:w-full right-0 !z-20 bg-[#FBC830] clip-path-phone">
                 <img class = "max-lg:w-full w-14/15 h-[457px] relative z-10  clip-path-img" src="{{asset('assets/img/file_00000000d6188243b80c993b60cf3bc7.png')}}" alt="">
             </div>
-            <div class="w-3/7  flex flex-col items-end text-white relative z-30 justify-center gap-1 max-lg:gap-0 max-lg:p-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full clip-pathh2 bg-[#091E2F] max-lg:order-first max-lg:justify-end max-lg:pt-5">
+            <div class="w-3/7  flex flex-col items-end text-white relative z-30 justify-center gap-2 max-lg:gap-0 max-lg:pb-5 max-lg:px-3 max-lg:items-center max-lg:w-full clip-pathh2 bg-[#091E2F] max-lg:order-first max-lg:justify-end max-lg:pt-3 ">
                 <!-- <div class="w-12 h-114 absolute bg-[#FBC830] right-25 z-30 -skew-x-25 max-lg:hidden"></div> -->
              <div class="w-full flex gap-2 items-center justify-end font-bold max-lg:justify-center">
                 <a href="{{route('firstpage')}}">خانه</a>
@@ -247,8 +247,8 @@
              </div>   
              <span class = "text-[55px] font-bold max-lg:text-[50px]">تماس با <span class = "text-[#F2CE56]">ما</span></span>
              <span class = "text-[30px] max-sm:text-[25px] text-nowrap">ما همیشه در کنار شما هستیم</span>
-             <h2 class = "text-[20px] w-125  text-end leading-12 text-gray-300 max-lg:w-full max-lg:text-[18px] max-lg:leading-10">در رصورت داشتن هرگونه سوال پیشنهاد با نیاز به مشاوره می توانید از طریق راه های ارتبازی زیر با ما در تماس باشید</h2>
-             <a href = "{{route('about_as')}}" class = "w-52 h-12 bg-[#FBC830] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] max-lg:mt-3 max-sm:w-[200px] max-lg:text-[15px] max-lg:gap-2 max-lg:h-[45px] max-lg:self-end" href="{{route('single_amir')}}">
+             <h2 class = "text-[20px] w-125  text-end leading-12 text-gray-300 max-lg:w-full max-lg:text-[18px] max-lg:leading-8 max-lg:text-center ">در رصورت داشتن هرگونه سوال پیشنهاد با نیاز به مشاوره می توانید از طریق راه های ارتبازی زیر با ما در تماس باشید</h2>
+             <a href = "{{route('about_as')}}" class = "w-52 h-12 bg-[#FBC830] mt-1 rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] max-lg:mt-3 max-sm:w-[200px] max-lg:text-[15px] max-lg:gap-2 max-lg:h-[45px] max-lg:mb-5" href="{{route('single_amir')}}">
                  <span>درباره ما</span>
                  <svg class = "size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
                 </a>
@@ -259,7 +259,7 @@
     </div>
     </header>
     <main class = "max-w-[21000px] min-w-[325px]">
-        <section class = "w-11/12 mx-auto max-lg:px-3 mt-10 max-lg:mt-75">
+        <section class = "w-11/12 mx-auto max-lg:px-3 mt-10">
             <div class="w-full flex gap-6 max-lg:flex-col">
                 <div class="w-[25%] max-lg:w-full flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
