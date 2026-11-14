@@ -606,16 +606,16 @@
             </div>
         </section>
         <section class = "w-11/12 mx-auto max-lg:px-3 mt-10 max-lg:mb-50 ">
-                <div class="w-full flex relative max-lg:flex-col">
-                    <div class="w-[40%] max-lg:hidden"></div>
-                    <div class="w-[50%] absolute right-0 max-lg:w-full max-lg:-bottom-35 imgg ">
-                        <img class = "w-full h-[212px] rounded-[10px]" src="{{asset('assets/img/file_00000000588881f48ceb936670889db4.png')}}" alt="">
+                <div class="w-full flex relative max-lg:flex-col bg-[#0E2E48] rounded-[15px]">
+                    <!-- <div class="w-[40%] max-lg:hidden"></div> -->
+                    <div class="w-3/7 right-0 max-lg:w-full max-lg:-bottom-35 imgg bg-[#FBC830] clip-path-about-as rounded-[10px]">
+                        <img class = "w-11/12 max-lg:w-full h-[212px] rounded-[10px] clip-path-img-1" src="{{asset('assets/img/file_00000000588881f48ceb936670889db4.png')}}" alt="">
                     </div>
-                    <div class="w-[60%] lg:h-53 flex justify-end bg-[#0E2E48] p-5 py-6 rounded-[15px] clip-pathh1 max-lg:w-full relative max-lg:flex-col max-lg:pb-20 max-lg:pt-10 max-lg:justify-between max-lg:items-center max-lg:gap-3">
-                        <div class="w-15 h-[213px] bg-[#F2CE56] -skew-x-27 rounded-[7px] absolute right-9 max-lg:hidden z-10 top-0 max-[1600px]:w-10 max-[1600px]:-skew-x-23"></div>
+                    <div class="w-4/7 lg:h-53 flex justify-end bg-[#0E2E48] p-5 py-6 rounded-[15px] clip-pathh1 max-lg:w-full relative max-lg:flex-col max-lg:pb-20 max-lg:pt-10 max-lg:justify-between max-lg:items-center max-lg:gap-3">
+                        <!-- <div class="w-15 h-[213px] bg-[#F2CE56] -skew-x-27 rounded-[7px] absolute right-9 max-lg:hidden z-10 top-0 max-[1600px]:w-10 max-[1600px]:-skew-x-23"></div> -->
                     <div class="w-30 h-40 bg-[#FBC830] absolute z-20 -bottom-4 rotate-30 -right-18 lg:hidden"></div>
                         <div class="w-[70%] flex flex-col items-end text-white gap-2 max-lg:w-full max-lg:items-center">
-                            <h2 class = "text-[30px] max-lg:text-[17px] max-lg:text-center text-nowrap ">برای انتخاب <span class = "text-[#F2CE56] ">بهترین ترازو</span>با ما در ارتباط باشید</h2>
+                            <h2 class = "text-[27px] max-lg:text-[17px] max-lg:text-center text-nowrap ">برای انتخاب <span class = "text-[#F2CE56] ">بهترین ترازو</span>با ما در ارتباط باشید</h2>
                             <span class = "text-[20px] text-gray-400 max-lg:text-center">مشاوره ما اماده پاسخگویی به سوالات ما هستند</span>
                             <div class="w-48 h-10 flex items-center justify-center gap-5 bg-[#FBC830] rounded-[30px] text-[#0E2E48] text-[20px] max-lg:self-center max-lg:w-48 max-lg:h-10 max-lg:text-[18px]">
                                 <span>تماس باما</span>
