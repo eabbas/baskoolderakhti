@@ -16,6 +16,7 @@ use App\Http\Controllers\AdvertisementController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\SupportInformationController;
 use App\Http\Controllers\HeaderSettingController;
+use App\Http\Controllers\DiscuntCodeController;
 use App\Http\Controllers\AddressController;
 use App\Http\Middleware\checkUserExist;
 use App\Http\Middleware\checkAuthUser;
@@ -76,6 +77,7 @@ Route::group([
     Route::post('/signup_with_ajax','signup_with_ajax')->name('signup_with_ajax');
     Route::post('/signin_with_ajax','signin_with_ajax')->name('signin_with_ajax');
     Route::post('/checkUser','checkUser')->name('checkUser');
+    Route::any('/cartInformation','cartInformation')->name('cartInformation');
 });
 Route::group([
     'prefix'=>'role',
@@ -203,7 +205,19 @@ Route::group([
     Route::post('/get/cities','getCities')->name('getCities');
     Route::post('/create/ajax','createAjax')->name('createAjax');
 });
-
+route::group([
+    'prefix'=>'discuntCode',
+    'as'=>'discuntCode.',
+    'controller'=>DiscuntCodeController::class,
+],function(){
+    Route::get('/create','create')->name('create');
+    Route::post('/store','store')->name('store');
+    Route::get('/list','list')->name('list');
+    Route::get('/edit/{discuntCode}','edit')->name('edit');
+    Route::post('/update/{discuntCode}','update')->name('update');
+    Route::get('/delete/{discuntCode}','delete')->name('delete');
+    Route::post('/checkCode','checkCode')->name('checkCode');
+});
 
 Route::get('/about/as' , [UserController::class , 'about_as'])->name('about_as');
 
