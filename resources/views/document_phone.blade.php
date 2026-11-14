@@ -108,7 +108,7 @@
                 <a class = " text-center fonts text-nowrap" href="{{route('document_phone')}}">تماس باما</a>
                 <a class = " text-center fonts text-nowrap" href="{{route('about_as')}}">درباره ما</a>
                 <a class = " text-center fonts text-nowrap" href="">محصولات خدمات</a>
-                <a class = " text-center fonts text-nowrap" href="">صفحه اصلی</a>
+                <a class = " text-center fonts text-nowrap" href="{{route('firstpage')}}">صفحه اصلی</a>
             </div>
             <svg  onclick = "bar_menu()" class = "size-8 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
 
@@ -128,7 +128,7 @@
                 </div>
                 @else
                 <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
-                    <div class=" flex items-center gap-3">
+                    <div class=" flex items-center gap-3 text-[14px] font-bold">
                         <a href="{{url('login')}}">
                             ورود / ثبت نام
                         </a>   
@@ -493,7 +493,7 @@
                     </div>
                     <span>دسترسی سریع</span>
                 </div>
-                <a href = "#" class = "text-gray-400 text-[20px]">صفحه اصلی</a>
+                <a href = "{{route('firstpage')}}" class = "text-gray-400 text-[20px]">صفحه اصلی</a>
                 <a href = "#" class = "text-gray-400 text-[20px]">محصولات</a>
                 <a href = "#" class = "text-gray-400 text-[20px]">درباره ما</a>
                 <a href = "#" class = "text-gray-400 text-[20px]">تماس باما</a>

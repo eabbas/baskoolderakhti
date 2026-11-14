@@ -8,7 +8,9 @@
     <script src="{{asset('assets/js/jquery.js')}}"></script>
 </head>
 <body>
-
+   @extends('header')
+   @section('content') 
+<!-- 
 <div class="w-full h-dvh top-0 fixed z-50 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
     <div class="fixed w-70 h-[97%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 top-1 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
             <div class="w-full  flex items-center justify-between  ">
@@ -108,7 +110,7 @@
                 <a class = " text-center fonts text-nowrap" href="{{route('document_phone')}}">تماس باما</a>
                 <a class = " text-center fonts text-nowrap" href="{{route('about_as')}}">درباره ما</a>
                 <a class = " text-center fonts text-nowrap" href="">محصولات خدمات</a>
-                <a class = " text-center fonts text-nowrap" href="">صفحه اصلی</a>
+                <a class = " text-center fonts text-nowrap" href="{{route('firstpage')}}">صفحه اصلی</a>
             </div>
             <svg  onclick = "bar_menu()" class = "size-8 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
 
@@ -128,7 +130,7 @@
                 </div>
                 @else
                 <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
-                    <div class=" flex items-center gap-3">
+                    <div class=" flex items-center gap-3 text-[14px] font-bold">
                         <a href="{{url('login')}}">
                             ورود / ثبت نام
                         </a>   
@@ -224,7 +226,7 @@
 
 
    
-    </header>
+    </header> -->
 
     <main class = "max-w-[2100px] min-w-[320px] bg-[url('{{asset('assets/img/file_00000000780c81f4bdf8e7d80669e56b.png')}}')] bg-cover bg-center bg-no-repeat mx-auto pb-5 pt-10">
             <section class = "max-w-[800px] min-w-[320px] mx-auto max-lg:px-3">
@@ -232,7 +234,7 @@
                     <svg class = "size-10 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 48a80 80 0 1 1 0 160 80 80 0 1 1 0-160zm0 208A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 96h91.4c65.7 0 120.1 48.7 129 112H49.3c8.9-63.3 63.3-112 129-112zm0-48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3zM504 312c0 13.3 10.7 24 24 24s24-10.7 24-24V248h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H552V136c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H440c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
                     <div class="w-full flex flex-col gap-3 items-center mb-5">
                         <h2 class = "text-[30px] font-bold text-[#0E2E48]">ایجاد حساب کابری</h2>
-                        <span class = "text-[17px] text-gray-600 max-lg:text-[15px] max-lg:text-center max-lg:leading-8">لطفا اطلاعات خود را وارد کنید تا حساب کاربری شما ایجاد شود</span>
+                        <span class = "text-[17px] text-gray-600 max-lg:text-[15px] max-lg:text-center max-lg:leading-8 font-bold">لطفا اطلاعات خود را وارد کنید تا حساب کاربری شما ایجاد شود</span>
                     </div>
                     <div class="w-full">
                         <form class = "w-full flex flex-col gap-5" action="{{route('user.store')}}" method = "post">
@@ -336,7 +338,7 @@
                     </div>
                     <span>دسترسی سریع</span>
                 </div>
-                <a href = "#" class = "text-gray-400 text-[20px]">صفحه اصلی</a>
+                <a href = "{{route('firstpage')}}" class = "text-gray-400 text-[20px]">صفحه اصلی</a>
                 <a href = "#" class = "text-gray-400 text-[20px]">محصولات</a>
                 <a href = "#" class = "text-gray-400 text-[20px]">درباره ما</a>
                 <a href = "#" class = "text-gray-400 text-[20px]">تماس باما</a>
@@ -604,5 +606,4 @@
 
 </script>
 
-</body>
-</html>
+@endsection

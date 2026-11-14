@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+@extends('header')
+@section('content')
+<!-- <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -108,7 +110,7 @@
                 <a class = " text-center fonts text-nowrap" href="{{route('document_phone')}}">تماس باما</a>
                 <a class = " text-center fonts text-nowrap" href="{{route('about_as')}}">درباره ما</a>
                 <a class = " text-center fonts text-nowrap" href="">محصولات خدمات</a>
-                <a class = " text-center fonts text-nowrap" href="">صفحه اصلی</a>
+                <a class = " text-center fonts text-nowrap" href="{{route('firstpage')}}">صفحه اصلی</a>
             </div>
             <svg  onclick = "bar_menu()" class = "size-6 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
 
@@ -128,7 +130,7 @@
                 </div>
                 @else
                 <div class=" flex gap-8 items-center text-white text-[20px] text-nowrap ">
-                    <div class=" flex items-center gap-3">
+                    <div class=" flex items-center gap-3 text-[14px] font-bold">
                         <a class = "text-[15px]" href="{{url('login')}}">
                             ورود / ثبت نام
                         </a>   
@@ -219,7 +221,7 @@
             </form>
         </div>
     </div>
-        </div>
+        </div> -->
 
 
     <div class="max-w-[21000px] min-w-[320px] relative ">
@@ -243,30 +245,30 @@
                 </a>
                
             </div>
-            <div class="w-[20%] h-[300px]  rounded-[40px] text-white top-15 z-10 bg-[#0B304A]/50 flex flex-col p-8 items-center absolute gap-3 right-0 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
+            <div class="w-[22%] h-[300px]  rounded-[40px] text-white top-15 z-10 bg-[#0B304A]/50 flex flex-col p-8 items-center absolute gap-3 right-0 max-2xl:w-[20%] max-2xl:top-5 max-xl:w-[25%]  max-lg:hidden">
                 <div class="w-full flex  items-end  gap-6  max-2xl:justify-center max-2xl:items-center ">
-                    <div class="w-[55px] h-[55px] border rounded-full border-slate-600 flex items-center justify-center  p-2 max-2xl:justify-center max-2xl:items-center">
+                    <div class="w-[60px] h-[60px] border rounded-full border-slate-600 flex items-center justify-center ">
                     <svg  class = "fill-[#D99A16] size-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 127L256 49.4 439 127c5.9 2.5 9.1 7.8 9 12.8c-.4 91.4-38.4 249.3-186.3 320.1c-3.6 1.7-7.8 1.7-11.3 0C102.4 389 64.5 231.2 64 139.7c0-5 3.1-10.2 9-12.8zM457.7 82.8L269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.8 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
                     </div>
                     <div class="flex flex-col items-start  gap-2">
-                        <span class = "font-bold text-[20px]">کیفیت تضمینی</span>
-                        <span class = "text-gray-400 text-[16px]">با ضمانت و اصالت بالا</span>
+                        <span class = "font-bold text-[18px]">کیفیت تضمینی</span>
+                        <span class = "text-gray-400 text-[14px]">با ضمانت و اصالت بالا</span>
                     </div>
                 </div>
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
                 <div class="w-full flex  items-end  gap-6 max-2xl:justify-center max-2xl:items-center">
-                    <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600 ">
+                    <div class="w-[60px] h-[60px] border rounded-full flex items-center justify-center border-slate-600 ">
                         <svg  class = "fill-[#D99A16] size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M352 48H128c-8.8 0-16 7.2-16 16V96H240c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16H64V64C64 28.7 92.7 0 128 0H352c35.3 0 64 28.7 64 64V96h42.7c14.9 0 29.1 5.9 39.6 16.4l93.3 93.3c10.5 10.5 16.4 24.7 16.4 39.6V368h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H576c0 53-43 96-96 96s-96-43-96-96h-8H352 320 256c0 53-43 96-96 96s-96-43-96-96V368 288h48v44.8c14.1-8.2 30.5-12.8 48-12.8c35.5 0 66.6 19.3 83.2 48H320h32c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16zM557.7 239.6l-93.3-93.3c-1.5-1.5-3.5-2.3-5.7-2.3H416v96H558l-.2-.2-.2-.2zM208 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm272 48a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM48 160H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H48c-8.8 0-16-7.2-16-16s7.2-16 16-16zM16 224H240c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg>
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class = "text-nowrap text-[20px]">ارسال سریع</span>
-                        <span class = "text-[16px] text-nowrap text-gray-400 max-lg:text-[12px]">به سراسر کشور</span>
+                        <span class = "text-nowrap text-[18px]">ارسال سریع</span>
+                        <span class = "text-[14px] text-nowrap text-gray-400 max-lg:text-[12px]">به سراسر کشور</span>
                     </div>
                 </div>
                 
                 <div class="w-[140px] h-[1px] bg-slate-800"></div>
                 <div class="w-full flex  items-end  gap-6 max-2xl:justify-center max-2xl:items-center">
-                    <div class="w-[55px] h-[55px] border rounded-full flex items-center justify-center border-slate-600">
+                    <div class="w-[60px] h-[60px] border rounded-full flex items-center justify-center border-slate-600">
                      <svg  class = "fill-[#D99A16] size-9" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
                                 
                                 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -278,8 +280,8 @@
                             </svg>   
                     </div>
                     <div class="flex flex-col gap-2">
-                        <span class = "text-nowrap text-[20px] ">پشتیبانی تخصصی</span>
-                        <span class = "text-[16px] text-nowrap text-gray-400 max-lg:text-[12px]">پپاسخگویی 24 ساعته</span>
+                        <span class = "text-nowrap text-[18px] ">پشتیبانی تخصصی</span>
+                        <span class = "text-[14px] text-nowrap text-gray-400 max-lg:text-[12px]">پپاسخگویی 24 ساعته</span>
                     </div>
                 </div>
         </div>
@@ -1065,7 +1067,7 @@ v10H2z"/>
                     <span>دسترسی سریع</span>
                 </div>
                 <div class="w-full flex flex-col gap-2">
-                    <a href = "#" class = "text-gray-400 text-[17px]">صفحه اصلی</a>
+                    <a href = "{{route('firstpage')}}" class = "text-gray-400 text-[17px]">صفحه اصلی</a>
                     <a href = "#" class = "text-gray-400 text-[17px]">محصولات</a>
                     <a href = "#" class = "text-gray-400 text-[17px]">درباره ما</a>
                     <a href = "#" class = "text-gray-400 text-[17px]">تماس باما</a>
@@ -1308,5 +1310,4 @@ v10H2z"/>
 
     </script>
 
-</body>
-</html>             
+@endsection
