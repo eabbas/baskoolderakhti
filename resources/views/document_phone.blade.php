@@ -260,8 +260,8 @@
     </header>
     <main class = "max-w-[21000px] min-w-[325px]">
         <section class = "w-11/12 mx-auto max-lg:px-3 mt-10">
-            <div class="w-full flex gap-6 max-lg:flex-col">
-                <div class="w-[25%] max-lg:w-full flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
+            <div class="w-full flex gap-6 max-lg:flex-col ">
+                <div class="w-[25%] max-lg:w-full flex flex-col justify-center items-center  bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
                         <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg> 
                     </div>
@@ -275,7 +275,7 @@
                         <span>مشاهده زمان ها</span>
                     </div>
                 </div>
-                <div class="w-[25%] max-lg:w-full flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
+                <div class="w-[25%] max-lg:w-full flex flex-col justify-center items-center  bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
                         <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
                     </div>
@@ -288,11 +288,11 @@
                         <span>ارسال ایمیل</span>
                     </div>
                 </div>
-                <div class="w-[25%] max-lg:w-full flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
+                <div class="w-[25%] max-lg:w-full flex flex-col justify-center items-center  bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
                         <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z"/></svg>
                     </div>
-                    <span class = "text-[25px] text-[#0E2E48]">ساعات کاری</span>
+                    <span class = "text-[25px] text-[#0E2E48]">تلفن تماس</span>
                     <div class="flex flex-col gap-1 items-center text-[17px] text-gray-500">
                         <span>021-44448288</span>
                         <span>09122146589</span>
@@ -302,14 +302,13 @@
                         <span>تماس بگیرید</span>
                     </div>
                 </div>
-                <div class="w-[25%] max-lg:w-full flex flex-col items-center justify-center bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
+                <div class="w-[25%] max-lg:w-full flex flex-col justify-center items-center  bg-white border-1 border-gray-100 shadow-sm rounded-[10px] p-6 gap-3">
                     <div class="w-12 h-12 rounded-full flex items-center justify-center bg-[#FBC830]">
                         <svg class = "size-6 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                     </div>
-                    <span class = "text-[25px] text-[#0E2E48]">ساعات کاری</span>
+                    <span class = "text-[25px] text-[#0E2E48]">ادرس</span>
                     <div class="flex flex-col gap-1 items-center text-[17px] text-gray-500">
-                        <span>شنبه تا پنجشنبه</span>
-                        <span>8 صبح تا 5 عصر</span>
+                        <span class = "w-50 text-center text-[15px] leading-8">تهران خیابان ولیعصر کوچه شهید رضایی پلاک 12</span>
                     </div>
                     <div class="w-45 h-12 bg-blue-50 flex items-center gap-2 text-[15px] text-[#0E2E48] justify-center rounded-[10px]">
                         <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
