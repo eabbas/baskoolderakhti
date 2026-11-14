@@ -141,7 +141,7 @@ route::group([
     Route::get('/delete/cart/{cart}','delete')->name('delete');
     Route::get('/list/cart','list')->name('list');
     Route::get('/user/cart/list','userCartList')->name('userCartList');
-
+    Route::post('/checkOutForm','checkOutForm')->name('checkOutForm');
 });
 route::group([
     'prefix'=>'order',

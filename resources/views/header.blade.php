@@ -7,6 +7,11 @@
     <script src="{{asset('assets/js/jquery.js')}}"></script>
     <link rel="stylesheet" href="{{asset('assets/css/stylehome.css')}}">
 </head>
+<style>
+    .transition_normal {
+        transition: all 0.3s ease;
+    }
+</style>
 <body class = "relative">
     <div class="w-full h-dvh top-0 fixed z-50 bg-black/50 invisible opacity-0 transition-all duration-300  " onclick = "bar_menu()" id = "document_black"></div>
     <div class="fixed w-70 h-[97%] bg-[#091E2F] z-50 p-3 text-white flex flex-col bottom-0 m-3 top-1 rounded-[15px] translate-x-150 transition-all duration-300 gap-5" id = "menu">
@@ -143,68 +148,159 @@
                     </div>
                     </div>
                     @endif
-                    @if($user)
-                        <div class='relative'>
-                            <div class="flex h-full items-center cursor-pointer " onclick="showCart()">
+                    <div class='relative group'>
+                        <a href="{{route('cart.userCartList')}}" class="flex h-full items-center cursor-pointer" >
+                            <svg class="size-7" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <circle cx="9" cy="21" r="1" /> <circle cx="20" cy="21" r="1" /> <path d="M1 1h4l2.68 13.39A2 2 0 0 0 9.64 16H19a2 2 0 0 0 2-1.72L23 6H6" /> </svg>
+                        </a>
+
+                        <!-- <div class="w-full h-dvh bg-black/50 fixed top-0 right-0 z-3"></div> -->
+                        <div id='cart' class='absolute z-4 rounded-xl w-[60vw] max-h-0 hidden lg:group-hover:max-h-[80vh] overflow-y-hidden top-5 left-0 bg-white lg:flex flex-col gap-4 group-hover:p-5 transition_normal '>
+                            <div class=" w-full flex justify-between items-center">
+                                <div class="flex justify-start items-center gap-3">
+                                    <div>
                                     <svg class="size-7" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"> <circle cx="9" cy="21" r="1" /> <circle cx="20" cy="21" r="1" /> <path d="M1 1h4l2.68 13.39A2 2 0 0 0 9.64 16H19a2 2 0 0 0 2-1.72L23 6H6" /> </svg>
+
+                                    </div>
+                                    <div class="flex flex-col gap-2 justify-start items-start">
+                                        <h3 class="text-xl font-bold">سبد خرید</h3>
+                                        <p class="text-xs text-(--discription)"><span> 3 </span>محصول در سبد خرید شماست </p>
+
+                                    </div>
                                 </div>
-                                <div id='cart' class='absolute hidden border-3 rounded-xl w-120 h-110 -right-130 bg-white '>
-                                    @if(Auth::check())
-                                        <div class='absolute -top-2 -right-2 bg-red-600 px-2 py-1 rounded-full cursor-pointer' onclick="hiddenCart(this)">x</div>
-                                        <?php
-                                            $count=0;
-                                            $total_price=0;
-                                        ?>
-                                            <div class='w-full h-full'>
-                                                <div id='cart_list' class='w-full h-95 overflow-y-auto flex flex-col gap-2 p-5'>
-                                                    @foreach($user->carts as $cart)
-                                                        <?php
-                                                            $count++;
-                                                            $total_price+=$cart->product->price * $cart->quantity;
-                                                        ?>
-                                                        <div class='parent_cart w-full flex justify-between border-2 gap-4'>
-                                                            <div class='w-1/5 p-2'>
-                                                                @if(count($cart->product->medias)>0)
-                                                                    <img class='w-full h-20 rounded-xl' src="{{asset('storage/product_medias/'.$cart->product->path)}}" alt="">
-                                                                @else
-                                                                    <div> 🖼 </div>
-                                                                @endif
-                                                            </div>
-                                                            <div class='w-4/5 flex flex-col justify-evenly '>
-                                                                <div class='text-xl text-center items-center'>
-                                                                    <span> {{$cart->product->title}} </span>
-                                                                </div>
-                                                                <div class='flex justify-between px-4'>
-                                                                    <div class='grid grid-cols-3 w-20 border-1 overflow-hidden rounded-full items-center text-center'>
-                                                                        <div onclick="updateCart(this,{{$cart->id}},'plus')" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg></div>
-                                                                        <div class='p-2 text-center items-center flex justify-center '><input type="number" class='w-10 font-bold outline-none text-center items-center text-black' readonly value="{{$cart->quantity}}"></div>
-                                                                        @if($cart->quantity==1)
-                                                                            <div onclick="trash(this,{{$cart->id}} , {{$cart->product->id}})" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg class='fill-rose-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg></div>
-                                                                        @else
-                                                                            <div onclick="updateCart(this,{{$cart->id}},'minus')" class='p-2 text-center items-center flex justify-center cursor-pointer bg-gray-300 h-full'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg></div>
-                                                                        @endif
+                            
+                            </div>
+                            <?php
+                            $count = 0;
+                            $total_price = 0;
+                            ?>
+                            <div class='w-full flex flex-col gap-10 justify-center items-start'>
+                                <div id='cart_list' class='w-full  flex flex-col gap-2 max-h-70 overflow-y-auto [&::-webkit-scrollbar]:w-1.5  [&::-webkit-scrollbar-thumb]:bg-(--primary_color)  [&::-webkit-scrollbar-thumb]:rounded-full'>
+                                    @if(Auth::check() && count($user->carts))
+                                        @foreach($user->carts as $cart)
+                                            <?php
+                                            $count++;
+                                            if($cart->product->discunt!=null && $cart->product->discunt >0){
+                                                $total_price += $cart->product->discunt * $cart->quantity;
+                                            }else{
+                                                $total_price += $cart->product->price * $cart->quantity;
+                                            }
+                                            ?>
+                                            <div class='parent_cart w-full flex justify-between  border-2 border-(--product) gap-4 bg-white rounded-xl xl:p-2 p-2 relative'>
+                                                <div class="flex gap-2 items-center">
+                                                    <div class='xl:min-w-22 xl:min-h-22 xl:w-22 xl:h-22 min-w-18 min-h-18 w-18 h-18 bg-(--product) rounded-xl flex justify-center items-center'>
+                                                        @if(count($cart->product->medias)>0)
+                                                        <img class='max-w-full max-h-full rounded-xl' src="{{asset('storage/product_medias/'.$cart->product->path)}}" alt="">
+                                                        @else
+                                                        <div> 🖼 </div>
+                                                        @endif
+                                                    </div>
+                                                    <div class="flex xl:gap-8 gap-6">
+
+                                                        <div class="flex flex-col justify-center items-start">
+                                                            <h5 class="xl:text-lg  font-bold text-(--title) xl:max-w-50 max-w-35 truncate">{{$cart->product->title}}</h5>
+                                                            <p class="xl:text-xs text-[10px] text-(--discription) xl:max-w-50 max-w-35 truncate">{{$cart->product->summary}}</p>
+                                                        </div>
+                                                        @if($cart->product->discunt==null || $cart->product->discunt<1)
+                                                            <div class="flex justify-start items-center gap-2">
+                                                                <div class="flex flex-col justify-start items-end gap-2">
+                                                                    <div class="text-[#316361] flex justify-start items-center gap-1">
+                                                                        <span class="max-xl:text-sm font-bold">{{$cart->product->price}}</span>
+                                                                        <span>تومان</span>
                                                                     </div>
-                                                                    
-                                                                    <div class='text-black text-xl'> {{$cart->product->price}} </div>
                                                                 </div>
+                                                            </div>
+                                                        @else
+                                                            <div class="flex justify-start items-center gap-2">
+                                                                <div class="flex flex-col justify-start items-end gap-2">
+                                                                    <del class="xl:text-xs text-[10px] text-(--discription) flex justify-start items-center gap-1">
+                                                                        <span>{{$cart->product->price}}</span>
+                                                                        <span>تومان</span>
+                                                                    </del>
+                                                                    <div class="text-[#316361] flex justify-start items-center gap-1">
+                                                                        <span class="xl:text-lg font-bold">{{$cart->product->discunt}}</span>
+                                                                        <span>تومان</span>
+                                                                    </div>
+                                                                </div>
+                                                                <span class="xl:text-sm text-xs px-2 py-1 rounded-xl bg-red-200 text-red-900">{{$cart->product->percent}}%</span>
+                                                            </div>
+                                                        @endif
+                                                    </div>
+                                                </div>
+                                                <span class="min-w-[1px] w-[1px] max-w-[1px] min-h-9/12 rounded-full bg-(--product)"></span>
+                                                <div class='xl:gap-5 gap-3 flex justify-between'>
+
+
+                                                    <div class=' flex justify-start gap-10 items-center'>
+                                                        <div class='entries flex xl:gap-5 gap-2 border-2 border-[#E5EBEB] rounded-full items-center text-center xl:px-4 px-3 xl:py-2 py-1.5'  data-id='{{$cart->id}}'>
+                                                            <div onclick="updateCart(this,{{$cart->id}},'plus')" class='xl:size-4 size-3  text-center items-center flex justify-center cursor-pointer'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                                    <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" />
+                                                                </svg>
+                                                            </div>
+                                                            <div class='text-center items-center flex justify-center cursor-pointer'>
+                                                                <input type="number" class='w-10 font-bold outline-none text-center text-black flex max-xl:text-sm' readonly value="{{$cart->quantity}}">
+                                                            </div>
+                                                            @if($cart->quantity==1)
+                                                            <div onclick="trash(this,{{$cart->id}} , {{$cart->product->id}})" class='xl:size-4 size-3 text-center items-center flex justify-center cursor-pointer'><svg class='fill-rose-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                                    <path d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                                                                </svg>
+                                                            </div>
+                                                            @else
+                                                            <div onclick="updateCart(this,{{$cart->id}},'minus')" class='xl:size-4 size-3 text-center items-center flex justify-center cursor-pointer'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                                    <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z" />
+                                                                </svg>
+                                                            </div>
+                                                            @endif
+                                                            <div onclick="fullTrash(this,{{$cart->id}} , {{$cart->product->id}})" class='absolute top-2 left-2 size-4 text-center items-center flex justify-center cursor-pointer'><svg class='fill-rose-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                                                    <path d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+                                                                </svg>
                                                             </div>
                                                         </div>
-                                                    @endforeach
-                                                </div>
-                                                <div id="cart_buttons" class=' grid grid-cols-2 items-center text-center p-1 gap-2 '>
-                                                    <a href="{{route('cart.userCartList')}}" class='bg-green-200 p-2 rounded-sm cursor-pointer'> تکمیل سفارش </a>
-                                                    <div class='bg-red-200 p-2 rounded-sm '> <span> قیمت کل: </span><input type="number" value={{$total_price}} disabled class='w-24 text-black font-bold text-sm' id="total_price"></div>
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div id="cart_counter" class='absolute -top-3 -left-3 bg-[#FBC830] px-2 py-1 text-xs rounded-full cursor-pointer text-white'>{{$count}}</div>
+                                            
+                                        @endforeach
                                     @endif
+                                </div>
+                                <!-- <div id="cart_buttons" class=' grid grid-cols-2 items-center text-center p-1 gap-2 '>
+                                    <a href="{{route('cart.userCartList')}}" class='bg-green-200 p-2 rounded-sm cursor-pointer'> تکمیل سفارش </a>
+                                    <div class='bg-red-200 p-2 rounded-sm '> <span> قیمت کل: </span><input type="number" value={{$total_price}} disabled class='w-24 text-black font-bold text-sm' id="total_price"></div>
+                                </div> -->
+                                <div class="w-full bg-[#FBC830] rounded-xl flex justify-between text-[#0B304A] px-4 py-3">
+                                    <div class="flex xl:gap-20 gap-10 justify-start items-center">
+                                        <a href="{{route('cart.userCartList')}}" class='bg-(--buttom) px-10 py-2 rounded-full cursor-pointer flex gap-5 justify-center items-center'>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="xl:size-4 size-3.5 fill-[#0B304A]">
+                                                    <path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z" />
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="xl:size-4 size-3.5 fill-[#0B304A]">
+                                                    <path d="M160 112v48H288V112c0-35.3-28.7-64-64-64s-64 28.7-64 64zm-48 48V112C112 50.1 162.1 0 224 0s112 50.1 112 112v48h64c26.5 0 48 21.5 48 48V416c0 53-43 96-96 96H96c-53 0-96-43-96-96V208c0-26.5 21.5-48 48-48h64zM48 416c0 26.5 21.5 48 48 48H352c26.5 0 48-21.5 48-48V208H48V416zm72-80c0-13.3 10.7-24 24-24h56V256c0-13.3 10.7-24 24-24s24 10.7 24 24v56h56c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v56c0 13.3-10.7 24-24 24s-24-10.7-24-24V360H144c-13.3 0-24-10.7-24-24z" />
+                                                </svg>
+                                            </div>
+                                            <span class="font-bold  max-xl:text-sm ">
+                                                    مشاهده سبد خرید
+                                            </span>
+                                        </a>
+                                        <span class="min-w-[1px] w-[1px] max-w-[1px] min-h-full rounded-full bg-gray-300"></span>
+                                    </div>
+                                    <div class="flex flex-col gap-1 justify-center items-end">
+                                        <p class="xl:text-xs text-[10px] text-[#4A6366]">مبلغ کل سبد خرید</p>
+                                        <div class="text-(--buttom) flex justify-start items-center gap-1">
+                                            <span class="xl:text-xl text-lg font-bold" id="total_price">
+                                                {{$total_price}}
+                                            </span>
+                                            <span class="text-lg font-bold">تومان</span>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                        @else
-                            <div onclick="showLoginForm()" class="flex h-full items-center cursor-pointer">
-                                <svg class = "size-6 fill-white lg:size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                            </div>
-                    @endif
+                        </div>
+                        <div id="cart_counter" class='absolute -top-3 -left-3 bg-green-800 px-1.5 py-0.5 text-xs rounded-full cursor-pointer text-white'>{{$count}}</div>
+                    </div>
                     
             </div>
         </div>
@@ -219,4 +315,13 @@
         </div>
     </div>
         </div>
+
+<script>
+    
+</script>
+
         @yield('content')
+
+
+
+
