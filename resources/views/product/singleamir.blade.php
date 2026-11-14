@@ -1,5 +1,7 @@
 
-<!DOCTYPE html>
+@extends('header')
+@section('content')
+<!-- <!DOCTYPE html>
 <html lang="fa" dir = "rtl">
 <head>
     <meta charset="UTF-8">
@@ -227,7 +229,7 @@
     </div>
         </div>
 
-</header>
+</header> -->
 <section class = "max-w-[1800px] min-w-[325px] mx-auto mt-10 max-lg:px-3 max-lg:mt-0">
     <div class="w-full flex gap-3 text-[20px] max-lg:my-5 items-center max-lg:text-[12px]">
         <a href = "{{route('firstpage')}}">صفحه اصلی</a>
@@ -705,5 +707,4 @@
             document_black.classList.toggle('opacity-0')
         }
     </script>
-</body>
-</html>
+@endsection
