@@ -346,7 +346,7 @@ v10H2z"/>
             <div class="w-full  mx-auto flex gap-3 flex-col bg-slate-200 py-5 max-lg:py-3">
                 <div class="w-11/12 flex relative overflow-x-auto gap-3 mx-auto rounded-[15px] [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
 
-                <div class=" min-w-[400px] max-lg:min-w-[190px] bg-[#091E2F] rounded-[16px] min-h-full">
+                <div class=" min-w-[400px] max-lg:min-w-[240px] bg-[#091E2F] rounded-[16px] min-h-full">
                     <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
                         <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold max-lg:w-17">
                             <span>جدید</span>
@@ -373,7 +373,7 @@ v10H2z"/>
                         </div>
                     </div>
                 </div>
-                <div class=" min-w-[400px] max-lg:min-w-[190px] bg-[#091E2F] rounded-[16px] min-h-full">
+                <div class=" min-w-[400px] max-lg:min-w-[240px] bg-[#091E2F] rounded-[16px] min-h-full">
                     <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
                         <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold max-lg:w-17">
                             <span>جدید</span>
@@ -400,7 +400,7 @@ v10H2z"/>
                         </div>
                     </div>
                 </div>
-                <div class=" min-w-[400px] max-lg:min-w-[190px] bg-[#091E2F] rounded-[16px] min-h-full">
+                <div class=" min-w-[400px] max-lg:min-w-[240px] bg-[#091E2F] rounded-[16px] min-h-full">
                     <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
                         <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold max-lg:w-17">
                             <span>جدید</span>
