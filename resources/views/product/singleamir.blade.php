@@ -3,7 +3,7 @@
 @section('content')
 
 </header> 
-<main class = "w-12/12 2xl:max-w-[2100px] mx-auto mt-40">
+<main class = "w-12/12 2xl:max-w-[2100px] mx-auto mt-40 max-lg:mt-30">
 
 <section class = "w-11/12 mx-auto mt-10  max-lg:mt-0">
     <div class="w-full flex gap-3 text-[15px] max-lg:my-5 items-center max-lg:text-[12px]">
@@ -174,55 +174,55 @@
             <div class="w-full flex flex-col gap-3 border-1 border-gray-200 bg-slate-50 p-5 rounded-[10px] max-lg:px-4 max-lg:bg-white">
                 <div class="w-full flex -mt-3">
                     <div class="w-[30%] max-lg:w-[50%] flex items-center  ">
-                        <span class = "text-[#0E2E48] text-[22px]  max-lg:text-[17px] mt-3">ظزفیت توزین</span>
+                        <span class = "text-[#0E2E48] text-[19px]  max-lg:text-[17px] mt-3">ظزفیت توزین</span>
                     </div>
                     <div class="w-[70%] max-lg:w-[50%] flex items-center  max-lg:justify-start max-lg:mt-2">
-                        <span class = "text-[18px] max-lg:text-[15px] text-gray-500">30کیلو گرم</span>
+                        <span class = "text-[16px] max-lg:text-[15px] text-gray-500">30کیلو گرم</span>
                     </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-200"></div>
                 <div class="w-full flex">
                     <div class="w-[30%] max-lg:w-[50%] flex items-center  ">
-                        <span class = "text-[#0E2E48] text-[22px] max-lg:pr-0 max-lg:text-[17px] ">دقت</span>
+                        <span class = "text-[#0E2E48] text-[19px] max-lg:pr-0 max-lg:text-[17px] ">دقت</span>
                     </div>
                     <div class="w-[70%] max-lg:w-[50%] flex items-center  max-lg:justify-start">
-                        <span class = "text-[18px] max-lg:text-[15px] text-gray-500">2 گرم</span>
+                        <span class = "text-[16px] max-lg:text-[15px] text-gray-500">2 گرم</span>
                     </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-200"></div>
                 <div class="w-full flex">
                     <div class="w-[30%] max-lg:w-[50%] flex items-center  ">
-                        <span class = "text-[#0E2E48] text-[22px] max-lg:pr-0 max-lg:text-[17px] ">نوع مایشگر</span>
+                        <span class = "text-[#0E2E48] text-[19px] max-lg:pr-0 max-lg:text-[17px] ">نوع مایشگر</span>
                     </div>
                     <div class="w-[70%] max-lg:w-[50%] flex items-center  max-lg:justify-start">
-                        <span class = "text-[18px] max-lg:text-[15px] text-gray-500">LCD دوطرفه</span>
+                        <span class = "text-[16px] max-lg:text-[15px] text-gray-500">LCD دوطرفه</span>
                     </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-200"></div>
                 <div class="w-full flex">
                     <div class="w-[30%] max-lg:w-[50%] flex items-center  ">
-                        <span class = "text-[#0E2E48] text-[22px] max-lg:pr-0 max-lg:text-[17px] ">ابعاد سینی</span>
+                        <span class = "text-[#0E2E48] text-[19px] max-lg:pr-0 max-lg:text-[17px] ">ابعاد سینی</span>
                     </div>
                     <div class="w-[70%] max-lg:w-[50%] flex items-center  max-lg:justify-start">
-                        <span class = "text-[18px] max-lg:text-[15px] text-gray-500">25 * 35 سانتی متر</span>
+                        <span class = "text-[16px] max-lg:text-[15px] text-gray-500">25 * 35 سانتی متر</span>
                     </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-200"></div>
                 <div class="w-full flex">
                     <div class="w-[30%] max-lg:w-[50%] flex items-center  ">
-                        <span class = "text-[#0E2E48] text-[22px] max-lg:pr-0 max-lg:text-[17px] ">منبع تغذیه</span>
+                        <span class = "text-[#0E2E48] text-[19px] max-lg:pr-0 max-lg:text-[17px] ">منبع تغذیه</span>
                     </div>
                     <div class="w-[70%] max-lg:w-[50%] flex items-center  max-lg:justify-start">
-                        <span class = "text-[18px] max-lg:text-[15px] text-gray-500">برق شهرب و باطری داخلی</span>
+                        <span class = "text-[16px] max-lg:text-[15px] text-gray-500">برق شهرب و باطری داخلی</span>
                     </div>
                 </div>
                 <div class="w-full h-[1px] bg-gray-200"></div>
                 <div class="w-full flex">
                     <div class="w-[30%] max-lg:w-[50%] flex items-center max-lg:mb-2">
-                        <span class = "text-[#0E2E48] text-[22px]  max-lg:text-[17px]">برند</span>
+                        <span class = "text-[#0E2E48] text-[19px]  max-lg:text-[17px]">برند</span>
                     </div>
                     <div class="w-[70%] max-lg:w-[50%] flex items-center max-lg:justify-start">
-                        <span class = "text-[18px] max-lg:text-[15px] text-gray-500">CAS</span>
+                        <span class = "text-[16px] max-lg:text-[15px] text-gray-500">CAS</span>
                     </div>
                 </div>
             </div>
@@ -238,7 +238,7 @@
                     </div>
                     <div class="w-[100px] h-1 bg-[#F2CE56] rounded-[10px]"></div>
                 </div>
-                <p class = "max-lg:text-[15px] text-justify">برند CAS یکی از معتبر ترین تولید کنندگان تجهیزات توزین در جهان است که کیفیت بالا دقت بی نظیر و عمر طولانی محصولاتش انتخاب اول بسیاری از کسب و کارها در سراسر دنیا است</p>
+                <p class = "max-lg:text-[15px] text-justify text-[15px]">برند CAS یکی از معتبر ترین تولید کنندگان تجهیزات توزین در جهان است که کیفیت بالا دقت بی نظیر و عمر طولانی محصولاتش انتخاب اول بسیاری از کسب و کارها در سراسر دنیا است</p>
                 <div class="w-full flex flex-col gap-5 ">
                     <div class="w-full gap-7 flex items-center  ">
                         <div class="w-[50px] h-[50px] bg-[#FBC830] flex items-center justify-center rounded-full max-lg:w-[45px] max-lg:h-[45px]">
@@ -301,78 +301,78 @@
 </div>
 <section class = "w-11/12 mx-auto relative ">
     <div class="w-full flex justify-between items-center ">
-        <div class="w-[50px] h-[50px] max-lg:w-[10%] flex items-center justify-center bg-white border-1 border-gray-200 shadow-sm rounded-full absolute -left-7 max-lg:left-0">
-            <svg class = "size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M47 239c-9.4 9.4-9.4 24.6 0 33.9L207 433c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L97.9 256 241 113c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L47 239z"/></svg>
+        <div class="w-[40px] h-[40px] max-lg:w-[10%] flex items-center justify-center bg-white border-1 border-gray-200 shadow-sm rounded-full absolute -left-7 max-lg:left-0">
+            <svg class = "size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M47 239c-9.4 9.4-9.4 24.6 0 33.9L207 433c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L97.9 256 241 113c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L47 239z"/></svg>
         </div>
-        <div class = "w-11/12 flex gap-4 mx-auto justify-center overflow-x-auto">
-            <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
+        <div class = "w-full flex gap-4 mx-auto justify-start max-lg:justify-start overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
+            <div class="min-w-[19%] max-lg:min-w-[220px]  flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
+                    <img class = "w-full h-[200px] max-lg:h-[170px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col  text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
-                    <span>ترازوی فروشگاهی CAS مدل ER</span>
+                <div class="w-full flex flex-col  gap-8 text-[#0E2E48] max-lg:gap-3">
+                    <span class = "text-[17px] font-bold truncate w-full">ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
-                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-3 text-[20px] text-[#0E2E48]">
-                    <svg class = "size-7 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                    <span>افزودن به سبد خرید</span>
+                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-1 text-[17px] text-[#0E2E48]">
+                    <svg class = "size-5 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                    <span>مشاهده محصول</span>
                 </div>
             </div>
-            <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
+            <div class="min-w-[19%] max-lg:min-w-[220px]  flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
+                    <img class = "w-full h-[200px] max-lg:h-[170px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col  text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
-                    <span>ترازوی فروشگاهی CAS مدل ER</span>
+                <div class="w-full flex flex-col  gap-8 text-[#0E2E48] max-lg:gap-3">
+                    <span class = "text-[17px] font-bold truncate w-full">ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
-                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-3 text-[20px] text-[#0E2E48]">
-                    <svg class = "size-7 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                    <span>افزودن به سبد خرید</span>
+                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-1 text-[17px] text-[#0E2E48]">
+                    <svg class = "size-5 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                    <span>مشاهده محصول</span>
                 </div>
             </div>
-            <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
+            <div class="min-w-[19%] max-lg:min-w-[220px]  flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img  class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
+                    <img  class = "w-full h-[200px] max-lg:h-[170px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col  text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
-                    <span>ترازوی فروشگاهی CAS مدل ER</span>
+                <div class="w-full flex flex-col  gap-8 text-[#0E2E48] max-lg:gap-3">
+                    <span class = "text-[17px] font-bold truncate w-full">ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
-                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-3 text-[20px] text-[#0E2E48]">
-                    <svg class = "size-7 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                    <span>افزودن به سبد خرید</span>
+                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-1 text-[17px] text-[#0E2E48]">
+                    <svg class = "size-5 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                    <span>مشاهده محصول</span>
                 </div>
             </div>
-            <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
+            <div class="min-w-[19%] max-lg:min-w-[220px]  flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img  class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
+                    <img  class = "w-full h-[200px] max-lg:h-[170px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col  text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
-                    <span>ترازوی فروشگاهی CAS مدل ER</span>
+                <div class="w-full flex flex-col  gap-8 text-[#0E2E48] max-lg:gap-3">
+                    <span class = "text-[17px] font-bold truncate w-full">ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
-                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-3 text-[20px] text-[#0E2E48]">
-                    <svg class = "size-7 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                    <span>افزودن به سبد خرید</span>
+                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-1 text-[17px] text-[#0E2E48]">
+                    <svg class = "size-5 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                    <span>مشاهده محصول</span>
                 </div>
             </div>
-            <div class="min-w-[19%] max-lg:min-w-full flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
+            <div class="min-w-[19%] max-lg:min-w-[220px]  flex flex-col p-7 bg-white border-1 border-gray-200 shadow-sm rounded-[10px] gap-5">
                 <div class="w-full">
-                    <img   class = "w-full h-[250px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
+                    <img   class = "w-full h-[200px] max-lg:h-[170px]" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                 </div>
-                <div class="w-full flex flex-col  text-[20px] gap-8 text-[#0E2E48] max-lg:gap-3">
-                    <span>ترازوی فروشگاهی CAS مدل ER</span>
+                <div class="w-full flex flex-col  gap-8 text-[#0E2E48] max-lg:gap-3">
+                    <span class = "text-[17px] font-bold truncate w-full">ترازوی فروشگاهی CAS مدل ER</span>
                     <span>تومان 11.500.000</span>
                 </div>
-                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-3 text-[20px] text-[#0E2E48]">
-                    <svg class = "size-7 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                    <span>افزودن به سبد خرید</span>
+                <div class="w-full h-[40px] flex items-center justify-center bg-[#FBC830] rounded-[20px] gap-1 text-[17px] text-[#0E2E48]">
+                    <svg class = "size-5 fill-[#091E2F]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                    <span>مشاهده محصول</span>
                 </div>
             </div>
         </div>
-        <div class="w-[50px] h-[50px] max-lg:w-[10%] flex items-center justify-center bg-white border-1 border-gray-200 shadow-sm rounded-full absolute -right-7 max-lg:right-0">
-            <svg class = "size-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
+        <div class="w-[40px] h-[40px] max-lg:w-[10%] flex items-center justify-center bg-white border-1 border-gray-200 shadow-sm rounded-full absolute -right-7 max-lg:right-0">
+            <svg class = "size-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
         </div>
 </section>
 </main>
