@@ -106,11 +106,14 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     .leaner_about{
         background: linear-gradient(180deg, rgba(3, 21, 34, 1) 60%, rgba(3, 21, 34, 0) 83%, rgba(3, 21, 34, 0) 100%);
     }
-    .clip-pathh{
-    clip-path: polygon(0 0 , 100% 0 , 100% 40% , 80% 100% , 0% 100%);
+    .clip-path{
+        clip-path: polygon(0 0 , 100% 0 , 100% 50% , 79% 100% , 0% 100%);
+    }
+    .clip-pathh-ablut-img{
+    clip-path: polygon(0 30%,18% 0 , 100% 0 , 100% 23% , 66% 100% , 0% 100%);
     }
     .clip-pathh1{
-    clip-path: polygon(0 0 , 100% 0 , 100% 87% , 0 100%);
+    clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
 }
     .imgg{
         clip-path: polygon(0 0 , 100% 0 , 100% 100% , 0 100%);
