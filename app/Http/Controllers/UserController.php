@@ -11,6 +11,10 @@ use App\Models\role_permision;
 use App\Models\hero;
 use App\Models\category;
 use App\Models\product;
+use App\Models\address;
+use App\Models\brand;
+use App\Models\order;
+use App\Models\cart;
 use App\Models\phone_code;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -500,5 +504,94 @@ class UserController extends Controller
             // $request->all()
             );
     }
+    public function cartInformation(Request $request){
+        $products=json_decode($request->products[0], true);
+        // dd($products);
+        $flag=false;
+        //  باپکیچ ورتا زمان و تاریخ شمسی را میگیریم
+        $dateAndTime=explode(' ',verta());
+        $date=implode('/',explode('-',$dateAndTime[0]));
+        $time=$dateAndTime[1];
+        $receipt=null;
+        $password='';
+        // dd($request->all());
+        if(Auth::check()){
+            $user=Auth::user();
+        }else{
+            if(isset($request['password'])){
+                $password=$request->password;
+            }else{
+                $chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+                $password= substr(str_shuffle(str_repeat($chars, 5)), 0,6);
+            }
+            if(User::where('phoneNumber',$request->phoneNumber)->first()){
+                $flag=true;
+            }
+            $user=User::updateOrCreate(    
+            ['phoneNumber'=>$request->phoneNumber],
+            [
+                'name'     => $request->name,
+                'family'   => $request->family,
+                'password' => $password,
+            ],
+            );
+            if($flag==false){
+                $role=role::where('ea_title','user')->first();
+                role_user::create([
+                    'user_id'=>$user->id,
+                    'role_id'=>$role->id,
+                ]);                
+            }
+            Auth::login($user);
+        }
+        // dd($user);
+        
+        $address=address::firstOrCreate([
+            "user_id" => $user->id,
+            "province_id" => $request->province_id,
+            "city_id" => $request->city_id,
+            "location" => $request->location,
+            "phoneNumber" => $request->phoneNumber,
+            "postalCode" => $request->postalCode,
+        ]);
 
+        if(isset($receipt['receipt'])){
+            $file=$request->file('receipt');
+            $fullName=Str::uuid().$file->getClientOriginalName();
+            $receipt=$request->file("receipt")->storeAs("receipts",$fullName,"public");
+        }
+        $code = rand(1000, 100000000);
+        $order=order::create([
+            'address_id'=>$address->id,
+            'user_id'=>$user->id,
+            'order_status_id'=>1,
+            'description'=>$request->order_description,
+            'order_code'=>$code,
+            'receipt'=>$receipt,
+            'onlinePayment'=>1,
+            'date'=>$date,
+            'time'=>$time,
+        ]);
+        if($products!=null){
+            if(count($products)>0){
+                foreach ($products as $product) {
+                    $cart=cart::create([
+                        'user_id'=>$user->id,
+                        'product_id'=>$product['id'],
+                        'order_id'=>$order->id,
+                        'quantity'=>$product['quantity'],
+                        'pack_id'=>null,
+                    ]);
+                }
+            }
+        }
+        $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
+        if(count($user->carts)>0){
+            foreach ($user->carts as $cart) {
+                $cart->order_id=$order->id;
+                $cart->save();
+            }
+        }
+        return view('client.cart.receipt',['code'=>$code ,'date'=>$date ,'time'=>$time , 'user'=>$user]);
+    }
 }

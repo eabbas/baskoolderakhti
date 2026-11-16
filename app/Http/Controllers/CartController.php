@@ -20,7 +20,6 @@ use App\Models\address;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
-
 class CartController extends Controller
 {
     public function store(Request $request){
@@ -56,30 +55,76 @@ class CartController extends Controller
     }
     public function userCartList(){
         $user=Auth::user();
-        $user->address;
-        foreach ($user->address as $address) {
-            $address->city=province_city::find($address->city_id)->title;
-        }
-        // if(count($user->carts)>0){
-        //     foreach ($user->carts as $cart) {
-        //         foreach ($cart->product->medias as $media) {
-        //             if($media->is_main==1){
-        //                 $cart->product->path=$media->path;
-        //             }
-        //         }
-                
-        //     }
-        // }
-        $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
-        foreach ( $user->carts as $cart) {
-            foreach ($cart->product->medias as $media) {
-                if($media->is_main==1){
-                    $cart->product->path=$media->path;
+        if($user){
+            $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
+            foreach ( $user->carts as $cart) {
+                foreach ($cart->product->medias as $media) {
+                    if($media->is_main==1){
+                        $cart->product->path=$media->path;
+                    }
                 }
-            }
-        };
+            };
+        } 
+        return view('client.cart.userCartList' ,['user'=>$user]);
+    }
+    public function checkOutForm(Request $request){
+        $products=json_decode($request->products[0], true);
+        // dd($products);
+        $sum=0;
+        $finalAmount=0;
+        $benefit=0;
         $provinces=province_city::where('parent',0)->get();
+        $user=Auth::user();
         // dd($user);
-        return view('client.cart.userCartList' ,['user'=>$user , 'provinces'=>$provinces , 'cities'=>$provinces[0]->cities]);
+        if($user!=null){
+            $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
+            foreach ( $user->carts as $cart) {
+                // هزینه کل
+                $sum+=$cart->product->price * $cart->quantity;
+                // هزینه قابل پرداخت
+                if($cart->product->discunt!=null && $cart->product->discunt>0){
+                    $finalAmount+=$cart->product->discunt * $cart->quantity;
+                }else{
+                    $finalAmount+=$cart->product->price * $cart->quantity;
+                }
+                // dd($cart);
+            };
+            $benefit = $sum - $finalAmount;
+            $user->address;
+            foreach ($user->address as $address) {
+                $address->city_name=province_city::find($address->city_id)->title;
+                $address->province_name=province_city::find($address->province_id)->title;
+            }
+            // dd($user);
+            return view('client.cart.checkoutForm',
+            [
+                'provinces'=>$provinces ,
+                'cities'=>$provinces[0]->cities ,
+                'user'=>$user,
+                'sum'=>$sum,
+                'finalAmount'=>$finalAmount,
+                'benefit'=>$benefit,
+            ]);
+        }else{
+            foreach ($products as $product) {
+                $sum+=$product['price'] * $product['quantity'];
+                // هزینه قابل پرداخت
+                if($product['discunt']!="" && $product['discunt']>0){
+                    $finalAmount+=$product['discunt'] * $product['quantity'];
+                }else{
+                    $finalAmount+=$product['price'] * $product['quantity'];
+                }
+                
+            }
+            $benefit = $sum - $finalAmount;
+            return view('client.cart.checkoutForm',
+            [
+                'provinces'=>$provinces ,
+                'cities'=>$provinces[0]->cities ,
+                'sum'=>$sum,
+                'finalAmount'=>$finalAmount,
+                'benefit'=>$benefit,
+            ]);
+        }
     }
 }

@@ -660,6 +660,7 @@ class ProductController extends Controller
     public function client_pro_single(product $product){
         $user=Auth::user();
         $flag=false;
+        $currentProductCart='';
         if($user){
             $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
             if(count($user->carts)>0){
@@ -669,18 +670,23 @@ class ProductController extends Controller
                             $cart->product->path=$media->path;
                         }
                     }
+                    if ($cart->product->discunt!=null ||$cart->product->discunt>0 ) {
+                        $campare = $cart->product->price - $cart->product->discunt;
+                        $x = $campare / $cart->product->price;
+                        $cart->product->percent = intval($x * 100);
+                    }
                     
                 }
             }
             foreach ($user->carts as $cart) {
                 if($cart->product->id==$product->id){
+                    $currentProductCart=$cart;
                     $flag=true;
                 }
             }
             $is_mainpicture='';
             $galleryPicture=[];
         }
-        
         foreach ($product->medias as $media) {
             if($media->is_main==1){
                 $product->is_main=$media->path;
@@ -696,7 +702,7 @@ class ProductController extends Controller
         }
         $attributes=$this->arranged_attributes($product->attributes);
         // dd($attributes);
-        return view('client.product.single',['product'=>$product, 'user'=>$user,'flag'=>$flag,'attributes'=>$attributes]);
+        return view('product.singleamir',['product'=>$product, 'user'=>$user,'flag'=>$flag,'attributes'=>$attributes,'currentProductCart'=>$currentProductCart]);
     }
     public function searchProduct(Request $request){
         $products=product::where('title','like','%'.$request['title'].'%')->with('medias')->get();
