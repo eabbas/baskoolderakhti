@@ -111,7 +111,7 @@
                         <div class="w-[50px] h-[3px] bg-[#F8C028]"></div>
                     </div>
                     <div class="w-full flex flex-col gap-1 items-center ">
-                        <span class = "text-[30px] text-[#0B304A]">مناسب برای همه صنایع</span>
+                        <span class = "text-[30px] text-[#0B304A] font-bold">مناسب برای همه صنایع</span>
                         <span class = "text-gray-400 text-center leading-7">ترازوهای ما در انواع کسب و کارها و صنایع مختلف کارایی و دقت بالا دارند</span>
                     </div>
                 </div>
@@ -333,7 +333,7 @@ v10H2z"/>
        <section class = "max-w-[2100px] min-w-[325px] mx-auto mt-10">
         <div class="w-11/12 mx-auto flex items-end justify-between mb-5 max-lg:flex-col">
             <div class="w-full flex flex-col  items-center  lg:pr-50">
-                <div class="flex gap-3 text-nowrap text-[40px] max-lg:text-[30px] text-[#0E2E48] items-center justify-center ">
+                <div class="flex gap-3 text-nowrap text-[40px] max-lg:text-[30px] text-[#0E2E48] items-center justify-center font-bold">
                     <div class="w-[130px] max-lg:w-[50px] h-1 bg-[#FBC830]"></div>
                     <span>محصولات پر فروش</span>
                     <div class="w-[130px] max-lg:w-[50px] h-1 bg-[#FBC830]"></div>
@@ -495,12 +495,12 @@ v10H2z"/>
                     </div>
                      <div class="w-[30%] flex flex-col  gap-3  max-lg:w-full max-lg:items-center">
                         <div class="flex flex-col gap-3 max-lg:items-center  items-end">
-                            <div class="w-[140px] h-[45px] text-[25px] flex items-center justify-center bg-[#F8C028] rounded-[25px] max-lg:w-[200px] max-lg:text-[30px] text-white">
+                            <div class="w-[140px] h-[45px] text-[25px] flex items-center justify-center bg-[#F8C028] rounded-[25px] max-lg:w-[160px] max-lg:text-[23px] text-white">
                                 <span>معرفی ما</span>
                             </div>
                             <div class="flex flex-col items-end max-lg:items-center">
                                 <span class = "text-[40px] text-nowrap text-center text-[#F8C028] max-lg:text-[50px] max-lg:hidden">ویدیو معرفی</span>
-                                <span class = "text-[40px] text-nowrap text-center text-[#002030] max-lg:text-[45px]">ترازوی حرفه ای</span>
+                                <span class = "text-[40px] text-nowrap text-center text-[#002030] max-lg:text-[35px] font-bold">ترازوی حرفه ای</span>
                             </div>
                         </div>
                         <div class="flex flex-col gap-3 max-lg:items-center items-end">
@@ -616,9 +616,9 @@ v10H2z"/>
 
 
  
-<section class="w-11/12 mx-auto mt-10">
+<section class="w-11/12 mx-auto mt-10 ">
 
-    <div class="w-full relative mt-10 overflow-hidden flex h-[400px] rounded-[15px] max-lg:hidden">
+    <div class="w-full relative mt-10 overflow-hidden flex h-[400px] rounded-[15px] max-lg:hidden ">
         <div class="w-[75%] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover"></div>
         <div class=" flex flex-col  w-[700px] bg-[#002030] gap-3 rounded-[10px] p-12 justify-center bg items-end clip-path-3 absolute left-0">
                 <div class="w-full flex flex-col  text-white  items-end gap-2">
@@ -639,7 +639,7 @@ v10H2z"/>
         <div class="w-full mx-auto flex items-center justify-between my-5  max-lg:flex-col max-lg:gap-3 max-lg:my-0 max-lg:mb-5 ">
             <div class=" flex gap-3 t  justify-center items-center text-[30px] max-lg:text-[22px] max-lg:w-full">
                 <div class="w-[80px] h-1 rounded-[2px] bg-[#D99A16] max-lg:w-[15%]"></div>
-                <span class = "max-lg:text-[17px] ">محصولات پر فروش</span>
+                <span class = "max-lg:text-[17px] font-bold">برند ها</span>
                 <div class="w-[20%] h-1 rounded-[2px] bg-[#D99A16] lg:hidden max-lg:w-[15%]"></div>
             </div>
             <a href = "" class="flex gap-3 items-center max-lg:order-1">
@@ -647,13 +647,12 @@ v10H2z"/>
                 <svg class = "size-5 fill-[#0B304A]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M7.4 273.4C2.7 268.8 0 262.6 0 256s2.7-12.8 7.4-17.4l176-168c9.6-9.2 24.8-8.8 33.9 .8s8.8 24.8-.8 33.9L83.9 232 424 232c13.3 0 24 10.7 24 24s-10.7 24-24 24L83.9 280 216.6 406.6c9.6 9.2 9.9 24.3 .8 33.9s-24.3 9.9-33.9 .8l-176-168z"/></svg>
             </a href = "">
         </div>
-        <div class="w-full lg:hidden flex flex-col relative mb-30 overflow-hidden rounded-[15px]">
-            <div class="w-full h-[400px] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/scale_mobile_768x432-1.png')}}')] bg-center bg-cover max-lg:"></div>
-            <div class="w-[100px] h-[120px] bg-[#F8C028] -skew-x-35 absolute z-20 bottom-0 -right-22"></div>
-            <div class="w-[90px] h-[130px] bg-[#F8C028]  absolute -skew-x-35 top-60 -right-20"></div>
-            <div class="w-full h-[8px] bg-[#F8C028] absolute -skew-y-6 top-92 max-lg:top-90"></div>
-            <div class="w-full h-1/2  absolute bg-[#0B304A] -bottom-10 -skew-y-6"></div>
-            <div class="w-full flex flex-col items-center justify-center pb-10  text-white gap-3 ">
+        <div class="w-full lg:hidden flex flex-col relative mb-30 overflow-hidden rounded-[15px] bg-[#F8C028]">
+            <div class="w-full h-[250px] rounded-[15px] first-page-img  bg-[url('{{asset('assets/img/scale_mobile_768x432-1.png')}}')] bg-center bg-cover z-20"></div>
+            <!-- <div class="w-[100px] h-[120px] bg-[#F8C028] -skew-x-35 absolute z-20 bottom-0 -right-22"></div> -->
+            <!-- <div class="w-[90px] h-[130px] bg-[#F8C028]  absolute -skew-x-35 top-60 -right-20"></div> -->
+            <!-- <div class="w-full h-[8px] bg-[#F8C028] absolute -skew-y-6 top-92 max-lg:top-90"></div> -->
+            <div class="w-full flex flex-col items-center justify-center max-lg:py-10  text-white gap-3 bg-[#0B304A] clip-path-first">
                 <div class="w-[190px] h-[37px] bg-[#F8C028] flex items-center justify-center z-10 gap-2 rounded-[20px] text-black p-2 text-nowrap">
                     <svg class = " size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M250.2 19.4l5.8-2.2 5.8 2.2L469.3 99.9l9.6 3.7 .6 10.3c2.8 47.8-4.7 121.5-36 193.6C412 379.9 356.2 451.2 262.4 491.8l-6.4 2.7-6.4-2.7C155.8 451.2 100 379.9 68.5 307.5c-31.3-72.1-38.8-145.8-36-193.6l.6-10.3 9.6-3.7L250.2 19.4zM495.5 113l-1.2-20.5L475.1 85 267.6 4.5 256 0 244.4 4.5 36.9 85 17.8 92.5 16.6 113c-2.9 49.9 4.9 126.3 37.3 200.9c32.7 75.3 91 150 189.4 192.6L256 512l12.7-5.5c98.4-42.6 156.7-117.3 189.4-192.6c32.4-74.7 40.2-151 37.3-200.9zM357.7 197.7l5.7-5.7L352 180.7l-5.7 5.7L224 308.7l-58.3-58.3-5.7-5.7L148.7 256l5.7 5.7 64 64 5.7 5.7 5.7-5.7 128-128z"/></svg>
                     <span>تضمین کیفیت و دقت</span>
@@ -676,20 +675,20 @@ v10H2z"/>
 
 
         <section class="w-11/12 mx-auto max-lg:-mt-20">
-            <div class="w-full  bg-slate-50 border-1 border-slate-100 shadow-sm p-2 rounded-[15px]">
+            <div class="w-full  bg-[#0E2E48] border-1 border-slate-100 shadow-sm p-2 rounded-[15px]">
                 <div class="w-full flex justify-between items-center max-lg:flex-col  max-lg:justify-center ">
                     <div class="flex flex-col   max-lg:w-full max-lg:items-center max-lg:justify-center gap-2">
-                        <div class="w-[120px] h-[30px] flex justify-center items-center rounded-[40px] text-purple-400 bg-purple-200 mr-5 max-lg:mr-0 ">
+                        <div class="w-[120px] h-[30px] flex justify-center items-center rounded-[40px] text-white bg-[#ffd663] mr-5 max-lg:mr-0 ">
                             <span class>بنردهای معتبر</span>
                         </div>
-                        <span class = "text-right text-[35px] mb-3">برترین برندهای جهانی</span>
-                        <span class = "ml-7 max-lg:ml-0 mb-3 lg:hidden">با محصولات اصل و دارای گارانتی</span>
+                        <span class = "text-right text-[35px] mb-3 text-white">برترین برندهای جهانی</span>
+                        <span class = "ml-7 max-lg:ml-0 mb-3 lg:hidden text-white">با محصولات اصل و دارای گارانتی</span>
                     </div>
-                    <span class = "ml-7 max-lg:ml-0 max-lg:hidden text-[17px]">با محصولات اصل و دارای گارانتی</span>
+                    <span class = "ml-7 max-lg:ml-0 max-lg:hidden text-[17px text-white">با محصولات اصل و دارای گارانتی</span>
                 </div>                
                 <div class="w-full flex items-center justify-center  rounded-[15px]">
                     <div class="w-[2%] flex items-center justify-center">    
-                        <svg class = "size-6 fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
+                        <svg class = "size-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
                     </div>
                     <div class="w-full flex gap-4  items-center justify-start bg-white  shadow-sm rounded-[5px] overflow-x-auto p-3">
                         <div class="min-w-[13%] max-lg:min-w-[50%] bg-gray-50 rounded-[10px]">
@@ -715,7 +714,7 @@ v10H2z"/>
                         </div>
                     </div>   
                     <div class="w-[2%] flex items-center justify-center">
-                        <svg class = "size-6 fill-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M47 239c-9.4 9.4-9.4 24.6 0 33.9L207 433c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L97.9 256 241 113c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L47 239z"></svg>
+                        <svg class = "size-6 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M47 239c-9.4 9.4-9.4 24.6 0 33.9L207 433c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L97.9 256 241 113c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L47 239z"></svg>
                     </div>
 
                 </div>                
@@ -726,19 +725,19 @@ v10H2z"/>
                 <div class="w-full flex  border-1 border-slate-200 rounded-[15px] max-lg:flex-col max-lg:items-center ">
                    
                     <div class="w-[40%] flex flex-col p-3  justify-center gap-5  max-lg:w-full max-lg:items-center ">
-                        <div class="w-[160px] h-[40px] bg-purple-200 text-purple-500 text-[20px] rounded-[20px] flex items-center justify-center  max-lg:mr-0">
+                        <div class="w-[160px] h-[40px] bg-[#ffd663] text-white text-[20px] rounded-[20px] flex items-center justify-center  max-lg:mr-0">
                             <span>کاربرد های ترازو</span>
                         </div>
                         <div class="w-full flex flex-col gap-2  max-lg:items-center">
-                            <span class = "text-[#0B304A] text-[40px] max-lg:text-[30px]">مناسب برای همه صنایع</span>
-                            <span class = "text-gray-400 text-[20px]  max-lg:text-[20px]">ترازوی مناسب راهکاری برای رشد کسب و کارها</span>
+                            <span class = "text-[#0B304A] text-[40px] max-lg:text-[30px] font-bold">مناسب برای همه صنایع</span>
+                            <span class = "text-gray-400 text-[20px]  max-lg:text-[17px] max-lg:text-center">ترازوی مناسب راهکاری برای رشد کسب و کارها</span>
                         </div>
-                        <a href = "#" class="w-[220px] h-[50px]  bg-purple-600 flex items-center justify-center gap-4 text-white rounded-[25px] text-[20px] max-lg:hidden">
+                        <a href = "#" class="w-[220px] h-[50px]  bg-[#F8C028] flex items-center justify-center gap-4 text-white rounded-[25px] text-[20px] max-lg:hidden">
                             <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"/></svg>
                             <span>مشاهده همه صنایع</span>
                         </a>
                     </div>
-                    <a href = "#" class="w-[220px] h-[50px]  bg-purple-600 flex items-center justify-center gap-4 text-white rounded-[25px] text-[20px] lg:hidden order-2 mb-4">
+                    <a href = "#" class="w-[220px] h-[50px]  bg-[#F8C028] flex items-center justify-center gap-4 text-white rounded-[25px] text-[20px] lg:hidden order-2 mb-4 max-lg:text-[18px]">
                                <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"/></svg>
                                <span>مشاهده همه صنایع</span>
                            </a>
