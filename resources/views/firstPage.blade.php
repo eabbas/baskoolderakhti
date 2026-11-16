@@ -17,7 +17,7 @@
                 </p>
                 <span class = "font-bold text-[60px] max-2xl:text-[40px] max-lg:text-[40px] lg:text-nowrap">دقت در وزن کشی</span>
                 <span class = "font-bold text-[#FBC830] text-[60px] max-lg:text-[40px] lg:text-nowrap">سرمایه شماست</span>
-                <p class = "text-[20px] w-[400px] flex items-center justify-center text-end leading-8   max-lg:w-full max-lg:text-center max-lg:px-3 max-lg:mb-5 max-lg:text-[15px]">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
+                <p class = "text-[20px] w-[400px] flex items-center justify-center text-end leading-8   max-lg:w-full max-lg:text-center max-lg:mb-5 max-lg:text-[15px]">تامین و فروش انواع ترازوهای فروشگاهیم,پزشکی و ازمایشگاهی با بهترین کیفیت و قیمت مناسب</p>
                 <a class = "w-[220px] h-[50px] max-lg:h-[40px] bg-[#FBC830]  rounded-[30px] flex items-center justify-center gap-5 text-black text-[18px] lg:mt-6" href="{{route('single_amir')}}">
                     <svg class = "size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z"></svg>
                     <span>مشاهده محصولات</span>
@@ -100,7 +100,7 @@
     </header>
 
   <main class = "w-12/12 2xl:max-w-[2100px] mx-auto max-lg:mt-40">
-     <section class = "w-11/12 mx-auto mt-10 max-lg:px-3"> 
+     <section class = "w-11/12 mx-auto mt-10"> 
             <div class="w-full mx-auto flex flex-col items-center">
                 <div class="w-[300px] flex flex-col items-center  ">
                     <div class="w-full flex gap-2 items-center justify-center ">
@@ -328,7 +328,7 @@ v10H2z"/>
                 </div>
             </div>
        </section> 
-       <section class = "max-w-[2100px] min-w-[325px] mx-auto mt-10 max-lg:px-3">
+       <section class = "max-w-[2100px] min-w-[325px] mx-auto mt-10">
         <div class="w-11/12 mx-auto flex items-end justify-between mb-5 max-lg:flex-col">
             <div class="w-full flex flex-col  items-center  lg:pr-50">
                 <div class="flex gap-3 text-nowrap text-[40px] max-lg:text-[30px] text-[#0E2E48] items-center justify-center ">
@@ -345,10 +345,7 @@ v10H2z"/>
         </div>
             <div class="w-full  mx-auto flex gap-3 flex-col bg-slate-200 py-5 max-lg:py-3">
                 <div class="w-11/12 flex relative overflow-x-auto gap-3 mx-auto rounded-[15px] [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
-                    <!-- <div class="w-7 h-7 absolute left-0 rounded-full bg-white shadow-sm border-1 border-gray-300 flex items-center justify-center">
-                        <svg class = "size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M47 239c-9.4 9.4-9.4 24.6 0 33.9L207 433c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L97.9 256 241 113c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L47 239z"/></svg>
-                    </div> -->
-                <div class=" min-w-[400px] max-lg:min-w-[370px] bg-[#091E2F] rounded-[16px] min-h-full">
+                <div class=" min-w-[400px]  bg-[#091E2F] rounded-[16px] min-h-full">
                     <div class="w-full flex flex-col max-lg:py-4 py-7 items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
                         <img class = "w-5/7 " src="{{asset('assets/img/Industrial Blue-Trim Platform Scale (1).png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
@@ -505,7 +502,7 @@ v10H2z"/>
                 </div>
             </div>
        </section>
-              <section  class = "w-11/12 mx-auto justify-center mt-10 max-lg:px-3">
+              <section  class = "w-11/12 mx-auto justify-center mt-10">
                 <div class="w-full relative flex -z-20 bg-[url('{{asset('assets/img/file_00000000e7948243afb2f2c8987fa0cb.png')}}')]  p-6 overflow-hidden rounded-[15px] px-20 bg-center bg-cover max-lg:p-5 max-lg:flex-col max-lg:gap-5">
                     <div class="absolute w-[10px] h-[200px] bg-[#F8C028] left-0 rotate-30 -top-10"></div>
                     <div class="absolute w-[10px] h-[200px] bg-[#F8C028] right-3 rotate-30 -bottom-10 -z-10"></div>
@@ -583,7 +580,7 @@ v10H2z"/>
             </section>
 
      
-         <section class = "w-11/12 mx-auto mt-10 max-lg:px-3">
+         <section class = "w-11/12 mx-auto mt-10">
             <div class="w-full flex flex-col items-center">
                 <div class="w-full flex items-center justify-center gap-2 max-lg:mx-3 ">
                     <div class="w-[50px] h-[3px] bg-[#F8C028] max-lg:w-[40px]"></div>
@@ -683,7 +680,7 @@ v10H2z"/>
 
 
  
-<section class="w-11/12 mx-auto mt-10 max-lg:px-3">
+<section class="w-11/12 mx-auto mt-10">
 
     <div class="w-full relative mt-10 overflow-hidden flex h-[400px] rounded-[15px] max-lg:hidden">
         <div class="w-[75%] rounded-[15px]  -z-30  bg-[url('{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}')] bg-center bg-cover"></div>
@@ -789,7 +786,7 @@ v10H2z"/>
             </div>
         </section> 
 
-         <section  class="w-11/12 mx-auto mt-10 max-lg:px-3">
+         <section  class="w-11/12 mx-auto mt-10">
                 <div class="w-full flex  border-1 border-slate-200 rounded-[15px] max-lg:flex-col max-lg:items-center ">
                    
                     <div class="w-[40%] flex flex-col p-3  justify-center gap-5  max-lg:w-full max-lg:items-center ">
@@ -988,7 +985,7 @@ v10H2z"/>
                 </div>
         </section> 
     </main>
-      <footer class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#061F35] flex flex-col items-center gap-8 max-lg:px-3 max-lg:gap-4 mt-10">
+      <footer class = "max-w-[2100px] min-w-[325px] mx-auto bg-[#061F35] flex flex-col items-center gap-8 max-lg:gap-4 mt-10">
         <div class="w-11/12 flex mx-auto text-white pt-5 max-lg:flex-col max-lg:items-end ">
 
          <div class="w-[25%] flex flex-col  justify-start  gap-5  max-lg:w-full max-lg:justify-center max-lg:items-center ">
