@@ -131,6 +131,12 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
     .clip-path-phone{
         clip-path: polygon(0 11% , 100% 5% , 100% 100% , 0 100%);
     }
+    .first-page-img{
+        clip-path: polygon(0 0 , 100% 0 , 100% 75% , 90% 95% ,0 100%);
+    }
+    .clip-path-first{
+        clip-path: polygon(0 6% , 100% 0 , 100% 70%,85% 100%,0 100%);
+    }
 }
 
 
