@@ -345,123 +345,24 @@ v10H2z"/>
         </div>
             <div class="w-full  mx-auto flex gap-3 flex-col bg-slate-200 py-5 max-lg:py-3">
                 <div class="w-11/12 flex relative overflow-x-auto gap-3 mx-auto rounded-[15px] [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
-                <div class=" min-w-[400px]  bg-[#091E2F] rounded-[16px] min-h-full">
-                    <div class="w-full flex flex-col max-lg:py-4 py-7 items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
-                        <img class = "w-5/7 " src="{{asset('assets/img/Industrial Blue-Trim Platform Scale (1).png')}}" alt="">
-                        <div class="w-full flex flex-col items-center gap-3">
-                            <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center">مناسب برای صنایع و کارگاه ها</span>
-                            </div>
-                            <div class="w-full flex flex-col items-center gap-4">
-                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
-                                    <span class = "text-[17px] font-bold">4.200.000</span>
-                                    <span class = "text-gray-600 text-[13px]">تومان</span>
-                                </div>
-                                <a href = "#" class="w-50 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3">
-                                    <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                                    <span class = " font-bold">مشاهده محصول</span>
-                                    <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
-                                        <svg class = "size-4 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" min-w-[400px] max-lg:min-w-[350px] bg-[#091E2F] rounded-[16px] min-h-full">
-                    <div class="w-full flex flex-col max-lg:py-4 py-7 items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
-                        <img class = "w-5/7 " src="{{asset('assets/img/Industrial Blue-Trim Platform Scale (1).png')}}" alt="">
-                        <div class="w-full flex flex-col items-center gap-3">
-                            <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center">مناسب برای صنایع و کارگاه ها</span>
-                            </div>
-                            <div class="w-full flex flex-col items-center gap-4">
-                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
-                                    <span class = "text-[17px] font-bold">4.200.000</span>
-                                    <span class = "text-gray-600 text-[13px]">تومان</span>
-                                </div>
-                                <a href = "#" class="w-50 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3">
-                                    <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                                    <span class = " font-bold">مشاهده محصول</span>
-                                    <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
-                                        <svg class = "size-4 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" min-w-[400px] max-lg:min-w-[350px] bg-[#091E2F] rounded-[16px] min-h-full">
-                    <div class="w-full flex flex-col max-lg:py-4 py-7 items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
-                        <img class = "w-5/7 " src="{{asset('assets/img/Industrial Blue-Trim Platform Scale (1).png')}}" alt="">
-                        <div class="w-full flex flex-col items-center gap-3">
-                            <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center">مناسب برای صنایع و کارگاه ها</span>
-                            </div>
-                            <div class="w-full flex flex-col items-center gap-4">
-                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
-                                    <span class = "text-[17px] font-bold">4.200.000</span>
-                                    <span class = "text-gray-600 text-[13px]">تومان</span>
-                                </div>
-                                <a href = "#" class="w-50 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3">
-                                    <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                                    <span class = " font-bold">مشاهده محصول</span>
-                                    <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
-                                        <svg class = "size-4 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" min-w-[400px] max-lg:min-w-[350px] bg-[#091E2F] rounded-[16px] min-h-full">
+
+                <div class=" min-w-[400px] max-lg:min-w-[190px] bg-[#091E2F] rounded-[16px] min-h-full">
                     <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
-                        <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-[#FBC830] text-[#0E2E48] shadow-[#FBC830] shadow-sm gap-1 text-[12px] font-bold">
-                            <svg  class = "fill-[#0E2E48] size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M89.3 156.3C113 115 143.2 77 170.5 50.4c18.7 18.7 40.9 47.2 60.1 71.7c3.8 4.8 7.4 9.5 10.9 13.9c4.6 5.8 11.7 9.2 19.1 9.1s14.4-3.6 18.9-9.5c3.3-4.3 7.7-10.8 12.3-17.4c2.6-3.8 5.3-7.6 7.8-11.2c5.6-7.9 10.5-14.5 14.4-19.1c20 20.8 41 53 57.4 88.4c17.7 38.2 28.6 77 28.6 106.3c0 103-78.8 181.4-176 181.4c-98.3 0-176-78.4-176-181.4c0-37.5 16.2-82.4 41.3-126.2zM199.5 11.6C183.3-3.8 158-3.9 141.8 11.5c-32 30.1-67 73.6-94.1 121C20.7 179.5 0 233 0 282.6C0 410.9 98.1 512 224 512c124.6 0 224-100.9 224-229.4c0-39.1-13.9-85.2-33.1-126.5C395.7 114.6 369.8 74.9 343 49c-16.3-15.8-42-15.8-58.3-.1c-7.9 7.6-17 20-24.3 30.3l-1.1 1.6C240.6 57 218.4 29.5 199.5 11.6zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"/></svg>
-                            <span>پر فروش</span>
-                        </div>
-                        <img class = "w-5/7 " src="{{asset('assets/img/Commercial Digital Weighing Scale Isolated.png')}}" alt="">
-                        <div class="w-full flex flex-col items-center gap-3">
-                            <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center">مناسب برای صنایع و کارگاه ها</span>
-                            </div>
-                            <div class="w-full flex flex-col items-center gap-4">
-                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
-                                    <span class = "text-[17px] font-bold">4.200.000</span>
-                                    <span class = "text-gray-600 text-[13px]">تومان</span>
-                                </div>
-                                <a href = "#" class="w-50 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3">
-                                    <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
-                                    <span class = " font-bold">مشاهده محصول</span>
-                                    <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
-                                        <svg class = "size-4 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" min-w-[400px] max-lg:min-w-[350px] bg-[#091E2F] rounded-[16px] min-h-full">
-                    <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
-                        <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold">
+                        <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold max-lg:w-17">
                             <span>جدید</span>
                         </div>
                         <img class = "w-5/7 " src="{{asset('assets/img/Industrial Digital Platform Scale.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
-                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
+                                <div class="w-45 h-10 max-lg:w-full rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
                                     <span class = "text-[17px] font-bold">4.200.000</span>
                                     <span class = "text-gray-600 text-[13px]">تومان</span>
                                 </div>
-                                <a href = "#" class="w-50 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3">
+                                <a href = "#" class="w-60 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3 max-lg:text-[14px] text-nowrap max-lg:gap-2 max-lg:w-full">
                                     <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
                                     <span class = " font-bold">مشاهده محصول</span>
                                     <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
@@ -472,23 +373,23 @@ v10H2z"/>
                         </div>
                     </div>
                 </div>
-                <div class=" min-w-[400px] max-lg:min-w-[350px] bg-[#091E2F] rounded-[16px] min-h-full">
+                <div class=" min-w-[400px] max-lg:min-w-[190px] bg-[#091E2F] rounded-[16px] min-h-full">
                     <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
-                        <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-green-500 text-white shadow-green-500 shadow-sm text-[12px] font-bold">
-                            <span>تخفیف</span>
+                        <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold max-lg:w-17">
+                            <span>جدید</span>
                         </div>
-                        <img class = "w-5/7 " src="{{asset('assets/img/Stainless Steel Digital Countertop Scale.png')}}" alt="">
+                        <img class = "w-5/7 " src="{{asset('assets/img/Industrial Digital Platform Scale.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] truncate w-full text-center text-[20px] font-bold">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] truncate w-full text-center text-gray-700">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
-                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
+                                <div class="w-45 h-10 max-lg:w-full rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
                                     <span class = "text-[17px] font-bold">4.200.000</span>
                                     <span class = "text-gray-600 text-[13px]">تومان</span>
                                 </div>
-                                <a href = "#" class="w-50 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3">
+                                <a href = "#" class="w-60 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3 max-lg:text-[14px] text-nowrap max-lg:gap-2 max-lg:w-full">
                                     <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
                                     <span class = " font-bold">مشاهده محصول</span>
                                     <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
@@ -498,6 +399,39 @@ v10H2z"/>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class=" min-w-[400px] max-lg:min-w-[190px] bg-[#091E2F] rounded-[16px] min-h-full">
+                    <div class="w-full flex flex-col max-lg:py-4 py-7 relative items-center bg-white rounded-tl-[75px] gap-3   h-full rounded-[15px] p-3">
+                        <div class="w-20 h-7 right-5  absolute rounded-[30px] flex items-center justify-center bg-blue-500 text-white shadow-blue-500 shadow-sm text-[12px] font-bold max-lg:w-17">
+                            <span>جدید</span>
+                        </div>
+                        <img class = "w-5/7 " src="{{asset('assets/img/Industrial Digital Platform Scale.png')}}" alt="">
+                        <div class="w-full flex flex-col items-center gap-3">
+                            <div class="w-full flex flex-col gap-2 items-center">
+                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                            </div>
+                            <div class="w-full flex flex-col items-center gap-4">
+                                <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
+                                    <span class = "text-[17px] font-bold">4.200.000</span>
+                                    <span class = "text-gray-600 text-[13px]">تومان</span>
+                                </div>
+                                <a href = "#" class="w-60 h-11 product_leaner flex items-center justify-center product_leaner rounded-[50px] gap-3 max-lg:text-[14px] text-nowrap max-lg:gap-2 max-lg:w-full">
+                                    <svg class = "size-4 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24S10.7 48 24 48H69.5c3.8 0 7.1 2.7 7.9 6.5l51.6 271c6.5 34 36.2 58.5 70.7 58.5H488c13.3 0 24-10.7 24-24s-10.7-24-24-24H199.7c-11.5 0-21.4-8.2-23.6-19.5L170.7 288H459.2c32.6 0 61.1-21.8 69.5-53.3l41-152.3C576.6 57 557.4 32 531.1 32h-411C111 12.8 91.6 0 69.5 0H24zM131.1 80H520.7L482.4 222.2c-2.8 10.5-12.3 17.8-23.2 17.8H161.6L131.1 80zM176 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm336-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg>
+                                    <span class = " font-bold">مشاهده محصول</span>
+                                    <div class="w-5 h-5 bg-[#0E2E48] flex items-center justify-center rounded-full">
+                                        <svg class = "size-4 fill-[#FBC830]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M273 239c9.4 9.4 9.4 24.6 0 33.9L113 433c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l143-143L79 113c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L273 239z"/></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                
+
+
+                </div>
                 </div>
                 </div>
             </div>
