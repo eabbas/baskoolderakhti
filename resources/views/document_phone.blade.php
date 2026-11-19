@@ -87,7 +87,7 @@
             </div>
         </section>
         <section class = "w-11/12 mx-auto mt-10 ">
-            <div class="w-full flex bg-white border-1 border-gray-100 shadow-sm rounded-[10px] gap-5 p-5 max-lg:flex-col">
+            <div class="w-full flex bg-white border-1 border-gray-100 shadow-sm rounded-[10px] gap-5 px-5  max-lg:flex-col ">
                 <div class="w-[40%] lg:h-160 max-lg:w-full flex flex-col bg-[#091E2F] rounded-[20px] p-10  gap-8 max-lg:p-5 overflow-hidden relative max-lg:gap-5">
                     <div class="w-13 h-80 bg-[#FBC830] absolute skew-x-30 bottom-0 -left-10"></div>
                     <div class="w-13 h-80  absolute skew-x-30 bottom-0 left-3 leanerrr"></div>
@@ -174,7 +174,7 @@
                                 <textarea placeholder = "متن پیام خود ر ااینجا بنویسید..." class = "w-full outline-none pr-14" name="" id="" cols = "110" rows = "5"></textarea>
                             </div>
                         </div>
-                        <a class = "w-56 h-13 flex gap-3 bg-[#FBC830] rounded-[30px] items-center justify-center font-bold mt-5 max-lg:mt-0 max-lg:h-11 max-lg:w-50" href="">
+                        <a class = "w-56 h-13 flex gap-3 bg-[#FBC830] rounded-[30px] items-center justify-center font-bold max-lg:mt-0 max-lg:h-11 max-lg:w-50" href="">
                             <span>ارسال پیام</span>
                             <svg class = "size-6 fill-[#0E2E48]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg>
                         </a>
