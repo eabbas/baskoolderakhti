@@ -84,7 +84,9 @@ background: linear-gradient(271deg,rgba(3, 21, 34, 1) 30%, rgba(3, 21, 34, 0) 45
 .clip-path-about-img-2{
     clip-path: polygon(0 60% ,15% 0 , 100% 0 ,100% 38%, 85% 100% , 0 100%);
 }
-
+.clip-pathh-ablut-img{
+    clip-path: polygon(0 0 , 100% 0 , 70% 100% , 0 100%);
+}
 @media(max-width:1406px){
     .fonts{
         font-size: 17px;
