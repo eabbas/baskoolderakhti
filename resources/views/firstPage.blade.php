@@ -1,16 +1,97 @@
 @extends('header')
 @section('content')
 
+<!-- <div class="w-full flex gap-10 bg-[#031522] shadow-2xl">
+    <div class="w-11/12 mx-auto flex py-5 gap-8">
+        <div class="flex flex-col items-center cursor-pointer text-white text-[14px] font-bold gap-3 ">
+            <div class="w-20 h-20 rounded-full border-5 border-[#F8C028] shadow_store bg-[url('{{asset('assets/img/khadamat.png')}}')] bg-center bg-cover"></div>
+            <span>خدمات ما</span> 
+        </div>
+        <div class="flex flex-col items-center cursor-pointer text-white text-[14px] font-bold gap-3 ">
+            <div class="w-20 h-20 rounded-full border-5 border-[#F8C028] shadow_store bg-[url('{{asset('assets/img/company.png')}}')] bg-center bg-cover "></div>
+            <span>فراینده همکاری باما</span> 
+        </div>
+        <div class="flex flex-col items-center cursor-pointer text-white text-[14px] font-bold gap-3 ">
+            <div class="w-20 h-20 rounded-full border-5 border-[#F8C028] shadow_store bg-[url('{{asset('assets/img/lamp.png')}}')] bg-center bg-cover "></div>
+            <span>نکات مهم</span> 
+        </div>
+        <div class="flex flex-col items-center cursor-pointer text-white text-[14px] font-bold gap-3 ">
+            <div class="w-20 h-20 rounded-full border-5 border-[#F8C028] shadow_store bg-[url('{{asset('assets/img/file_000000007efc81f4849eca10879d8b83.png')}}')] bg-center bg-cover "></div>
+            <span>محصولات</span> 
+        </div>
+        <div class="flex flex-col items-center cursor-pointer text-white text-[14px] font-bold gap-3 ">
+            <div class="w-20 h-20 rounded-full border-5 border-[#F8C028] shadow_store bg-[url('{{asset('assets/img/project.png')}}')] bg-center bg-cover "></div>
+            <span>پروژها</span> 
+        </div>
+    </div>
+</div> -->
+
+
+
+<section class="project-stories" dir="rtl">
+    <div class="story-card" onclick="openStory()">
+        <div class="story-ring">
+            <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+        </div>
+        <span>پروژه‌های ما</span>
+    </div>
+</section>
+
+<!-- Story Viewer -->
+<div class="story-modal" id="storyModal">
+
+    <div class="story-container">
+
+        <div class="story-progress" id="storyProgress"></div>
+
+        <div class="story-header">
+            <div class="story-user">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
+                <div>
+                    <strong id="storyTitle">پروژه باسکول درختی</strong>
+                    <small id="storyTime">نمونه کارهای ما</small>
+                </div>
+            </div>
+
+            <button class="story-close" onclick="closeStory()">×</button>
+        </div>
+
+        <div class="story-content">
+            <div class="story-background" id="storyBackground"></div>
+
+            <img id="storyImage" src="" alt="تصویر پروژه">
+                <video
+                    id="storyVideo"
+                    playsinline
+                    preload="auto"
+                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+                </video>
+            <div class="story-caption">
+                <h3 id="storyCaption"></h3>
+                <p id="storyDescription"></p>
+            </div>
+
+            <button class="story-prev" onclick="prevStory()"></button>
+            <button class="story-next" onclick="nextStory()"></button>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="h-20 w-100 bg-red-500" onclick = "texttt()"></div>
 
 
     <div class="max-w-[21000px] min-w-[320px] relative ">
         <div class="w-1/2 left-0 top-0 h-full absolute leaner z-10 max-lg:w-full max-lg:h-[530px]"></div>
         <div class="w-1/2 right-0 top-0 h-full absolute leaner-left z-10 max-lg:hidden"></div>
         <div class="w-11/12  mx-auto flex relative max-lg:flex-col justify-end max-lg:w-full">
+            
+            
             <div class="w-[60%] max-lg:h-[200px] max-lg:w-full ">
                 <img class = "w-full h-full" src="{{asset('assets/img/scale.png')}}" alt="">
             </div>
-            <div class="w-[30%] max-xl:w-[40%] flex flex-col py-10 items-end text-white z-20  justify-center  max-lg:p-1  max-lg:items-center max-lg:w-full   max-lg:order-first ">
+            <div class="w-[30%] max-xl:w-[40%] flex flex-col mt-7  lg:py-10 items-end text-white z-20  justify-center  max-lg:p-1  max-lg:items-center max-lg:w-full   max-lg:order-first ">
                 <p class = "text-[#D99A16] text-[25px] max-2xl:text-[20px] max-lg:text-[20px] max-lg:hidden">
                     فروش انواع ترازوهای
                     <span class = "text-white">دیجیتال و مکانیکی</span>
@@ -1128,178 +1209,284 @@ v10H2z"/>
             
         </div>
     </footer>
+
+  
     <script>
 
-        function bar_menu(){
-            let menu = document.getElementById('menu')
-            let document_black = document.getElementById('document_black')
-            console.log(document_black)
-            menu.classList.toggle('translate-x-150')
-            document_black.classList.toggle('invisible')
-            document_black.classList.toggle('opacity-0')
-        }
-       
-       
-  
-        const route = "{{ request()->path() }}";
-        let cart = document.getElementById('cart');
-        let cart_list = document.getElementById('cart_list');
-        let cart_counter = document.getElementById('cart_counter');
-        let pro_cart_parent_div = document.getElementById('pro_cart_parent_div');
-        let total_price = document.getElementById('total_price');
-        let cart_buttons = document.getElementById('cart_buttons');
 
-        function showCart(){
-            if(cart_counter.innerHTML!=0){
-                cart.classList.remove('hidden');
-                cart.classList.add('flex');
+
+const stories = [
+    {
+        type: "image",
+        src: "{{ asset('assets/img/project.png') }}",
+        title: "پروژه باسکول درختی",
+        caption: "طراحی و اجرای پروژه",
+        description: "معرفی یکی از پروژه‌های اجرا شده توسط مجموعه باسکول درختی"
+    },
+    {
+        type: "image",
+        src: "{{ asset('assets/img/lamp.png') }}",
+        title: "پروژه باسکول درختی",
+        caption: "کیفیت در اجرا",
+        description: "نگاهی نزدیک‌تر به جزئیات و مراحل اجرای پروژه"
+    },
+    {
+        type: "video",
+        src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
+        title: "پروژه باسکول درختی",
+        caption: "نمایی از پروژه",
+        description: "ویدیوی مراحل اجرای پروژه"
+    },
+    {
+        type: "video",
+        src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
+        title: "پروژه باسکول درختی",
+        caption: "نمایی از پروژه",
+        description: "ویدیوی مراحل اجرای پروژه"
+    },
+    {
+        type: "image",
+        src: "{{ asset('assets/img/khadamat.png') }}",
+        title: "پروژه باسکول درختی",
+        caption: "نتیجه نهایی",
+        description: "تلاش ما برای ارائه محصولی باکیفیت و قابل اعتماد"
+    }
+];
+
+
+
+
+let currentStory = 0;
+let animationFrame;
+let startTime = 0;
+let elapsed = 0;
+let paused = false;
+
+const duration = 5000;
+
+const modal = document.getElementById("storyModal");
+const image = document.getElementById("storyImage");
+const video = document.getElementById("storyVideo");
+const background = document.getElementById("storyBackground");
+const progress = document.getElementById("storyProgress");
+
+function openStory() {
+    currentStory = 0;
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+    showStory();
+}
+
+function closeStory() {
+    cancelAnimationFrame(animationFrame);
+
+    video.pause();
+    video.onended = null;
+    video.onloadedmetadata = null;
+
+    modal.classList.remove("active");
+    document.body.style.overflow = "";
+}
+
+function showStory() {
+    cancelAnimationFrame(animationFrame);
+
+    video.pause();
+    video.onended = null;
+    video.onloadedmetadata = null;
+
+    paused = false;
+    elapsed = 0;
+
+    const story = stories[currentStory];
+
+    document.getElementById("storyTitle").textContent = story.title;
+    document.getElementById("storyCaption").textContent = story.caption;
+    document.getElementById("storyDescription").textContent = story.description;
+
+    background.style.backgroundImage = `url("${story.src}")`;
+
+    progress.innerHTML = "";
+
+    stories.forEach((item, index) => {
+        const bar = document.createElement("div");
+        bar.className = "progress-item";
+
+        const fill = document.createElement("div");
+        fill.className = "progress-fill";
+
+        if (index < currentStory) {
+            fill.style.width = "100%";
+        }
+
+        bar.appendChild(fill);
+        progress.appendChild(bar);
+    });
+
+    if (story.type === "video") {
+        image.style.display = "none";
+        video.style.display = "block";
+
+        video.controls = false;
+        video.muted = false;
+        video.src = story.src;
+        video.load();
+
+        video.onloadedmetadata = () => {
+            if (!modal.classList.contains("active")) return;
+
+            video.play().then(() => {
+                startProgress();
+            }).catch(() => {
+                // اگر مرورگر پخش خودکار با صدا را مسدود کرد
+                video.controls = true;
+            });
+        };
+
+        video.onended = () => {
+            nextStory();
+        };
+
+    } else {
+        video.style.display = "none";
+        video.removeAttribute("src");
+        video.load();
+
+        image.style.display = "block";
+        image.src = story.src;
+
+        startProgress();
+    }
+}
+
+function startProgress() {
+    paused = false;
+    startTime = performance.now() - elapsed;
+
+    function update(now) {
+        if (paused || !modal.classList.contains("active")) return;
+
+        let percentage;
+
+        if (stories[currentStory].type === "video") {
+            if (!video.duration || !isFinite(video.duration)) {
+                animationFrame = requestAnimationFrame(update);
+                return;
             }
-        }
-        function hiddenCart(el){
-            cart.classList.add('hidden');
-            cart.classList.remove('flex');
 
-        }
+            percentage = (video.currentTime / video.duration) * 100;
 
-
-
-
-        let quantity=0;
-        function updateCart(el,id,state) {
-            console.log(el)
-            quantity = el.parentElement.children[1].children[0].value;
-
-            if (quantity < 30) {
-                
-                el.parentElement.children[0].innerHTML =
-                `
-                <div class="size-7 border-4 border-(--border) border-t-(--primary_color) rounded-full animate-spin"></div>
-
-                `;
-                // el.parentElement.children[0].setAttribute('disabled', true);
-                el.parentElement.children[0].disabled = true;
-                el.parentElement.children[0].removeAttribute('onclick');
-
-                el.parentElement.children[2].innerHTML =
-                `
-                <div class="size-7 border-4 border-(--border) border-t-(--primary_color) rounded-full animate-spin"></div>
-
-                `;
-                el.parentElement.children[2].disabled=true;
-                el.parentElement.children[2].removeAttribute('onclick');
-
-                if(state=='plus'){
-                    quantity++;
-                }else{
-                    quantity--;
-                }
-                $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': "{{ csrf_token() }}"
-                    }
-                })
-                $.ajax({
-                    url: "{{url('cart/update/cart')}}"+"/"+id,
-                    type: "post",
-                    dataType:"json",
-                    data:{
-                        'quantity':quantity,
-                    },
-                    success: function(data) {
-                        el.parentElement.children[1].children[0].value = data.quantity
-                        if(data.quantity==1){
-
-                            //  تغییر دادن  اس وی جی علامت پلاس  //
-                            
-                            el.parentElement.children[0].removeAttribute('disabled');
-                            el.parentElement.children[0].setAttribute('onclick',`updateCart(this,${data.cartId},'plus')`)
-                            el.parentElement.children[0].innerHTML=
-                            `
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-                            `
-                            ;
-
-
-                            //  تغییر دادن  اس وی جی علامت سطل آشغال  //
-
-                            el.parentElement.children[2].innerHTML =
-                            `
-                            <svg class='size-5 fill-rose-600' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
-                            `
-                            el.parentElement.children[2].setAttribute('onclick',`trash(this,${data.cartId},${data.product.id})`);
-                            el.parentElement.children[2].disabled=false;
-                        }
-                        if(data.quantity>1){
-
-                            //  تغییر دادن  اس وی جی علامت پلاس  //
-
-                            el.parentElement.children[0].removeAttribute('disabled');
-                            el.parentElement.children[0].setAttribute('onclick',`updateCart(this,${data.cartId},'plus')`)
-                            el.parentElement.children[0].innerHTML=
-                            `
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
-                            `
-                            ;
-                            //  تغییر دادن  اس وی جی علامت ماینس  //
-
-                            el.parentElement.children[2].disabled=false;
-                            el.parentElement.children[2].setAttribute('onclick',`updateCart(this,${data.cartId},'minus')`)
-                            el.parentElement.children[2].innerHTML =
-                            `
-                                <svg class='size-3 fill-black' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 13.3-10.7 24-24 24L40 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l368 0c13.3 0 24 10.7 24 24z"/></svg>
-                            `
-                        }
-                        let product_price=parseInt(data.product.price)
-                        let price=parseInt(total_price.value)
-                        // total_price.value=price+data.product.price
-                        // console.log(price+product_price)
-                        if(state=='plus'){
-                            total_price.value=price+product_price;
-                        }else{
-                            total_price.value=price-product_price;
-                        }
-                    },
-                    error: function() {
-                        console.log('☢')
-                    }
-                })
-            }
-        }
-        function trash(el,cart_id,product_id) {
-            let trash_icon='';
-            console.log(el.closest('.parent_cart'))
-            trash_icon=el.parentElement.children[2].innerHTML;
-            el.parentElement.children[2].innerHTML =
-            `
-                <div class="size-7 border-4 border-(--border) border-t-(--primary_color) rounded-full animate-spin"></div>
-            `
-            $.ajax({
-                url: "{{url('cart/delete/cart')}}"+"/" + cart_id,
-                type: "get",
-                dataType: "json",
-                success: function(productData) {
-                
-                    cart_counter.innerHTML--
-                    if(cart_counter.innerHTML==0){
-                        hiddenCart();
-                    }
-                    el.parentElement.classList.remove('flex')
-                    el.parentElement.classList.add('hidden')
-                    el.closest('.parent_cart').remove()
-                    product_price=parseInt(productData.price)
-                    price=parseInt(total_price.value)
-                    total_price.value=price-product_price;
-
-                },
-                error: function() {
-                    console.log('☢')
-                }
-            })
-                // console.log(entry)
-            // el.parentElement.children[2].innerHTML =trash_icon
+        } else {
+            elapsed = now - startTime;
+            percentage = (elapsed / duration) * 100;
         }
 
+        const fill = progress.children[currentStory]
+            .querySelector(".progress-fill");
 
+        fill.style.width = Math.min(percentage, 100) + "%";
+
+        if (
+            stories[currentStory].type === "image" &&
+            elapsed >= duration
+        ) {
+            nextStory();
+            return;
+        }
+
+        animationFrame = requestAnimationFrame(update);
+    }
+
+    animationFrame = requestAnimationFrame(update);
+}
+
+function nextStory() {
+    if (currentStory < stories.length - 1) {
+        currentStory++;
+        showStory();
+    } else {
+        closeStory();
+    }
+}
+
+function prevStory() {
+    if (currentStory > 0) {
+        currentStory--;
+        showStory();
+    } else {
+        showStory();
+    }
+}
+
+function pauseStory() {
+    if (paused) return;
+
+    paused = true;
+    cancelAnimationFrame(animationFrame);
+
+    if (stories[currentStory].type === "video") {
+        video.pause();
+    } else {
+        elapsed = performance.now() - startTime;
+    }
+}
+
+function resumeStory() {
+    if (!paused) return;
+
+    if (stories[currentStory].type === "video") {
+        video.play().then(() => {
+            startProgress();
+        }).catch(() => {});
+    } else {
+        paused = false;
+        startProgress();
+    }
+}
+
+modal.addEventListener("mouseenter", pauseStory);
+modal.addEventListener("mouseleave", resumeStory);
+
+document.addEventListener("keydown", (e) => {
+    if (!modal.classList.contains("active")) return;
+
+    if (e.key === "ArrowRight") prevStory();
+    if (e.key === "ArrowLeft") nextStory();
+    if (e.key === "Escape") closeStory();
+});
+
+// اتصال توابع به دکمه‌های HTML
+window.openStory = openStory;
+window.closeStory = closeStory;
+window.nextStory = nextStory;
+window.prevStory = prevStory;
+
+
+
+
+
+    let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+function showSlide(index) {
+    if (index >= totalSlides) currentSlide = 0;
+    else if (index < 0) currentSlide = totalSlides - 1;
+    else currentSlide = index;
+    
+    // تغییر جهت حرکت به راست (مثبت) برای RTL
+    slides.style.transform = `translateX(${currentSlide * 100}%)`;
+}
+// معکوس کردن عملکرد دکمه‌ها برای RTL
+document.querySelector('.next').addEventListener('click', () => showSlide(currentSlide - 1));
+document.querySelector('.prev').addEventListener('click', () => showSlide(currentSlide + 1));
+// تغییر جهت حرکت اتوماتیک
+setInterval(() => showSlide(currentSlide - 1), 5000);
+
+// مقداردهی اولیه
+showSlide(0);
+
+
+     
 
 
 
