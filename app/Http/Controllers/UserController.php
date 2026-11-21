@@ -25,7 +25,6 @@ use Illuminate\Support\Str;
 use Log;
 class UserController extends Controller
 {
-    
     public function document_phone(){
           $user=Auth::user();
         if($user){

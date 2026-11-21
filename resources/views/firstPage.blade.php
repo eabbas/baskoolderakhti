@@ -28,8 +28,155 @@
 
 <div class="w-full bg-[#031522]">
 
-<div class="w-11/12  mx-auto flex gap-5 pt-5 items-center max-lg:justify-center">
+<div class="w-11/12  mx-auto flex gap-5 py-5 max-lg:gap-2 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
 
+    <section class="project-stories">
+        <div class="story-card" onclick="openStory()">
+            <div class="story-ring">
+                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+            </div>
+            <span>پروژه‌های ما</span>
+        </div>
+    </section>
+    
+    <!-- Story Viewer -->
+    <div class="story-modal" id="storyModal">
+        
+        <div class="story-container">
+
+            <div class="story-progress" id="storyProgress"></div>
+
+        <div class="story-header">
+            <div class="story-user">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
+                <div>
+                    <strong id="storyTitle">پروژه باسکول درختی</strong>
+                    <small id="storyTime">نمونه کارهای ما</small>
+                </div>
+            </div>
+
+            <button class="story-close" onclick="closeStory()">×</button>
+        </div>
+
+        <div class="story-content">
+            <div class="story-background" id="storyBackground"></div>
+
+            <img id="storyImage" src="" alt="تصویر پروژه">
+                <video
+                    id="storyVideo"
+                    playsinline
+                    preload="auto"
+                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+                </video>
+            <div class="story-caption">
+                <h3 id="storyCaption"></h3>
+                <p id="storyDescription"></p>
+            </div>
+            
+            <button class="story-prev" onclick="prevStory()"></button>
+            <button class="story-next" onclick="nextStory()"></button>
+        </div>
+        
+    </div>
+</div>
+    <section class="project-stories">
+        <div class="story-card" onclick="openStory()">
+            <div class="story-ring">
+                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+            </div>
+            <span>پروژه‌های ما</span>
+        </div>
+    </section>
+    
+    <!-- Story Viewer -->
+    <div class="story-modal" id="storyModal">
+        
+        <div class="story-container">
+
+            <div class="story-progress" id="storyProgress"></div>
+
+        <div class="story-header">
+            <div class="story-user">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
+                <div>
+                    <strong id="storyTitle">پروژه باسکول درختی</strong>
+                    <small id="storyTime">نمونه کارهای ما</small>
+                </div>
+            </div>
+
+            <button class="story-close" onclick="closeStory()">×</button>
+        </div>
+
+        <div class="story-content">
+            <div class="story-background" id="storyBackground"></div>
+
+            <img id="storyImage" src="" alt="تصویر پروژه">
+                <video
+                    id="storyVideo"
+                    playsinline
+                    preload="auto"
+                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+                </video>
+            <div class="story-caption">
+                <h3 id="storyCaption"></h3>
+                <p id="storyDescription"></p>
+            </div>
+            
+            <button class="story-prev" onclick="prevStory()"></button>
+            <button class="story-next" onclick="nextStory()"></button>
+        </div>
+        
+    </div>
+</div>
+    <section class="project-stories">
+        <div class="story-card" onclick="openStory()">
+            <div class="story-ring">
+                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+            </div>
+            <span>پروژه‌های ما</span>
+        </div>
+    </section>
+    
+    <!-- Story Viewer -->
+    <div class="story-modal" id="storyModal">
+        
+        <div class="story-container">
+
+            <div class="story-progress" id="storyProgress"></div>
+
+        <div class="story-header">
+            <div class="story-user">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
+                <div>
+                    <strong id="storyTitle">پروژه باسکول درختی</strong>
+                    <small id="storyTime">نمونه کارهای ما</small>
+                </div>
+            </div>
+
+            <button class="story-close" onclick="closeStory()">×</button>
+        </div>
+
+        <div class="story-content">
+            <div class="story-background" id="storyBackground"></div>
+
+            <img id="storyImage" src="" alt="تصویر پروژه">
+                <video
+                    id="storyVideo"
+                    playsinline
+                    preload="auto"
+                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+                </video>
+            <div class="story-caption">
+                <h3 id="storyCaption"></h3>
+                <p id="storyDescription"></p>
+            </div>
+            
+            <button class="story-prev" onclick="prevStory()"></button>
+            <button class="story-next" onclick="nextStory()"></button>
+        </div>
+        
+    </div>
+</div>
     <section class="project-stories">
         <div class="story-card" onclick="openStory()">
             <div class="story-ring">
@@ -233,7 +380,7 @@
     </div>
     </header>
 
-  <main class = "w-12/12 2xl:max-w-[2100px] mx-auto max-lg:mt-20">
+  <main class = "w-12/12 2xl:max-w-[2100px] mx-auto mt-45">
      <section class = "w-11/12 mx-auto mt-10"> 
             <div class="w-full mx-auto flex flex-col items-center">
                 <div class="w-[300px] flex flex-col items-center  ">
