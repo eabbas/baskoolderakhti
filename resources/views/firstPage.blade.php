@@ -27,22 +27,23 @@
 </div> -->
 
 
+<div class="w-full flex gap-10">
 
-<section class="project-stories" dir="rtl">
-    <div class="story-card" onclick="openStory()">
-        <div class="story-ring">
-            <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+    <section class="project-stories">
+        <div class="story-card" onclick="openStory()">
+            <div class="story-ring">
+                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+            </div>
+            <span>پروژه‌های ما</span>
         </div>
-        <span>پروژه‌های ما</span>
-    </div>
-</section>
+    </section>
+    
+    <!-- Story Viewer -->
+    <div class="story-modal" id="storyModal">
+        
+        <div class="story-container">
 
-<!-- Story Viewer -->
-<div class="story-modal" id="storyModal">
-
-    <div class="story-container">
-
-        <div class="story-progress" id="storyProgress"></div>
+            <div class="story-progress" id="storyProgress"></div>
 
         <div class="story-header">
             <div class="story-user">
@@ -70,16 +71,65 @@
                 <h3 id="storyCaption"></h3>
                 <p id="storyDescription"></p>
             </div>
-
+            
             <button class="story-prev" onclick="prevStory()"></button>
             <button class="story-next" onclick="nextStory()"></button>
         </div>
-
+        
     </div>
+</div>
+    <section class="project-stories">
+        <div class="story-card" onclick="openStory()">
+            <div class="story-ring">
+                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+            </div>
+            <span>پروژه‌های ما</span>
+        </div>
+    </section>
+    
+    <!-- Story Viewer -->
+    <div class="story-modal" id="storyModal">
+        
+        <div class="story-container">
+
+            <div class="story-progress" id="storyProgress"></div>
+
+        <div class="story-header">
+            <div class="story-user">
+                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
+                <div>
+                    <strong id="storyTitle">پروژه باسکول درختی</strong>
+                    <small id="storyTime">نمونه کارهای ما</small>
+                </div>
+            </div>
+
+            <button class="story-close" onclick="closeStory()">×</button>
+        </div>
+
+        <div class="story-content">
+            <div class="story-background" id="storyBackground"></div>
+
+            <img id="storyImage" src="" alt="تصویر پروژه">
+                <video
+                    id="storyVideo"
+                    playsinline
+                    preload="auto"
+                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
+                </video>
+            <div class="story-caption">
+                <h3 id="storyCaption"></h3>
+                <p id="storyDescription"></p>
+            </div>
+            
+            <button class="story-prev" onclick="prevStory()"></button>
+            <button class="story-next" onclick="nextStory()"></button>
+        </div>
+        
+    </div>
+</div>
 </div>
 
 
-    <div class="h-20 w-100 bg-red-500" onclick = "texttt()"></div>
 
 
     <div class="max-w-[21000px] min-w-[320px] relative ">
