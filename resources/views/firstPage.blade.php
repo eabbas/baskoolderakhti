@@ -26,8 +26,9 @@
     </div>
 </div> -->
 
+<div class="w-full bg-[#031522]">
 
-<div class="w-full flex gap-10">
+<div class="w-11/12  mx-auto flex gap-5 py-5 items-center ">
 
     <section class="project-stories">
         <div class="story-card" onclick="openStory()">
@@ -80,7 +81,7 @@
 </div>
     <section class="project-stories">
         <div class="story-card" onclick="openStory()">
-            <div class="story-ring">
+            <div class="story-ring ">
                 <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
             </div>
             <span>پروژه‌های ما</span>
@@ -90,7 +91,7 @@
     <!-- Story Viewer -->
     <div class="story-modal" id="storyModal">
         
-        <div class="story-container">
+        <div class="story-container" >
 
             <div class="story-progress" id="storyProgress"></div>
 
@@ -126,6 +127,7 @@
         </div>
         
     </div>
+</div>
 </div>
 </div>
 
