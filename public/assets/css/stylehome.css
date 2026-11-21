@@ -7,11 +7,7 @@
 
 
 
-.project-stories {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-}
+
 
 .story-card {
     width: 90px;
@@ -21,9 +17,11 @@
 
 .story-card span {
     display: block;
+    color: white;
     margin-top: 8px;
-    color: #002030;
-    font-size: 13px;
+    color: white;
+    font-size: 14px;
+    font: bold;
 }
 
 .story-ring {
@@ -31,7 +29,8 @@
     height: 85px;
     padding: 3px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #F8C028, #002030);
+    background: linear-gradient(135deg, #F8C028, #F8C028);
+    box-shadow: #F8C028 0px 0px 20px 0px;
 }
 
 .story-ring img {
@@ -218,6 +217,8 @@
         border-radius: 0;
     }
 }
+
+
 
 
 
