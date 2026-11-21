@@ -5,7 +5,7 @@
         <div class="w-22/23 flex relative max-lg:flex-col justify-end max-lg:w-full">
             <!-- <div class="w-[99%] h-10 absolute bg-[#FBC830] bottom-3 z-30 lg:hidden left-1/2 -translate-x-1/2 -rotate-5 -skew-x-13 max-[380px]:-rotate-7"></div> -->
             <div class="w-4/7  max-lg:w-full right-0 !z-20 bg-[#FBC830] clip-path-phone">
-                <img class = "max-lg:w-full w-14/15 h-[350px] relative z-10  clip-path-img" src="{{asset('assets/img/file_00000000d6188243b80c993b60cf3bc7.png')}}" alt="">
+                <img class = "max-lg:w-full w-14/15 h-[380px] relative z-10  clip-path-img" src="{{asset('assets/img/file_00000000d6188243b80c993b60cf3bc7.png')}}" alt="">
             </div>
             <div class="w-3/7  flex flex-col items-end text-white relative z-30 justify-center gap-2 max-lg:gap-0 max-lg:pb-5 max-lg:items-center max-lg:w-11/12 max-lg:mx-auto bg-[#091E2F] max-lg:order-first max-lg:justify-center max-lg:pt-3 ">
                 <!-- <div class="w-12 h-114 absolute bg-[#FBC830] right-25 z-30 -skew-x-25 max-lg:hidden"></div> -->
@@ -183,7 +183,7 @@
         </div>
         </section>
         <section class = "w-11/12 mx-auto bg-white rounded-[10px] max-lg:bg-inherit mt-10">
-            <div class="w-full flex gap-10 p-8 max-lg:p-0 max-lg:flex-col">
+            <div class="w-full flex gap-10 max-lg:p-0 max-lg:flex-col">
                 <div class="w-3/7 flex flex-col relative items-end justify-between gap-10 p-8 py-12 max-lg:w-full max-lg:bg-white max-lg:border-1 max-lg:border-gray-200 max-lg:rounded-[15px] max-lg:shadow-md">
                     <img class = "absolute w-[60%] top-10 right-0 opacity-10" src="{{asset('assets/img/building1.png')}}" alt="">
                     <div class=" flex items-center gap-3">
