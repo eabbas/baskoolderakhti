@@ -355,8 +355,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/Commercial Digital Weighing Scale Isolated.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 max-lg:w-full rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
@@ -382,8 +382,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 max-lg:w-full rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
@@ -409,8 +409,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/Industrial Blue-Trim Platform Scale (1).png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 max-lg:w-full rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
@@ -436,8 +436,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/InShot_20260925_125714980-removebg-preview.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 max-lg:w-full rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
@@ -463,8 +463,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/Industrial Digital Platform Scale.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
@@ -490,8 +490,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/file_0000000053cc8210b89a11d9f1be5829-removebg-preview.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">
@@ -517,8 +517,8 @@ v10H2z"/>
                         <img class = "w-5/7 h-30" src="{{asset('assets/img/Stainless Steel Digital Countertop Scale.png')}}" alt="">
                         <div class="w-full flex flex-col items-center gap-3">
                             <div class="w-full flex flex-col gap-2 items-center">
-                                <h3 class = "text-[#0E2E48] text-[20px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
-                                <span class = "text-[15px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
+                                <h3 class = "text-[#0E2E48] text-[18px] font-bold truncate w-full text-center max-lg:text-[17px]">ترازوی صنعتی مدل P7</h3>
+                                <span class = "text-[14px] text-gray-700 truncate w-full text-center max-lg:text-[14px]">مناسب برای صنایع و کارگاه ها</span>
                             </div>
                             <div class="w-full flex flex-col items-center gap-4">
                                 <div class="w-45 h-10 rounded-[50px] bg-slate-100 flex items-center justify-center gap-2">

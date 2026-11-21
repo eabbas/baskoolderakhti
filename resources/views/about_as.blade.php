@@ -9,7 +9,7 @@
                 <img class = "w-full h-full max-lg:h-[210px]" src="{{asset('assets/img/file_00000000151c82439a17a7e2cf35e05d.png')}}" alt="">
             </div>
             <div class="w-2/5  max-xl:w-[40%] flex flex-col items-end text-white z-20  justify-center gap-3 max-lg:p-0 max-lg:pt-5 max-lg:items-center max-lg:w-full   max-lg:order-first pb-5 pt-10">
-                <div class="w-full flex gap-2 font-bold items-center max-lg:justify-center">
+                <div class="w-full flex gap-2 font-bold items-center justify-end max-lg:justify-center">
                     <a href="{{route('firstpage')}}">خانه</a>
                     <svg class = "size-4 fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
                     <a href="">درباره ما</a>
@@ -200,7 +200,7 @@
                         <div class="w-10 h-1 bg-[#FBC830] lg:hidden"></div>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <span class = "text-[40px] text-[#0E2E48] max-lg:text-[30px] max-lg:text-center">مسیر رشد ترازوی درختی</span>
+                        <span class = "text-[40px] text-[#0E2E48] max-lg:text-[30px] max-lg:text-center font-bold">مسیر رشد ترازوی درختی</span>
                         <span class = "text-[25px] text-gray-500 max-lg:text-[20px] max-lg:text-center">از اغاز تا امروز همواره در کنار مشتریان خود بوده ایم</span>
                     </div>
                     <div class="w-full flex items-center relative gap-8  mt-5 max-lg:hidden ">
@@ -209,40 +209,40 @@
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
                             <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M520.6 120.9l0 0c18.7 29.6 .3 66.6-29.2 70.6c-2.6 .3-5.2 .5-7.9 .5c-16.5 0-31.2-7.2-41.5-18.5c-6.1-6.7-14.7-10.5-23.7-10.5s-17.6 3.8-23.7 10.5c-10.2 11.2-24.8 18.4-41.4 18.4c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C254 184.8 239.3 192 222.7 192c-16.5 0-31.3-7.2-41.4-18.4c-6.1-6.7-14.7-10.5-23.7-10.5s-17.7 3.8-23.7 10.5C123.6 184.8 109 192 92.4 192c-2.6 0-5.2-.2-7.9-.5c-29.3-4-47.7-41-29.1-70.6l0 0L111.6 32H464.4l56.2 88.9zM483.4 224c4.1 0 8.1-.3 12.1-.8c55.5-7.4 81.8-72.5 52.1-119.4L490.3 13.1C485.2 5 476.1 0 466.4 0H109.6C99.9 0 90.8 5 85.7 13.1L28.3 103.8c-29.6 46.8-3.4 111.9 51.9 119.4c4 .5 8.1 .8 12.1 .8c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-11.9c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.6 0 37.5-6.4 52-17c4.8-3.5 9.2-7.6 13.2-12c4 4.4 8.4 8.4 13.2 11.9c14.5 10.6 32.4 17 52 17c19.8 0 37.8-6.5 52.3-17.3c4.7-3.5 9-7.4 12.9-11.7c3.9 4.3 8.3 8.3 13 11.8c14.5 10.7 32.5 17.2 52.2 17.2zM80 256c-8.8 0-16 7.2-16 16v80 16 16 64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V384 368 352 272c0-8.8-7.2-16-16-16s-16 7.2-16 16v80H96V272c0-8.8-7.2-16-16-16zM96 384H480v64c0 17.7-14.3 32-32 32H128c-17.7 0-32-14.3-32-32V384z"/></svg>
                         </div>
-                        <span class = "text-[#0E2E48] text-[22px]">1382</span>
-                        <span class = "text-[#0E2E48] text-[17px] text-center">تاسیس مجموعه قطعات اصولی</span>
+                        <span class = "text-[#0E2E48] text-[20px] font-bold">1382</span>
+                        <span class = "text-[#0E2E48] text-[15px] text-center">تاسیس مجموعه قطعات اصولی</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
                        <div class="flex flex-col h-60 w-full gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
                             <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>
                         </div>
-                        <span class = "text-[#0E2E48] text-[22px]">1392</span>
-                        <span class = "text-[#0E2E48] text-[17px] text-center">گسترش تنوع محصولات</span>
+                        <span class = "text-[#0E2E48] text-[20px] font-bold">1392</span>
+                        <span class = "text-[#0E2E48] text-[15px] text-center">گسترش تنوع محصولات</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
                        <div class="flex flex-col h-60 w-full gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
                             <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"/></svg>
                         </div>
-                        <span class = "text-[#0E2E48] text-[22px]">1398</span>
-                        <span class = "text-[#0E2E48] text-[17px] text-center">راه اندازی قطعات و تعمیر</span>
+                        <span class = "text-[#0E2E48] text-[20px] font-bold">1398</span>
+                        <span class = "text-[#0E2E48] text-[15px] text-center">راه اندازی قطعات و تعمیر</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
                        <div class="flex flex-col h-60 w-full gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
                             <svg class = "size-6 fill-[#091E2F] z-10"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480H416c-1.2-79.7-66.2-144-146.3-144H178.3c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
                         </div>
-                        <span class = "text-[#0E2E48] text-[22px]">1402</span>
-                        <span class = "text-[#0E2E48] text-[17px] text-center">افزایش تعداد مشتری و همکار</span>
+                        <span class = "text-[#0E2E48] text-[20px] font-bold">1402</span>
+                        <span class = "text-[#0E2E48] text-[15px] text-center">افزایش تعداد مشتری و همکار</span>
                        </div>
                        <div class="h-25 w-[1px] bg-gray-500"></div>
                        <div class="flex flex-col h-60 w-full gap-1 items-center  p-3 ">
                         <div class="w-11 h-11 bg-[#FBC830] rounded-full flex items-center justify-center">
                             <svg class = "size-6 fill-[#091E2F] z-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
                         </div>
-                        <span class = "text-[#0E2E48] text-[22px]">امروز</span>
-                        <span class = "text-[#0E2E48] text-[17px] text-center">ادامه مسیر با هدف رشد بیشتر</span>
+                        <span class = "text-[#0E2E48] text-[20px] font-bold">امروز</span>
+                        <span class = "text-[#0E2E48] text-[15px] text-center">ادامه مسیر با هدف رشد بیشتر</span>
                        </div>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
                         <span class = "text-[20px] text-[#0E2E48]">خدمات ما</span>
                         <div class="w-10 h-1 bg-[#FBC830]"></div>
                     </div>
-                    <h3 class = "text-[40px] text-[#0E2E48] max-lg:text-[24px]">خدمات تخصصی ترازوی درختی</h3>
+                    <h3 class = "text-[40px] text-[#0E2E48] max-lg:text-[24px] font-bold">خدمات تخصصی ترازوی درختی</h3>
                     <span class = "text-[28px] text-gray-500 max-lg:text-[20px] max-lg:text-center">مادر تمام مراحل خرید و استفاده از ترازو خمراه شما هستیم</span>
                 </div>
                 <div class="w-full flex gap-5 max-lg:flex-col">
@@ -384,10 +384,9 @@
                         <img class = "w-11/12 max-lg:w-full h-[212px] max-lg:h-[180px] rounded-[10px] clip-path-img-1" src="{{asset('assets/img/file_00000000588881f48ceb936670889db4.png')}}" alt="">
                     </div>
                     <div class="w-4/7 lg:h-53 flex justify-end p-5 py-6 rounded-[15px] clip-pathh1 max-lg:w-full relative max-lg:flex-col  max-lg:justify-between max-lg:items-center max-lg:gap-3 overflow-hidden">
-                        <!-- <div class="w-15 h-[213px] bg-[#F2CE56] -skew-x-27 rounded-[7px] absolute right-9 max-lg:hidden z-10 top-0 max-[1600px]:w-10 max-[1600px]:-skew-x-23"></div> -->
                     <div class="w-30 h-50 bg-[#FBC830] absolute z-20 -bottom-10 rotate-16 -right-25 lg:hidden"></div>
-                        <div class="w-[70%] flex flex-col items-end text-white gap-2 max-lg:w-full max-lg:items-center">
-                            <h2 class = "text-[27px] max-lg:text-[15px] max-lg:text-center text-nowrap ">برای انتخاب <span class = "text-[#F2CE56] ">بهترین ترازو</span>با ما در ارتباط باشید</h2>
+                        <div class="w-[70%] flex flex-col items-end justify-center text-white gap-2 max-lg:w-full max-lg:items-center">
+                            <h2 class = "text-[27px] max-lg:text-[15px] max-lg:text-center text-nowrap font-bold">برای انتخاب <span class = "text-[#F2CE56] ">بهترین ترازو</span>با ما در ارتباط باشید</h2>
                             <span class = "text-[20px] text-gray-400 max-lg:text-center ">مشاوره ما اماده پاسخگویی به سوالات ما هستند</span>
                             <div class="w-48 h-10 flex items-center justify-center gap-5 bg-[#FBC830] rounded-[30px] text-[#0E2E48] text-[20px] max-lg:self-center max-lg:w-48 max-lg:h-10 max-lg:text-[18px]">
                                 <span>تماس باما</span>
