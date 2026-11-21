@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <header class = "max-w-[2500px] min-w-[325px] mx-auto bg-[#0B304A] mt-35">
+    <header class = "max-w-[2500px] min-w-[325px] mx-auto bg-[#0B304A] mt-30">
         <div class="w-full  translate-x-1/2 right-1/2 mx-auto bg-[#0E2E48] top-0 fixed  z-40">
         <div class="w-11/12  mx-auto flex flex-col  ">
             <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2  my-3">

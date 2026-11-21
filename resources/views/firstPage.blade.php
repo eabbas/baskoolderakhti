@@ -28,7 +28,7 @@
 
 <div class="w-full bg-[#031522]">
 
-<div class="w-11/12  mx-auto flex gap-5 py-5 items-center ">
+<div class="w-11/12  mx-auto flex gap-5 pt-5 items-center max-lg:justify-center">
 
     <section class="project-stories">
         <div class="story-card" onclick="openStory()">
@@ -143,7 +143,7 @@
             <div class="w-[60%] max-lg:h-[200px] max-lg:w-full ">
                 <img class = "w-full h-full" src="{{asset('assets/img/scale.png')}}" alt="">
             </div>
-            <div class="w-[30%] max-xl:w-[40%] flex flex-col mt-7  lg:py-10 items-end text-white z-20  justify-center  max-lg:p-1  max-lg:items-center max-lg:w-full   max-lg:order-first ">
+            <div class="w-[30%] max-xl:w-[40%] flex flex-col mt-5  lg:py-10 items-end text-white z-20  justify-center  max-lg:p-1  max-lg:items-center max-lg:w-full   max-lg:order-first ">
                 <p class = "text-[#D99A16] text-[25px] max-2xl:text-[20px] max-lg:text-[20px] max-lg:hidden">
                     فروش انواع ترازوهای
                     <span class = "text-white">دیجیتال و مکانیکی</span>
@@ -233,7 +233,7 @@
     </div>
     </header>
 
-  <main class = "w-12/12 2xl:max-w-[2100px] mx-auto max-lg:mt-40">
+  <main class = "w-12/12 2xl:max-w-[2100px] mx-auto max-lg:mt-20">
      <section class = "w-11/12 mx-auto mt-10"> 
             <div class="w-full mx-auto flex flex-col items-center">
                 <div class="w-[300px] flex flex-col items-center  ">
