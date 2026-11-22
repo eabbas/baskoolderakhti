@@ -28,14 +28,16 @@
 
 <div class="w-full bg-[#031522]">
 
-<div class="w-11/12  mx-auto flex gap-5 py-5 max-lg:gap-2 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
+<div class="w-11/12  mx-auto flex gap-5 py-4  max-lg:gap-2 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
 
-    <section class="project-stories">
-        <div class="story-card" onclick="openStory()">
+  @foreach($main_stores as $key => $store)
+  @if(count($store->store) >= 1)
+      <section class="project-stories">
+        <div class="story-card" onclick="openStory({{$store->id}})">
             <div class="story-ring">
-                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
+                <img src="{{ asset('/storage/store/' . $store->img) }}" alt="پروژه باسکول">
             </div>
-            <span>پروژه‌های ما</span>
+            <span>{{$store->title}}</span>
         </div>
     </section>
     
@@ -48,7 +50,7 @@
 
         <div class="story-header">
             <div class="story-user">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
+                <img src="{{ asset('/storage/store/' . $store->img) }}" alt="لوگو">
                 <div>
                     <strong id="storyTitle">پروژه باسکول درختی</strong>
                     <small id="storyTime">نمونه کارهای ما</small>
@@ -73,207 +75,16 @@
                 <p id="storyDescription"></p>
             </div>
             
-            <button class="story-prev" onclick="prevStory()"></button>
-            <button class="story-next" onclick="nextStory()"></button>
+            <button class="story-prev" onclick="prevStory({{$store->id}})"></button>
+            <button class="story-next" onclick="nextStory({{$store->id}})"></button>
         </div>
         
     </div>
 </div>
-    <section class="project-stories">
-        <div class="story-card" onclick="openStory()">
-            <div class="story-ring">
-                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
-            </div>
-            <span>پروژه‌های ما</span>
-        </div>
-    </section>
+    @endif
+@endforeach
     
-    <!-- Story Viewer -->
-    <div class="story-modal" id="storyModal">
-        
-        <div class="story-container">
 
-            <div class="story-progress" id="storyProgress"></div>
-
-        <div class="story-header">
-            <div class="story-user">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
-                <div>
-                    <strong id="storyTitle">پروژه باسکول درختی</strong>
-                    <small id="storyTime">نمونه کارهای ما</small>
-                </div>
-            </div>
-
-            <button class="story-close" onclick="closeStory()">×</button>
-        </div>
-
-        <div class="story-content">
-            <div class="story-background" id="storyBackground"></div>
-
-            <img id="storyImage" src="" alt="تصویر پروژه">
-                <video
-                    id="storyVideo"
-                    playsinline
-                    preload="auto"
-                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
-                </video>
-            <div class="story-caption">
-                <h3 id="storyCaption"></h3>
-                <p id="storyDescription"></p>
-            </div>
-            
-            <button class="story-prev" onclick="prevStory()"></button>
-            <button class="story-next" onclick="nextStory()"></button>
-        </div>
-        
-    </div>
-</div>
-    <section class="project-stories">
-        <div class="story-card" onclick="openStory()">
-            <div class="story-ring">
-                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
-            </div>
-            <span>پروژه‌های ما</span>
-        </div>
-    </section>
-    
-    <!-- Story Viewer -->
-    <div class="story-modal" id="storyModal">
-        
-        <div class="story-container">
-
-            <div class="story-progress" id="storyProgress"></div>
-
-        <div class="story-header">
-            <div class="story-user">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
-                <div>
-                    <strong id="storyTitle">پروژه باسکول درختی</strong>
-                    <small id="storyTime">نمونه کارهای ما</small>
-                </div>
-            </div>
-
-            <button class="story-close" onclick="closeStory()">×</button>
-        </div>
-
-        <div class="story-content">
-            <div class="story-background" id="storyBackground"></div>
-
-            <img id="storyImage" src="" alt="تصویر پروژه">
-                <video
-                    id="storyVideo"
-                    playsinline
-                    preload="auto"
-                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
-                </video>
-            <div class="story-caption">
-                <h3 id="storyCaption"></h3>
-                <p id="storyDescription"></p>
-            </div>
-            
-            <button class="story-prev" onclick="prevStory()"></button>
-            <button class="story-next" onclick="nextStory()"></button>
-        </div>
-        
-    </div>
-</div>
-    <section class="project-stories">
-        <div class="story-card" onclick="openStory()">
-            <div class="story-ring">
-                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
-            </div>
-            <span>پروژه‌های ما</span>
-        </div>
-    </section>
-    
-    <!-- Story Viewer -->
-    <div class="story-modal" id="storyModal">
-        
-        <div class="story-container">
-
-            <div class="story-progress" id="storyProgress"></div>
-
-        <div class="story-header">
-            <div class="story-user">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
-                <div>
-                    <strong id="storyTitle">پروژه باسکول درختی</strong>
-                    <small id="storyTime">نمونه کارهای ما</small>
-                </div>
-            </div>
-
-            <button class="story-close" onclick="closeStory()">×</button>
-        </div>
-
-        <div class="story-content">
-            <div class="story-background" id="storyBackground"></div>
-
-            <img id="storyImage" src="" alt="تصویر پروژه">
-                <video
-                    id="storyVideo"
-                    playsinline
-                    preload="auto"
-                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
-                </video>
-            <div class="story-caption">
-                <h3 id="storyCaption"></h3>
-                <p id="storyDescription"></p>
-            </div>
-            
-            <button class="story-prev" onclick="prevStory()"></button>
-            <button class="story-next" onclick="nextStory()"></button>
-        </div>
-        
-    </div>
-</div>
-    <section class="project-stories">
-        <div class="story-card" onclick="openStory()">
-            <div class="story-ring ">
-                <img src="{{ asset('assets/img/khadamat.png') }}" alt="پروژه باسکول">
-            </div>
-            <span>پروژه‌های ما</span>
-        </div>
-    </section>
-    
-    <!-- Story Viewer -->
-    <div class="story-modal" id="storyModal">
-        
-        <div class="story-container" >
-
-            <div class="story-progress" id="storyProgress"></div>
-
-        <div class="story-header">
-            <div class="story-user">
-                <img src="{{ asset('assets/img/logo.png') }}" alt="لوگو">
-                <div>
-                    <strong id="storyTitle">پروژه باسکول درختی</strong>
-                    <small id="storyTime">نمونه کارهای ما</small>
-                </div>
-            </div>
-
-            <button class="story-close" onclick="closeStory()">×</button>
-        </div>
-
-        <div class="story-content">
-            <div class="story-background" id="storyBackground"></div>
-
-            <img id="storyImage" src="" alt="تصویر پروژه">
-                <video
-                    id="storyVideo"
-                    playsinline
-                    preload="auto"
-                    style="display:none; position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1;">
-                </video>
-            <div class="story-caption">
-                <h3 id="storyCaption"></h3>
-                <p id="storyDescription"></p>
-            </div>
-            
-            <button class="story-prev" onclick="prevStory()"></button>
-            <button class="story-next" onclick="nextStory()"></button>
-        </div>
-        
-    </div>
 </div>
 </div>
 </div>
@@ -1414,66 +1225,75 @@ v10H2z"/>
 
 
 
-const stories = [
-    {
-        type: "image",
-        src: "{{ asset('assets/img/project.png') }}",
-        title: "پروژه باسکول درختی",
-        caption: "طراحی و اجرای پروژه",
-        description: "معرفی یکی از پروژه‌های اجرا شده توسط مجموعه باسکول درختی"
-    },
-    {
-        type: "image",
-        src: "{{ asset('assets/img/lamp.png') }}",
-        title: "پروژه باسکول درختی",
-        caption: "کیفیت در اجرا",
-        description: "نگاهی نزدیک‌تر به جزئیات و مراحل اجرای پروژه"
-    },
-    {
-        type: "video",
-        src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
-        title: "پروژه باسکول درختی",
-        caption: "نمایی از پروژه",
-        description: "ویدیوی مراحل اجرای پروژه"
-    },
-    {
-        type: "video",
-        src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
-        title: "پروژه باسکول درختی",
-        caption: "نمایی از پروژه",
-        description: "ویدیوی مراحل اجرای پروژه"
-    },
-    {
-        type: "image",
-        src: "{{ asset('assets/img/khadamat.png') }}",
-        title: "پروژه باسکول درختی",
-        caption: "نتیجه نهایی",
-        description: "تلاش ما برای ارائه محصولی باکیفیت و قابل اعتماد"
-    }
-];
+// const stories = [
+//     {
+//         type: "image",
+//         src: "{{ asset('assets/img/project.png') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "طراحی و اجرای پروژه",
+//         description: "معرفی یکی از پروژه‌های اجرا شده توسط مجموعه باسکول درختی"
+//     },
+//     {
+//         type: "image",
+//         src: "{{ asset('assets/img/lamp.png') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "کیفیت در اجرا",
+//         description: "نگاهی نزدیک‌تر به جزئیات و مراحل اجرای پروژه"
+//     },
+//     {
+//         type: "video",
+//         src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "نمایی از پروژه",
+//         description: "ویدیوی مراحل اجرای پروژه"
+//     },
+//     {
+//         type: "video",
+//         src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "نمایی از پروژه",
+//         description: "ویدیوی مراحل اجرای پروژه"
+//     },
+//     {
+//         type: "image",
+//         src: "{{ asset('assets/img/khadamat.png') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "نتیجه نهایی",
+//         description: "تلاش ما برای ارائه محصولی باکیفیت و قابل اعتماد"
+//     }
+// ];
 
-
-
-
+let datas 
+let id_main_story
 let currentStory = 0;
 let animationFrame;
 let startTime = 0;
 let elapsed = 0;
 let paused = false;
-
 const duration = 5000;
-
 const modal = document.getElementById("storyModal");
 const image = document.getElementById("storyImage");
 const video = document.getElementById("storyVideo");
 const background = document.getElementById("storyBackground");
 const progress = document.getElementById("storyProgress");
 
-function openStory() {
-    currentStory = 0;
-    modal.classList.add("active");
-    document.body.style.overflow = "hidden";
-    showStory();
+function openStory(id) {
+    $.ajax({
+        url: "{{route('main_store.add_store')}}",
+        type: "POST",
+        dataType: "json",
+        data: {'_token' : "{{csrf_token()}}" , 'id' : id},
+        success: function(data){
+            datas = data
+            id_main_story = id
+            currentStory = 0;
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+            console.log(datas)
+            console.log(id_main_story)
+            showStory(data);
+        }
+    })
 }
 
 function closeStory() {
@@ -1487,27 +1307,21 @@ function closeStory() {
     document.body.style.overflow = "";
 }
 
-function showStory() {
+function showStory(data) {
     cancelAnimationFrame(animationFrame);
-
     video.pause();
     video.onended = null;
     video.onloadedmetadata = null;
-
     paused = false;
     elapsed = 0;
-
-    const story = stories[currentStory];
-
+    const story = data[currentStory];
     document.getElementById("storyTitle").textContent = story.title;
-    document.getElementById("storyCaption").textContent = story.caption;
-    document.getElementById("storyDescription").textContent = story.description;
-
-    background.style.backgroundImage = `url("${story.src}")`;
-
+    document.getElementById("storyCaption").textContent = story.title;
+    document.getElementById("storyDescription").textContent = story.summry;
+    background.style.backgroundImage = `bg-[url("asset('storage/store/')")]` + story.path;
+    console.log(background)
     progress.innerHTML = "";
-
-    stories.forEach((item, index) => {
+    data.forEach((item, index) => {
         const bar = document.createElement("div");
         bar.className = "progress-item";
 
@@ -1521,21 +1335,19 @@ function showStory() {
         bar.appendChild(fill);
         progress.appendChild(bar);
     });
-
-    if (story.type === "video") {
+    if (story.format === "mp4") {
         image.style.display = "none";
         video.style.display = "block";
-
         video.controls = false;
         video.muted = false;
-        video.src = story.src;
+        video.src = `{{asset('storage/store')}}`+ '/' + story.path;
         video.load();
-
+        // console.log(video.src)
         video.onloadedmetadata = () => {
             if (!modal.classList.contains("active")) return;
 
             video.play().then(() => {
-                startProgress();
+                startProgress(data);
             }).catch(() => {
                 // اگر مرورگر پخش خودکار با صدا را مسدود کرد
                 video.controls = true;
@@ -1543,31 +1355,30 @@ function showStory() {
         };
 
         video.onended = () => {
-            nextStory();
+            nextStory(data);
         };
 
     } else {
+        console.log("img")
         video.style.display = "none";
         video.removeAttribute("src");
         video.load();
 
         image.style.display = "block";
-        image.src = story.src;
-
-        startProgress();
+        image.src = `{{asset('/storage/store')}}`+ '/' + story.path;
+        console.log(image.src)
+        startProgress(data);
     }
 }
 
-function startProgress() {
+function startProgress(data) {
     paused = false;
     startTime = performance.now() - elapsed;
-
     function update(now) {
         if (paused || !modal.classList.contains("active")) return;
 
         let percentage;
-
-        if (stories[currentStory].type === "video") {
+        if (data[currentStory].format === "mp4") {
             if (!video.duration || !isFinite(video.duration)) {
                 animationFrame = requestAnimationFrame(update);
                 return;
@@ -1586,10 +1397,10 @@ function startProgress() {
         fill.style.width = Math.min(percentage, 100) + "%";
 
         if (
-            stories[currentStory].type === "image" &&
+            data[currentStory].format === "jpg" &&
             elapsed >= duration
         ) {
-            nextStory();
+            nextStory(data);
             return;
         }
 
@@ -1599,58 +1410,74 @@ function startProgress() {
     animationFrame = requestAnimationFrame(update);
 }
 
+
 function nextStory() {
-    if (currentStory < stories.length - 1) {
+
+    if (currentStory < datas.length - 1) {
         currentStory++;
-        showStory();
+        showStory(datas);
     } else {
         closeStory();
     }
+
 }
 
 function prevStory() {
+
     if (currentStory > 0) {
         currentStory--;
-        showStory();
-    } else {
-        showStory();
+        showStory(datas);
     }
+
 }
 
 function pauseStory() {
+
     if (paused) return;
 
     paused = true;
     cancelAnimationFrame(animationFrame);
 
-    if (stories[currentStory].type === "video") {
+    if (datas[currentStory].format === "mp4") {
         video.pause();
     } else {
         elapsed = performance.now() - startTime;
     }
+
 }
 
 function resumeStory() {
+
     if (!paused) return;
 
-    if (stories[currentStory].type === "video") {
+    if (datas[currentStory].format === "mp4") {
+
         video.play().then(() => {
-            startProgress();
+            startProgress(datas);
         }).catch(() => {});
+
     } else {
+
         paused = false;
-        startProgress();
+        startProgress(datas);
+
     }
+
 }
 
-modal.addEventListener("mouseenter", pauseStory);
-modal.addEventListener("mouseleave", resumeStory);
+
+modal.addEventListener("mouseenter", () => {
+    pauseStory()
+});
+modal.addEventListener("mouseleave", () => {
+    resumeStory();
+});
 
 document.addEventListener("keydown", (e) => {
     if (!modal.classList.contains("active")) return;
 
-    if (e.key === "ArrowRight") prevStory();
-    if (e.key === "ArrowLeft") nextStory();
+    if (e.key === "ArrowRight") prevStory(id_main_story);
+    if (e.key === "ArrowLeft") nextStory(id_main_story);
     if (e.key === "Escape") closeStory();
 });
 
@@ -1664,7 +1491,7 @@ window.prevStory = prevStory;
 
 
 
-    let currentSlide = 0;
+let currentSlide = 0;
 const slides = document.querySelector('.slides');
 const totalSlides = document.querySelectorAll('.slide').length;
 function showSlide(index) {
@@ -1685,7 +1512,294 @@ setInterval(() => showSlide(currentSlide - 1), 5000);
 showSlide(0);
 
 
+
+
+
+// const stories = [
+//     {
+//         type: "image",
+//         src: "{{ asset('assets/img/project.png') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "طراحی و اجرای پروژه",
+//         description: "معرفی یکی از پروژه‌های اجرا شده توسط مجموعه باسکول درختی"
+//     },
+//     {
+//         type: "image",
+//         src: "{{ asset('assets/img/lamp.png') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "کیفیت در اجرا",
+//         description: "نگاهی نزدیک‌تر به جزئیات و مراحل اجرای پروژه"
+//     },
+//     {
+//         type: "video",
+//         src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "نمایی از پروژه",
+//         description: "ویدیوی مراحل اجرای پروژه"
+//     },
+//     {
+//         type: "video",
+//         src: "{{ asset('assets/videos/VID_20250325_193215_530.mp4') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "نمایی از پروژه",
+//         description: "ویدیوی مراحل اجرای پروژه"
+//     },
+//     {
+//         type: "image",
+//         src: "{{ asset('assets/img/khadamat.png') }}",
+//         title: "پروژه باسکول درختی",
+//         caption: "نتیجه نهایی",
+//         description: "تلاش ما برای ارائه محصولی باکیفیت و قابل اعتماد"
+//     }
+// ];
+
+
+
+
+// let currentStory = 0;
+// let animationFrame;
+// let startTime = 0;
+// let elapsed = 0;
+// let paused = false;
+
+// const duration = 5000;
+
+// const modal = document.getElementById("storyModal");
+// const image = document.getElementById("storyImage");
+// const video = document.getElementById("storyVideo");
+// const background = document.getElementById("storyBackground");
+// const progress = document.getElementById("storyProgress");
+
+// function openStory(id) {
+//     console.log(id)
+//     currentStory = 0;
+//     modal.classList.add("active");
+//     document.body.style.overflow = "hidden";
+//     $.ajax({
+//         url: "{{route('main_store.add_store')}}",
+//         type: "POST",
+//         dataType: "json",
+//         data: {'_token' : "{{csrf_token()}}" , 'id' : id},
+//         success: function(data){
+//             // console.log(data)
+//             showStory(data);
+//         }
+//     })
+// }
+
+// function closeStory() {
+//     cancelAnimationFrame(animationFrame);
+
+//     video.pause();
+//     video.onended = null;
+//     video.onloadedmetadata = null;
+
+//     modal.classList.remove("active");
+//     document.body.style.overflow = "";
+// }
+
+// function showStory(data) {
+//     cancelAnimationFrame(animationFrame);
+
+//     video.pause();
+//     video.onended = null;
+//     video.onloadedmetadata = null;
+
+//     paused = false;
+//     elapsed = 0;
+
+//     const story = stories[currentStory];
+//     console.log(story)
+//     document.getElementById("storyTitle").textContent = story.title;
+//     document.getElementById("storyCaption").textContent = story.caption;
+//     document.getElementById("storyDescription").textContent = story.description;
+
+//     background.style.backgroundImage = `url("${story.src}")`;
+
+//     progress.innerHTML = "";
+
+//     stories.forEach((item, index) => {
+//         const bar = document.createElement("div");
+//         bar.className = "progress-item";
+
+//         const fill = document.createElement("div");
+//         fill.className = "progress-fill";
+
+//         if (index < currentStory) {
+//             fill.style.width = "100%";
+//         }
+
+//         bar.appendChild(fill);
+//         progress.appendChild(bar);
+//     });
+
+//     if (story.type === "video") {
+//         image.style.display = "none";
+//         video.style.display = "block";
+
+//         video.controls = false;
+//         video.muted = false;
+//         video.src = story.src;
+//         video.load();
+
+//         video.onloadedmetadata = () => {
+//             if (!modal.classList.contains("active")) return;
+
+//             video.play().then(() => {
+//                 startProgress();
+//             }).catch(() => {
+//                 // اگر مرورگر پخش خودکار با صدا را مسدود کرد
+//                 video.controls = true;
+//             });
+//         };
+
+//         video.onended = () => {
+//             nextStory();
+//         };
+
+//     } else {
+//         video.style.display = "none";
+//         video.removeAttribute("src");
+//         video.load();
+
+//         image.style.display = "block";
+//         image.src = story.src;
+
+//         startProgress();
+//     }
+// }
+
+// function startProgress() {
+//     paused = false;
+//     startTime = performance.now() - elapsed;
+
+//     function update(now) {
+//         if (paused || !modal.classList.contains("active")) return;
+
+//         let percentage;
+
+//         if (stories[currentStory].type === "video") {
+//             if (!video.duration || !isFinite(video.duration)) {
+//                 animationFrame = requestAnimationFrame(update);
+//                 return;
+//             }
+
+//             percentage = (video.currentTime / video.duration) * 100;
+
+//         } else {
+//             elapsed = now - startTime;
+//             percentage = (elapsed / duration) * 100;
+//         }
+
+//         const fill = progress.children[currentStory]
+//             .querySelector(".progress-fill");
+
+//         fill.style.width = Math.min(percentage, 100) + "%";
+
+//         if (
+//             stories[currentStory].type === "image" &&
+//             elapsed >= duration
+//         ) {
+//             nextStory();
+//             return;
+//         }
+
+//         animationFrame = requestAnimationFrame(update);
+//     }
+
+//     animationFrame = requestAnimationFrame(update);
+// }
+
+// function nextStory() {
+//     if (currentStory < stories.length - 1) {
+//         currentStory++;
+//         showStory();
+//     } else {
+//         closeStory();
+//     }
+// }
+
+// function prevStory() {
+//     if (currentStory > 0) {
+//         currentStory--;
+//         showStory();
+//     } else {
+//         showStory();
+//     }
+// }
+
+// function pauseStory() {
+//     if (paused) return;
+
+//     paused = true;
+//     cancelAnimationFrame(animationFrame);
+
+//     if (stories[currentStory].type === "video") {
+//         video.pause();
+//     } else {
+//         elapsed = performance.now() - startTime;
+//     }
+// }
+
+// function resumeStory() {
+//     if (!paused) return;
+
+//     if (stories[currentStory].type === "video") {
+//         video.play().then(() => {
+//             startProgress();
+//         }).catch(() => {});
+//     } else {
+//         paused = false;
+//         startProgress();
+//     }
+// }
+
+// modal.addEventListener("mouseenter", pauseStory);
+// modal.addEventListener("mouseleave", resumeStory);
+
+// document.addEventListener("keydown", (e) => {
+//     if (!modal.classList.contains("active")) return;
+
+//     if (e.key === "ArrowRight") prevStory();
+//     if (e.key === "ArrowLeft") nextStory();
+//     if (e.key === "Escape") closeStory();
+// });
+
+// // اتصال توابع به دکمه‌های HTML
+// window.openStory = openStory;
+// window.closeStory = closeStory;
+// window.nextStory = nextStory;
+// window.prevStory = prevStory;
+
+
+
+
+
+//     let currentSlide = 0;
+// const slides = document.querySelector('.slides');
+// const totalSlides = document.querySelectorAll('.slide').length;
+// function showSlide(index) {
+//     if (index >= totalSlides) currentSlide = 0;
+//     else if (index < 0) currentSlide = totalSlides - 1;
+//     else currentSlide = index;
+    
+//     // تغییر جهت حرکت به راست (مثبت) برای RTL
+//     slides.style.transform = `translateX(${currentSlide * 100}%)`;
+// }
+// // معکوس کردن عملکرد دکمه‌ها برای RTL
+// document.querySelector('.next').addEventListener('click', () => showSlide(currentSlide - 1));
+// document.querySelector('.prev').addEventListener('click', () => showSlide(currentSlide + 1));
+// // تغییر جهت حرکت اتوماتیک
+// setInterval(() => showSlide(currentSlide - 1), 5000);
+
+// // مقداردهی اولیه
+// showSlide(0);
+
+
      
+
+
+
 
 
 

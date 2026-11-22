@@ -51,6 +51,7 @@ Route::group([
     'controller' => StoreController::class,
 ] , function(){
     Route::get('/create' , 'create')->name('create');
+    Route::get('/index' , 'index')->name('index');
     Route::post('/store' , 'store')->name('store');
     Route::get('/delete/{store}' , 'delete')->name('delete');
     Route::get('/edit/{store}' , 'edit')->name('edit');
@@ -62,12 +63,13 @@ Route::group([
     'prefix' => 'main_store',
     'as' => 'main_store.',
     'controller' => MainStoreController::class,
-] , function(){
-    Route::get('/create' , 'create')->name('create');
-    Route::post('/store' , 'store')->name('store');
-    Route::get('/delete/{store}' , 'delete')->name('delete');
-    Route::get('/edit/{store}' , 'edit')->name('edit');
-    Route::post('/update' , 'update')->name('update');
+    ] , function(){
+        Route::get('/create' , 'create')->name('create');
+        Route::post('/store' , 'store')->name('store');
+        Route::get('/delete/{main_store}' , 'delete')->name('delete');
+        Route::get('/edit/{main_store}' , 'edit')->name('edit');
+        Route::post('/update' , 'update')->name('update');
+        Route::post('/add/store' , 'add_store')->name('add_store');
 });
 
 Route::get('/search', function(){

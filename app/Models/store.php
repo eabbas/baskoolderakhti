@@ -10,9 +10,10 @@ class store extends Model
         'title',
         'summry',
         'path',
-        'format'
+        'format',
+        'main_store_id'
     ];  
     public function main_store(){
-        return $this->hasMany(main_store::class , 'main_store_id');
+        return $this->belongsTo(main_store::class , 'main_store_id');
     } 
 }

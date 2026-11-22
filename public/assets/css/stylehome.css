@@ -10,7 +10,7 @@
 
 
 .story-card {
-    min-width: 90px;
+    min-width: 120px;
     text-align: center;
     cursor: pointer;
 }
@@ -18,15 +18,13 @@
 .story-card span {
     display: block;
     color: white;
+    font-size: 16px;
     margin-top: 8px;
-    color: white;
-    font-size: 14px;
-    font: bold;
 }
 
 .story-ring {
-    width: 85px;
-    height: 85px;
+    width: 110px;
+    height: 110px;
     padding: 3px;
     border-radius: 50%;
     background: linear-gradient(135deg, #F8C028, #F8C028);
@@ -37,6 +35,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
     object-fit: cover;
     border: 3px solid white;
 }

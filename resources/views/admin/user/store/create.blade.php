@@ -316,7 +316,11 @@
 
 <div class="w-full flex justify-center py-6 px-4">
     <div class="vafadar-user-card w-full">
-
+      @if(session('message'))
+    <div id = "messagee"  class="py-5 mx-8 rounded-lg shadow-lg bg-gray-300 fixed top-5 left-10 z-40 flex justify-center items-center transition-all duration-300">
+        <span  class = "font-bold text-sm text-slate-500e">{{session('message')}}</span>
+    </div>
+    @endif
         <!-- ===== هدر ===== -->
         <div class="vafadar-form-header">
             <h2>
@@ -382,4 +386,9 @@
     </div>
 </div>
 
+<script>
+              setTimeout(function(){
+                document.getElementById('messagee').classList.add('opacity-0')
+            }, 4000);
+</script>
 @endsection

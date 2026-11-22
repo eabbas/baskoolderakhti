@@ -12,6 +12,6 @@ class main_store extends Model
         'img'
     ];   
     public function store(){
-        return $this->belongsTo(store::class , 'main_store_id');
+        return $this->hasMany(store::class , 'main_store_id');
     }
 }
