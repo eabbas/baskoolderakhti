@@ -16,6 +16,7 @@ use App\Models\brand;
 use App\Models\order;
 use App\Models\cart;
 use App\Models\phone_code;
+use App\Models\main_store;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Middleware\checkUserExist;
@@ -25,7 +26,6 @@ use Illuminate\Support\Str;
 use Log;
 class UserController extends Controller
 {
-    
     public function document_phone(){
           $user=Auth::user();
         if($user){
@@ -277,6 +277,7 @@ class UserController extends Controller
         return view('profile');
     }
     public function firstPage(){
+        $main_stores = main_store::all();
         $user=Auth::user();
         if($user){
             $user->load(['carts'=>function($query){$query->where('order_id',null)->get();}]);
@@ -292,7 +293,7 @@ class UserController extends Controller
             }
         }
 
-        return view('firstPage',['user'=>$user]);
+        return view('firstPage',['user'=>$user , 'main_stores' => $main_stores]);
     }
     public function about_as(){
         $user=Auth::user();

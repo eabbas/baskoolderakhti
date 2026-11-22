@@ -18,6 +18,8 @@ use App\Http\Controllers\SupportInformationController;
 use App\Http\Controllers\HeaderSettingController;
 use App\Http\Controllers\DiscuntCodeController;
 use App\Http\Controllers\AddressController;
+use App\Http\Controllers\MainStoreController;
+use App\Http\Controllers\StoreController;
 use App\Http\Middleware\checkUserExist;
 use App\Http\Middleware\checkAuthUser;
 use Illuminate\Database\Schema\Blueprint;
@@ -42,6 +44,33 @@ Route::get('/login/amir' , function(){
     $user = Auth::user();
     return view('admin.user.document_login_amir' , ['user' => $user]);
 });;
+
+Route::group([
+    'prefix' => 'store',
+    'as' => 'store.',
+    'controller' => StoreController::class,
+] , function(){
+    Route::get('/create' , 'create')->name('create');
+    Route::get('/index' , 'index')->name('index');
+    Route::post('/store' , 'store')->name('store');
+    Route::get('/delete/{store}' , 'delete')->name('delete');
+    Route::get('/edit/{store}' , 'edit')->name('edit');
+    Route::post('/update' , 'update')->name('update');
+});
+
+
+Route::group([
+    'prefix' => 'main_store',
+    'as' => 'main_store.',
+    'controller' => MainStoreController::class,
+    ] , function(){
+        Route::get('/create' , 'create')->name('create');
+        Route::post('/store' , 'store')->name('store');
+        Route::get('/delete/{main_store}' , 'delete')->name('delete');
+        Route::get('/edit/{main_store}' , 'edit')->name('edit');
+        Route::post('/update' , 'update')->name('update');
+        Route::post('/add/store' , 'add_store')->name('add_store');
+});
 
 Route::get('/search', function(){
     return view('search');
