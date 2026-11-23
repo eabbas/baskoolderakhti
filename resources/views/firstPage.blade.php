@@ -28,7 +28,7 @@
 
 <div class="w-full bg-[#031522]">
 
-<div class="w-11/12  mx-auto flex gap-5 py-4  max-lg:gap-2 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
+<div class="w-11/12  mx-auto flex gap-5  pt-10 max-lg:gap-2 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
 
   @foreach($main_stores as $key => $store)
   @if(count($store->store) >= 1)
@@ -1223,7 +1223,14 @@ v10H2z"/>
   
     <script>
 
-
+ function bar_menu(){
+            let menu = document.getElementById('menu')
+            let document_black = document.getElementById('document_black')
+            console.log(document_black)
+            menu.classList.toggle('translate-x-150')
+            document_black.classList.toggle('invisible')
+            document_black.classList.toggle('opacity-0')
+        }
 
 // const stories = [
 //     {

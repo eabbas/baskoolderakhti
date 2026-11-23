@@ -363,15 +363,15 @@
     <!-- ===== هدر لیست ===== -->
     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 ">
         <div>
-            <h2 class="text-xl font-bold" style="color: var(--metronic-dark);"> لیست دسته‌بندی‌ها</h2>
-            <p class="text-sm mt-1" style="color: var(--metronic-text-dark);">مدیریت دسته‌بندی‌های محصولات</p>
+            <h2 class="text-xl font-bold" style="color: var(--metronic-dark);"> لیست محتوای استوری</h2>
+            <p class="text-sm mt-1" style="color: var(--metronic-text-dark);">مدیریت محتوای استوری ها</p>
         </div>
         <div class="flex items-center gap-3 flex-wrap">
             <a href="{{route('store.create')}}" class="derakhti-add-btn">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M12 5v14M5 12h14"/>
                 </svg>
-                دسته‌بندی جدید
+                محتوای جدید
             </a>
         </div>
     </div>
@@ -386,7 +386,7 @@
                     <circle cx="11" cy="11" r="8"/>
                     <path d="M21 21l-4.35-4.35"/>
                 </svg>
-                <input type="text" id="searchCategory" placeholder="جستجوی دسته‌بندی‌ها..." class="derakhti-search">
+                <input type="text" id="searchCategory" placeholder="جستجوی محتوا..." class="derakhti-search">
             </div>
         </div>
 
@@ -439,7 +439,6 @@
                                     </svg>
                                     <span class="hidden sm:inline">ویرایش</span>
                                 </a>
-                                @if($store->id!=1)
                                     <a href="{{route('store.delete',['store'=>$store->id])}}" class="derakhti-action-btn delete" title="حذف دسته‌بندی" onclick="return confirm('آیا از حذف دسته‌بندی «{{$store->title}}» مطمئن هستید؟')">
                                         <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M3 6h18"/>
@@ -447,7 +446,6 @@
                                         </svg>
                                         <span class="hidden sm:inline">حذف</span>
                                     </a>
-                                @endif        
                             </div>
                         </td>
                     </tr>

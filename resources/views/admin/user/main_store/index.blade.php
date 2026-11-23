@@ -363,15 +363,15 @@
     <!-- ===== هدر لیست ===== -->
     <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 ">
         <div>
-            <h2 class="text-xl font-bold" style="color: var(--metronic-dark);"> لیست دسته‌بندی‌ها</h2>
-            <p class="text-sm mt-1" style="color: var(--metronic-text-dark);">مدیریت دسته‌بندی‌های محصولات</p>
+            <h2 class="text-xl font-bold" style="color: var(--metronic-dark);"> لیست استوری ها</h2>
+            <p class="text-sm mt-1" style="color: var(--metronic-text-dark);">مدیریت استوری ها</p>
         </div>
         <div class="flex items-center gap-3 flex-wrap">
             <a href="{{route('store.create')}}" class="derakhti-add-btn">
                 <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                     <path d="M12 5v14M5 12h14"/>
                 </svg>
-                دسته‌بندی جدید
+                استوری جدید
             </a>
         </div>
     </div>
@@ -386,7 +386,7 @@
                     <circle cx="11" cy="11" r="8"/>
                     <path d="M21 21l-4.35-4.35"/>
                 </svg>
-                <input type="text" id="searchCategory" placeholder="جستجوی دسته‌بندی‌ها..." class="derakhti-search">
+                <input type="text" id="searchCategory" placeholder="جستجوی استوری ها..." class="derakhti-search">
             </div>
         </div>
 
@@ -411,7 +411,7 @@
                         </td>
                        
                         <td>
-                            <img class = "w-[100px] rounded-[15px]" src="{{asset('storage/store/' . $main_store->img)}}" alt="">
+                            <img class = "w-[100px] h-[50px] rounded-[15px]" src="{{asset('storage/store/' . $main_store->img)}}" alt="">
                         </td>
                         <td>
                             <div class="font-semibold" style="color: var(--metronic-dark);">{{$main_store->title}}</div>
@@ -442,7 +442,6 @@
                                     </svg>
                                     <span class="hidden sm:inline">محتواهای استوری</span>
                                 </a>
-                                @if($main_store->id!=1)
                                 <a href="{{route('main_store.delete',['main_store'=>$main_store->id])}}" class="derakhti-action-btn delete" title="حذف دسته‌بندی" onclick="return confirm('آیا از حذف دسته‌بندی «{{$main_store->title}}» مطمئن هستید؟')">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M3 6h18"/>
@@ -450,7 +449,6 @@
                                     </svg>
                                     <span class="hidden sm:inline">حذف</span>
                                 </a>
-                                @endif        
                             </div>
                         </td>
                     </tr>
