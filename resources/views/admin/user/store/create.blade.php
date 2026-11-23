@@ -334,10 +334,10 @@
                 </span>
                 ایجاد استوری جدید
             </h2>
-            <p class="text-sm text-[#9A9CAE] mt-1 mr-12">اطلاعات کاربر را وارد کنید</p>
+            <p class="text-sm text-[#9A9CAE] mt-1 mr-12">اطلاعات محتوای استوری را وارد کنید</p>
         </div>
         <!-- ===== فرم ===== -->
-        <form action="{{route('store.store')}}" method="post" class='grid grid-cols-1 sm:grid-cols-2 gap-2' enctype='multipart/form-data'>
+        <form action="{{route('store.store')}}" method="post" class='flex flex-col sm:grid sm:grid-cols-2 gap-2' enctype='multipart/form-data'>
             @csrf
 
             <!-- نام -->
@@ -364,13 +364,13 @@
                 <label class = "vafadar-label" for="">استوری ها</label>
               @foreach($main_store as $store)
                   <div class="w-full flex gap-3 items-center rounded-[10px] shadow-sm p-2 border-1 border-gray-300 my-2">
-                      <input name = "main_store_id" type="checkbox" value = "{{$store->id}}">
+                      <input required name = "main_store_id" type="radio" value = "{{$store->id}}">
                       <span>{{$store->title}}</span>
                   </div>
               @endforeach
             </div>
             <button type="submit" class="vafadar-submit-btn sm:col-span-2">
-                <span>ثبت  استوری</span>
+                <span>ثبت  محتوای برای استوری</span>
                 <svg class="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
                     <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
                 </svg>

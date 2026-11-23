@@ -334,7 +334,7 @@
                 </span>
                 ایجاد استوری جدید
             </h2>
-            <p class="text-sm text-[#9A9CAE] mt-1 mr-12">اطلاعات کاربر را وارد کنید</p>
+            <p class="text-sm text-[#9A9CAE] mt-1 mr-12">اطلاعات استوری را وارد کنید</p>
         </div>
         <!-- ===== فرم ===== -->
         <form action="{{route('main_store.store')}}" method="post" class='grid grid-cols-1 sm:grid-cols-2 gap-2' enctype='multipart/form-data'>
