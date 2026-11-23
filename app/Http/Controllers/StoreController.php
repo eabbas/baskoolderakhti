@@ -27,14 +27,15 @@ class StoreController extends Controller
         return to_route('store.create')->with('message' , "محتوای استوری با موفقیت ثبت شد");
     }
     public function delete(store $store){
-        dd($store->main_store);
+        $store->delete();
+        return to_route("store.index");
+
     }
     public function edit(store $store){
         $main_stores = main_store::all();
         return view("admin.user.store.edit" , ['store' => $store , 'main_stores' => $main_stores]);
     }
     public function update(Request $request){
-        dd($request->all());
         $store = store::find($request->id);
         $store->title = $request->title;
         $store->summry = $request->summry;
@@ -47,7 +48,7 @@ class StoreController extends Controller
         $store->save();
         return to_route("store.index");
     }
-    public function index(){
+    public function index(){    
         $stores = store::all();
         return view("admin.user.store.index" , ['stores' => $stores]);
     }

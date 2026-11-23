@@ -31,6 +31,7 @@
 
         <form action = "{{route('store.update')}}" method = "post"  class="p-5 md:p-8" enctype='multipart/form-data'>
             @csrf
+            <input type="hidden" name="id" value = "{{$store->id}}">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                 <!-- عنوان -->

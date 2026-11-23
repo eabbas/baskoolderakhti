@@ -10,7 +10,7 @@
 
 
 .story-card {
-    min-width: 120px;
+    min-width: 90px;
     text-align: center;
     cursor: pointer;
 }
@@ -23,8 +23,8 @@
 }
 
 .story-ring {
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     padding: 3px;
     border-radius: 50%;
     background: linear-gradient(135deg, #F8C028, #F8C028);

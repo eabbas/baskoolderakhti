@@ -67,9 +67,11 @@ Route::group([
         Route::get('/create' , 'create')->name('create');
         Route::post('/store' , 'store')->name('store');
         Route::get('/delete/{main_store}' , 'delete')->name('delete');
+        Route::get('/index' , 'index')->name('index');
         Route::get('/edit/{main_store}' , 'edit')->name('edit');
         Route::post('/update' , 'update')->name('update');
         Route::post('/add/store' , 'add_store')->name('add_store');
+        Route::get('/store/content/{main_store}' , 'store_content')->name('store_content');
 });
 
 Route::get('/search', function(){
