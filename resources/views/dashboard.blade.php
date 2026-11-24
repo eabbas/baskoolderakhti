@@ -399,7 +399,156 @@
         .menu-icon-aqua {
             color: #7dd3fc;
         }
-    </style>
+
+
+    /* پس‌زمینه اصلی سایدبار */
+    #sidebar {
+        background-color: #002030 !important;
+        color: #FFFFFF;
+        border-left: 1px solid #29404D;
+    }
+
+    /* بخش لوگو */
+    #sidebar > div:first-child {
+        background: linear-gradient(135deg, #001020, #002D40) !important;
+        border-bottom: 1px solid #29404D;
+    }
+
+    #sidebar .logo-gradient {
+        background: linear-gradient(135deg, #F8C028, #F8D048) !important;
+        color: #001020 !important;
+        box-shadow: 0 5px 18px rgba(248, 192, 40, 0.2) !important;
+    }
+
+    #sidebar h1 {
+        color: #FFFFFF !important;
+    }
+
+    #sidebar p {
+        color: #A8B5BE !important;
+    }
+
+    /* دکمه خانه */
+    #sidebar nav > a:first-child {
+        background-color: #001A28 !important;
+        color: #F8C028 !important;
+        border: 1px solid #29404D;
+    }
+
+    #sidebar nav > a:first-child:hover {
+        background-color: #12394A !important;
+    }
+
+    /* آیتم‌های اصلی منو */
+    #sidebar .element {
+        background-color: #001A28 !important;
+        border: 1px solid #29404D;
+        transition: all 0.3s ease;
+    }
+
+    #sidebar .element:hover {
+        background-color: #12394A !important;
+        border-color: #F8C028;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* عنوان منوها */
+    #sidebar .element span {
+        color: #DCE5EA !important;
+        transition: color 0.3s ease;
+    }
+
+    #sidebar .element:hover > div:first-child span {
+        color: #F8C028 !important;
+    }
+
+    /* تمام آیکون‌های SVG */
+    #sidebar svg {
+        fill: #F8C028 !important;
+    }
+
+    #sidebar svg path {
+        stroke: #F8C028;
+    }
+
+    #sidebar svg circle {
+        stroke: #F8C028;
+    }
+
+    /* زیرمنوها */
+    #sidebar .sub-menu-item {
+        color: #A8B5BE !important;
+        transition: all 0.25s ease;
+    }
+
+    #sidebar .sub-menu-item svg {
+        fill: #F8C028 !important;
+    }
+
+    #sidebar .sub-menu-item a {
+        color: #A8B5BE !important;
+        transition: all 0.25s ease;
+    }
+
+    #sidebar .sub-menu-item a:hover {
+        color: #F8C028 !important;
+        padding-right: 5px;
+    }
+
+    /* فلش باز و بسته شدن منو */
+    #sidebar .element > div:first-child > svg:last-child {
+        fill: #A8B5BE !important;
+    }
+
+    /* عنوان نقش و دسترسی */
+    #sidebar .element span.text-xs {
+        color: #F8C028 !important;
+    }
+
+    /* خط جداکننده */
+    #sidebar .element .border-t,
+    #sidebar nav > div:last-child {
+        border-color: #29404D !important;
+    }
+
+    /* دکمه خروج */
+    #sidebar nav > div:last-child a {
+        background-color: #001A28 !important;
+        border: 1px solid #29404D;
+        color: #F87171 !important;
+        transition: all 0.3s ease;
+    }
+
+    #sidebar nav > div:last-child a:hover {
+        background-color: rgba(220, 38, 38, 0.12) !important;
+        border-color: #DC2626;
+        color: #FCA5A5 !important;
+    }
+
+    #sidebar nav > div:last-child svg {
+        fill: #F87171 !important;
+    }
+
+    /* اسکرول‌بار */
+    #sidebar::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #sidebar::-webkit-scrollbar-track {
+        background: #001020;
+    }
+
+    #sidebar::-webkit-scrollbar-thumb {
+        background: #345365;
+        border-radius: 10px;
+    }
+
+    #sidebar::-webkit-scrollbar-thumb:hover {
+        background: #F8C028;
+    }
+</style>
+
+    
     
     @stack('styles')
 </head>
@@ -451,9 +600,9 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('address.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد آدرس جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
@@ -504,9 +653,9 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('product.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد محصول جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
@@ -533,9 +682,9 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('category.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] ">ایجاد دسته بندی جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
@@ -562,9 +711,9 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('brand.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد برند جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
@@ -590,15 +739,15 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('main_store.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">ایجاد استوری</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('store.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">ایجاد محتوا برای استوری</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
@@ -631,9 +780,9 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
-                                <!-- <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg> -->
+                                </svg>
                                 <a href="{{route('user.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد کاربر جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
