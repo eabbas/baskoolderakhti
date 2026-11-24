@@ -1378,13 +1378,17 @@ function showStory(data) {
     }
 }
 
+
+
 function startProgress(data) {
     paused = false;
     startTime = performance.now() - elapsed;
+
     function update(now) {
         if (paused || !modal.classList.contains("active")) return;
 
         let percentage;
+
         if (data[currentStory].format === "mp4") {
             if (!video.duration || !isFinite(video.duration)) {
                 animationFrame = requestAnimationFrame(update);
@@ -1404,10 +1408,10 @@ function startProgress(data) {
         fill.style.width = Math.min(percentage, 100) + "%";
 
         if (
-            data[currentStory].format === "jpg" &&
+            data[currentStory].format !== "mp4" &&
             elapsed >= duration
         ) {
-            nextStory(data);
+            nextStory();
             return;
         }
 
@@ -1416,6 +1420,46 @@ function startProgress(data) {
 
     animationFrame = requestAnimationFrame(update);
 }
+
+
+// function startProgress(data) {
+//     paused = false;
+//     startTime = performance.now() - elapsed;
+//     function update(now) {
+//         if (paused || !modal.classList.contains("active")) return;
+
+//         let percentage;
+//         if (data[currentStory].format === "mp4") {
+//             if (!video.duration || !isFinite(video.duration)) {
+//                 animationFrame = requestAnimationFrame(update);
+//                 return;
+//             }
+
+//             percentage = (video.currentTime / video.duration) * 100;
+
+//         } else {
+//             elapsed = now - startTime;
+//             percentage = (elapsed / duration) * 100;
+//         }
+
+//         const fill = progress.children[currentStory]
+//             .querySelector(".progress-fill");
+
+//         fill.style.width = Math.min(percentage, 100) + "%";
+
+//         if (
+//             data[currentStory].format === "jpg" &&
+//             elapsed >= duration
+//         ) {
+//             nextStory(data);
+//             return;
+//         }
+
+//         animationFrame = requestAnimationFrame(update);
+//     }
+
+//     animationFrame = requestAnimationFrame(update);
+// }
 
 
 function nextStory() {

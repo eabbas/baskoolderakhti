@@ -39,7 +39,7 @@
     .shadow-\[\#1B84FF\]\/20 { --tw-shadow-color: rgba(251, 200, 48, 0.20) !important; }
     .hover\:shadow-\[\#0a6fd6\]\/30:hover { --tw-shadow-color: rgba(224, 168, 0, 0.30) !important; }
 </style>
-<div class="max-w-6xl mx-auto">
+<div class="max-w-full mx-auto">
     
     <!-- عنوان صفحه با استایل جدید -->
     <div class="mb-8">
@@ -74,8 +74,8 @@
                         </span>
                         ویرایش اطلاعات شخصی
                     </h3>
-                    <div class="relative">
-                        <div class="w-24 h-24 rounded-full bg-white p-1 shadow-xl">
+                    <div class="flex flex-col">
+                        <div class="w-24 h-24 rounded-full p-1 shadow-xl">
                             <div id="profile_avatar" class="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-[#1B84FF] to-[#0a6fd6] p-1">
                                 @if(Auth::user()->path!=null)
                                     <img class='rounded-full w-full h-full object-cover' src="{{asset('storage/user_medias/'.Auth::user()->path)}}" alt="">
@@ -86,11 +86,11 @@
                                 @endif
                             </div>
                         </div>
-                        <label for="avatarUpload" class="absolute bottom-0 left-0 bg-[#1B84FF] hover:bg-[#0a6fd6] text-white w-8 h-8 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all hover:scale-110 border-2 border-white">
+                        <!-- <label for="avatarUpload" class="absolute bottom-0 left-0 bg-[#1B84FF] hover:bg-[#0a6fd6] text-white w-8 h-8 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all hover:scale-110 border-2 border-white">
                             <i class="fas fa-camera text-xs"></i>
                         </label>
                         <input type="file" id="avatarUpload" class="hidden" accept="image/*">
-                        <span class='absolute top-0 -right-17 font-bold text-sm'> عکس پروفایل </span>
+                        <span> عکس پروفایل </span> -->
                     </div>
                 </div>
 
