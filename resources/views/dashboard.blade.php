@@ -729,8 +729,8 @@
                 <a href=""
                     class="flex items-center shrink-0 max-lg:hidden">
                     <img src="{{ asset('assets/img/file_00000000527881f4835e03acef97b338.png') }}"
-                        alt="رینسو"
-                        class="w-[105px] sm:w-[120px] max-h-[55px] object-contain">
+                        alt="باسکول درختی"
+                        class="w-[105px] sm:w-[120px] max-h-[55px] object-contain ">
                 </a>
                
 
@@ -818,7 +818,7 @@
 
 
             {{-- سمت چپ: حساب کاربری و جستجوی موبایل --}}
-            <div class="flex items-center gap-2 shrink-0">
+            <div class="flex items-center gap-2 shrink-0  ">
 
                 {{-- جستجوی موبایل --}}
                 <button type="button"
@@ -851,10 +851,10 @@
                                 hover:border-slate-200 hover:bg-slate-50
                                 transition-all duration-200">
 
-                            <!-- @if(!Auth::user()->main_image)
-                                <img src=""
+                                <img src="{{asset('assets/img/file_0000000032ac81f499cdabd6758572c0.png')}}"
                                     class="size-9 rounded-xl object-cover"
                                     alt="پروفایل">
+                            <!-- @if(!Auth::user()->main_image)
                             @else
                                 <img src="{{ asset('storage/' . Auth::user()->main_image) }}"
                                     class="size-9 rounded-xl object-cover"
@@ -1184,7 +1184,7 @@
                        justify-center gap-1.5 relative cursor-pointer">
 
                 @if (Auth::check())
-                    <img src="{{ Auth::user()->main_image ? asset('storage/' . Auth::user()->main_image) : asset('assets/img/user.png') }}"
+                    <img src="{{asset('assets/img/file_0000000032ac81f499cdabd6758572c0.png')}}"
                         class="size-[25px] rounded-full object-cover
                                ring-2 ring-slate-100"
                         alt="پروفایل" onclick="pup_up_profil('open')">
