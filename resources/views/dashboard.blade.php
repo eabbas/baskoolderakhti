@@ -429,13 +429,13 @@
 
             <!-- منو -->
             <nav class="px-4 py-6">
-                <a href="{{url('/')}}" class="text-md font-semibold w-full h-14 rounded-[13px] bg-[#142033] hover:bg-white/5 text-[#9A9CAE] uppercase tracking-wider px-3 mb-4 flex gap-1 text-center items-center"> 
+                <a href="{{url('/')}}" class="text-md font-semibold w-full h-14 rounded-[13px] bg-[#142033] max-lg:bg-white hover:bg-white/5 text-[#9A9CAE] uppercase tracking-wider px-3 mb-4 flex gap-1 text-center items-center"> 
                     <svg class='w-7 fill-[#9CA3AF]' viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#1fd699" stroke-width="0.00016" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.032"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z"></path> </g></svg>
                     <span>رفتن به خانه</span>
                 </a>
 
 
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                <svg class='section-icon size-10 fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" >
@@ -464,7 +464,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                 <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#1B84FF">
@@ -490,7 +490,7 @@
                 @can('admin_dashboard',['admin1','admin2'])
 
                     <!-- =====  محصولات ===== -->
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -519,7 +519,7 @@
                     </div>
 
                     <!-- =====  دسته بندی ها ===== -->
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                 <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#059669">
@@ -548,7 +548,7 @@
                     </div>
 
                     <!-- =====  برند ===== -->
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                 <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#d97706">
@@ -577,7 +577,7 @@
                     </div>
 
                     <!-- =====  تنظیمات ===== -->
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                 <svg class='size-4 fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0c17 0 33.6 1.7 49.8 4.8c7.9 1.5 21.8 6.1 29.4 20.1c2 3.7 3.6 7.6 4.6 11.8l9.3 38.5C350.5 81 360.3 86.7 366 85l38-11.2c4-1.2 8.1-1.8 12.2-1.9c16.1-.5 27 9.4 32.3 15.4c22.1 25.1 39.1 54.6 49.9 86.3c2.6 7.6 5.6 21.8-2.7 35.4c-2.2 3.6-4.9 7-8 10L459 246.3c-4.2 4-4.2 15.5 0 19.5l28.7 27.3c3.1 3 5.8 6.4 8 10c8.2 13.6 5.2 27.8 2.7 35.4c-10.8 31.7-27.8 61.1-49.9 86.3c-5.3 6-16.3 15.9-32.3 15.4c-4.1-.1-8.2-.8-12.2-1.9L366 427c-5.7-1.7-15.5 4-16.9 9.8l-9.3 38.5c-1 4.2-2.6 8.2-4.6 11.8c-7.7 14-21.6 18.5-29.4 20.1C289.6 510.3 273 512 256 512s-33.6-1.7-49.8-4.8c-7.9-1.5-21.8-6.1-29.4-20.1c-2-3.7-3.6-7.6-4.6-11.8l-9.3-38.5c-1.4-5.8-11.2-11.5-16.9-9.8l-38 11.2c-4 1.2-8.1 1.8-12.2 1.9c-16.1 .5-27-9.4-32.3-15.4c-22-25.1-39.1-54.6-49.9-86.3c-2.6-7.6-5.6-21.8 2.7-35.4c2.2-3.6 4.9-7 8-10L53 265.7c4.2-4 4.2-15.5 0-19.5L24.2 218.9c-3.1-3-5.8-6.4-8-10C8 195.3 11 181.1 13.6 173.6c10.8-31.7 27.8-61.1 49.9-86.3c5.3-6 16.3-15.9 32.3-15.4c4.1 .1 8.2 .8 12.2 1.9L146 85c5.7 1.7 15.5-4 16.9-9.8l9.3-38.5c1-4.2 2.6-8.2 4.6-11.8c7.7-14 21.6-18.5 29.4-20.1C222.4 1.7 239 0 256 0zM218.1 51.4l-8.5 35.1c-7.8 32.3-45.3 53.9-77.2 44.6L97.9 120.9c-16.5 19.3-29.5 41.7-38 65.7l26.2 24.9c24 22.8 24 66.2 0 89L59.9 325.4c8.5 24 21.5 46.4 38 65.7l34.6-10.2c31.8-9.4 69.4 12.3 77.2 44.6l8.5 35.1c24.6 4.5 51.3 4.5 75.9 0l8.5-35.1c7.8-32.3 45.3-53.9 77.2-44.6l34.6 10.2c16.5-19.3 29.5-41.7 38-65.7l-26.2-24.9c-24-22.8-24-66.2 0-89l26.2-24.9c-8.5-24-21.5-46.4-38-65.7l-34.6 10.2c-31.8 9.4-69.4-12.3-77.2-44.6l-8.5-35.1c-24.6-4.5-51.3-4.5-75.9 0zM208 256a48 48 0 1 0 96 0 48 48 0 1 0 -96 0zm48 96a96 96 0 1 1 0-192 96 96 0 1 1 0 192z"/></svg>
@@ -617,7 +617,7 @@
                     </div>
 
                     <!-- =====  کاربر ===== -->
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
                                 <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#059669">
@@ -677,7 +677,7 @@
 
                 <!-- ===== دکمه خروج ===== -->
                 <div class="mt-6 pt-4 border-t border-[#DBDFE9]">
-                    <a href="{{ route('user.logOut')}}" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#142033] shadow-sm text-[#dc2626] hover:text-[#ff4444] transition-all">
+                    <a href="{{ route('user.logOut')}}" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white shadow-sm text-[#dc2626] hover:text-[#ff4444] transition-all">
                         <svg class='size-5 fill-[#dc2626]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
                         </svg>
