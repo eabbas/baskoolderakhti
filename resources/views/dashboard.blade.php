@@ -563,7 +563,7 @@
         <!-- ============================================================ -->
         <!-- ===== سایدبار ===== -->
         <!-- ============================================================ -->
-        <aside id="sidebar" class="w-2/12 sidebar fixed top-0 right-0 h-full bg-[#142033] shadow-xl transition-all z-999 overflow-y-auto">
+        <aside id="sidebar" class="w-2/12 sidebar fixed top-0 right-0 h-full bg-[#142033] shadow-xl transition-all z-999 overflow-y-auto [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
             
             <!-- لوگو -->
             <div class="flex items-center gap-3 px-6 py-6 bg-gradient-to-r from-[#142033] to-[#142033]">
@@ -599,13 +599,13 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center >
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('address.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد آدرس جدید</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -626,7 +626,7 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -652,13 +652,13 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('product.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد محصول جدید</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -681,13 +681,13 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('category.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] ">ایجاد دسته بندی جدید</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -710,13 +710,13 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('brand.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد برند جدید</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -738,25 +738,25 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('main_store.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">ایجاد استوری</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('store.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">ایجاد محتوا برای استوری</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
                                 <a href="{{route('store.index')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap text-[14px]">لیست محتوای استوری ها</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -779,13 +779,13 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                 </svg>
                                 <a href="{{route('user.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد کاربر جدید</a>
                             </div>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item'>
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
                                 <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                 </svg>
@@ -794,26 +794,26 @@
                             @can('role_permision',['admin1'])
                                 <div class="w-full border-t border-[#DBDFE9] my-2"></div>
                                 <span class='text-xs font-semibold text-[#1B84FF] text-start mt-1'>نقش</span>
-                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item'>
+                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item items-center'>
                                     <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                         <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                     </svg>
                                     <a href="{{route('role.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد نقش</a>
                                 </div>
-                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item'>
+                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item items-center'>
                                     <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                     </svg>
                                     <a href="{{route('role.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست نقش ها</a>
                                 </div>
                                 <span class='text-xs font-semibold text-[#1B84FF] text-start mt-1'>دسترسی</span>
-                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item'>
+                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item items-center'>
                                     <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                         <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
                                     </svg>
                                     <a href="{{route('permision.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد دسترسی</a>
                                 </div>
-                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item'>
+                                <div class='w-12/12 justify-start text-white mr-3 flex p-2 text-base gap-2 sub-menu-item items-center'>
                                     <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                         <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
                                     </svg>
