@@ -11,7 +11,7 @@ class MainStoreController extends Controller
         return view('admin.user.main_store.create');
     }
     public function store(Request $request){
-        // dd($request->all());
+//         dd($request->all());
         $name_img = request()->file('img')->getClientOriginalName();
         $request->file('img')->storeAs('store' , $name_img , 'public');
         main_store::create([
