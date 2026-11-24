@@ -363,9 +363,7 @@
             <!-- دکمه ثبت -->
             <button type="submit" class="vafadar-submit-btn sm:col-span-2">
                 <span>ثبت  استوری</span>
-                <svg class="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
-                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                </svg>
+               
             </button>
 
         </form>

@@ -360,20 +360,25 @@
 
          
             <!-- دکمه ثبت -->
-            <div class="w-full  col-span-2 ">
-                <label class = "vafadar-label" for="">استوری ها</label>
-              @foreach($main_store as $store)
-                  <div class="w-full flex gap-3 items-center rounded-[10px] shadow-sm p-2 border-1 border-gray-300 my-2">
-                      <input required name = "main_store_id" type="radio" value = "{{$store->id}}">
-                      <span>{{$store->title}}</span>
-                  </div>
-              @endforeach
-            </div>
-            <button type="submit" class="vafadar-submit-btn sm:col-span-2">
+           <div class="w-full col-span-2">
+    <label class="vafadar-label" for="main_store_id">استوری ها</label>
+
+    <select required name="main_store_id" id="main_store_id"
+        class="w-full rounded-[10px] border border-gray-300 p-3 shadow-sm outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-100">
+
+        <option value="" disabled selected>یک استوری انتخاب کنید</option>
+
+        @foreach($main_store as $store)
+            <option value="{{ $store->id }}">
+                {{ $store->title }}
+            </option>
+        @endforeach
+
+    </select>
+</div>
+            <button type="submit" class="vafadar-submit-btn sm:col-span-2 mt-3">
                 <span>ثبت  محتوای برای استوری</span>
-                <svg class="w-[18px] h-[18px] fill-white" viewBox="0 0 24 24">
-                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                </svg>
+                
             </button>
 
         </form>
