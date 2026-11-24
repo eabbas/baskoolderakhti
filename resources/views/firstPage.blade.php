@@ -28,7 +28,7 @@
 
 <div class="w-full bg-[#031522]">
 
-<div class="w-11/12  mx-auto flex gap-5  pt-10 max-lg:gap-2 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
+<div class="w-11/12  mx-auto flex gap-5 pt-10 max-lg:pt-5 max-lg:gap-3 items-center max-lg:justify-start rounded-[10px] overflow-x-auto [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#0E2E48] [&::-webkit-scrollbar-thumb]:rounded-full">
 
   @foreach($main_stores as $key => $store)
   @if(count($store->store) >= 1)
@@ -53,7 +53,7 @@
                 <img src="{{ asset('/storage/store/' . $store->img) }}" alt="لوگو">
                 <div>
                     <strong id="storyTitle">پروژه باسکول درختی</strong>
-                    <small id="storyTime">نمونه کارهای ما</small>
+                    <small id="storyTime">{{$store->summry}}}</small>
                 </div>
             </div>
 
@@ -83,8 +83,8 @@
 </div>
     @endif
 @endforeach
-    
 
+  
 </div>
 </div>
 </div>
