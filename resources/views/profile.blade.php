@@ -67,33 +67,7 @@
 
             <!-- ===== کارت ویرایش اطلاعات ===== -->
             <div class="bg-white rounded-2xl shadow-md border border-[#DBDFE9] overflow-hidden">
-                <div class="flex justify-between px-6 py-4 border-b border-[#DBDFE9] bg-[#0E2E48] text-[#FFFFFF]">
-                    <h3 class="text-base font-bold flex items-center gap-2.5">
-                        <span class="w-8 h-8 rounded-xl bg-[#FBC830] flex items-center justify-center text-[#FFFFFF]">
-                            <i class="fas fa-edit text-sm"></i>
-                        </span>
-                        ویرایش اطلاعات شخصی
-                    </h3>
-                    <div class="flex flex-col">
-                        <div class="w-24 h-24 rounded-full p-1 shadow-xl">
-                            <div id="profile_avatar" class="w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-[#1B84FF] to-[#0a6fd6] p-1">
-                                @if(Auth::user()->path!=null)
-                                    <img class='rounded-full w-full h-full object-cover' src="{{asset('storage/user_medias/'.Auth::user()->path)}}" alt="">
-                                @else
-                                <div class="w-full h-full rounded-full bg-[#F5F5F5] overflow-hidden flex items-center justify-center">
-                                    <span class="text-4xl text-[#9A9CAE] font-bold">{{Auth::user()->name[0]}}</span>
-                                </div>
-                                @endif
-                            </div>
-                        </div>
-                        <!-- <label for="avatarUpload" class="absolute bottom-0 left-0 bg-[#1B84FF] hover:bg-[#0a6fd6] text-white w-8 h-8 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all hover:scale-110 border-2 border-white">
-                            <i class="fas fa-camera text-xs"></i>
-                        </label>
-                        <input type="file" id="avatarUpload" class="hidden" accept="image/*">
-                        <span> عکس پروفایل </span> -->
-                    </div>
-                </div>
-
+                
                 <div class="p-6">
                     <div id="profileForm" class='mb-6 grid grid-cols-1 sm:grid-cols-2 gap-2'>
                         @csrf
@@ -154,7 +128,7 @@
 
 
                         <div class="flex flex-wrap gap-3 mt-6 pt-5 border-t border-[#DBDFE9]">
-                            <button id="profileFormButton" type="submit" class="px-6 py-2.5 bg-[#1B84FF] hover:bg-[#0a6fd6] text-white font-medium rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-[#1B84FF]/20 hover:shadow-[#0a6fd6]/30">
+                            <button id="profileFormButton" type="submit" class="px-6 py-2.5 bg-[#FBC830] hover:bg-[#0a6fd6] text-white font-medium rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-[#1B84FF]/20 hover:shadow-[#0a6fd6]/30">
                                 <i class="fas fa-save"></i>
                                 ذخیره تغییرات
                             </button>
@@ -166,14 +140,7 @@
 
             <!-- ===== کارت تغییر رمز عبور ===== -->
             <div class="bg-white rounded-2xl shadow-md border border-[#DBDFE9] overflow-hidden">
-                <div class="px-6 py-4 border-b border-[#DBDFE9] bg-[#0E2E48] text-[#FFFFFF]">
-                    <h3 class="text-base font-bold  flex items-center gap-2.5">
-                        <span class="w-8 h-8 rounded-xl bg-red-50 flex items-center justify-center text-red-500">
-                            <i class="fas fa-lock text-sm"></i>
-                        </span>
-                        تغییر رمز عبور
-                    </h3>
-                </div>
+               
 
                 <div class="p-6">
                     <div id="passwordForm">
@@ -207,7 +174,7 @@
                         </div>
 
                         <div class="mt-5 pt-4 border-t border-[#DBDFE9]">
-                            <button onclick="setNewPassword()" type="submit" class="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white font-medium rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-red-600/20 hover:shadow-red-600/30">
+                            <button onclick="setNewPassword()" type="submit" class="px-6 py-2.5 bg-[#FBC830] hover:bg-[#E0A800] text-white font-medium rounded-xl transition-all flex items-center gap-2 shadow-lg shadow-[#E0A800] hover:shadow-[#E0A800]">
                                 <i class="fas fa-key"></i>
                                 تغییر رمز عبور
                             </button>

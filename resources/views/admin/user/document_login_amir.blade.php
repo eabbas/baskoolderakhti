@@ -1,6 +1,6 @@
 @extends('header')
 @section('content')
-
+    
     <main class = "max-w-[2100px] min-w-[320px] bg-[url('{{asset('assets/img/file_00000000780c81f4bdf8e7d80669e56b.png')}}')] bg-cover bg-center bg-no-repeat mx-auto pb-5 pt-10">
             <section class = "max-w-[800px] min-w-[320px] mx-auto">
                 <div class="w-full flex flex-col  items-center justify-between bg-white px-10 py-3 rounded-[15px] border-1 border-gray-300 shadow-md">
@@ -12,16 +12,17 @@
                     <div class="w-full flex flex-col gap-5">
                        
                     
-                    <div class="w-full flex  gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
+                    <div class="w-full flex  justify-between gap-2 bg-white border-1 border-gray-200 items-center rounded-[15px]">
                         <div class="w-1/14 pr-5">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                         </div>
-                        <input class = "w-13/14 h-15 outline-none " name = "phonenumber" id = "" placeholder = "شماره موبایل" type="text">
+                        <input class = "w-12/14 h-15 outline-none " name = "phonenumber" id = "password" placeholder = "شماره موبایل" type="text">
+                     
                     </div>
                     <div class="w-full flex  gap-2 bg-white  items-center rounded-[15px]">
                         <div class="w-8/12 pr-5 flex gap-3 items-center">
                             <svg class = "size-5 fill-[#0E2E48]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 48c44.2 0 80 35.8 80 80v64H144V128c0-44.2 35.8-80 80-80zM96 128v64H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V256c0-35.3-28.7-64-64-64H352V128C352 57.3 294.7 0 224 0S96 57.3 96 128zM64 240H384c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V256c0-8.8 7.2-16 16-16zm184 80c0-13.3-10.7-24-24-24s-24 10.7-24 24v64c0 13.3 10.7 24 24 24s24-10.7 24-24V320z"/></svg>
-                            <input class = "w-13/14 h-15 outline-none " name = "password" id = "" placeholder = "رمز عبور" type="text">
+                            <input class = "w-13/14 h-15 outline-none " name = "password" id = "password" placeholder = "رمز عبور" type="text">
                         </div>
                     </div>
                    
@@ -148,6 +149,10 @@
             document_black.classList.toggle('invisible')
             document_black.classList.toggle('opacity-0')
         }
+
+        function pass()[
+            
+        ]
     </script>
     
 @endsection
