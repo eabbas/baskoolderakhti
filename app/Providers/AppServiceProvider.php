@@ -65,12 +65,16 @@ class AppServiceProvider extends ServiceProvider
         
 
 
-        Gate::define('admin_dashboard',function(User $user,$roles){
-            return $user->hasRole([$roles]);
+        // Gate::define('admin_dashboard',function(User $user,$roles){
+        //     return $user->hasRole([$roles]);
+        // });
+        // Gate::define('role_permision',function(User $user,$roles){
+        //     Log::info($roles);
+        //     return $user->hasRole([$roles]);
+        // });
+        Gate::define('access',function(User $user ,$permision){
+            return $user->hasAccess([$permision]);
         });
-        Gate::define('role_permision',function(User $user,$roles){
-            Log::info($roles);
-            return $user->hasRole([$roles]);
-        });
+
     }
 }

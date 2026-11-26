@@ -24,7 +24,18 @@ use App\Http\Middleware\checkUserExist;
 use App\Http\Middleware\checkAuthUser;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\role_permision;
 
+
+
+Route::get('/permision',function(){
+    for ($i=0; $i <56 ; $i++) { 
+        role_permision::create([
+            'role_id'=>1,
+            'permision_id'=>$i,
+        ]);
+    }
+});
 Route::get('/test',function(){
     Schema::table('products',function(Blueprint $table){
         $table->longText('description')->nullable()->change();
