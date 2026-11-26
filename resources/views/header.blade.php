@@ -86,7 +86,7 @@
 
     <header class = "max-w-[2500px] min-w-[325px] mx-auto bg-[#0B304A] mt-30">
         <div class="w-full  translate-x-1/2 right-1/2 mx-auto bg-[#0E2E48] top-0 fixed  z-40">
-        <div class="w-11/12  mx-auto flex flex-col  ">
+        <div class="w-11/12  mx-auto flex flex-col  2xl:max-w-[2100px]">
             <div class="flex items-center gap-7 max-xl:gap-2  max-lg:hidden max-lg:gap-2  my-3">
                 <div class="flex items-center text-white gap-3 font-bold">
                     <svg class = "size-6 fill-[#F5B83D]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M375.8 275.2c-16.4-7-35.4-2.4-46.7 11.4l-33.2 40.6c-46-26.7-84.4-65.1-111.1-111.1L225.3 183c13.8-11.3 18.5-30.3 11.4-46.7l-48-112C181.2 6.7 162.3-3.1 143.6 .9l-112 24C13.2 28.8 0 45.1 0 64v0C0 300.7 183.5 494.5 416 510.9c4.5 .3 9.1 .6 13.7 .8c0 0 0 0 0 0c0 0 0 0 .1 0c6.1 .2 12.1 .4 18.3 .4l0 0c18.9 0 35.2-13.2 39.1-31.6l24-112c4-18.7-5.8-37.6-23.4-45.1l-112-48zM447.7 480C218.1 479.8 32 293.7 32 64v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0c0-3.8 2.6-7 6.3-7.8l112-24c3.7-.8 7.5 1.2 9 4.7l48 112c1.4 3.3 .5 7.1-2.3 9.3l-40.6 33.2c-12.1 9.9-15.3 27.2-7.4 40.8c29.5 50.9 71.9 93.3 122.7 122.7c13.6 7.9 30.9 4.7 40.8-7.4l33.2-40.6c2.3-2.8 6.1-3.7 9.3-2.3l112 48c3.5 1.5 5.5 5.3 4.7 9l-24 112c-.8 3.7-4.1 6.3-7.8 6.3c-.1 0-.2 0-.3 0z"></svg>
@@ -98,7 +98,7 @@
                     <span>تهران و خیابان اصلی</span>
                 </div>
             </div>
-            <div class="w-full  flex items-center gap-5 max-lg:pb-2  max-lg:justify-between max-lg:py-4 ">
+            <div class="w-full  flex items-center gap-2 max-lg:pb-2  max-lg:justify-between max-lg:py-4 ">
                 <div class="w-3/12 flex items-center mb-3 gap-4 max-lg:hidden ">
                     <div class="w-[80px]">
                         <img src="{{asset('assets/img/file_00000000527881f4835e03acef97b338.png')}}" class = "w-[80px]" alt="">
@@ -108,7 +108,7 @@
                     <span class = "text-[14px] text-nowrap ">دقت در اندازه گیری و اعتبار در کسب و کار</span>
                 </div>
             </div>
-            <div class="w-5/12 flex items-center justify-around gap-5  max-2xl:w-[80%] text-white  text-[16px] font-bold   parent_font max-lg:hidden">
+            <div class="w-4/12 flex items-center justify-around gap-5  max-2xl:w-[80%] text-white  text-[16px] font-bold   parent_font max-lg:hidden">
                 <a class = " text-center fonts text-nowrap" href="{{route('document_phone')}}">تماس باما</a>
                 <a class = " text-center fonts text-nowrap" href="{{route('about_as')}}">درباره ما</a>
                 <a class = " text-center fonts text-nowrap" href="">محصولات خدمات</a>
@@ -116,18 +116,21 @@
             </div>
             <svg  onclick = "bar_menu()" class = "size-6 fill-white lg:hidden"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
 
-            <div class="w-4/12 flex items-center  gap-10 justify-between max-xl:w-[30%] max-xl:gap-8   max-lg:w-[70%] max-lg:justify-end ">
+            <div class="w-6/12 flex items-center  gap-5 justify-between max-xl:w-[30%] max-xl:gap-8   max-lg:w-[70%] max-lg:justify-end ">
                 @if(Auth::check())
-                <a href="{{route('user.profile')}}">
+                    <!-- <svg class='section-icon size-8 fill-[#9CA3AF] cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#059669">
+                        <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/>
+                    </svg> -->
+                <!-- <a href="{{route('user.profile')}}">
                     <div class='w-full px-4 py-1 bg-[#EBECEE] shadow-md rounded-xl duration-500 transition-all hover:shadow-[#099975] text-black text-center'>{{Auth::user()->name}}  خوش آمدید</div>
-                </a>
-                <div class="lg:block hidden w-full h-[45px]  rounded-[10px] bg-white transition_fast"id="search">
+                </a> -->
+                <div class="lg:block hidden w-full h-[45px] items-center rounded-[10px] bg-white transition_fast"id="search">
                         <form action="{{route('product.searchProduct')}}" method="POST" class="flex gap-2 w-full mx-auto h-full  rounded-lg text-black">
                             @csrf
-                            <button class="cursor-pointer w-[13%] md:w-10 h-10  flex justify-center items-center p-2">
-                                <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+                            <button class="cursor-pointer w-[13%] md:w-10 h-full  flex justify-center items-center ">
+                                <svg class="size-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
                             </button>
-                            <input type="text" name="title" class="w-[87%] h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
+                            <input type="text" name="title" class="w-full h-full outline-none text-(--title) text-[13px]" placeholder="کالای خود را جستوجو کن">
                         </form>
                 </div>
                 @else
@@ -143,7 +146,7 @@
                                 <button class="cursor-pointer w-[13%] md:w-10 h-10  flex justify-center items-center p-2">
                                     <svg class="size-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
                                 </button>
-                                <input type="text" name="title" class="w-[87%] h-full outline-none text-(--title)" placeholder="کالای خود را جستوجو کن">
+                                <input type="text" name="title" class="w-[87%] h-full outline-none text-(--title) text-[13px]" placeholder="کالای خود را جستوجو کن">
                             </form>
                     </div>
                     </div>

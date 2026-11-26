@@ -401,151 +401,385 @@
         }
 
 
-    /* پس‌زمینه اصلی سایدبار */
+        
+
+
+
+
+
+/* ===============================
+   Sidebar - Baskool Derakhti
+================================ */
+/* 
+#sidebar {
+    background: #142033 !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.12);
+    scrollbar-width: none;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar > div:first-child {
+    background: linear-gradient(
+        135deg,
+        #192b43,
+        #142033
+    ) !important;
+
+    padding: 26px 22px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+#sidebar .logo-gradient {
+    background: linear-gradient(
+        135deg,
+        #1B84FF,
+        #0755b5
+    ) !important;
+
+    border-radius: 14px !important;
+    box-shadow: 0 5px 18px rgba(27, 132, 255, 0.25);
+}
+
+#sidebar h1 {
+    font-size: 17px;
+    letter-spacing: -0.4px;
+}
+
+#sidebar p {
+    color: #8998ad !important;
+}
+
+#sidebar nav {
+    padding: 22px 14px !important;
+}
+
+#sidebar nav > a:first-child {
+    height: 48px !important;
+    background: rgba(27, 132, 255, 0.12) !important;
+    color: #65aaff !important;
+    border: 1px solid rgba(27, 132, 255, 0.16);
+    border-radius: 11px !important;
+    margin-bottom: 22px !important;
+    transition: all 0.25s ease;
+}
+
+#sidebar nav > a:first-child:hover {
+    background: #1B84FF !important;
+    color: white !important;
+}
+
+#sidebar nav > a:first-child svg {
+    fill: currentColor !important;
+}
+
+#sidebar .element {
+    background: transparent !important;
+    border: 1px solid transparent;
+    border-radius: 11px !important;
+    padding: 13px 12px !important;
+    margin-bottom: 5px !important;
+    box-shadow: none !important;
+    transition: all 0.25s ease;
+}
+
+#sidebar .element:hover {
+    background: rgba(255, 255, 255, 0.045) !important;
+    border-color: rgba(255, 255, 255, 0.055);
+}
+
+#sidebar .element span {
+    color: #aab7c8 !important;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+#sidebar .element:hover > div:first-child span {
+    color: #ffffff !important;
+}
+
+#sidebar .section-icon {
+    width: 22px !important;
+    height: 22px !important;
+    fill: #8998ad !important;
+    transition: all 0.25s ease;
+}
+
+#sidebar .element:hover .section-icon {
+    fill: #1B84FF !important;
+}
+
+#sidebar .element > div:first-child > svg:last-child {
+    fill: #718198 !important;
+    transition: all 0.3s ease;
+}
+
+#sidebar .element:hover > div:first-child > svg:last-child {
+    fill: #1B84FF !important;
+}
+
+#sidebar .element > div:last-child {
+    margin-top: 5px;
+    padding: 5px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+#sidebar .sub-menu-item {
+    padding: 10px 9px !important;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+#sidebar .sub-menu-item:hover {
+    background: rgba(27, 132, 255, 0.10);
+}
+
+#sidebar .sub-menu-item a {
+    color: #8998ad !important;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+#sidebar .sub-menu-item:hover a {
+    color: #65aaff !important;
+}
+
+#sidebar .sub-menu-item svg {
+    flex-shrink: 0;
+}
+
+#sidebar .element span.text-xs {
+    color: #65aaff !important;
+    padding: 5px 8px;
+}
+
+#sidebar .element .border-t {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+#sidebar nav > div:last-child {
+    border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+#sidebar nav > div:last-child a {
+    background: rgba(220, 38, 38, 0.08) !important;
+    border: 1px solid rgba(220, 38, 38, 0.12);
+    border-radius: 10px !important;
+    color: #f87171 !important;
+    transition: all 0.25s ease;
+}
+
+#sidebar nav > div:last-child a:hover {
+    background: rgba(220, 38, 38, 0.16) !important;
+    border-color: rgba(220, 38, 38, 0.25);
+}
+
+@media (max-width: 1024px) {
     #sidebar {
-        background-color: #002030 !important;
-        color: #FFFFFF;
-        border-left: 1px solid #29404D;
+        background: #142033 !important;
     }
 
-    /* بخش لوگو */
-    #sidebar > div:first-child {
-        background: linear-gradient(135deg, #001020, #002D40) !important;
-        border-bottom: 1px solid #29404D;
-    }
-
-    #sidebar .logo-gradient {
-        background: linear-gradient(135deg, #F8C028, #F8D048) !important;
-        color: #001020 !important;
-        box-shadow: 0 5px 18px rgba(248, 192, 40, 0.2) !important;
-    }
-
-    #sidebar h1 {
-        color: #FFFFFF !important;
-    }
-
-    #sidebar p {
-        color: #A8B5BE !important;
-    }
-
-    /* دکمه خانه */
-    #sidebar nav > a:first-child {
-        background-color: #001A28 !important;
-        color: #F8C028 !important;
-        border: 1px solid #29404D;
-    }
-
-    #sidebar nav > a:first-child:hover {
-        background-color: #12394A !important;
-    }
-
-    /* آیتم‌های اصلی منو */
-    #sidebar .element {
-        background-color: #001A28 !important;
-        border: 1px solid #29404D;
-        transition: all 0.3s ease;
-    }
-
-    #sidebar .element:hover {
-        background-color: #12394A !important;
-        border-color: #F8C028;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    /* عنوان منوها */
-    #sidebar .element span {
-        color: #DCE5EA !important;
-        transition: color 0.3s ease;
-    }
-
-    #sidebar .element:hover > div:first-child span {
-        color: #F8C028 !important;
-    }
-
-    /* تمام آیکون‌های SVG */
-    #sidebar svg {
-        fill: #F8C028 !important;
-    }
-
-    #sidebar svg path {
-        stroke: #F8C028;
-    }
-
-    #sidebar svg circle {
-        stroke: #F8C028;
-    }
-
-    /* زیرمنوها */
-    #sidebar .sub-menu-item {
-        color: #A8B5BE !important;
-        transition: all 0.25s ease;
-    }
-
-    #sidebar .sub-menu-item svg {
-        fill: #F8C028 !important;
-    }
-
-    #sidebar .sub-menu-item a {
-        color: #A8B5BE !important;
-        transition: all 0.25s ease;
-    }
-
-    #sidebar .sub-menu-item a:hover {
-        color: #F8C028 !important;
-        padding-right: 5px;
-    }
-
-    /* فلش باز و بسته شدن منو */
-    #sidebar .element > div:first-child > svg:last-child {
-        fill: #A8B5BE !important;
-    }
-
-    /* عنوان نقش و دسترسی */
-    #sidebar .element span.text-xs {
-        color: #F8C028 !important;
-    }
-
-    /* خط جداکننده */
-    #sidebar .element .border-t,
-    #sidebar nav > div:last-child {
-        border-color: #29404D !important;
-    }
-
-    /* دکمه خروج */
+    #sidebar .element,
+    #sidebar nav > a:first-child,
     #sidebar nav > div:last-child a {
-        background-color: #001A28 !important;
-        border: 1px solid #29404D;
-        color: #F87171 !important;
-        transition: all 0.3s ease;
+        background-color: transparent !important;
     }
+}
+ */
 
-    #sidebar nav > div:last-child a:hover {
-        background-color: rgba(220, 38, 38, 0.12) !important;
-        border-color: #DC2626;
-        color: #FCA5A5 !important;
-    }
+   
 
-    #sidebar nav > div:last-child svg {
-        fill: #F87171 !important;
-    }
+/* ===============================
+   METRONIC SIDEBAR STYLE
+================================ */
 
-    /* اسکرول‌بار */
-    #sidebar::-webkit-scrollbar {
-        width: 5px;
-    }
+#sidebar {
+    width: 260px;
+    background: #151c2c !important;
+    border-left: 1px solid #252f43;
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.12);
+    padding: 0;
+    direction: rtl;
+    scrollbar-width: none;
+}
 
-    #sidebar::-webkit-scrollbar-track {
-        background: #001020;
-    }
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
 
-    #sidebar::-webkit-scrollbar-thumb {
-        background: #345365;
-        border-radius: 10px;
-    }
+/* Logo */
+#sidebar > div:first-child {
+    min-height: 85px;
+    padding: 20px 22px;
+    background: #151c2c !important;
+    border-bottom: 1px solid #252f43;
+}
 
-    #sidebar::-webkit-scrollbar-thumb:hover {
-        background: #F8C028;
+#sidebar .logo-gradient {
+    background: linear-gradient(135deg, #1b84ff, #056ee9);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(27, 132, 255, .2);
+}
+
+/* Navigation */
+#sidebar nav {
+    padding: 20px 14px;
+}
+
+/* Home link */
+#sidebar nav > a:first-child {
+    height: 46px;
+    margin-bottom: 24px;
+    padding: 0 13px;
+    border-radius: 8px;
+    background: #1b84ff !important;
+    color: #fff !important;
+    font-size: 13px;
+    transition: .2s ease;
+}
+
+#sidebar nav > a:first-child svg {
+    fill: #fff;
+    width: 21px;
+}
+
+#sidebar nav > a:first-child:hover {
+    background: #056ee9 !important;
+}
+
+/* Menu groups */
+#sidebar .element {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5px;
+    gap: 0;
+    border-radius: 8px;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: background .2s ease;
+}
+
+/* Main menu row */
+#sidebar .element > div:first-child {
+    min-height: 45px;
+    padding: 0 12px;
+    border-radius: 8px;
+    transition: .2s ease;
+}
+
+/* Menu hover */
+#sidebar .element > div:first-child:hover {
+    background: #1d2638;
+}
+
+/* Menu icons */
+#sidebar .section-icon {
+    width: 21px !important;
+    height: 21px !important;
+    fill: #929db1 !important;
+    transition: .2s ease;
+}
+
+/* Menu titles */
+#sidebar .element span {
+    color: #a1a9b8 !important;
+    font-size: 13px;
+    font-weight: 500;
+    transition: .2s ease;
+}
+
+#sidebar .element > div:first-child:hover span {
+    color: #fff !important;
+}
+
+#sidebar .element > div:first-child:hover .section-icon {
+    fill: #fff !important;
+}
+
+/* Arrow */
+#sidebar .element > div:first-child > svg:last-child {
+    width: 13px;
+    height: 13px;
+    fill: #7e8a9f;
+}
+
+/* Submenu */
+#sidebar .element > div:nth-child(2) {
+    padding: 5px 12px 10px 5px;
+    margin-right: 18px;
+    width: calc(100% - 18px);
+}
+
+/* Submenu items */
+#sidebar .sub-menu-item {
+    padding: 9px 10px;
+    border-radius: 6px;
+    gap: 10px;
+    transition: .2s ease;
+}
+
+#sidebar .sub-menu-item:hover {
+    background: #1d2638;
+}
+
+#sidebar .sub-menu-item svg {
+    width: 7px;
+    height: 7px;
+    fill: #1b84ff !important;
+}
+
+#sidebar .sub-menu-item a {
+    color: #929db1 !important;
+    font-size: 12px;
+    transition: .2s ease;
+}
+
+#sidebar .sub-menu-item:hover a {
+    color: #fff !important;
+}
+
+/* Role and permission headings */
+#sidebar .element span.text-xs {
+    color: #1b84ff !important;
+    padding: 8px 10px 3px;
+}
+
+/* Divider */
+#sidebar .element .border-t {
+    border-color: #303b50 !important;
+}
+
+/* Logout */
+#sidebar nav > div:last-child {
+    border-color: #303b50 !important;
+    margin-top: 25px;
+}
+
+#sidebar nav > div:last-child a {
+    min-height: 43px;
+    background: transparent !important;
+    border: 1px solid #3b2935;
+    border-radius: 8px;
+    color: #f1416c !important;
+    font-size: 13px;
+}
+
+#sidebar nav > div:last-child a:hover {
+    background: rgba(241, 65, 108, .1) !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    #sidebar {
+        width: 260px;
     }
+}
+
+
 </style>
 
     
@@ -563,7 +797,7 @@
         <!-- ============================================================ -->
         <!-- ===== سایدبار ===== -->
         <!-- ============================================================ -->
-        <aside id="sidebar" class="w-2/12 sidebar fixed top-0 right-0 h-full bg-[#142033] shadow-xl transition-all z-999 overflow-y-auto [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+        <aside id="sidebar" class="w-2/12 sidebar fixed top-0 right-0 h-full bg-red-500 shadow-xl transition-all z-999 overflow-y-auto [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
             
             <!-- لوگو -->
             <div class="flex items-center gap-3 px-6 py-6 bg-gradient-to-r from-[#142033] to-[#142033]">
@@ -578,20 +812,16 @@
 
             <!-- منو -->
             <nav class="px-4 py-6">
-                <a href="{{url('/')}}" class="text-md font-semibold w-full h-14 rounded-[13px] bg-[#142033] max-lg:bg-white hover:bg-white/5 text-[#9A9CAE] uppercase tracking-wider px-3 mb-4 flex gap-1 text-center items-center"> 
+                <a href="{{url('/')}}" class="text-md font-semibold w-full h-14 rounded-[13px] bg-red-500 max-lg:bg-white hover:bg-white/5 text-[#9A9CAE] uppercase tracking-wider px-3 mb-4 flex gap-1 text-center items-center"> 
                     <svg class='w-7 fill-[#9CA3AF]' viewBox="-1.6 -1.6 19.20 19.20" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#1fd699" stroke-width="0.00016" transform="matrix(1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.032"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L0 6V8H1V15H4V10H7V15H15V8H16V6L14 4.5V1H11V2.25L8 0ZM9 10H12V13H9V10Z"></path> </g></svg>
                     <span>رفتن به خانه</span>
                 </a>
 
 
-                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
+                    <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-red-500 max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
-                               <svg class='section-icon size-10 fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" >
-                                <!-- آیکون لوکیشن (Pin) -->
-                                <path d="M128 28c-35.3 0-64 28.7-64 64 0 48 64 120 64 120s64-72 64-120c0-35.3-28.7-64-64-64z" stroke="black" stroke-width="10" stroke-linejoin="round"/>
-                                <circle cx="128" cy="92" r="20" stroke="black" stroke-width="10"/>
-                                </svg>
+                              <svg  class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 512s192-208 192-320C384 86 298 0 192 0S0 86 0 192C0 304 192 512 192 512zm0-384a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
                                 <span class="text-[#9A9CAE]">آدرس</span>
                             </div>
                             <svg class='size-4 fill-[#9A9CAE] transition-all duration-700 rotate-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -599,16 +829,15 @@
                             </svg>
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
-                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center >
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center' >
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('address.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد آدرس جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('address.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست آدرس ها</a>
                             </div>
                         </div>
@@ -627,9 +856,7 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('order.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست سفارش ها</a>
                             </div>
                         </div>
@@ -642,9 +869,10 @@
                     <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
-                               <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                               <!-- <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                 <path d="M256 0c-4.7 0-9.4 1-13.7 3L28.6 82.4C11.4 89.2 0 105.9 0 124.6V387.4c0 18.7 11.4 35.4 28.6 42.2l213.7 79.4c4.3 2 9 3 13.7 3s9.4-1 13.7-3l213.7-79.4C500.6 422.8 512 406.1 512 387.4V124.6c0-18.7-11.4-35.4-28.6-42.2L269.7 3C265.4 1 260.7 0 256 0zM48 152.6l184-68.4v144.4L48 297V152.6zm232-68.4l184 68.4V297l-184-68.4V84.2zM232 472.2L48 403.8V312l184 68.4v91.8zm48 0v-91.8L464 312v91.8l-184 68.4z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" class="icon" style="width: 1em;height: 1em;vertical-align: middle;fill: #000000;overflow: hidden;" version="1.1" viewBox="0 0 1024 1024"><path d="M34.014 383.659l459.588 280.303a35.328 35.328 0 0 0 36.83 0l459.554-280.303a35.31 35.31 0 0 0 0-60.365L530.398 43.059a35.396 35.396 0 0 0-36.796 0L34.014 323.294a35.362 35.362 0 0 0 0 60.365zM953.805 483.499L512 752.896 70.195 483.499a34.133 34.133 0 1 0-35.533 58.3l459.572 280.234a34.236 34.236 0 0 0 35.532 0l459.589-280.235a34.15 34.15 0 0 0-35.55-58.3zM953.805 642.577L512 911.974 70.195 642.577a34.133 34.133 0 1 0-35.533 58.3L494.234 981.11a34.236 34.236 0 0 0 35.532 0l459.589-280.234a34.15 34.15 0 0 0-35.55-58.3z" /></svg>
                                 <span class="text-[#9A9CAE]">محصولات</span>
                             </div>
                             <svg class='size-4 fill-[#9A9CAE] transition-all duration-700 rotate-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -653,15 +881,14 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('product.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد محصول جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('product.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست محصولات</a>
                             </div>
                         </div>
@@ -671,8 +898,14 @@
                     <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
-                                <svg class='section-icon fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#059669">
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#059669">
                                     <path d="M184.1 59.8c-7.7-9.4-19.5-11.7-29.9-5.4L8.6 132.8c-8 5.1-13.3 14.3-13.3 24.5v198.2c0 10.2 5.3 19.4 13.3 24.5l145.6 78.3c10.4 6.3 22.2 3.9 29.9-5.4L306.7 256 184.1 59.8zM344 349.8L366.5 304H472V208H366.5L344 162.2 472 80V48H344.4L296 16 247.6 48H128v32h64.4L344 128v221.8zM306.7 256L418.5 460.2c7.7 9.4 19.5 11.7 29.9 5.4l145.6-78.3c8-5.1 13.3-14.3 13.3-24.5V164.5c0-10.2-5.3-19.4-13.3-24.5L448.4 61.8c-10.4-6.3-22.2-3.9-29.9 5.4L306.7 256z"/>
+                                </svg> -->
+                                <svg class='section-icon fill-[#9CA3AF]'  viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 10H7C9 10 10 9 10 7V5C10 3 9 2 7 2H5C3 2 2 3 2 5V7C2 9 3 10 5 10Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 10H19C21 10 22 9 22 7V5C22 3 21 2 19 2H17C15 2 14 3 14 5V7C14 9 15 10 17 10Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 22H19C21 22 22 21 22 19V17C22 15 21 14 19 14H17C15 14 14 15 14 17V19C14 21 15 22 17 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 22H7C9 22 10 21 10 19V17C10 15 9 14 7 14H5C3 14 2 15 2 17V19C2 21 3 22 5 22Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 <span class="text-[#9A9CAE]">دسته بندی ها</span>
                             </div>
@@ -682,15 +915,14 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('category.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] ">ایجاد دسته بندی جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('category.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست دسته بندی ها</a>
                             </div>
                         </div>
@@ -711,15 +943,14 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('brand.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد برند جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('brand.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست برند</a>
                             </div>
                         </div>
@@ -729,8 +960,15 @@
                     <div class='element flex flex-col items-center gap-2 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white hover:bg-white/5 shadow-sm hover:shadow-md transition-all mb-3'>
                         <div class='flex w-full justify-between items-center text-center cursor-pointer'>
                             <div class='flex items-center gap-2 text-white text-base font-medium'>
-                                <svg class='size-4 fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 0c17 0 33.6 1.7 49.8 4.8c7.9 1.5 21.8 6.1 29.4 20.1c2 3.7 3.6 7.6 4.6 11.8l9.3 38.5C350.5 81 360.3 86.7 366 85l38-11.2c4-1.2 8.1-1.8 12.2-1.9c16.1-.5 27 9.4 32.3 15.4c22.1 25.1 39.1 54.6 49.9 86.3c2.6 7.6 5.6 21.8-2.7 35.4c-2.2 3.6-4.9 7-8 10L459 246.3c-4.2 4-4.2 15.5 0 19.5l28.7 27.3c3.1 3 5.8 6.4 8 10c8.2 13.6 5.2 27.8 2.7 35.4c-10.8 31.7-27.8 61.1-49.9 86.3c-5.3 6-16.3 15.9-32.3 15.4c-4.1-.1-8.2-.8-12.2-1.9L366 427c-5.7-1.7-15.5 4-16.9 9.8l-9.3 38.5c-1 4.2-2.6 8.2-4.6 11.8c-7.7 14-21.6 18.5-29.4 20.1C289.6 510.3 273 512 256 512s-33.6-1.7-49.8-4.8c-7.9-1.5-21.8-6.1-29.4-20.1c-2-3.7-3.6-7.6-4.6-11.8l-9.3-38.5c-1.4-5.8-11.2-11.5-16.9-9.8l-38 11.2c-4 1.2-8.1 1.8-12.2 1.9c-16.1 .5-27-9.4-32.3-15.4c-22-25.1-39.1-54.6-49.9-86.3c-2.6-7.6-5.6-21.8 2.7-35.4c2.2-3.6 4.9-7 8-10L53 265.7c4.2-4 4.2-15.5 0-19.5L24.2 218.9c-3.1-3-5.8-6.4-8-10C8 195.3 11 181.1 13.6 173.6c10.8-31.7 27.8-61.1 49.9-86.3c5.3-6 16.3-15.9 32.3-15.4c4.1 .1 8.2 .8 12.2 1.9L146 85c5.7 1.7 15.5-4 16.9-9.8l9.3-38.5c1-4.2 2.6-8.2 4.6-11.8c7.7-14 21.6-18.5 29.4-20.1C222.4 1.7 239 0 256 0zM218.1 51.4l-8.5 35.1c-7.8 32.3-45.3 53.9-77.2 44.6L97.9 120.9c-16.5 19.3-29.5 41.7-38 65.7l26.2 24.9c24 22.8 24 66.2 0 89L59.9 325.4c8.5 24 21.5 46.4 38 65.7l34.6-10.2c31.8-9.4 69.4 12.3 77.2 44.6l8.5 35.1c24.6 4.5 51.3 4.5 75.9 0l8.5-35.1c7.8-32.3 45.3-53.9 77.2-44.6l34.6 10.2c16.5-19.3 29.5-41.7 38-65.7l-26.2-24.9c-24-22.8-24-66.2 0-89l26.2-24.9c-8.5-24-21.5-46.4-38-65.7l-34.6 10.2c-31.8 9.4-69.4-12.3-77.2-44.6l-8.5-35.1c-24.6-4.5-51.3-4.5-75.9 0zM208 256a48 48 0 1 0 96 0 48 48 0 1 0 -96 0zm48 96a96 96 0 1 1 0-192 96 96 0 1 1 0 192z"/></svg>
-                                
+                                <!-- <svg class='size-4 fill-[#9CA3AF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M256 0c17 0 33.6 1.7 49.8 4.8c7.9 1.5 21.8 6.1 29.4 20.1c2 3.7 3.6 7.6 4.6 11.8l9.3 38.5C350.5 81 360.3 86.7 366 85l38-11.2c4-1.2 8.1-1.8 12.2-1.9c16.1-.5 27 9.4 32.3 15.4c22.1 25.1 39.1 54.6 49.9 86.3c2.6 7.6 5.6 21.8-2.7 35.4c-2.2 3.6-4.9 7-8 10L459 246.3c-4.2 4-4.2 15.5 0 19.5l28.7 27.3c3.1 3 5.8 6.4 8 10c8.2 13.6 5.2 27.8 2.7 35.4c-10.8 31.7-27.8 61.1-49.9 86.3c-5.3 6-16.3 15.9-32.3 15.4c-4.1-.1-8.2-.8-12.2-1.9L366 427c-5.7-1.7-15.5 4-16.9 9.8l-9.3 38.5c-1 4.2-2.6 8.2-4.6 11.8c-7.7 14-21.6 18.5-29.4 20.1C289.6 510.3 273 512 256 512s-33.6-1.7-49.8-4.8c-7.9-1.5-21.8-6.1-29.4-20.1c-2-3.7-3.6-7.6-4.6-11.8l-9.3-38.5c-1.4-5.8-11.2-11.5-16.9-9.8l-38 11.2c-4 1.2-8.1 1.8-12.2 1.9c-16.1 .5-27-9.4-32.3-15.4c-22-25.1-39.1-54.6-49.9-86.3c-2.6-7.6-5.6-21.8 2.7-35.4c2.2-3.6 4.9-7 8-10L53 265.7c4.2-4 4.2-15.5 0-19.5L24.2 218.9c-3.1-3-5.8-6.4-8-10C8 195.3 11 181.1 13.6 173.6c10.8-31.7 27.8-61.1 49.9-86.3c5.3-6 16.3-15.9 32.3-15.4c4.1 .1 8.2 .8 12.2 1.9L146 85c5.7 1.7 15.5-4 16.9-9.8l9.3-38.5c1-4.2 2.6-8.2 4.6-11.8c7.7-14 21.6-18.5 29.4-20.1C222.4 1.7 239 0 256 0zM218.1 51.4l-8.5 35.1c-7.8 32.3-45.3 53.9-77.2 44.6L97.9 120.9c-16.5 19.3-29.5 41.7-38 65.7l26.2 24.9c24 22.8 24 66.2 0 89L59.9 325.4c8.5 24 21.5 46.4 38 65.7l34.6-10.2c31.8-9.4 69.4 12.3 77.2 44.6l8.5 35.1c24.6 4.5 51.3 4.5 75.9 0l8.5-35.1c7.8-32.3 45.3-53.9 77.2-44.6l34.6 10.2c16.5-19.3 29.5-41.7 38-65.7l-26.2-24.9c-24-22.8-24-66.2 0-89l26.2-24.9c-8.5-24-21.5-46.4-38-65.7l-34.6 10.2c-31.8 9.4-69.4-12.3-77.2-44.6l-8.5-35.1c-24.6-4.5-51.3-4.5-75.9 0zM208 256a48 48 0 1 0 96 0 48 48 0 1 0 -96 0zm48 96a96 96 0 1 1 0-192 96 96 0 1 1 0 192z"/></svg> -->
+                                    <svg class='size-5 fill-[#9CA3AF]'  viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+                                        <g id="style=stroke">
+                                        <g id="setting">
+                                        <path id="vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M12 9.75C10.7574 9.75 9.75 10.7574 9.75 12C9.75 13.2426 10.7574 14.25 12 14.25C13.2426 14.25 14.25 13.2426 14.25 12C14.25 10.7574 13.2426 9.75 12 9.75ZM8.25 12C8.25 9.92893 9.92893 8.25 12 8.25C14.0711 8.25 15.75 9.92893 15.75 12C15.75 14.0711 14.0711 15.75 12 15.75C9.92893 15.75 8.25 14.0711 8.25 12Z" />
+                                        <path id="vector (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd" d="M9.60347 3.77018C9.3358 3.32423 8.77209 3.18551 8.35347 3.43457L8.34256 3.44105L6.61251 4.43096C6.06514 4.74375 5.8763 5.45289 6.1894 5.9948L5.54 6.37001L6.18888 5.99391C6.72395 6.91704 6.86779 7.92882 6.38982 8.75823C5.91192 9.58753 4.96479 9.97001 3.9 9.97001C3.26678 9.97001 2.75 10.4917 2.75 11.12V12.88C2.75 13.5084 3.26678 14.03 3.9 14.03C4.96479 14.03 5.91192 14.4125 6.38982 15.2418C6.86773 16.0711 6.72398 17.0827 6.18909 18.0058C5.87642 18.5476 6.06491 19.2561 6.6121 19.5688L8.35352 20.5654C8.77214 20.8144 9.33577 20.6758 9.60345 20.2299L9.71093 20.0442C10.2458 19.1214 11.052 18.4925 12.0087 18.4925C12.9662 18.4925 13.77 19.1219 14.3 20.0458C14.3002 20.0462 14.3004 20.0466 14.3007 20.047L14.4065 20.2298C14.6742 20.6758 15.2379 20.8145 15.6565 20.5655L15.6674 20.559L17.3975 19.5691C17.9434 19.2571 18.1351 18.5578 17.8198 18.0038C17.2858 17.0813 17.1426 16.0705 17.6202 15.2418C18.0981 14.4125 19.0452 14.03 20.11 14.03C20.7432 14.03 21.26 13.5084 21.26 12.88V11.12C21.26 10.4868 20.7384 9.97001 20.11 9.97001C19.0452 9.97001 18.0981 9.58753 17.6202 8.75824C17.1423 7.92899 17.286 6.91744 17.8208 5.99445C18.1336 5.45258 17.9451 4.74391 17.3979 4.43119L15.6565 3.43466C15.2379 3.1856 14.6742 3.32423 14.4065 3.77019L14.2991 3.95579C13.7642 4.8786 12.958 5.50751 12.0012 5.50751C11.0439 5.50751 10.2402 4.87825 9.71021 3.95455C9.70992 3.95403 9.70962 3.95352 9.70933 3.95301L9.60347 3.77018ZM7.59248 2.14193C8.75191 1.45656 10.2226 1.87704 10.8946 3.00654L10.8991 3.01421L11.0091 3.20423L11.0107 3.20701C11.3807 3.85247 11.7666 4.00751 12.0012 4.00751C12.237 4.00751 12.6259 3.85115 13.0009 3.20423C13.001 3.20412 13.0009 3.20434 13.0009 3.20423L13.1154 3.00651C13.7874 1.877 15.2581 1.45656 16.4175 2.14193L18.1421 3.12883C19.4147 3.85604 19.8463 5.48713 19.1194 6.74522L19.1189 6.74611C18.7439 7.39298 18.8028 7.8062 18.9198 8.00929C19.0369 8.21249 19.3648 8.47001 20.11 8.47001C21.5616 8.47001 22.76 9.65323 22.76 11.12V12.88C22.76 14.3317 21.5768 15.53 20.11 15.53C19.3648 15.53 19.0369 15.7875 18.9198 15.9907C18.8028 16.1938 18.7439 16.607 19.1189 17.2539L19.1212 17.2579C19.8444 18.5235 19.4157 20.1431 18.1425 20.871C18.1424 20.871 18.1426 20.8709 18.1425 20.871L16.4174 21.8581C15.258 22.5434 13.7874 22.123 13.1154 20.9935L13.1109 20.9858L13.0009 20.7958L12.9993 20.793C12.6293 20.1476 12.2434 19.9925 12.0087 19.9925C11.773 19.9925 11.3841 20.1489 11.0091 20.7958C11.009 20.7959 11.0091 20.7957 11.0091 20.7958L10.8946 20.9935C10.2226 22.123 8.75199 22.5434 7.59257 21.8581L5.8679 20.8712C5.86776 20.8711 5.86803 20.8713 5.8679 20.8712C4.59558 20.1439 4.16378 18.5128 4.8906 17.2548L4.89112 17.2539C5.26605 16.607 5.20721 16.1938 5.09018 15.9907C4.97308 15.7875 4.64521 15.53 3.9 15.53C2.43322 15.53 1.25 14.3317 1.25 12.88V11.12C1.25 9.66837 2.43322 8.47001 3.9 8.47001C4.64521 8.47001 4.97308 8.21249 5.09018 8.00929C5.20721 7.8062 5.26605 7.39298 4.89112 6.74611L4.8906 6.74522C4.16378 5.48726 4.59518 3.85639 5.86749 3.12906L7.59248 2.14193Z"/>
+                                        </g>
+                                        </g>
+                                    </svg>
                                 <span class="text-[#9A9CAE]">تنظیمات</span>
                             </div>
                             <svg class='size-4 fill-[#9A9CAE] transition-all duration-700 rotate-0' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -739,27 +977,25 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('main_store.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">ایجاد استوری</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('store.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">ایجاد محتوا برای استوری</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('store.index')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap text-[14px]">لیست محتوای استوری ها</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('main_store.index')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE] text-nowrap">لیست استوری ها</a>
                             </div>
                         </div>
@@ -780,15 +1016,14 @@
                         </div>
                         <div class='w-full grid grid-cols-1 text-end max-h-0 overflow-hidden transition-all duration-500'>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                                     <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
-                                </svg>
+                                </svg> -->
+                                <svg class='size-4 fill-[#059669]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('user.create')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">ایجاد کاربر جدید</a>
                             </div>
                             <div class='w-12/12 justify-start text-white flex p-2 text-base gap-2 sub-menu-item items-center'>
-                                <svg class='size-4 fill-[#1B84FF]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"/>
-                                </svg>
+                            <svg class = "size-4 fill-[#059669]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
                                 <a href="{{route('user.list')}}" class="hover:text-white transition-colors font-medium text-[#9A9CAE]">لیست کاربر</a>
                             </div>
                             @can('role_permision',['admin1'])
@@ -825,7 +1060,7 @@
                 @endcan
 
                 <!-- ===== دکمه خروج ===== -->
-                <div class="mt-6 pt-4 border-t border-[#DBDFE9]">
+                <div class="mt-6 pt-4 ">
                     <a href="{{ route('user.logOut')}}" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-[#142033] max-lg:bg-white shadow-sm text-[#dc2626] hover:text-[#ff4444] transition-all">
                         <svg class='size-5 fill-[#dc2626]' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/>
@@ -885,34 +1120,7 @@
 
              
 
-                {{-- منوی دسکتاپ --}}
-                <nav class="hidden lg:flex items-center gap-7">
-
-                    <a href=""
-                        class="relative py-3 text-sm font-bold transition-colors
-                        ">
-
-                        خانه
-
-                        @if(Route::is('home'))
-                            <span class="absolute -bottom-[2px] right-0
-                                w-5 h-[3px] rounded-full bg-[#FF9018]"></span>
-                        @endif
-                    </a>
-
-                    <a href=""
-                        class="py-3 text-sm font-medium transition-colors
-                        ">
-                        درباره ما
-                    </a>
-
-                    <a href=""
-                        class="py-3 text-sm font-medium transition-colors
-                        ">
-                        ارتباط با ما
-                    </a>
-
-                </nav>
+              
 
             </div>
 
@@ -1060,7 +1268,7 @@
                                     </p>
                                 </div>
 
-                                <a href=""
+                                <a href="{{route('user.profile')}}"
                                     class="flex items-center gap-3 p-3 mt-2
                                         rounded-xl text-sm text-slate-600
                                         hover:bg-orange-50 hover:text-[#FF9018]
@@ -1068,7 +1276,7 @@
                                     پروفایل من
                                 </a>
 
-                                <a href=""
+                                <a href="{{route('user.profile')}}"
                                     class="flex items-center gap-3 p-3
                                         rounded-xl text-sm text-slate-600
                                         hover:bg-orange-50 hover:text-[#FF9018]
@@ -1077,7 +1285,7 @@
                                 </a>
 
                                 <div class="border-t border-slate-100 mt-2 pt-2">
-                                    <a href=""
+                                    <a href="{{ route('user.logOut')}}"
                                         class="block p-3 rounded-xl text-sm
                                             text-rose-500 hover:bg-rose-50
                                             transition-colors">
