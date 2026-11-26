@@ -22,10 +22,11 @@ use App\Http\Controllers\MainStoreController;
 use App\Http\Controllers\StoreController;
 use App\Http\Middleware\checkUserExist;
 use App\Http\Middleware\checkAuthUser;
+use App\Http\Middleware\authUser;
+use App\Http\Middleware\checkAccess;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use App\Models\role_permision;
-
 
 
 Route::get('/permision',function(){
@@ -61,12 +62,12 @@ Route::group([
     'as' => 'store.',
     'controller' => StoreController::class,
 ] , function(){
-    Route::get('/create' , 'create')->name('create');
-    Route::get('/index' , 'index')->name('index');
-    Route::post('/store' , 'store')->name('store');
-    Route::get('/delete/{store}' , 'delete')->name('delete');
-    Route::get('/edit/{store}' , 'edit')->name('edit');
-    Route::post('/update' , 'update')->name('update');
+    Route::get('/create' , 'create')->middleware(authUser::class)->middleware(checkAccess::class . ':story_media_create')->name('create');
+    Route::get('/index' , 'index')->middleware(authUser::class)->middleware(checkAccess::class . ':story_media_list')->name('index');
+    Route::post('/store' , 'store')->middleware(authUser::class)->middleware(checkAccess::class . ':story_media_create')->name('store');
+    Route::get('/delete/{store}' , 'delete')->middleware(authUser::class)->middleware(checkAccess::class . ':story_media_delete')->name('delete');
+    Route::get('/edit/{store}' , 'edit')->middleware(authUser::class)->middleware(checkAccess::class . ':story_media_edit')->name('edit');
+    Route::post('/update' , 'update')->middleware(authUser::class)->middleware(checkAccess::class . ':story_media_edit')->name('update');
 });
 
 
@@ -75,13 +76,13 @@ Route::group([
     'as' => 'main_store.',
     'controller' => MainStoreController::class,
     ] , function(){
-        Route::get('/create' , 'create')->name('create');
-        Route::post('/store' , 'store')->name('store');
-        Route::get('/delete/{main_store}' , 'delete')->name('delete');
-        Route::get('/index' , 'index')->name('index');
-        Route::get('/edit/{main_store}' , 'edit')->name('edit');
-        Route::post('/update' , 'update')->name('update');
-        Route::post('/add/store' , 'add_store')->name('add_store');
+        Route::get('/create' , 'create')->middleware(authUser::class)->middleware(checkAccess::class . ':story_create')->name('create');
+        Route::post('/store' , 'store')->middleware(authUser::class)->middleware(checkAccess::class . ':story_create')->name('store');
+        Route::get('/delete/{main_store}' , 'delete')->middleware(authUser::class)->middleware(checkAccess::class . ':story_delete')->name('delete');
+        Route::get('/index' , 'index')->middleware(authUser::class)->middleware(checkAccess::class . ':story_list')->name('index');
+        Route::get('/edit/{main_store}' , 'edit')->middleware(authUser::class)->middleware(checkAccess::class . ':story_edit')->name('edit');
+        Route::post('/update' , 'update')->middleware(authUser::class)->middleware(checkAccess::class . ':story_edit')->name('update');
+        Route::post('/add/store' , 'add_store')->middleware(authUser::class)->middleware(checkAccess::class . ':story_add_store')->name('add_store');
         Route::get('/store/content/{main_store}' , 'store_content')->name('store_content');
 });
 
@@ -93,25 +94,25 @@ Route::group([
     'as'=>'user.',
     'controller'=>UserController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
+    Route::get('/create','create')->middleware(authUser::class)->middleware(checkAccess::class . ':user_create')->name('create');
     Route::post('/store','store')->name('store');
-    Route::post('/createUser','createUser')->name('createUser');
-    Route::get('/list','list')->name('list');
-    Route::get('/single/{user}','single')->name('single');
-    Route::get('/edit/{user}','edit')->name('edit');
-    Route::post('/update/{user}','update')->name('update');
-    Route::get('/delete/{user}','delete')->name('delete');
+    Route::post('/createUser','createUser')->middleware(authUser::class)->middleware(checkAccess::class . ':user_create')->name('createUser');
+    Route::get('/list','list')->middleware(authUser::class)->middleware(checkAccess::class . ':user_list')->name('list');
+    Route::get('/single/{user}','single')->middleware(authUser::class)->middleware(checkAccess::class . ':user_single')->name('single');
+    Route::get('/edit/{user}','edit')->middleware(authUser::class)->middleware(checkAccess::class . ':user_edit')->name('edit');
+    Route::post('/update/{user}','update')->middleware(authUser::class)->middleware(checkAccess::class . ':user_edit')->name('update');
+    Route::get('/delete/{user}','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':user_delete')->name('delete');
     // Route::post('/edit/profile','editProfile')->name('editProfile');
-    Route::post('/edit/profile/{user}','editProfile')->name('editProfile');
-    Route::post('/change/avatar/{user}','changeAvatar')->name('changeAvatar');
-    Route::post('/change/password/{user}','changePassword')->name('changePassword');
+    Route::post('/edit/profile/{user}','editProfile')->middleware(authUser::class)->name('editProfile');
+    Route::post('/change/avatar/{user}','changeAvatar')->middleware(authUser::class)->name('changeAvatar');
+    Route::post('/change/password/{user}','changePassword')->middleware(authUser::class)->name('changePassword');
 
     Route::get('/login/page','loginPage')->name('loginPage')->middleware(checkAuthUser::class);
     Route::post('/login','login')->name('login')->middleware(checkUserExist::class);
     Route::post('/signup','signup')->name('signup');
     Route::get('/logOut','logOut')->name('logOut');
-    Route::get('/dashboard','dashboard')->name('dashboard');
-    Route::get('/profile','profile')->name('profile');
+    Route::get('/dashboard','dashboard')->middleware(authUser::class)->name('dashboard');
+    Route::get('/profile','profile')->middleware(authUser::class)->name('profile');
     Route::post('/send/code/login','send_code_login')->name('send_code_login');
     Route::post('/send/code/signup','send_code_signup')->name('send_code_signup');
     Route::post('/remove/activation/code','removeActivationCode')->name('removeActivationCode');
@@ -126,11 +127,11 @@ Route::group([
     'as'=>'role.',
     'controller'=>RoleController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
-    Route::get('/list','list')->name('list');
-    Route::post('/update','update')->name('update');
-    Route::get('/delete/{role}','delete')->name('delete');
+    Route::get('/create','create')->middleware(authUser::class)->middleware(checkAccess::class . ':role_create')->name('create');
+    Route::post('/store','store')->middleware(authUser::class)->middleware(checkAccess::class . ':role_create')->name('store');
+    Route::get('/list','list')->middleware(authUser::class)->middleware(checkAccess::class . ':role_list')->name('list');
+    Route::post('/update','update')->middleware(authUser::class)->middleware(checkAccess::class . ':role_edit')->name('update');
+    Route::get('/delete/{role}','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':role_delete')->name('delete');
     Route::get('/getRole/{role}','getRole')->name('getRole');
     Route::get('/get/role/users/{role}','getUsers')->name('getUsers');
     Route::get('/get/role/permisions/{role}','getpermisions')->name('getpermisions');
@@ -156,15 +157,15 @@ route::group([
     'as'=>'product.',
     'controller'=>ProductController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
+    Route::get('/create','create')->middleware(authUser::class)->middleware(checkAccess::class . ':product_create')->name('create');
+    Route::post('/store','store')->middleware(authUser::class)->middleware(checkAccess::class . ':product_create')->name('store');
     Route::post('/searchProduct','searchProduct')->name('searchProduct');
-    Route::get('/list','list')->name('list');
-    Route::get('/single/product/{product}','single')->name('single');
-    Route::get('/single/package/{package}','singlePackage')->name('singlePackage');
-    Route::get('/edit/{product}','edit')->name('edit');
-    Route::post('/update/{product}','update')->name('update');
-    Route::get('/delete/{product}','delete')->name('delete');
+    Route::get('/list','list')->middleware(authUser::class)->middleware(checkAccess::class . ':product_list')->name('list');
+    Route::get('/single/product/{product}','single')->middleware(authUser::class)->middleware(checkAccess::class . ':product_single')->name('single');
+    Route::get('/single/package/{package}','singlePackage')->middleware(authUser::class)->middleware(checkAccess::class . ':product_single')->name('singlePackage');
+    Route::get('/edit/{product}','edit')->middleware(authUser::class)->middleware(checkAccess::class . ':product_edit')->name('edit');
+    Route::post('/update/{product}','update')->middleware(authUser::class)->middleware(checkAccess::class . ':product_edit')->name('update');
+    Route::get('/delete/{product}','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':product_delete')->name('delete');
     Route::get('category/attributes/{category}','categoryAttributes')->name('categoryAttributes');
     Route::get('/packages/{product}','packages')->name('packages');
     Route::get('/attributes/{product}','attributes')->name('attributes');
@@ -181,9 +182,9 @@ route::group([
     'controller'=>CartController::class,
 ],function(){    
     Route::post('/store/cart','store')->name('store');
-    Route::post('/update/cart/{cart}','update')->name('update');
-    Route::get('/delete/cart/{cart}','delete')->name('delete');
-    Route::get('/list/cart','list')->name('list');
+    Route::post('/update/cart/{cart}','update')->middleware(authUser::class)->name('update');
+    Route::get('/delete/cart/{cart}','delete')->middleware(authUser::class)->name('delete');
+    Route::get('/list/cart','list')->middleware(authUser::class)->name('list');
     Route::get('/user/cart/list','userCartList')->name('userCartList');
     Route::post('/checkOutForm','checkOutForm')->name('checkOutForm');
 });
@@ -193,36 +194,36 @@ route::group([
     'controller'=>OrderController::class,
 ],function(){    
     Route::post('/store/order','store')->name('store');
-    Route::get('/list/order','list')->name('list');
-    Route::get('/edit/order','edit')->name('edit');
-    Route::post('/update/order','update')->name('update');
-    Route::get('/delete/order','delete')->name('delete');
+    Route::get('/list/order','list')->middleware(authUser::class)->middleware(checkAccess::class . ':order_list')->name('list');
+    Route::get('/edit/order','edit')->middleware(authUser::class)->middleware(checkAccess::class . ':order_edit')->name('edit');
+    Route::post('/update/order','update')->middleware(authUser::class)->middleware(checkAccess::class . ':order_edit')->name('update');
+    Route::get('/delete/order','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':order_delete')->name('delete');
 });
 route::group([
     'prefix'=>'category',
     'as'=>'category.',
     'controller'=>CategoryController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
-    Route::get('/list','list')->name('list');
-    Route::get('/single/{category}','single')->name('single');
-    Route::get('/edit/{category}','edit')->name('edit');
-    Route::post('/update/{category}','update')->name('update');
-    Route::get('/delete/{category}','delete')->name('delete');
+    Route::get('/create','create')->middleware(authUser::class)->middleware(checkAccess::class . ':category_create')->name('create');
+    Route::post('/store','store')->middleware(authUser::class)->middleware(checkAccess::class . ':category_create')->name('store');
+    Route::get('/list','list')->middleware(authUser::class)->middleware(checkAccess::class . ':category_list')->name('list');
+    Route::get('/single/{category}','single')->middleware(authUser::class)->middleware(checkAccess::class . ':category_single')->name('single');
+    Route::get('/edit/{category}','edit')->middleware(authUser::class)->middleware(checkAccess::class . ':category_edit')->name('edit');
+    Route::post('/update/{category}','update')->middleware(authUser::class)->middleware(checkAccess::class . ':category_edit')->name('update');
+    Route::get('/delete/{category}','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':category_delete')->name('delete');
 });
 route::group([
     'prefix'=>'brand',
     'as'=>'brand.',
     'controller'=>BrandController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
-    Route::get('/list','list')->name('list');
-    Route::get('/single/{brand}','single')->name('single');
-    Route::get('/edit/{brand}','edit')->name('edit');
-    Route::post('/update/{brand}','update')->name('update');
-    Route::get('/delete/{brand}','delete')->name('delete');
+    Route::get('/create','create')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_create')->name('create');
+    Route::post('/store','store')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_create')->name('store');
+    Route::get('/list','list')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_list')->name('list');
+    Route::get('/single/{brand}','single')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_single')->name('single');
+    Route::get('/edit/{brand}','edit')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_edit')->name('edit');
+    Route::post('/update/{brand}','update')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_edit')->name('update');
+    Route::get('/delete/{brand}','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':brand_delete')->name('delete');
 });
 
 Route::get('check',function(){
@@ -238,12 +239,12 @@ Route::group([
     'as'=>'address.',
     'controller'=>AddressController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
-    Route::get('/list','list')->name('list');
+    Route::get('/create','create')->middleware(authUser::class)->name('create');
+    Route::post('/store','store')->middleware(authUser::class)->name('store');
+    Route::get('/list','list')->middleware(authUser::class)->name('list');
     Route::get('/get/address/{address}','getAddress')->name('getAddress');
-    Route::post('/update/{address}','update')->name('update');
-    Route::get('/delete/{address}','delete')->name('delete');
+    Route::post('/update/{address}','update')->middleware(authUser::class)->name('update');
+    Route::get('/delete/{address}','delete')->middleware(authUser::class)->name('delete');
     Route::post('/get/cities','getCities')->name('getCities');
     Route::post('/create/ajax','createAjax')->name('createAjax');
 });
@@ -252,12 +253,12 @@ route::group([
     'as'=>'discuntCode.',
     'controller'=>DiscuntCodeController::class,
 ],function(){
-    Route::get('/create','create')->name('create');
-    Route::post('/store','store')->name('store');
-    Route::get('/list','list')->name('list');
-    Route::get('/edit/{discuntCode}','edit')->name('edit');
-    Route::post('/update/{discuntCode}','update')->name('update');
-    Route::get('/delete/{discuntCode}','delete')->name('delete');
+    Route::get('/create','create')->middleware(authUser::class)->middleware(checkAccess::class . ':discuntCode_create')->name('create');
+    Route::post('/store','store')->middleware(authUser::class)->middleware(checkAccess::class . ':discuntCode_create')->name('store');
+    Route::get('/list','list')->middleware(authUser::class)->middleware(checkAccess::class . ':discuntCode_list')->name('list');
+    Route::get('/edit/{discuntCode}','edit')->middleware(authUser::class)->middleware(checkAccess::class . ':discuntCode_edit')->name('edit');
+    Route::post('/update/{discuntCode}','update')->middleware(authUser::class)->middleware(checkAccess::class . ':discuntCode_edit')->name('update');
+    Route::get('/delete/{discuntCode}','delete')->middleware(authUser::class)->middleware(checkAccess::class . ':discuntCode_delete')->name('delete');
     Route::post('/checkCode','checkCode')->name('checkCode');
 });
 
