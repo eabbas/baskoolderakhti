@@ -191,7 +191,7 @@
     </div>
     </header>
 
-  <main class = "w-12/12 2xl:max-w-[2100px] mx-auto mt-45">
+  <main class = "w-12/12 2xl:max-w-[2100px] mx-auto">
      <section class = "w-11/12 mx-auto mt-10"> 
             <div class="w-full mx-auto flex flex-col items-center">
                 <div class="w-[300px] flex flex-col items-center  ">
